@@ -1,0 +1,14 @@
+   1              		.file	"sys_time.c"
+   2              		.comm	cpu_time,2,2
+   3              		.bss
+   4              		.align	2
+   5              	last_periodic_event:
+   6 0000 00000000 		.space	4
+   7              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 sys_time.c
+                            *COM*:00000002 cpu_time
+                             .bss:00000000 $d
+     /tmp/ccHewb0B.s:5      .bss:00000000 last_periodic_event
+
+NO UNDEFINED SYMBOLS

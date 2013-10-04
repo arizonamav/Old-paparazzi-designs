@@ -1,0 +1,689 @@
+   1              		.file	"datalink.c"
+   2              		.global	__floatsisf
+   3              		.global	__divsf3
+   4              		.global	__extendsfdf2
+   5              		.global	__divdf3
+   6              		.global	__muldf3
+   7              		.global	__truncdfsf2
+   8              		.global	__addsf3
+   9              		.global	__subsf3
+  10              		.global	__fixunssfsi
+  11              		.text
+  12              		.align	2
+  13              		.global	dl_parse_msg
+  15              	dl_parse_msg:
+  16              		@ Function supports interworking.
+  17              		@ args = 0, pretend = 0, frame = 20
+  18              		@ frame_needed = 1, uses_anonymous_args = 0
+  19 0000 0DC0A0E1 		mov	ip, sp
+  20 0004 F0DF2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, ip, lr, pc}
+  21 0008 04B04CE2 		sub	fp, ip, #4
+  22 000c 14D04DE2 		sub	sp, sp, #20
+  23 0010 B0539FE5 		ldr	r5, .L58+24
+  24 0014 0130D5E5 		ldrb	r3, [r5, #1]	@ zero_extendqisi2
+  25 0018 010053E3 		cmp	r3, #1
+  26 001c 3F00001A 		bne	.L2
+  27 0020 040095E5 		ldr	r0, [r5, #4]
+  28 0024 FEFFFFEB 		bl	__floatsisf
+  29 0028 9C139FE5 		ldr	r1, .L58+28
+  30 002c FEFFFFEB 		bl	__divsf3
+  31 0030 0080A0E1 		mov	r8, r0
+  32 0034 080095E5 		ldr	r0, [r5, #8]
+  33 0038 FEFFFFEB 		bl	__floatsisf
+  34 003c 88139FE5 		ldr	r1, .L58+28
+  35 0040 FEFFFFEB 		bl	__divsf3
+  36 0044 00A0A0E1 		mov	sl, r0
+  37 0048 0C0095E5 		ldr	r0, [r5, #12]
+  38 004c FEFFFFEB 		bl	__floatsisf
+  39 0050 74139FE5 		ldr	r1, .L58+28
+  40 0054 FEFFFFEB 		bl	__divsf3
+  41 0058 0090A0E1 		mov	r9, r0
+  42 005c F200D5E1 		ldrsh	r0, [r5, #2]
+  43 0060 FEFFFFEB 		bl	__floatsisf
+  44 0064 FEFFFFEB 		bl	__extendsfdf2
+  45 0068 0D2D8FE2 		adr	r2, .L58
+  46 006c 0C0092E8 		ldmia	r2, {r2-r3}
+  47 0070 FEFFFFEB 		bl	__divdf3
+  48 0074 CF2F8FE2 		adr	r2, .L58+8
+  49 0078 0C0092E8 		ldmia	r2, {r2-r3}
+  50 007c FEFFFFEB 		bl	__divdf3
+  51 0080 CE2F8FE2 		adr	r2, .L58+16
+  52 0084 0C0092E8 		ldmia	r2, {r2-r3}
+  53 0088 FEFFFFEB 		bl	__muldf3
+  54 008c FEFFFFEB 		bl	__truncdfsf2
+  55 0090 F441D5E1 		ldrsh	r4, [r5, #20]
+  56 0094 0070A0E1 		mov	r7, r0
+  57 0098 0400A0E1 		mov	r0, r4
+  58 009c FEFFFFEB 		bl	__floatsisf
+  59 00a0 000054E3 		cmp	r4, #0
+  60 00a4 1840D5E5 		ldrb	r4, [r5, #24]	@ zero_extendqisi2
+  61 00a8 20139FB5 		ldrlt	r1, .L58+32
+  62 00ac FEFFFFBB 		bllt	__addsf3
+  63              	.L3:
+  64 00b0 14139FE5 		ldr	r1, .L58+28
+  65 00b4 FEFFFFEB 		bl	__divsf3
+  66 00b8 170054E3 		cmp	r4, #23
+  67 00bc 0060A0E1 		mov	r6, r0
+  68 00c0 0802008A 		bhi	.L1
+  69 00c4 08139FE5 		ldr	r1, .L58+36
+  70 00c8 0800A0E1 		mov	r0, r8
+  71 00cc FEFFFFEB 		bl	__subsf3
+  72 00d0 00539FE5 		ldr	r5, .L58+40
+  73 00d4 044184E0 		add	r4, r4, r4, asl #2
+  74 00d8 0441A0E1 		mov	r4, r4, asl #2
+  75 00dc 050084E7 		str	r0, [r4, r5]	@ float
+  76 00e0 F4129FE5 		ldr	r1, .L58+44
+  77 00e4 0A00A0E1 		mov	r0, sl
+  78 00e8 FEFFFFEB 		bl	__subsf3
+  79 00ec 054084E0 		add	r4, r4, r5
+  80 00f0 106084E5 		str	r6, [r4, #16]	@ float
+  81 00f4 040084E5 		str	r0, [r4, #4]	@ float
+  82 00f8 087084E5 		str	r7, [r4, #8]	@ float
+  83 00fc 0C9084E5 		str	r9, [r4, #12]	@ float
+  84 0100 080200EA 		b	.L1
+  85              	.L2:
+  86 0104 020053E3 		cmp	r3, #2
+  87 0108 DC00001A 		bne	.L6
+  88 010c 0230D5E5 		ldrb	r3, [r5, #2]	@ zero_extendqisi2
+  89 0110 040095E5 		ldr	r0, [r5, #4]
+  90 0114 29304BE5 		strb	r3, [fp, #-41]
+  91 0118 FEFFFFEB 		bl	__floatsisf
+  92 011c A8129FE5 		ldr	r1, .L58+28
+  93 0120 FEFFFFEB 		bl	__divsf3
+  94 0124 0060A0E1 		mov	r6, r0
+  95 0128 080095E5 		ldr	r0, [r5, #8]
+  96 012c 30600BE5 		str	r6, [fp, #-48]	@ float
+  97 0130 FEFFFFEB 		bl	__floatsisf
+  98 0134 90129FE5 		ldr	r1, .L58+28
+  99 0138 FEFFFFEB 		bl	__divsf3
+ 100 013c 0080A0E1 		mov	r8, r0
+ 101 0140 0C0095E5 		ldr	r0, [r5, #12]
+ 102 0144 34800BE5 		str	r8, [fp, #-52]	@ float
+ 103 0148 FEFFFFEB 		bl	__floatsisf
+ 104 014c 78129FE5 		ldr	r1, .L58+28
+ 105 0150 FEFFFFEB 		bl	__divsf3
+ 106 0154 84329FE5 		ldr	r3, .L58+48
+ 107 0158 29205BE5 		ldrb	r2, [fp, #-41]	@ zero_extendqisi2
+ 108 015c 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 109 0160 030052E1 		cmp	r2, r3
+ 110 0164 0070A0E1 		mov	r7, r0
+ 111 0168 38000BE5 		str	r0, [fp, #-56]	@ float
+ 112 016c 6D00002A 		bcs	.L7
+ 113 0170 6C329FE5 		ldr	r3, .L58+52
+ 114 0174 000093E5 		ldr	r0, [r3, #0]
+ 115 0178 824082E0 		add	r4, r2, r2, asl #1
+ 116 017c FEFFFFEB 		bl	__floatsisf
+ 117 0180 0010A0E1 		mov	r1, r0
+ 118 0184 0600A0E1 		mov	r0, r6
+ 119 0188 FEFFFFEB 		bl	__subsf3
+ 120 018c 54529FE5 		ldr	r5, .L58+56
+ 121 0190 54329FE5 		ldr	r3, .L58+60
+ 122 0194 0441A0E1 		mov	r4, r4, asl #2
+ 123 0198 050084E7 		str	r0, [r4, r5]	@ float
+ 124 019c 000093E5 		ldr	r0, [r3, #0]
+ 125 01a0 FEFFFFEB 		bl	__floatsisf
+ 126 01a4 0010A0E1 		mov	r1, r0
+ 127 01a8 0800A0E1 		mov	r0, r8
+ 128 01ac FEFFFFEB 		bl	__subsf3
+ 129 01b0 054084E0 		add	r4, r4, r5
+ 130 01b4 087084E5 		str	r7, [r4, #8]	@ float
+ 131 01b8 040084E5 		str	r0, [r4, #4]	@ float
+ 132              	.L7:
+ 133 01bc 1200A0E3 		mov	r0, #18
+ 134 01c0 FEFFFFEB 		bl	uart0_check_free_space
+ 135 01c4 FF0010E3 		tst	r0, #255
+ 136 01c8 0402000A 		beq	.L53
+ 137 01cc 0060A0E3 		mov	r6, #0
+ 138 01d0 7E00A0E3 		mov	r0, #126
+ 139 01d4 9C429FE5 		ldr	r4, .L58+200
+ 140 01d8 FEFFFFEB 		bl	uart0_transmit
+ 141 01dc 0600A0E1 		mov	r0, r6
+ 142 01e0 FEFFFFEB 		bl	uart0_transmit
+ 143 01e4 0150A0E3 		mov	r5, #1
+ 144 01e8 1400A0E3 		mov	r0, #20
+ 145 01ec FEFFFFEB 		bl	uart0_transmit
+ 146 01f0 0500A0E1 		mov	r0, r5
+ 147 01f4 0050C4E5 		strb	r5, [r4, #0]
+ 148 01f8 FEFFFFEB 		bl	uart0_transmit
+ 149 01fc 0600A0E1 		mov	r0, r6
+ 150 0200 FEFFFFEB 		bl	uart0_transmit
+ 151 0204 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 152 0208 053083E0 		add	r3, r3, r5
+ 153 020c 0030C4E5 		strb	r3, [r4, #0]
+ 154 0210 0500A0E1 		mov	r0, r5
+ 155 0214 FEFFFFEB 		bl	uart0_transmit
+ 156 0218 0600A0E1 		mov	r0, r6
+ 157 021c FEFFFFEB 		bl	uart0_transmit
+ 158 0220 0600A0E1 		mov	r0, r6
+ 159 0224 FEFFFFEB 		bl	uart0_transmit
+ 160 0228 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 161 022c 083083E2 		add	r3, r3, #8
+ 162 0230 0800A0E3 		mov	r0, #8
+ 163 0234 0030C4E5 		strb	r3, [r4, #0]
+ 164 0238 FEFFFFEB 		bl	uart0_transmit
+ 165 023c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 166 0240 233083E2 		add	r3, r3, #35
+ 167 0244 2300A0E3 		mov	r0, #35
+ 168 0248 0030C4E5 		strb	r3, [r4, #0]
+ 169 024c FEFFFFEB 		bl	uart0_transmit
+ 170 0250 29305BE5 		ldrb	r3, [fp, #-41]	@ zero_extendqisi2
+ 171 0254 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 172 0258 0300A0E1 		mov	r0, r3
+ 173 025c 023083E0 		add	r3, r3, r2
+ 174 0260 0030C4E5 		strb	r3, [r4, #0]
+ 175 0264 FEFFFFEB 		bl	uart0_transmit
+ 176 0268 30305BE5 		ldrb	r3, [fp, #-48]	@ zero_extendqisi2
+ 177 026c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 178 0270 0300A0E1 		mov	r0, r3
+ 179 0274 023083E0 		add	r3, r3, r2
+ 180 0278 0030C4E5 		strb	r3, [r4, #0]
+ 181 027c FEFFFFEB 		bl	uart0_transmit
+ 182 0280 2F305BE5 		ldrb	r3, [fp, #-47]	@ zero_extendqisi2
+ 183 0284 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 184 0288 0300A0E1 		mov	r0, r3
+ 185 028c 023083E0 		add	r3, r3, r2
+ 186 0290 0030C4E5 		strb	r3, [r4, #0]
+ 187 0294 FEFFFFEB 		bl	uart0_transmit
+ 188 0298 2E305BE5 		ldrb	r3, [fp, #-46]	@ zero_extendqisi2
+ 189 029c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 190 02a0 0300A0E1 		mov	r0, r3
+ 191 02a4 023083E0 		add	r3, r3, r2
+ 192 02a8 0030C4E5 		strb	r3, [r4, #0]
+ 193 02ac FEFFFFEB 		bl	uart0_transmit
+ 194 02b0 2D305BE5 		ldrb	r3, [fp, #-45]	@ zero_extendqisi2
+ 195 02b4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 196 02b8 0300A0E1 		mov	r0, r3
+ 197 02bc 023083E0 		add	r3, r3, r2
+ 198 02c0 0030C4E5 		strb	r3, [r4, #0]
+ 199 02c4 FEFFFFEB 		bl	uart0_transmit
+ 200 02c8 34305BE5 		ldrb	r3, [fp, #-52]	@ zero_extendqisi2
+ 201 02cc 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 202 02d0 0300A0E1 		mov	r0, r3
+ 203 02d4 023083E0 		add	r3, r3, r2
+ 204 02d8 0030C4E5 		strb	r3, [r4, #0]
+ 205 02dc FEFFFFEB 		bl	uart0_transmit
+ 206 02e0 33305BE5 		ldrb	r3, [fp, #-51]	@ zero_extendqisi2
+ 207 02e4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 208 02e8 0300A0E1 		mov	r0, r3
+ 209 02ec 023083E0 		add	r3, r3, r2
+ 210 02f0 0030C4E5 		strb	r3, [r4, #0]
+ 211 02f4 FEFFFFEB 		bl	uart0_transmit
+ 212 02f8 32305BE5 		ldrb	r3, [fp, #-50]	@ zero_extendqisi2
+ 213 02fc 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 214 0300 0300A0E1 		mov	r0, r3
+ 215 0304 023083E0 		add	r3, r3, r2
+ 216 0308 0030C4E5 		strb	r3, [r4, #0]
+ 217 030c FEFFFFEB 		bl	uart0_transmit
+ 218 0310 31305BE5 		ldrb	r3, [fp, #-49]	@ zero_extendqisi2
+ 219 0314 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 220 0318 0300A0E1 		mov	r0, r3
+ 221 031c 023083E0 		add	r3, r3, r2
+ 222 0320 0030C4E5 		strb	r3, [r4, #0]
+ 223 0324 FEFFFFEB 		bl	uart0_transmit
+ 224 0328 38305BE5 		ldrb	r3, [fp, #-56]	@ zero_extendqisi2
+ 225 032c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 226 0330 0300A0E1 		mov	r0, r3
+ 227 0334 023083E0 		add	r3, r3, r2
+ 228 0338 0030C4E5 		strb	r3, [r4, #0]
+ 229 033c FEFFFFEB 		bl	uart0_transmit
+ 230 0340 37305BE5 		ldrb	r3, [fp, #-55]	@ zero_extendqisi2
+ 231 0344 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 232 0348 0300A0E1 		mov	r0, r3
+ 233 034c 023083E0 		add	r3, r3, r2
+ 234 0350 0030C4E5 		strb	r3, [r4, #0]
+ 235 0354 FEFFFFEB 		bl	uart0_transmit
+ 236 0358 36305BE5 		ldrb	r3, [fp, #-54]	@ zero_extendqisi2
+ 237 035c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 238 0360 0300A0E1 		mov	r0, r3
+ 239 0364 023083E0 		add	r3, r3, r2
+ 240 0368 0030C4E5 		strb	r3, [r4, #0]
+ 241 036c FEFFFFEB 		bl	uart0_transmit
+ 242 0370 35305BE5 		ldrb	r3, [fp, #-53]	@ zero_extendqisi2
+ 243 0374 F90100EA 		b	.L57
+ 244              	.L6:
+ 245 0378 050053E3 		cmp	r3, #5
+ 246 037c E100001A 		bne	.L11
+ 247 0380 0200D5E5 		ldrb	r0, [r5, #2]	@ zero_extendqisi2
+ 248 0384 FEFFFFEB 		bl	nav_goto_block
+ 249 0388 080200EA 		b	.L1
+ 250              	.L11:
+ 251 038c 030053E3 		cmp	r3, #3
+ 252 0390 1E01001A 		bne	.L13
+ 253 0394 042095E5 		ldr	r2, [r5, #4]	@ float
+ 254 0398 5C309FE5 		ldr	r3, .L58+76
+ 255 039c 081095E5 		ldr	r1, [r5, #8]	@ float
+ 256 03a0 002083E5 		str	r2, [r3, #0]	@ float
+ 257 03a4 54309FE5 		ldr	r3, .L58+80
+ 258 03a8 001083E5 		str	r1, [r3, #0]	@ float
+ 259 03ac 080200EA 		b	.L1
+ 260              	.L59:
+ 261              		.align	2
+ 262              	.L58:
+ 263 03b0 00002440 		.word	1076101120
+ 264 03b4 00000000 		.word	0
+ 265 03b8 00806640 		.word	1080459264
+ 266 03bc 00000000 		.word	0
+ 267 03c0 FB210940 		.word	1074340347
+ 268 03c4 182D4454 		.word	1413754136
+ 269 03c8 00000000 		.word	dl_buffer
+ 270 03cc 0000C842 		.word	1120403456
+ 271 03d0 00008047 		.word	1199570944
+ 272 03d4 E0F4F248 		.word	1223881952
+ 273 03d8 00000000 		.word	the_acs
+ 274 03dc E89E594A 		.word	1247387368
+ 275 03e0 00000000 		.word	nb_waypoint
+ 276 03e4 00000000 		.word	nav_utm_east0
+ 277 03e8 00000000 		.word	waypoints
+ 278 03ec 00000000 		.word	nav_utm_north0
+ 279 03f0 00000000 		.word	telemetry_mode_Ap
+ 280 03f4 00000000 		.word	flight_altitude
+ 281 03f8 00000000 		.word	light_mode
+ 282 03fc 00000000 		.word	wind_east
+ 283 0400 00000000 		.word	wind_north
+ 284 0404 00000000 		.word	pprz_mode
+ 285 0408 00000000 		.word	alt_kalman_enabled
+ 286 040c 00000000 		.word	estimator_flight_time
+ 287 0410 00000000 		.word	launch
+ 288 0414 00000000 		.word	kill_throttle
+ 289 0418 00000000 		.word	ir_roll_neutral
+ 290 041c 00000000 		.word	ir_pitch_neutral
+ 291 0420 00000000 		.word	ir_correction_left
+ 292 0424 00000000 		.word	ir_correction_right
+ 293 0428 00000000 		.word	ir_correction_up
+ 294 042c 00000000 		.word	ir_correction_down
+ 295 0430 00000000 		.word	ir_estim_mode
+ 296 0434 00000000 		.word	h_ctl_attitude_enabled
+ 297 0438 00000000 		.word	gyro_roll_adc
+ 298 043c 00000000 		.word	gyro_pitch_adc
+ 299 0440 00000000 		.word	gyro_yaw_adc
+ 300 0444 00000000 		.word	h_ctl_elevator_of_roll
+ 301 0448 00000000 		.word	h_ctl_roll_rate_setpoint_pgain
+ 302 044c 00000000 		.word	h_ctl_hi_throttle_roll_rate_pgain
+ 303 0450 00000000 		.word	h_ctl_lo_throttle_roll_rate_pgain
+ 304 0454 00000000 		.word	h_ctl_pitch_rate_setpoint_pgain
+ 305 0458 00000000 		.word	h_ctl_hi_throttle_pitch_rate_pgain
+ 306 045c 00000000 		.word	h_ctl_lo_throttle_pitch_rate_pgain
+ 307 0460 00000000 		.word	h_ctl_yaw_rate_setpoint_pgain
+ 308 0464 00000000 		.word	h_ctl_hi_throttle_yaw_rate_pgain
+ 309 0468 00000000 		.word	h_ctl_lo_throttle_yaw_rate_pgain
+ 310 046c 00000000 		.word	v_ctl_altitude_pgain
+ 311 0470 00000000 		.word	v_ctl_auto_throttle_cruise_throttle
+ 312 0474 00000000 		.word	v_ctl_auto_throttle_cruise_throttle_pgain
+ 313 0478 00000000 		.word	xbee_cs
+ 314 047c 00000000 		.word	downlink_nb_ovrn
+ 315              	.L13:
+ 316 0480 080053E3 		cmp	r3, #8
+ 317 0484 0220D505 		ldreqb	r2, [r5, #2]	@ zero_extendqisi2
+ 318 0488 A0301F05 		ldreq	r3, .L58+64
+ 319 048c 0020C305 		streqb	r2, [r3, #0]
+ 320 0490 0802000A 		beq	.L1
+ 321 0494 040053E3 		cmp	r3, #4
+ 322 0498 0802001A 		bne	.L1
+ 323 049c 0230D5E5 		ldrb	r3, [r5, #2]	@ zero_extendqisi2
+ 324 04a0 2A304BE5 		strb	r3, [fp, #-42]
+ 325 04a4 042095E5 		ldr	r2, [r5, #4]	@ float
+ 326 04a8 2A305BE5 		ldrb	r3, [fp, #-42]	@ zero_extendqisi2
+ 327 04ac 3C200BE5 		str	r2, [fp, #-60]	@ float
+ 328 04b0 200053E3 		cmp	r3, #32
+ 329 04b4 03F19F97 		ldrls	pc, [pc, r3, asl #2]
+ 330 04b8 BB0100EA 		b	.L18
+ 331              		.p2align 2
+ 332              	.L52:
+ 333 04bc 40050000 		.word	.L19
+ 334 04c0 4C050000 		.word	.L20
+ 335 04c4 5C050000 		.word	.L21
+ 336 04c8 68050000 		.word	.L22
+ 337 04cc 74050000 		.word	.L23
+ 338 04d0 84050000 		.word	.L24
+ 339 04d4 94050000 		.word	.L25
+ 340 04d8 A8050000 		.word	.L26
+ 341 04dc B8050000 		.word	.L27
+ 342 04e0 C8050000 		.word	.L28
+ 343 04e4 D4050000 		.word	.L29
+ 344 04e8 E0050000 		.word	.L30
+ 345 04ec EC050000 		.word	.L31
+ 346 04f0 F8050000 		.word	.L32
+ 347 04f4 04060000 		.word	.L33
+ 348 04f8 10060000 		.word	.L34
+ 349 04fc 20060000 		.word	.L35
+ 350 0500 34060000 		.word	.L36
+ 351 0504 40060000 		.word	.L37
+ 352 0508 4C060000 		.word	.L38
+ 353 050c 58060000 		.word	.L39
+ 354 0510 64060000 		.word	.L40
+ 355 0514 70060000 		.word	.L41
+ 356 0518 7C060000 		.word	.L42
+ 357 051c 88060000 		.word	.L43
+ 358 0520 94060000 		.word	.L44
+ 359 0524 A0060000 		.word	.L45
+ 360 0528 AC060000 		.word	.L46
+ 361 052c B8060000 		.word	.L47
+ 362 0530 C4060000 		.word	.L48
+ 363 0534 D0060000 		.word	.L49
+ 364 0538 DC060000 		.word	.L50
+ 365 053c E8060000 		.word	.L51
+ 366              	.L19:
+ 367 0540 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 368 0544 58311FE5 		ldr	r3, .L58+68
+ 369 0548 BA0100EA 		b	.L55
+ 370              	.L20:
+ 371 054c 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 372 0550 FEFFFFEB 		bl	__fixunssfsi
+ 373 0554 64311FE5 		ldr	r3, .L58+72
+ 374 0558 890100EA 		b	.L56
+ 375              	.L21:
+ 376 055c 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 377 0560 6C311FE5 		ldr	r3, .L58+76
+ 378 0564 BA0100EA 		b	.L55
+ 379              	.L22:
+ 380 0568 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 381 056c 74311FE5 		ldr	r3, .L58+80
+ 382 0570 BA0100EA 		b	.L55
+ 383              	.L23:
+ 384 0574 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 385 0578 FEFFFFEB 		bl	__fixunssfsi
+ 386 057c 80311FE5 		ldr	r3, .L58+84
+ 387 0580 890100EA 		b	.L56
+ 388              	.L24:
+ 389 0584 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 390 0588 FEFFFFEB 		bl	__fixunssfsi
+ 391 058c 8C311FE5 		ldr	r3, .L58+88
+ 392 0590 890100EA 		b	.L56
+ 393              	.L25:
+ 394 0594 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 395 0598 FEFFFFEB 		bl	__fixunssfsi
+ 396 059c 98311FE5 		ldr	r3, .L58+92
+ 397 05a0 B000C3E1 		strh	r0, [r3, #0]	@ movhi 
+ 398 05a4 BB0100EA 		b	.L18
+ 399              	.L26:
+ 400 05a8 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 401 05ac FEFFFFEB 		bl	__fixunssfsi
+ 402 05b0 A8311FE5 		ldr	r3, .L58+96
+ 403 05b4 890100EA 		b	.L56
+ 404              	.L27:
+ 405 05b8 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 406 05bc FEFFFFEB 		bl	__fixunssfsi
+ 407 05c0 B4311FE5 		ldr	r3, .L58+100
+ 408 05c4 890100EA 		b	.L56
+ 409              	.L28:
+ 410 05c8 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 411 05cc BC311FE5 		ldr	r3, .L58+104
+ 412 05d0 BA0100EA 		b	.L55
+ 413              	.L29:
+ 414 05d4 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 415 05d8 C4311FE5 		ldr	r3, .L58+108
+ 416 05dc BA0100EA 		b	.L55
+ 417              	.L30:
+ 418 05e0 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 419 05e4 CC311FE5 		ldr	r3, .L58+112
+ 420 05e8 BA0100EA 		b	.L55
+ 421              	.L31:
+ 422 05ec 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 423 05f0 D4311FE5 		ldr	r3, .L58+116
+ 424 05f4 BA0100EA 		b	.L55
+ 425              	.L32:
+ 426 05f8 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 427 05fc DC311FE5 		ldr	r3, .L58+120
+ 428 0600 BA0100EA 		b	.L55
+ 429              	.L33:
+ 430 0604 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 431 0608 E4311FE5 		ldr	r3, .L58+124
+ 432 060c BA0100EA 		b	.L55
+ 433              	.L34:
+ 434 0610 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 435 0614 FEFFFFEB 		bl	__fixunssfsi
+ 436 0618 F0311FE5 		ldr	r3, .L58+128
+ 437 061c 890100EA 		b	.L56
+ 438              	.L35:
+ 439 0620 3C001BE5 		ldr	r0, [fp, #-60]	@ float
+ 440 0624 FEFFFFEB 		bl	__fixunssfsi
+ 441 0628 FC311FE5 		ldr	r3, .L58+132
+ 442              	.L56:
+ 443 062c 0000C3E5 		strb	r0, [r3, #0]
+ 444 0630 BB0100EA 		b	.L18
+ 445              	.L36:
+ 446 0634 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 447 0638 08321FE5 		ldr	r3, .L58+136
+ 448 063c BA0100EA 		b	.L55
+ 449              	.L37:
+ 450 0640 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 451 0644 10321FE5 		ldr	r3, .L58+140
+ 452 0648 BA0100EA 		b	.L55
+ 453              	.L38:
+ 454 064c 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 455 0650 18321FE5 		ldr	r3, .L58+144
+ 456 0654 BA0100EA 		b	.L55
+ 457              	.L39:
+ 458 0658 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 459 065c 20321FE5 		ldr	r3, .L58+148
+ 460 0660 BA0100EA 		b	.L55
+ 461              	.L40:
+ 462 0664 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 463 0668 28321FE5 		ldr	r3, .L58+152
+ 464 066c BA0100EA 		b	.L55
+ 465              	.L41:
+ 466 0670 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 467 0674 30321FE5 		ldr	r3, .L58+156
+ 468 0678 BA0100EA 		b	.L55
+ 469              	.L42:
+ 470 067c 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 471 0680 38321FE5 		ldr	r3, .L58+160
+ 472 0684 BA0100EA 		b	.L55
+ 473              	.L43:
+ 474 0688 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 475 068c 40321FE5 		ldr	r3, .L58+164
+ 476 0690 BA0100EA 		b	.L55
+ 477              	.L44:
+ 478 0694 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 479 0698 48321FE5 		ldr	r3, .L58+168
+ 480 069c BA0100EA 		b	.L55
+ 481              	.L45:
+ 482 06a0 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 483 06a4 50321FE5 		ldr	r3, .L58+172
+ 484 06a8 BA0100EA 		b	.L55
+ 485              	.L46:
+ 486 06ac 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 487 06b0 58321FE5 		ldr	r3, .L58+176
+ 488 06b4 BA0100EA 		b	.L55
+ 489              	.L47:
+ 490 06b8 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 491 06bc 60321FE5 		ldr	r3, .L58+180
+ 492 06c0 BA0100EA 		b	.L55
+ 493              	.L48:
+ 494 06c4 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 495 06c8 68321FE5 		ldr	r3, .L58+184
+ 496 06cc BA0100EA 		b	.L55
+ 497              	.L49:
+ 498 06d0 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 499 06d4 70321FE5 		ldr	r3, .L58+188
+ 500 06d8 BA0100EA 		b	.L55
+ 501              	.L50:
+ 502 06dc 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 503 06e0 78321FE5 		ldr	r3, .L58+192
+ 504 06e4 BA0100EA 		b	.L55
+ 505              	.L51:
+ 506 06e8 3C201BE5 		ldr	r2, [fp, #-60]	@ float
+ 507 06ec 80321FE5 		ldr	r3, .L58+196
+ 508              	.L55:
+ 509 06f0 002083E5 		str	r2, [r3, #0]	@ float
+ 510              	.L18:
+ 511 06f4 0A00A0E3 		mov	r0, #10
+ 512 06f8 FEFFFFEB 		bl	uart0_check_free_space
+ 513 06fc FF0010E3 		tst	r0, #255
+ 514 0700 0402000A 		beq	.L53
+ 515 0704 0060A0E3 		mov	r6, #0
+ 516 0708 7E00A0E3 		mov	r0, #126
+ 517 070c 9C421FE5 		ldr	r4, .L58+200
+ 518 0710 FEFFFFEB 		bl	uart0_transmit
+ 519 0714 0600A0E1 		mov	r0, r6
+ 520 0718 FEFFFFEB 		bl	uart0_transmit
+ 521 071c 0150A0E3 		mov	r5, #1
+ 522 0720 0C00A0E3 		mov	r0, #12
+ 523 0724 FEFFFFEB 		bl	uart0_transmit
+ 524 0728 0500A0E1 		mov	r0, r5
+ 525 072c 0050C4E5 		strb	r5, [r4, #0]
+ 526 0730 FEFFFFEB 		bl	uart0_transmit
+ 527 0734 0600A0E1 		mov	r0, r6
+ 528 0738 FEFFFFEB 		bl	uart0_transmit
+ 529 073c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 530 0740 053083E0 		add	r3, r3, r5
+ 531 0744 0030C4E5 		strb	r3, [r4, #0]
+ 532 0748 0500A0E1 		mov	r0, r5
+ 533 074c FEFFFFEB 		bl	uart0_transmit
+ 534 0750 0600A0E1 		mov	r0, r6
+ 535 0754 FEFFFFEB 		bl	uart0_transmit
+ 536 0758 0600A0E1 		mov	r0, r6
+ 537 075c FEFFFFEB 		bl	uart0_transmit
+ 538 0760 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 539 0764 083083E2 		add	r3, r3, #8
+ 540 0768 0800A0E3 		mov	r0, #8
+ 541 076c 0030C4E5 		strb	r3, [r4, #0]
+ 542 0770 FEFFFFEB 		bl	uart0_transmit
+ 543 0774 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 544 0778 1F3083E2 		add	r3, r3, #31
+ 545 077c 1F00A0E3 		mov	r0, #31
+ 546 0780 0030C4E5 		strb	r3, [r4, #0]
+ 547 0784 FEFFFFEB 		bl	uart0_transmit
+ 548 0788 2A305BE5 		ldrb	r3, [fp, #-42]	@ zero_extendqisi2
+ 549 078c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 550 0790 0300A0E1 		mov	r0, r3
+ 551 0794 023083E0 		add	r3, r3, r2
+ 552 0798 0030C4E5 		strb	r3, [r4, #0]
+ 553 079c FEFFFFEB 		bl	uart0_transmit
+ 554 07a0 3C305BE5 		ldrb	r3, [fp, #-60]	@ zero_extendqisi2
+ 555 07a4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 556 07a8 0300A0E1 		mov	r0, r3
+ 557 07ac 023083E0 		add	r3, r3, r2
+ 558 07b0 0030C4E5 		strb	r3, [r4, #0]
+ 559 07b4 FEFFFFEB 		bl	uart0_transmit
+ 560 07b8 3B305BE5 		ldrb	r3, [fp, #-59]	@ zero_extendqisi2
+ 561 07bc 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 562 07c0 0300A0E1 		mov	r0, r3
+ 563 07c4 023083E0 		add	r3, r3, r2
+ 564 07c8 0030C4E5 		strb	r3, [r4, #0]
+ 565 07cc FEFFFFEB 		bl	uart0_transmit
+ 566 07d0 3A305BE5 		ldrb	r3, [fp, #-58]	@ zero_extendqisi2
+ 567 07d4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 568 07d8 0300A0E1 		mov	r0, r3
+ 569 07dc 023083E0 		add	r3, r3, r2
+ 570 07e0 0030C4E5 		strb	r3, [r4, #0]
+ 571 07e4 FEFFFFEB 		bl	uart0_transmit
+ 572 07e8 39305BE5 		ldrb	r3, [fp, #-57]	@ zero_extendqisi2
+ 573              	.L57:
+ 574 07ec 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 575 07f0 0300A0E1 		mov	r0, r3
+ 576 07f4 023083E0 		add	r3, r3, r2
+ 577 07f8 0030C4E5 		strb	r3, [r4, #0]
+ 578 07fc FEFFFFEB 		bl	uart0_transmit
+ 579 0800 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 580 0804 0330E0E1 		mvn	r3, r3
+ 581 0808 0030C4E5 		strb	r3, [r4, #0]
+ 582 080c 0000D4E5 		ldrb	r0, [r4, #0]	@ zero_extendqisi2
+ 583 0810 FEFFFFEB 		bl	uart0_transmit
+ 584 0814 080200EA 		b	.L1
+ 585              	.L53:
+ 586 0818 A4231FE5 		ldr	r2, .L58+204
+ 587 081c 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 588 0820 013083E2 		add	r3, r3, #1
+ 589 0824 0030C2E5 		strb	r3, [r2, #0]
+ 590              	.L1:
+ 591 0828 28D04BE2 		sub	sp, fp, #40
+ 592 082c F06F9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, sl, fp, sp, lr}
+ 593 0830 1EFF2FE1 		bx	lr
+ 595              		.comm	the_acs,480,4
+ 596              		.comm	dl_msg_available,1,1
+ 597              		.comm	dl_buffer,128,4
+ 598              		.bss
+ 599              		.align	2
+ 600              	last_periodic_event:
+ 601 0000 00000000 		.space	4
+ 602              		.comm	accel_ax_scale,4,4
+ 603              		.comm	accel_ay_scale,4,4
+ 604              		.comm	accel_az_scale,4,4
+ 605              		.comm	accel_ax_neutral,4,4
+ 606              		.comm	accel_ay_neutral,4,4
+ 607              		.comm	accel_az_neutral,4,4
+ 608              		.comm	estimator_kalman_phi,4,4
+ 609              		.comm	estimator_kalman_theta,4,4
+ 610              		.comm	estimator_kalman_q_angle,4,4
+ 611              		.comm	estimator_kalman_q_gyro,4,4
+ 612              		.comm	estimator_kalman_r_angle,4,4
+ 613              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 datalink.c
+     /tmp/ccPKcYIv.s:15     .text:00000000 dl_parse_msg
+     /tmp/ccPKcYIv.s:19     .text:00000000 $a
+     /tmp/ccPKcYIv.s:263    .text:000003b0 $d
+                            *COM*:00000080 dl_buffer
+                            *COM*:000001e0 the_acs
+     /tmp/ccPKcYIv.s:316    .text:00000480 $a
+     /tmp/ccPKcYIv.s:333    .text:000004bc $d
+     /tmp/ccPKcYIv.s:367    .text:00000540 $a
+                            *COM*:00000001 dl_msg_available
+                             .bss:00000000 $d
+     /tmp/ccPKcYIv.s:600    .bss:00000000 last_periodic_event
+                            *COM*:00000004 accel_ax_scale
+                            *COM*:00000004 accel_ay_scale
+                            *COM*:00000004 accel_az_scale
+                            *COM*:00000004 accel_ax_neutral
+                            *COM*:00000004 accel_ay_neutral
+                            *COM*:00000004 accel_az_neutral
+                            *COM*:00000004 estimator_kalman_phi
+                            *COM*:00000004 estimator_kalman_theta
+                            *COM*:00000004 estimator_kalman_q_angle
+                            *COM*:00000004 estimator_kalman_q_gyro
+                            *COM*:00000004 estimator_kalman_r_angle
+
+UNDEFINED SYMBOLS
+__floatsisf
+__divsf3
+__extendsfdf2
+__divdf3
+__muldf3
+__truncdfsf2
+__addsf3
+__subsf3
+__fixunssfsi
+uart0_check_free_space
+uart0_transmit
+nav_goto_block
+nb_waypoint
+nav_utm_east0
+waypoints
+nav_utm_north0
+telemetry_mode_Ap
+flight_altitude
+light_mode
+wind_east
+wind_north
+pprz_mode
+alt_kalman_enabled
+estimator_flight_time
+launch
+kill_throttle
+ir_roll_neutral
+ir_pitch_neutral
+ir_correction_left
+ir_correction_right
+ir_correction_up
+ir_correction_down
+ir_estim_mode
+h_ctl_attitude_enabled
+gyro_roll_adc
+gyro_pitch_adc
+gyro_yaw_adc
+h_ctl_elevator_of_roll
+h_ctl_roll_rate_setpoint_pgain
+h_ctl_hi_throttle_roll_rate_pgain
+h_ctl_lo_throttle_roll_rate_pgain
+h_ctl_pitch_rate_setpoint_pgain
+h_ctl_hi_throttle_pitch_rate_pgain
+h_ctl_lo_throttle_pitch_rate_pgain
+h_ctl_yaw_rate_setpoint_pgain
+h_ctl_hi_throttle_yaw_rate_pgain
+h_ctl_lo_throttle_yaw_rate_pgain
+v_ctl_altitude_pgain
+v_ctl_auto_throttle_cruise_throttle
+v_ctl_auto_throttle_cruise_throttle_pgain
+xbee_cs
+downlink_nb_ovrn

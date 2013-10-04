@@ -1,0 +1,100 @@
+<flight_plan alt="220." ground_alt="170." lat0="43.5389" lon0="1.2433" max_dist_from_home="900" name="MAV07" qfu="180." security_height="2" wind_dir="60" wind_mod="3">
+  <header>
+#include "bomb.h"
+</header>
+  <waypoints>
+    <waypoint alt="210" name="HOME" x="753.859003724" y="-51.1591526465"/>
+    <waypoint alt="185." name="arch_end" x="114.879061408" y="-37.1172814257"/>
+    <waypoint alt="176." name="arch1" x="267.927283816" y="121.455797768"/>
+    <waypoint alt="177." name="arch2" x="219.820790168" y="32.6927627642"/>
+    <waypoint alt="185" name="arch_begin" x="480.827210398" y="223.887485793"/>
+    <waypoint name="no_flight_0" x="0." y="0."/>
+    <waypoint name="no_flight_1" x="299.289766307" y="393.682997511"/>
+    <waypoint name="no_flight_2" x="643.74554738" y="630.872654988"/>
+    <waypoint name="no_flight_3" x="1653.57829881" y="609.706564201"/>
+    <waypoint name="no_flight_4" x="1406.70066794" y="-374.012941903"/>
+    <waypoint name="no_flight_5" x="1181.56548784" y="-702.63091506"/>
+    <waypoint alt="200" name="target1_0" x="524.68052623" y="265.490340538"/>
+    <waypoint alt="200" name="target1_1" x="604.20580033" y="-76.0402953709"/>
+    <waypoint name="search_0" x="872.785733111" y="-266.492118832"/>
+    <waypoint name="search_1" x="1189.58211834" y="-273.135852122"/>
+    <waypoint name="search_2" x="1194.11451029" y="66.2109498335"/>
+    <waypoint name="search_3" x="879.909457222" y="72.8007674953"/>
+    <waypoint alt="200" name="target2_0" x="1004.80605541" y="-392.706182453"/>
+    <waypoint alt="200" name="target2_1" x="1054.25736695" y="-177.744815784"/>
+    <waypoint alt="200." name="BASELEG" x="586.379358206" y="86.4412197703"/>
+    <waypoint alt="200." name="TARGET" x="423.371151849" y="67.3115331577"/>
+    <waypoint alt="200." name="START" x="515.385176622" y="136.134358133"/>
+    <waypoint alt="200." name="RELEASE" x="259.854739052" y="14.6261974452"/>
+    <waypoint alt="200." name="CLIMB" x="380.75125501" y="-52.3279377595"/>
+    <waypoint alt="175." name="land" x="184.23507853" y="27.8879636619"/>
+    <waypoint alt="190" name="land_approach" x="422.998154359" y="245.388613055"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <while cond="(!launch)"/>
+      <attitude pitch="0.3" roll="0.0" throttle="0.8" until="(estimator_z > SECURITY_HEIGHT)" vmode="throttle"/>
+      <deroute block="wait"/>
+    </block>
+    <block name="wait" strip_button="Wait">
+      <circle alt="ground_alt+50" radius="50" wp="RELEASE"/>
+      <deroute block="wait"/>
+    </block>
+    <block name="target1">
+      <exception cond="block_time > 300" deroute="target2"/>
+      <circle radius="50" until="nav_circle_radians>4*M_PI" wp="target1_0"/>
+      <circle radius="50" until="nav_circle_radians>4*M_PI" wp="target1_1"/>
+    </block>
+    <block name="target2">
+      <exception cond="block_time > 300" deroute="search"/>
+      <circle radius="50" until="nav_circle_radians>4*M_PI" wp="target2_0"/>
+      <circle radius="50" until="nav_circle_radians>4*M_PI" wp="target2_1"/>
+    </block>
+    <block name="search">
+      <exception cond="block_time > 200" deroute="search1"/>
+      <go approaching_time="1" from="search_3" wp="search_0"/>
+      <go approaching_time="1" from="search_0" hmode="route" wp="search_1"/>
+      <go approaching_time="1" from="search_1" hmode="route" wp="search_2"/>
+      <go approaching_time="1" wp="search_3"/>
+    </block>
+    <block name="search1">
+      <go approaching_time="1" from="search_3" wp="search_0"/>
+      <go approaching_time="1" from="search_0" hmode="route" wp="search_1"/>
+      <go approaching_time="1" from="search_1" hmode="route" wp="search_3"/>
+      <go approaching_time="1" from="search_3" hmode="route" wp="search_0"/>
+      <go approaching_time="1" from="search_0" hmode="route" wp="search_2"/>
+      <go approaching_time="1" from="search_2" hmode="route" wp="search_3"/>
+      <go approaching_time="1" from="search_3" hmode="route" wp="search_1"/>
+      <go approaching_time="1" from="search_1" hmode="route" wp="search_2"/>
+      <go approaching_time="1" wp="search_0"/>
+      <deroute block="bomb"/>	
+    </block>
+    <block name="bomb" strip_button="Bomb">
+      <set value="BombComputeApproach()" var="unit"/>
+      <circle radius="BOMB_RADIUS" until="NavQdrCloseTo(DegOfRad(bomb_start_qdr)-10)" wp="TARGET"/>
+    </block>
+    <block name="align">
+      <exception cond="BombUpdateRelease()" deroute="kill"/>
+      <go approaching_time="bomb_trigger_delay" from="TARGET" hmode="route" wp="CLIMB"/>
+    </block>
+    <block name="shoot">
+      <set value="BombShoot()" var="unit"/>
+      <go approaching_time="0" from="CLIMB" hmode="route" wp="target2_0"/>
+    </block>
+    <block name="arch">
+      <go approaching_time="1" from="arch_end" wp="arch_begin"/>
+      <go approaching_time="1" from="arch_begin" hmode="route" wp="arch1"/>
+      <go approaching_time="1" from="arch1" hmode="route" wp="arch2"/>
+      <go approaching_time="1" wp="arch_end"/>
+      <deroute block="bomb"/>
+    </block>
+    <block name="landing">
+      <go wp="land_approach"/>
+      <go throttle="0.15" vmode="throttle" wp="land"/>
+    </block>
+    <block name="kill">
+      <attitude pitch="0.0" roll="0.0" throttle="0.0" vmode="throttle"/>
+      <deroute block="kill"/>
+    </block>
+  </blocks>
+</flight_plan>

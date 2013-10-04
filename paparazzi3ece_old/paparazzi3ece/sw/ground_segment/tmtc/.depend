@@ -1,0 +1,15 @@
+aircraft.cmo: aircraft.cmi 
+aircraft.cmx: aircraft.cmi 
+airprox.cmo: aircraft.cmi airprox.cmi 
+airprox.cmx: aircraft.cmx airprox.cmi 
+airprox.cmi: aircraft.cmi 
+link.cmo: modem.cmi 
+link.cmx: modem.cmx 
+modem.cmo: modem.cmi 
+modem.cmx: modem.cmi 
+server1.cmo: wind.cmi airprox.cmi aircraft.cmi 
+server1.cmx: wind.cmx airprox.cmx aircraft.cmx 
+server.cmo: wind.cmi airprox.cmi aircraft.cmi 
+server.cmx: wind.cmx airprox.cmx aircraft.cmx 
+wind.cmo: wind.cmi 
+wind.cmx: wind.cmi 

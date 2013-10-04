@@ -1,0 +1,41 @@
+   1              		.file	"sys_time_hw.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	TIMER0_ISR
+   6              	TIMER0_ISR:
+   7              		@ Function supports interworking.
+   8              		@ Naked Function: prologue and epilogue provided by programmer.
+   9              		@ args = 0, pretend = 0, frame = 0
+  10              		@ frame_needed = 0, uses_anonymous_args = 0
+  11 0000 04E04EE2 		 sub   lr, lr,#4
+  12 0004 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+  13 0008 00104FE1 	 mrs   r1, spsr
+  14 000c 02002DE9 	 stmfd sp!,{r1}
+  15              	.L2:
+  16 0010 1C309FE5 		ldr	r3, .L5
+  17 0014 003093E5 		ldr	r3, [r3, #0]
+  18 0018 422013E2 		ands	r2, r3, #66
+  19 001c 0200001A 		bne	.L2
+  20 0020 10309FE5 		ldr	r3, .L5+4
+  21 0024 302083E5 		str	r2, [r3, #48]
+  22 0028 0200BDE8 		 ldmfd sp!,{r1}
+  23 002c 01F061E1 	 msr   spsr_c,r1
+  24 0030 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+  25              	.L6:
+  26              		.align	2
+  27              	.L5:
+  28 0034 004000E0 		.word	-536854528
+  29 0038 00F0FFFF 		.word	-4096
+  31              		.bss
+  32              		.align	2
+  33              	last_periodic_event:
+  34 0000 00000000 		.space	4
+  35              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 sys_time_hw.c
+     /tmp/ccBbjSbF.s:6      .text:00000000 TIMER0_ISR
+     /tmp/ccBbjSbF.s:11     .text:00000000 $a
+     /tmp/ccBbjSbF.s:28     .text:00000034 $d
+     /tmp/ccBbjSbF.s:33     .bss:00000000 last_periodic_event
+
+NO UNDEFINED SYMBOLS

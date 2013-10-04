@@ -1,0 +1,184 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00004000         0x00079000         xr
+RAM              0x40000000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/uart_tunnel.o
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+                0x00001000                STACK_SIZE = 0x1000
+
+.text           0x00004000      0x25c
+ *(.init)
+ .init          0x00004000      0x13c /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+                0x00004114                reset
+                0x00004000                _boot
+                0x00004050                _mainCRTStartup
+                0x00004114                abort
+                0x00004050                _start
+                0x00004114                _reset
+                0x00004114                exit
+                0x00004050                start
+ *(.text .text.*)
+ .text          0x0000413c      0x120 /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/uart_tunnel.o
+                0x0000413c                main
+ *(.gnu.linkonce.t.*)
+ *(.glue_7)
+ *(.glue_7t)
+ *(.gcc_except_table)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r.*)
+                0x0000425c                . = ALIGN (0x4)
+
+.ctors          0x0000425c        0x0
+                0x0000425c                PROVIDE (__ctors_start__, .)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0000425c                PROVIDE (__ctors_end__, .)
+
+.dtors          0x0000425c        0x0
+                0x0000425c                PROVIDE (__dtors_start__, .)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0000425c                PROVIDE (__dtors_end__, .)
+                0x0000425c                . = ALIGN (0x4)
+                0x0000425c                _etext = .
+                0x0000425c                PROVIDE (etext, .)
+
+.data           0x40000000        0x0 load address 0x0000425c
+                0x40000000                _data = .
+ *(.data)
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x40000000                . = ALIGN (0x4)
+ *(.fastrun)
+                0x40000000                . = ALIGN (0x4)
+                0x40000000                _edata = .
+                0x40000000                PROVIDE (edata, .)
+
+.bss            0x40000000        0x0
+                0x40000000                __bss_start = .
+                0x40000000                __bss_start__ = .
+ *(.bss)
+ *(.gnu.linkonce.b*)
+ *(COMMON)
+                0x40000000                . = ALIGN (0x4)
+                0x40000000                . = ALIGN (0x4)
+                0x40000000                __bss_end__ = .
+                0x40000000                PROVIDE (__bss_end, .)
+
+.stack          0x40000000     0x1000
+                0x40001000                . = (. + STACK_SIZE)
+ *fill*         0x40000000     0x1000 00
+                0x40001000                PROVIDE (_stack, .)
+                0x40001000                _end = .
+                0x40001000                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x12
+ *(.comment)
+ .comment       0x00000000       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/uart_tunnel.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(/home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/tunnel.elf elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+__bss_end__                                       /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+__bss_start                                       /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+__ctors_end__                                     /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+__ctors_start__                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_boot                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_data                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_edata                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_etext                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_mainCRTStartup                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_reset                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_stack                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+_start                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+abort                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+exit                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+main                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/uart_tunnel.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+reset                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/uart_tunnel.o
+start                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/ornismall/tunnel/crt0.o

@@ -1,0 +1,35 @@
+<flight_plan alt="770" ground_alt="762" lat0="32.207787" lon0="-110.918648" max_dist_from_home="150" name="reid" qfu="180" security_height="0.3" wind_dir="60" wind_mod="3">
+  <waypoints>
+    <waypoint name="HOME" x="0" y="0"/>
+    <waypoint name="1" x="-10" y="0"/>
+    <waypoint name="2" x="10" y="0"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.3" roll="0.0" throttle="1.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="2wp loiter"/>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <while>
+        <go wp="1" approaching_time="1" pitch="0.0" throttle="auto" vmode="alt"/>
+        <go wp="2" approaching_time="1" pitch="0.0" throttle="auto" vmode="alt"/>
+      </while>
+    </block>
+    <block name="circle">
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <circle wp="HOME" alt="GROUND_ALT+8" radius="10"/>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <go wp="1" alt="GROUND_ALT+8"/>
+      <go wp="2" alt="GROUND_ALT" throttle="0.30" vmode="throttle"/>
+    </block>
+  </blocks>
+</flight_plan>

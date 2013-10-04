@@ -1,0 +1,74 @@
+<flight_plan alt="119" ground_alt="59" lat0="30.686697" lon0="-86.393367" max_dist_from_home="950" name="Precise Navigation" qfu="270" security_height="50">
+  <waypoints>
+    <waypoint name="HOME" x="-2.09132428793" y="-0.0113031547517"/>
+    <waypoint name="Rally Point" x="-124.538056516" y="3.9494972243"/>
+    <waypoint name="1a" x="-306.464237378" y="64.6614009165"/>
+    <waypoint name="2" x="-258.382960336" y="153.329109348"/>
+    <waypoint alt="229." name="3" x="-176.695842727" y="315.898109607"/>
+    <waypoint alt="229." name="3a" x="-453.232241373" y="409.044105641"/>
+    <waypoint alt="229." name="4" x="-388.050240278" y="524.327525611"/>
+    <waypoint alt="229." name="4a" x="-98.8091189879" y="723.697365021"/>
+    <waypoint alt="229." name="5" x="49.4445553524" y="658.795656843"/>
+    <waypoint alt="229." name="6" x="-7.81488431536" y="559.961683692"/>
+    <waypoint name="7" x="48.2857538932" y="529.128704788"/>
+    <waypoint alt="180." name="6a" x="-281.474342232" y="405.960979547"/>
+    <waypoint alt="140." name="6b" x="-97.2176164665" y="651.974441113"/>
+    <waypoint name="T1" x="-17.2146562989" y="72.2316937782"/>
+    <waypoint name="T2" x="-139.648165602" y="176.038773991"/>
+    <waypoint name="NFZ7" x="154.926843931" y="-8.69276140677"/>
+    <waypoint name="NFZ1" x="154.926843917" y="599.999998195"/>
+    <waypoint name="NFZ2" x="154.926843931" y="499.999999098"/>
+    <waypoint name="NFZ3" x="154.926843931" y="399.999999099"/>
+    <waypoint name="NFZ4" x="154.92684393" y="299.999999096"/>
+    <waypoint name="NFZ5" x="154.92684393" y="199.999999101"/>
+    <waypoint name="NFZ6" x="154.926843932" y="99.999999098"/>
+    <waypoint name="GCS" x="35.188179508" y="27.6930553433"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent2())" deroute="7wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="landing"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.1" roll="0.0" throttle="0.46" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="2wp loiter"/>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="7wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="Rally Point"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="T1"/>
+      </while>
+    </block>
+    <block name="7wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="Rally Point"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1a"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="3"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="3a"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="4"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="4a"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="5"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="6"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="6a"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="6b"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="7"/>
+      </while>
+      <deroute block="landing"/>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="7wp loiter"/>
+      <go alt="GROUND_ALT+40" wp="T2"/>
+      <go alt="GROUND_ALT+15" wp="T1"/>
+      <go alt="GROUND_ALT" throttle="0.10" vmode="throttle" wp="GCS"/>
+    </block>
+  </blocks>
+</flight_plan>

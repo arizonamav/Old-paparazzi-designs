@@ -1,0 +1,28 @@
+   1              		.file	"radio_control.c"
+   2              		.global	rc_values_contains_avg_channels
+   3              		.bss
+   6              	rc_values_contains_avg_channels:
+   7 0000 00       		.space	1
+   8 0001 000000   		.align	2
+   9              	last_periodic_event:
+  10 0004 00000000 		.space	4
+  11              		.comm	rc_values,16,2
+  12              		.comm	rc_status,1,1
+  13              		.comm	avg_rc_values,32,4
+  14              		.comm	time_since_last_ppm,1,1
+  15              		.comm	ppm_cpt,1,1
+  16              		.comm	last_ppm_cpt,1,1
+  17              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 radio_control.c
+     /tmp/cct8ovsE.s:6      .bss:00000000 rc_values_contains_avg_channels
+                             .bss:00000000 $d
+     /tmp/cct8ovsE.s:9      .bss:00000004 last_periodic_event
+                            *COM*:00000010 rc_values
+                            *COM*:00000001 rc_status
+                            *COM*:00000020 avg_rc_values
+                            *COM*:00000001 time_since_last_ppm
+                            *COM*:00000001 ppm_cpt
+                            *COM*:00000001 last_ppm_cpt
+
+NO UNDEFINED SYMBOLS

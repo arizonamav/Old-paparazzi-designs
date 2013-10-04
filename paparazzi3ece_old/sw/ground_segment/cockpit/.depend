@@ -1,0 +1,24 @@
+editFP.cmo: map2d.cmi editFP.cmi 
+editFP.cmx: map2d.cmx editFP.cmi 
+gcs.cmo: strip.cmi speech.cmi sectors.cmi plugin.cmi particules.cmo pages.cmi \
+    map2d.cmi live.cmi editFP.cmi 
+gcs.cmx: strip.cmx speech.cmx sectors.cmx plugin.cmx particules.cmx pages.cmx \
+    map2d.cmx live.cmx editFP.cmx 
+live.cmo: strip.cmi speech.cmi plugin.cmi pages.cmi map2d.cmi live.cmi 
+live.cmx: strip.cmx speech.cmx plugin.cmx pages.cmx map2d.cmx live.cmi 
+live.cmi: strip.cmi pages.cmi 
+map2d.cmo: map2d.cmi 
+map2d.cmx: map2d.cmi 
+pages.cmo: strip.cmi horizon.cmo pages.cmi 
+pages.cmx: strip.cmx horizon.cmx pages.cmi 
+pages.cmi: strip.cmi 
+particules.cmo: live.cmi 
+particules.cmx: live.cmx 
+plugin.cmo: plugin.cmi 
+plugin.cmx: plugin.cmi 
+sectors.cmo: sectors.cmi 
+sectors.cmx: sectors.cmi 
+speech.cmo: speech.cmi 
+speech.cmx: speech.cmi 
+strip.cmo: strip.cmi 
+strip.cmx: strip.cmi 

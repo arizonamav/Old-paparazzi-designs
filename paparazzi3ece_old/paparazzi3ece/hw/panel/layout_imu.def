@@ -1,0 +1,13 @@
+
+Row {           
+  Col {
+    ir_dual
+    Row {
+      imu_xz Rotate
+      imu_yz Rotate
+    }
+  }
+  Col {
+    imu_xy
+  }
+}

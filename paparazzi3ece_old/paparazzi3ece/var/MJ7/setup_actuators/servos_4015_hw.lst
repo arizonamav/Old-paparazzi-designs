@@ -1,0 +1,180 @@
+   1              		.file	"servos_4015_hw.c"
+   2              		.bss
+   3              	servos_idx:
+   4 0000 00       		.space	1
+   5              		.text
+   6              		.align	2
+   7              		.global	actuators_init
+   9              	actuators_init:
+  10              		@ Function supports interworking.
+  11              		@ args = 0, pretend = 0, frame = 0
+  12              		@ frame_needed = 0, uses_anonymous_args = 0
+  13              		@ link register save eliminated.
+  14 0000 B4209FE5 		ldr	r2, .L8
+  15 0004 0C3092E5 		ldr	r3, [r2, #12]
+  16 0008 013CC3E3 		bic	r3, r3, #256
+  17 000c 0C3082E5 		str	r3, [r2, #12]
+  18 0010 013CA0E3 		mov	r3, #256
+  19 0014 103082E5 		str	r3, [r2, #16]
+  20 0018 D83043E2 		sub	r3, r3, #216
+  21 001c 0C3282E5 		str	r3, [r2, #524]
+  22 0020 98309FE5 		ldr	r3, .L8+4
+  23 0024 0C3182E5 		str	r3, [r2, #268]
+  24 0028 94209FE5 		ldr	r2, .L8+8
+  25 002c 083092E5 		ldr	r3, [r2, #8]
+  26 0030 803083E3 		orr	r3, r3, #128
+  27 0034 083082E5 		str	r3, [r2, #8]
+  28 0038 183092E5 		ldr	r3, [r2, #24]
+  29 003c 063283E3 		orr	r3, r3, #1610612736
+  30 0040 183082E5 		str	r3, [r2, #24]
+  31 0044 7C109FE5 		ldr	r1, .L8+12
+  32 0048 003091E5 		ldr	r3, [r1, #0]
+  33 004c 023983E3 		orr	r3, r3, #32768
+  34 0050 003081E5 		str	r3, [r1, #0]
+  35 0054 052942E2 		sub	r2, r2, #81920
+  36 0058 FF34E0E3 		mvn	r3, #-16777216
+  37 005c 183082E5 		str	r3, [r2, #24]
+  38 0060 64309FE5 		ldr	r3, .L8+16
+  39 0064 203082E5 		str	r3, [r2, #32]
+  40 0068 0530A0E3 		mov	r3, #5
+  41 006c 503082E5 		str	r3, [r2, #80]
+  42 0070 3D3083E2 		add	r3, r3, #61
+  43 0074 143082E5 		str	r3, [r2, #20]
+  44 0078 013BA0E3 		mov	r3, #1024
+  45 007c 4C3082E5 		str	r3, [r2, #76]
+  46 0080 0000A0E3 		mov	r0, #0
+  47 0084 0930A0E3 		mov	r3, #9
+  48 0088 0C0082E5 		str	r0, [r2, #12]
+  49 008c 043082E5 		str	r3, [r2, #4]
+  50              		@ lr needed for prologue
+  51              	.L5:
+  52 0090 013080E2 		add	r3, r0, #1
+  53 0094 8020A0E1 		mov	r2, r0, asl #1
+  54 0098 30109FE5 		ldr	r1, .L8+20
+  55 009c FF0003E2 		and	r0, r3, #255
+  56 00a0 2C309FE5 		ldr	r3, .L8+24
+  57 00a4 070050E3 		cmp	r0, #7
+  58 00a8 B13082E1 		strh	r3, [r2, r1]	@ movhi 
+  59 00ac 2200009A 		bls	.L5
+  60 00b0 20309FE5 		ldr	r3, .L8+28
+  61 00b4 B030C1E1 		strh	r3, [r1, #0]	@ movhi 
+  62 00b8 1EFF2FE1 		bx	lr
+  63              	.L9:
+  64              		.align	2
+  65              	.L8:
+  66 00bc 00F0FFFF 		.word	-4096
+  67 00c0 00000000 		.word	PWM_ISR
+  68 00c4 008002E0 		.word	-536707072
+  69 00c8 00C002E0 		.word	-536690688
+  70 00cc FF0F0000 		.word	4095
+  71 00d0 00000000 		.word	servos_values
+  72 00d4 E4570000 		.word	22500
+  73 00d8 983A0000 		.word	15000
+  75              		.align	2
+  76              		.global	PWM_ISR
+  78              	PWM_ISR:
+  79              		@ Function supports interworking.
+  80              		@ Naked Function: prologue and epilogue provided by programmer.
+  81              		@ args = 0, pretend = 0, frame = 0
+  82              		@ frame_needed = 0, uses_anonymous_args = 0
+  83 00dc 04E04EE2 		 sub   lr, lr,#4
+  84 00e0 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+  85 00e4 00104FE1 	 mrs   r1, spsr
+  86 00e8 02002DE9 	 stmfd sp!,{r1}
+  87 00ec E8409FE5 		ldr	r4, .L15
+  88 00f0 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+  89 00f4 FF3002E2 		and	r3, r2, #255
+  90 00f8 000053E3 		cmp	r3, #0
+  91 00fc DC109FE5 		ldr	r1, .L15+4
+  92 0100 DCC09FE5 		ldr	ip, .L15+8
+  93 0104 DCE09FE5 		ldr	lr, .L15+12
+  94 0108 010082E2 		add	r0, r2, #1
+  95 010c 5000001A 		bne	.L11
+  96 0110 D4309FE5 		ldr	r3, .L15+16
+  97 0114 B020D3E1 		ldrh	r2, [r3, #0]
+  98 0118 D0309FE5 		ldr	r3, .L15+20
+  99 011c 011062E0 		rsb	r1, r2, r1
+ 100 0120 001083E5 		str	r1, [r3, #0]
+ 101 0124 0232A0E3 		mov	r3, #536870912
+ 102 0128 0000C4E5 		strb	r0, [r4, #0]
+ 103 012c 1C308CE5 		str	r3, [ip, #28]
+ 104 0130 033083E0 		add	r3, r3, r3
+ 105 0134 14308CE5 		str	r3, [ip, #20]
+ 106 0138 073183E2 		add	r3, r3, #-1073741823
+ 107 013c 18208EE5 		str	r2, [lr, #24]
+ 108 0140 50308EE5 		str	r3, [lr, #80]
+ 109 0144 6C0000EA 		b	.L12
+ 110              	.L11:
+ 111 0148 070053E3 		cmp	r3, #7
+ 112 014c 8310A0E1 		mov	r1, r3, asl #1
+ 113 0150 90509FE5 		ldr	r5, .L15+12
+ 114 0154 01E082E2 		add	lr, r2, #1
+ 115 0158 90C09FE5 		ldr	ip, .L15+20
+ 116 015c 6300008A 		bhi	.L13
+ 117 0160 84309FE5 		ldr	r3, .L15+16
+ 118 0164 00209CE5 		ldr	r2, [ip, #0]
+ 119 0168 B30091E1 		ldrh	r0, [r1, r3]
+ 120 016c 70309FE5 		ldr	r3, .L15+8
+ 121 0170 0111A0E3 		mov	r1, #1073741824
+ 122 0174 1C1083E5 		str	r1, [r3, #28]
+ 123 0178 022060E0 		rsb	r2, r0, r2
+ 124 017c 0130A0E3 		mov	r3, #1
+ 125 0180 00208CE5 		str	r2, [ip, #0]
+ 126 0184 00E0C4E5 		strb	lr, [r4, #0]
+ 127 0188 180085E5 		str	r0, [r5, #24]
+ 128 018c 503085E5 		str	r3, [r5, #80]
+ 129 0190 6C0000EA 		b	.L12
+ 130              	.L13:
+ 131 0194 48309FE5 		ldr	r3, .L15+8
+ 132 0198 0222A0E3 		mov	r2, #536870912
+ 133 019c 00109CE5 		ldr	r1, [ip, #0]
+ 134 01a0 142083E5 		str	r2, [r3, #20]
+ 135 01a4 0030A0E3 		mov	r3, #0
+ 136 01a8 0030C4E5 		strb	r3, [r4, #0]
+ 137 01ac 013083E2 		add	r3, r3, #1
+ 138 01b0 181085E5 		str	r1, [r5, #24]
+ 139 01b4 503085E5 		str	r3, [r5, #80]
+ 140              	.L12:
+ 141 01b8 28309FE5 		ldr	r3, .L15+12
+ 142 01bc 0420A0E3 		mov	r2, #4
+ 143 01c0 002083E5 		str	r2, [r3, #0]
+ 144 01c4 28309FE5 		ldr	r3, .L15+24
+ 145 01c8 042042E2 		sub	r2, r2, #4
+ 146 01cc 302083E5 		str	r2, [r3, #48]
+ 147 01d0 0200BDE8 		 ldmfd sp!,{r1}
+ 148 01d4 01F061E1 	 msr   spsr_c,r1
+ 149 01d8 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+ 150              	.L16:
+ 151              		.align	2
+ 152              	.L15:
+ 153 01dc 00000000 		.word	servos_idx
+ 154 01e0 D8B80500 		.word	375000
+ 155 01e4 008002E0 		.word	-536707072
+ 156 01e8 004001E0 		.word	-536788992
+ 157 01ec 00000000 		.word	servos_values
+ 158 01f0 08000000 		.word	servos_delay
+ 159 01f4 00F0FFFF 		.word	-4096
+ 161              		.bss
+ 162 0001 000000   		.align	2
+ 163              	last_periodic_event:
+ 164 0004 00000000 		.space	4
+ 165              		.comm	servos_values,16,2
+ 166              		.align	2
+ 167              	servos_delay:
+ 168 0008 00000000 		.space	4
+ 169              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 servos_4015_hw.c
+                             .bss:00000000 $d
+     /tmp/ccJhXHni.s:3      .bss:00000000 servos_idx
+     /tmp/ccJhXHni.s:9      .text:00000000 actuators_init
+     /tmp/ccJhXHni.s:14     .text:00000000 $a
+     /tmp/ccJhXHni.s:66     .text:000000bc $d
+     /tmp/ccJhXHni.s:78     .text:000000dc PWM_ISR
+                            *COM*:00000010 servos_values
+     /tmp/ccJhXHni.s:83     .text:000000dc $a
+     /tmp/ccJhXHni.s:153    .text:000001dc $d
+     /tmp/ccJhXHni.s:167    .bss:00000008 servos_delay
+     /tmp/ccJhXHni.s:163    .bss:00000004 last_periodic_event
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,112 @@
+   1              		.file	"aerocomm_new.c"
+   2              		.global	aerocomm_payload_len
+   3              		.bss
+   6              	aerocomm_payload_len:
+   7 0000 00       		.space	1
+   8              		.global	aerocomm_confirmation_status
+   9              		.data
+  12              	aerocomm_confirmation_status:
+  13 0000 01       		.byte	1
+  14              		.global	aerocomm_confirmation_received
+  17              	aerocomm_confirmation_received:
+  18 0001 01       		.byte	1
+  19              		.text
+  20              		.align	2
+  21              		.global	aerocomm_init
+  23              	aerocomm_init:
+  24              		@ Function supports interworking.
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 B0309FE5 		ldr	r3, .L13
+  28 0004 0120A0E3 		mov	r2, #1
+  29 0008 F0402DE9 		stmfd	sp!, {r4, r5, r6, r7, lr}
+  30 000c 0020C3E5 		strb	r2, [r3, #0]
+  31 0010 7850A0E3 		mov	r5, #120
+  32              	.L10:
+  33 0014 A0309FE5 		ldr	r3, .L13+4
+  34 0018 A0709FE5 		ldr	r7, .L13+8
+  35 001c 082093E5 		ldr	r2, [r3, #8]
+  36 0020 001097E5 		ldr	r1, [r7, #0]
+  37 0024 98309FE5 		ldr	r3, .L13+12
+  38 0028 98C09FE5 		ldr	ip, .L13+16
+  39 002c 022061E0 		rsb	r2, r1, r2
+  40 0030 030052E1 		cmp	r2, r3
+  41 0034 90409FE5 		ldr	r4, .L13+20
+  42 0038 0C0081E0 		add	r0, r1, ip
+  43 003c 0030A093 		movls	r3, #0
+  44 0040 2500009A 		bls	.L9
+  45 0044 002094E5 		ldr	r2, [r4, #0]
+  46 0048 80309FE5 		ldr	r3, .L13+24
+  47 004c 0CC082E0 		add	ip, r2, ip
+  48 0050 7C109FE5 		ldr	r1, .L13+28
+  49 0054 03005CE1 		cmp	ip, r3
+  50 0058 78E09FE5 		ldr	lr, .L13+32
+  51 005c 78609FE5 		ldr	r6, .L13+36
+  52 0060 011082E0 		add	r1, r2, r1
+  53 0064 000087E5 		str	r0, [r7, #0]
+  54 0068 00C084E5 		str	ip, [r4, #0]
+  55 006c 2400009A 		bls	.L6
+  56 0070 10209EE5 		ldr	r2, [lr, #16]
+  57 0074 B030D6E1 		ldrh	r3, [r6, #0]
+  58 0078 010212E3 		tst	r2, #268435456
+  59 007c 013083E2 		add	r3, r3, #1
+  60 0080 B030C6E1 		strh	r3, [r6, #0]	@ movhi 
+  61 0084 0132A013 		movne	r3, #268435456
+  62 0088 0132A003 		moveq	r3, #268435456
+  63 008c 001084E5 		str	r1, [r4, #0]
+  64 0090 1C308E15 		strne	r3, [lr, #28]
+  65 0094 14308E05 		streq	r3, [lr, #20]
+  66              	.L6:
+  67 0098 0130A0E3 		mov	r3, #1
+  68              	.L9:
+  69 009c 000053E3 		cmp	r3, #0
+  70 00a0 013045E2 		sub	r3, r5, #1
+  71 00a4 FF500312 		andne	r5, r3, #255
+  72 00a8 000055E3 		cmp	r5, #0
+  73 00ac 0300001A 		bne	.L10
+  74 00b0 F040BDE8 		ldmfd	sp!, {r4, r5, r6, r7, lr}
+  75 00b4 1EFF2FE1 		bx	lr
+  76              	.L14:
+  77              		.align	2
+  78              	.L13:
+  79 00b8 00000000 		.word	aerocomm_confirmation_received
+  80 00bc 004000E0 		.word	-536854528
+  81 00c0 04000000 		.word	last_periodic_event
+  82 00c4 86930300 		.word	234374
+  83 00c8 87930300 		.word	234375
+  84 00cc 00000000 		.word	cpu_time_ticks
+  85 00d0 C0E1E400 		.word	15000000
+  86 00d4 C7B11EFF 		.word	-14765625
+  87 00d8 008002E0 		.word	-536707072
+  88 00dc 00000000 		.word	cpu_time_sec
+  90              		.bss
+  91 0001 000000   		.align	2
+  92              	last_periodic_event:
+  93 0004 00000000 		.space	4
+  94              		.comm	aerocomm_cs,1,1
+  95              		.comm	aerocomm_payload,256,1
+  96              		.comm	aerocomm_msg_received,1,1
+  97              		.comm	aerocomm_rssi,1,1
+  98              		.comm	aerocomm_ovrn,1,1
+  99              		.comm	aerocomm_error,1,1
+ 100              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 aerocomm_new.c
+     /tmp/cclHHswM.s:6      .bss:00000000 aerocomm_payload_len
+                             .bss:00000000 $d
+     /tmp/cclHHswM.s:12     .data:00000000 aerocomm_confirmation_status
+     /tmp/cclHHswM.s:17     .data:00000001 aerocomm_confirmation_received
+     /tmp/cclHHswM.s:23     .text:00000000 aerocomm_init
+     /tmp/cclHHswM.s:27     .text:00000000 $a
+     /tmp/cclHHswM.s:79     .text:000000b8 $d
+     /tmp/cclHHswM.s:92     .bss:00000004 last_periodic_event
+                            *COM*:00000001 aerocomm_cs
+                            *COM*:00000100 aerocomm_payload
+                            *COM*:00000001 aerocomm_msg_received
+                            *COM*:00000001 aerocomm_rssi
+                            *COM*:00000001 aerocomm_ovrn
+                            *COM*:00000001 aerocomm_error
+
+UNDEFINED SYMBOLS
+cpu_time_ticks
+cpu_time_sec

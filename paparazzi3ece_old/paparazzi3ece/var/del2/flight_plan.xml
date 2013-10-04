@@ -1,0 +1,73 @@
+<dump>
+  <flight_plan name="himmel 2" wind_mod="3" wind_dir="60" lon0="-110.93243" max_dist_from_home="500" ground_alt="750" security_height="60" qfu="180" alt="850" lat0="32.23298">
+    <waypoints utm_x0="506366.156913" utm_y0="3566262.24583">
+      <waypoint name="HOME" x="-94.522471131" y="17.319972877" alt="850."/>
+      <waypoint name="4" x="92.5506532634" y="7.99539066314" alt="850."/>
+    </waypoints>
+    <blocks>
+      <block name="init" no="0">
+        <exception cond="(RcEvent1())" deroute="two"/>
+        <exception cond="(RcEvent2())" deroute="one"/>
+        <while cond="(!launch)" no="0"/>
+        <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle" throttle="1.0" pitch="0.3" no="2"/>
+        <deroute block="one" no="3"/>
+      </block>
+      <block name="one" no="1">
+        <exception cond="(RcEvent1())" deroute="init"/>
+        <exception cond="(RcEvent2())" deroute="two1"/>
+        <while no="0">
+          <go wp="4" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="1"/>
+          <go wp="HOME" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="2"/>
+        </while>
+      </block>
+      <block name="two1" no="2">
+        <exception cond="(RcEvent1())" deroute="one"/>
+        <exception cond="(RcEvent2())" deroute="two"/>
+        <go wp="4" alt="GROUND_ALT+80" no="0"/>
+        <go wp="HOME" alt="GROUND_ALT" throttle="0.20" vmode="throttle" no="1"/>
+      </block>
+      <block name="two" no="3">
+        <exception cond="(RcEvent2())" deroute="two1"/>
+        <exception cond="(RcEvent1())" deroute="init"/>
+        <go wp="4" alt="GROUND_ALT+60" no="0"/>
+        <go wp="HOME" alt="GROUND_ALT-40" throttle="0.20" vmode="throttle" no="1"/>
+      </block>
+    </blocks>
+    <exceptions/>
+  </flight_plan>
+  <stages>
+    <stage block="3" block_name="two" stage="1">
+      <go wp="HOME" alt="GROUND_ALT-40" throttle="0.20" vmode="throttle" no="1"/>
+    </stage>
+    <stage block="3" block_name="two" stage="0">
+      <go wp="4" alt="GROUND_ALT+60" no="0"/>
+    </stage>
+    <stage block="2" block_name="two1" stage="1">
+      <go wp="HOME" alt="GROUND_ALT" throttle="0.20" vmode="throttle" no="1"/>
+    </stage>
+    <stage block="2" block_name="two1" stage="0">
+      <go wp="4" alt="GROUND_ALT+80" no="0"/>
+    </stage>
+    <stage block="1" block_name="one" stage="2">
+      <go wp="HOME" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="2"/>
+    </stage>
+    <stage block="1" block_name="one" stage="1">
+      <go wp="4" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="1"/>
+    </stage>
+    <stage block="1" block_name="one" stage="0">
+      <while no="0">
+        <go wp="4" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="1"/>
+        <go wp="HOME" throttle="auto" pitch="0.0" alt="GROUND_ALT+80" vmode="alt" approaching_time="1" no="2"/>
+      </while>
+    </stage>
+    <stage block="0" block_name="init" stage="3">
+      <deroute block="one" no="3"/>
+    </stage>
+    <stage block="0" block_name="init" stage="2">
+      <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle" throttle="1.0" pitch="0.3" no="2"/>
+    </stage>
+    <stage block="0" block_name="init" stage="0">
+      <while cond="(!launch)" no="0"/>
+    </stage>
+  </stages>
+</dump>

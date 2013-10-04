@@ -1,0 +1,91 @@
+   1              		.file	"main.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	main
+   6              	main:
+   7              		@ Function supports interworking.
+   8              		@ args = 0, pretend = 0, frame = 0
+   9              		@ frame_needed = 1, uses_anonymous_args = 0
+  10 0000 0DC0A0E1 		mov	ip, sp
+  11 0004 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+  12 0008 04B04CE2 		sub	fp, ip, #4
+  13 000c FEFFFFEB 		bl	init_fbw
+  14 0010 FEFFFFEB 		bl	init_ap
+  15              	.L2:
+  16 0014 9C309FE5 		ldr	r3, .L10
+  17 0018 9C609FE5 		ldr	r6, .L10+4
+  18 001c 082093E5 		ldr	r2, [r3, #8]
+  19 0020 001096E5 		ldr	r1, [r6, #0]
+  20 0024 94309FE5 		ldr	r3, .L10+8
+  21 0028 94C09FE5 		ldr	ip, .L10+12
+  22 002c 022061E0 		rsb	r2, r1, r2
+  23 0030 030052E1 		cmp	r2, r3
+  24 0034 8C409FE5 		ldr	r4, .L10+16
+  25 0038 0C0081E0 		add	r0, r1, ip
+  26 003c 0030A093 		movls	r3, #0
+  27 0040 2500009A 		bls	.L9
+  28 0044 002094E5 		ldr	r2, [r4, #0]
+  29 0048 7C309FE5 		ldr	r3, .L10+20
+  30 004c 0CC082E0 		add	ip, r2, ip
+  31 0050 78109FE5 		ldr	r1, .L10+24
+  32 0054 03005CE1 		cmp	ip, r3
+  33 0058 74E09FE5 		ldr	lr, .L10+28
+  34 005c 74509FE5 		ldr	r5, .L10+32
+  35 0060 011082E0 		add	r1, r2, r1
+  36 0064 000086E5 		str	r0, [r6, #0]
+  37 0068 00C084E5 		str	ip, [r4, #0]
+  38 006c 2400009A 		bls	.L6
+  39 0070 10209EE5 		ldr	r2, [lr, #16]
+  40 0074 B030D5E1 		ldrh	r3, [r5, #0]
+  41 0078 010212E3 		tst	r2, #268435456
+  42 007c 013083E2 		add	r3, r3, #1
+  43 0080 B030C5E1 		strh	r3, [r5, #0]	@ movhi 
+  44 0084 0132A013 		movne	r3, #268435456
+  45 0088 0132A003 		moveq	r3, #268435456
+  46 008c 001084E5 		str	r1, [r4, #0]
+  47 0090 1C308E15 		strne	r3, [lr, #28]
+  48 0094 14308E05 		streq	r3, [lr, #20]
+  49              	.L6:
+  50 0098 0130A0E3 		mov	r3, #1
+  51              	.L9:
+  52 009c 000053E3 		cmp	r3, #0
+  53 00a0 2900000A 		beq	.L4
+  54 00a4 FEFFFFEB 		bl	periodic_task_fbw
+  55 00a8 FEFFFFEB 		bl	periodic_task_ap
+  56              	.L4:
+  57 00ac FEFFFFEB 		bl	event_task_fbw
+  58 00b0 FEFFFFEB 		bl	event_task_ap
+  59 00b4 030000EA 		b	.L2
+  60              	.L11:
+  61              		.align	2
+  62              	.L10:
+  63 00b8 004000E0 		.word	-536854528
+  64 00bc 00000000 		.word	last_periodic_event
+  65 00c0 86930300 		.word	234374
+  66 00c4 87930300 		.word	234375
+  67 00c8 00000000 		.word	cpu_time_ticks
+  68 00cc C0E1E400 		.word	15000000
+  69 00d0 C7B11EFF 		.word	-14765625
+  70 00d4 008002E0 		.word	-536707072
+  71 00d8 00000000 		.word	cpu_time_sec
+  73              		.bss
+  74              		.align	2
+  75              	last_periodic_event:
+  76 0000 00000000 		.space	4
+  77              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+     /tmp/cc7k97Ed.s:6      .text:00000000 main
+     /tmp/cc7k97Ed.s:10     .text:00000000 $a
+     /tmp/cc7k97Ed.s:63     .text:000000b8 $d
+     /tmp/cc7k97Ed.s:75     .bss:00000000 last_periodic_event
+
+UNDEFINED SYMBOLS
+init_fbw
+init_ap
+periodic_task_fbw
+periodic_task_ap
+event_task_fbw
+event_task_ap
+cpu_time_ticks
+cpu_time_sec

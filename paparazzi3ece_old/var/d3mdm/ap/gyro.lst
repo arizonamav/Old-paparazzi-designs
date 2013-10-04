@@ -1,0 +1,190 @@
+   1              		.file	"gyro.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	gyro_init
+   6              	gyro_init:
+   7              		@ Function supports interworking.
+   8              		@ args = 0, pretend = 0, frame = 0
+   9              		@ frame_needed = 1, uses_anonymous_args = 0
+  10 0000 0DC0A0E1 		mov	ip, sp
+  11 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+  12 0008 0200A0E3 		mov	r0, #2
+  13 000c 04B04CE2 		sub	fp, ip, #4
+  14 0010 4C109FE5 		ldr	r1, .L2
+  15 0014 1020A0E3 		mov	r2, #16
+  16 0018 FEFFFFEB 		bl	adc_buf_channel
+  17 001c 1020A0E3 		mov	r2, #16
+  18 0020 0300A0E3 		mov	r0, #3
+  19 0024 3C109FE5 		ldr	r1, .L2+4
+  20 0028 FEFFFFEB 		bl	adc_buf_channel
+  21 002c 38209FE5 		ldr	r2, .L2+8
+  22 0030 38309FE5 		ldr	r3, .L2+12
+  23 0034 002083E5 		str	r2, [r3, #0]	@ float
+  24 0038 34209FE5 		ldr	r2, .L2+16
+  25 003c 34309FE5 		ldr	r3, .L2+20
+  26 0040 002083E5 		str	r2, [r3, #0]	@ float
+  27 0044 30209FE5 		ldr	r2, .L2+24
+  28 0048 30309FE5 		ldr	r3, .L2+28
+  29 004c 002083E5 		str	r2, [r3, #0]	@ float
+  30 0050 2C209FE5 		ldr	r2, .L2+32
+  31 0054 2C309FE5 		ldr	r3, .L2+36
+  32 0058 002083E5 		str	r2, [r3, #0]	@ float
+  33 005c 00689DE8 		ldmfd	sp, {fp, sp, lr}
+  34 0060 1EFF2FE1 		bx	lr
+  35              	.L3:
+  36              		.align	2
+  37              	.L2:
+  38 0064 00000000 		.word	buf_roll
+  39 0068 44000000 		.word	buf_pitch
+  40 006c E17A4440 		.word	1078229729
+  41 0070 00000000 		.word	gyro_roll_scale
+  42 0074 AE472140 		.word	1075922862
+  43 0078 00000000 		.word	gyro_pitch_scale
+  44 007c 0000AC43 		.word	1135345664
+  45 0080 00000000 		.word	gyro_roll_adc
+  46 0084 00808F43 		.word	1133477888
+  47 0088 00000000 		.word	gyro_pitch_adc
+  49              		.global	__divsi3
+  50              		.global	__floatsisf
+  51              		.global	__subsf3
+  52              		.global	__fixsfsi
+  53              		.global	__floatsidf
+  54              		.global	__muldf3
+  55              		.global	__divdf3
+  56              		.global	__truncdfsf2
+  57              		.align	2
+  58              		.global	gyro_update
+  60              	gyro_update:
+  61              		@ Function supports interworking.
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 1, uses_anonymous_args = 0
+  64 008c 0DC0A0E1 		mov	ip, sp
+  65 0090 F0D82DE9 		stmfd	sp!, {r4, r5, r6, r7, fp, ip, lr, pc}
+  66 0094 00319FE5 		ldr	r3, .L5+40
+  67 0098 04B04CE2 		sub	fp, ip, #4
+  68 009c 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+  69 00a0 B000D3E1 		ldrh	r0, [r3, #0]
+  70 00a4 FEFFFFEB 		bl	__divsi3
+  71 00a8 FEFFFFEB 		bl	__floatsisf
+  72 00ac EC309FE5 		ldr	r3, .L5+44
+  73 00b0 001093E5 		ldr	r1, [r3, #0]	@ float
+  74 00b4 FEFFFFEB 		bl	__subsf3
+  75 00b8 FEFFFFEB 		bl	__fixsfsi
+  76 00bc E0709FE5 		ldr	r7, .L5+48
+  77 00c0 E0309FE5 		ldr	r3, .L5+52
+  78 00c4 B000C7E1 		strh	r0, [r7, #0]	@ movhi 
+  79 00c8 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+  80 00cc B000D3E1 		ldrh	r0, [r3, #0]
+  81 00d0 FEFFFFEB 		bl	__divsi3
+  82 00d4 FEFFFFEB 		bl	__floatsisf
+  83 00d8 CC309FE5 		ldr	r3, .L5+56
+  84 00dc 001093E5 		ldr	r1, [r3, #0]	@ float
+  85 00e0 FEFFFFEB 		bl	__subsf3
+  86 00e4 FEFFFFEB 		bl	__fixsfsi
+  87 00e8 C0309FE5 		ldr	r3, .L5+60
+  88 00ec B000C3E1 		strh	r0, [r3, #0]	@ movhi 
+  89 00f0 7C408FE2 		adr	r4, .L5
+  90 00f4 300094E8 		ldmia	r4, {r4-r5}
+  91 00f8 F000D3E1 		ldrsh	r0, [r3, #0]
+  92 00fc FEFFFFEB 		bl	__floatsidf
+  93 0100 74208FE2 		adr	r2, .L5+8
+  94 0104 0C0092E8 		ldmia	r2, {r2-r3}
+  95 0108 FEFFFFEB 		bl	__muldf3
+  96 010c 0530A0E1 		mov	r3, r5
+  97 0110 0420A0E1 		mov	r2, r4
+  98 0114 FEFFFFEB 		bl	__divdf3
+  99 0118 64208FE2 		adr	r2, .L5+16
+ 100 011c 0C0092E8 		ldmia	r2, {r2-r3}
+ 101 0120 FEFFFFEB 		bl	__muldf3
+ 102 0124 FEFFFFEB 		bl	__truncdfsf2
+ 103 0128 0060A0E1 		mov	r6, r0
+ 104 012c F000D7E1 		ldrsh	r0, [r7, #0]
+ 105 0130 FEFFFFEB 		bl	__floatsidf
+ 106 0134 50208FE2 		adr	r2, .L5+24
+ 107 0138 0C0092E8 		ldmia	r2, {r2-r3}
+ 108 013c FEFFFFEB 		bl	__muldf3
+ 109 0140 0530A0E1 		mov	r3, r5
+ 110 0144 0420A0E1 		mov	r2, r4
+ 111 0148 FEFFFFEB 		bl	__divdf3
+ 112 014c 40208FE2 		adr	r2, .L5+32
+ 113 0150 0C0092E8 		ldmia	r2, {r2-r3}
+ 114 0154 FEFFFFEB 		bl	__muldf3
+ 115 0158 FEFFFFEB 		bl	__truncdfsf2
+ 116 015c 50309FE5 		ldr	r3, .L5+64
+ 117 0160 000083E5 		str	r0, [r3, #0]	@ float
+ 118 0164 4C309FE5 		ldr	r3, .L5+68
+ 119 0168 006083E5 		str	r6, [r3, #0]	@ float
+ 120 016c F0689DE8 		ldmfd	sp, {r4, r5, r6, r7, fp, sp, lr}
+ 121 0170 1EFF2FE1 		bx	lr
+ 122              	.L6:
+ 123              		.align	2
+ 124              	.L5:
+ 125 0174 00806640 		.word	1080459264
+ 126 0178 00000000 		.word	0
+ 127 017c F5280440 		.word	1074014453
+ 128 0180 295C8FC2 		.word	-1030792151
+ 129 0184 FB210940 		.word	1074340347
+ 130 0188 182D4454 		.word	1413754136
+ 131 018c 5C8F0840 		.word	1074302812
+ 132 0190 8FC2F528 		.word	687194767
+ 133 0194 FB2109C0 		.word	-1073143301
+ 134 0198 182D4454 		.word	1413754136
+ 135 019c 00000000 		.word	buf_roll
+ 136 01a0 00000000 		.word	gyro_roll_adc
+ 137 01a4 00000000 		.word	roll_rate_adc
+ 138 01a8 44000000 		.word	buf_pitch
+ 139 01ac 00000000 		.word	gyro_pitch_adc
+ 140 01b0 00000000 		.word	pitch_rate_adc
+ 141 01b4 00000000 		.word	estimator_p
+ 142 01b8 00000000 		.word	estimator_q
+ 144              		.comm	roll_rate_adc,2,2
+ 145              		.comm	pitch_rate_adc,2,2
+ 146              		.comm	gyro_roll_scale,4,4
+ 147              		.comm	gyro_pitch_scale,4,4
+ 148              		.comm	gyro_roll_adc,4,4
+ 149              		.comm	gyro_pitch_adc,4,4
+ 150              		.bss
+ 151              		.align	2
+ 152              	buf_roll:
+ 153 0000 00000000 		.space	68
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 154              		.align	2
+ 155              	buf_pitch:
+ 156 0044 00000000 		.space	68
+ 156      00000000 
+ 156      00000000 
+ 156      00000000 
+ 156      00000000 
+ 157              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 gyro.c
+     /tmp/ccACrRV7.s:6      .text:00000000 gyro_init
+     /tmp/ccACrRV7.s:10     .text:00000000 $a
+     /tmp/ccACrRV7.s:38     .text:00000064 $d
+     /tmp/ccACrRV7.s:152    .bss:00000000 buf_roll
+     /tmp/ccACrRV7.s:155    .bss:00000044 buf_pitch
+                            *COM*:00000004 gyro_roll_scale
+                            *COM*:00000004 gyro_pitch_scale
+                            *COM*:00000004 gyro_roll_adc
+                            *COM*:00000004 gyro_pitch_adc
+     /tmp/ccACrRV7.s:60     .text:0000008c gyro_update
+     /tmp/ccACrRV7.s:64     .text:0000008c $a
+     /tmp/ccACrRV7.s:125    .text:00000174 $d
+                            *COM*:00000002 roll_rate_adc
+                            *COM*:00000002 pitch_rate_adc
+
+UNDEFINED SYMBOLS
+adc_buf_channel
+__divsi3
+__floatsisf
+__subsf3
+__fixsfsi
+__floatsidf
+__muldf3
+__divdf3
+__truncdfsf2
+estimator_p
+estimator_q

@@ -1,0 +1,8 @@
+#! /bin/sh
+if test -z "$PAPARAZZI_SRC"; then
+    PAPARAZZI_SRC=/usr/share/paparazzi
+    PAPARAZZI_BIN=$PAPARAZZI_SRC/bin
+else
+    PAPARAZZI_BIN=$PAPARAZZI_SRC/sw/tools
+fi
+ocaml -I +xml-light -I $PAPARAZZI_SRC/sw/lib/ocaml unix.cma str.cma ivy-ocaml.cma xml-light.cma lib-pprz.cma $PAPARAZZI_BIN/gen_settings.ml $*

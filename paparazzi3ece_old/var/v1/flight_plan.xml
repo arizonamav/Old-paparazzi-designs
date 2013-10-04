@@ -1,0 +1,96 @@
+<dump>
+  <flight_plan alt="50" ground_alt="3" lat0="30.51566" lon0="-86.45786" max_dist_from_home="500" name="kennedy" qfu="180" security_height="70">
+    <waypoints utm_x0="552016.083357" utm_y0="3376051.86681">
+      <waypoint alt="80." name="HOME" x="5960.43239682" y="18989.0024583"/>
+      <waypoint alt="80." name="2" x="6073.39562782" y="18945.1588256"/>
+      <waypoint alt="80." name="1" x="6062.15463243" y="18994.24443"/>
+    </waypoints>
+    <blocks>
+      <block name="init" no="0">
+        <exception cond="(RcEvent1())" deroute="landing"/>
+        <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+        <while cond="(!launch)" no="0"/>
+        <attitude pitch="0.1" roll="0.0" throttle="0.56" until="(estimator_z > SECURITY_ALT)" vmode="throttle" no="2"/>
+        <deroute block="2wp loiter" no="3"/>
+      </block>
+      <block name="2wp loiter" no="1">
+        <exception cond="(RcEvent1())" deroute="init"/>
+        <exception cond="(RcEvent2())" deroute="circle"/>
+        <while no="0">
+          <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+          <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+        </while>
+      </block>
+      <block name="3wp loiter" no="2">
+        <exception cond="(RcEvent1())" deroute="init"/>
+        <exception cond="(RcEvent2())" deroute="circle"/>
+        <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+        <while no="0">
+          <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+          <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+          <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2" no="3"/>
+        </while>
+      </block>
+      <block name="circle" no="3">
+        <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+        <exception cond="(RcEvent1())" deroute="landing"/>
+        <circle alt="GROUND_ALT+8" radius="10" wp="HOME" no="0"/>
+      </block>
+      <block name="landing" no="4">
+        <exception cond="(RcEvent2())" deroute="circle"/>
+        <exception cond="(RcEvent1())" deroute="init"/>
+        <go alt="GROUND_ALT+2" wp="1" no="0"/>
+        <go alt="GROUND_ALT" throttle="0.30" vmode="throttle" wp="2" no="1"/>
+      </block>
+    </blocks>
+    <exceptions/>
+  </flight_plan>
+  <stages>
+    <stage block="4" block_name="landing" stage="1">
+      <go alt="GROUND_ALT" throttle="0.30" vmode="throttle" wp="2" no="1"/>
+    </stage>
+    <stage block="4" block_name="landing" stage="0">
+      <go alt="GROUND_ALT+2" wp="1" no="0"/>
+    </stage>
+    <stage block="3" block_name="circle" stage="0">
+      <circle alt="GROUND_ALT+8" radius="10" wp="HOME" no="0"/>
+    </stage>
+    <stage block="2" block_name="3wp loiter" stage="3">
+      <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2" no="3"/>
+    </stage>
+    <stage block="2" block_name="3wp loiter" stage="2">
+      <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+    </stage>
+    <stage block="2" block_name="3wp loiter" stage="1">
+      <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+    </stage>
+    <stage block="2" block_name="3wp loiter" stage="0">
+      <while no="0">
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2" no="3"/>
+      </while>
+    </stage>
+    <stage block="1" block_name="2wp loiter" stage="2">
+      <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+    </stage>
+    <stage block="1" block_name="2wp loiter" stage="1">
+      <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+    </stage>
+    <stage block="1" block_name="2wp loiter" stage="0">
+      <while no="0">
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="HOME" no="1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1" no="2"/>
+      </while>
+    </stage>
+    <stage block="0" block_name="init" stage="3">
+      <deroute block="2wp loiter" no="3"/>
+    </stage>
+    <stage block="0" block_name="init" stage="2">
+      <attitude pitch="0.1" roll="0.0" throttle="0.56" until="(estimator_z > SECURITY_ALT)" vmode="throttle" no="2"/>
+    </stage>
+    <stage block="0" block_name="init" stage="0">
+      <while cond="(!launch)" no="0"/>
+    </stage>
+  </stages>
+</dump>

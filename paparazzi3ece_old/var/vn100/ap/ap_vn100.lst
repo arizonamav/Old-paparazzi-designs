@@ -1,0 +1,318 @@
+   1              		.file	"ap_vn100.c"
+   2              		.global	VN_SPI_LastReceivedPacket
+   3              		.bss
+   4              		.align	2
+   7              	VN_SPI_LastReceivedPacket:
+   8 0000 00000000 		.space	376
+   8      00000000 
+   8      00000000 
+   8      00000000 
+   8      00000000 
+   9              		.text
+  10              		.align	2
+  11              		.global	vn100_init
+  13              	vn100_init:
+  14              		@ Function supports interworking.
+  15              		@ args = 0, pretend = 0, frame = 0
+  16              		@ frame_needed = 0, uses_anonymous_args = 0
+  17              		@ link register save eliminated.
+  18              		@ lr needed for prologue
+  19 0000 1EFF2FE1 		bx	lr
+  21              		.align	2
+  22              		.global	vnSetSS
+  24              	vnSetSS:
+  25              		@ Function supports interworking.
+  26              		@ args = 0, pretend = 0, frame = 0
+  27              		@ frame_needed = 0, uses_anonymous_args = 0
+  28              		@ link register save eliminated.
+  29 0004 1C109FE5 		ldr	r1, .L5
+  30 0008 000050E3 		cmp	r0, #0
+  31 000c 0030D105 		ldreqb	r3, [r1, #0]	@ zero_extendqisi2
+  32 0010 0030D115 		ldrneb	r3, [r1, #0]	@ zero_extendqisi2
+  33 0014 02308303 		orreq	r3, r3, #2
+  34 0018 0230C313 		bicne	r3, r3, #2
+  35              		@ lr needed for prologue
+  36 001c 0030C105 		streqb	r3, [r1, #0]
+  37 0020 0030C115 		strneb	r3, [r1, #0]
+  38 0024 1EFF2FE1 		bx	lr
+  39              	.L6:
+  40              		.align	2
+  41              	.L5:
+  42 0028 048006E0 		.word	-536444924
+  44              		.align	2
+  45              		.global	vnSendReceive
+  47              	vnSendReceive:
+  48              		@ Function supports interworking.
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51 002c 30402DE9 		stmfd	sp!, {r4, r5, lr}
+  52 0030 0050A0E3 		mov	r5, #0
+  53              	.L24:
+  54 0034 68119FE5 		ldr	r1, .L34
+  55 0038 68419FE5 		ldr	r4, .L34+4
+  56 003c 68219FE5 		ldr	r2, .L34+8
+  57 0040 0030A0E3 		mov	r3, #0
+  58 0044 0030C4E5 		strb	r3, [r4, #0]
+  59 0048 60E19FE5 		ldr	lr, .L34+12
+  60 004c 0030C1E5 		strb	r3, [r1, #0]
+  61 0050 0030C2E5 		strb	r3, [r2, #0]
+  62 0054 0000DEE5 		ldrb	r0, [lr, #0]	@ zero_extendqisi2
+  63 0058 0030D1E5 		ldrb	r3, [r1, #0]	@ zero_extendqisi2
+  64 005c 000053E1 		cmp	r3, r0
+  65 0060 2800002A 		bcs	.L12
+  66 0064 48C19FE5 		ldr	ip, .L34+16
+  67              	.L31:
+  68 0068 0030DCE5 		ldrb	r3, [ip, #0]	@ zero_extendqisi2
+  69 006c 020013E3 		tst	r3, #2
+  70 0070 2800000A 		beq	.L12
+  71 0074 3C319FE5 		ldr	r3, .L34+20
+  72 0078 002093E5 		ldr	r2, [r3, #0]
+  73 007c 0030D1E5 		ldrb	r3, [r1, #0]	@ zero_extendqisi2
+  74 0080 0320D2E7 		ldrb	r2, [r2, r3]	@ zero_extendqisi2
+  75 0084 30319FE5 		ldr	r3, .L34+24
+  76 0088 B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+  77 008c 0030D1E5 		ldrb	r3, [r1, #0]	@ zero_extendqisi2
+  78 0090 013083E2 		add	r3, r3, #1
+  79 0094 0030C1E5 		strb	r3, [r1, #0]
+  80 0098 04119FE5 		ldr	r1, .L34
+  81 009c 0030D1E5 		ldrb	r3, [r1, #0]	@ zero_extendqisi2
+  82 00a0 000053E1 		cmp	r3, r0
+  83 00a4 1800003A 		bcc	.L31
+  84              	.L12:
+  85 00a8 F4009FE5 		ldr	r0, .L34
+  86 00ac 0010DEE5 		ldrb	r1, [lr, #0]	@ zero_extendqisi2
+  87 00b0 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  88 00b4 010053E1 		cmp	r3, r1
+  89 00b8 00219F05 		ldreq	r2, .L34+28
+  90 00bc 0030D205 		ldreqb	r3, [r2, #0]	@ zero_extendqisi2
+  91 00c0 0830C303 		biceq	r3, r3, #8
+  92 00c4 0030C205 		streqb	r3, [r2, #0]
+  93 00c8 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  94 00cc 010053E1 		cmp	r3, r1
+  95 00d0 4400002A 		bcs	.L16
+  96 00d4 D8109FE5 		ldr	r1, .L34+16
+  97              	.L32:
+  98 00d8 0030D1E5 		ldrb	r3, [r1, #0]	@ zero_extendqisi2
+  99 00dc 020013E3 		tst	r3, #2
+ 100 00e0 4400000A 		beq	.L16
+ 101 00e4 CC309FE5 		ldr	r3, .L34+20
+ 102 00e8 002093E5 		ldr	r2, [r3, #0]
+ 103 00ec 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+ 104 00f0 0320D2E7 		ldrb	r2, [r2, r3]	@ zero_extendqisi2
+ 105 00f4 C0309FE5 		ldr	r3, .L34+24
+ 106 00f8 B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+ 107 00fc 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+ 108 0100 013083E2 		add	r3, r3, #1
+ 109 0104 0030C0E5 		strb	r3, [r0, #0]
+ 110 0108 0020DEE5 		ldrb	r2, [lr, #0]	@ zero_extendqisi2
+ 111 010c 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+ 112 0110 020053E1 		cmp	r3, r2
+ 113 0114 3400003A 		bcc	.L32
+ 114              	.L16:
+ 115 0118 84309FE5 		ldr	r3, .L34
+ 116 011c 8C009FE5 		ldr	r0, .L34+12
+ 117 0120 0020D3E5 		ldrb	r2, [r3, #0]	@ zero_extendqisi2
+ 118 0124 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+ 119 0128 030052E1 		cmp	r2, r3
+ 120 012c 8C209F05 		ldreq	r2, .L34+28
+ 121 0130 0030D205 		ldreqb	r3, [r2, #0]	@ zero_extendqisi2
+ 122 0134 0830C303 		biceq	r3, r3, #8
+ 123 0138 0030C205 		streqb	r3, [r2, #0]
+ 124              	.L33:
+ 125 013c 70309FE5 		ldr	r3, .L34+16
+ 126 0140 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 127 0144 040013E3 		tst	r3, #4
+ 128 0148 6100000A 		beq	.L30
+ 129 014c 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+ 130 0150 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 131 0154 030052E1 		cmp	r2, r3
+ 132 0158 5C309F25 		ldrcs	r3, .L34+24
+ 133 015c B030D321 		ldrcsh	r3, [r3, #0]
+ 134 0160 4D00002A 		bcs	.L33
+ 135 0164 58309FE5 		ldr	r3, .L34+32
+ 136 0168 001093E5 		ldr	r1, [r3, #0]
+ 137 016c 48309FE5 		ldr	r3, .L34+24
+ 138 0170 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 139 0174 B030D3E1 		ldrh	r3, [r3, #0]
+ 140 0178 0230C1E7 		strb	r3, [r1, r2]
+ 141 017c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 142 0180 013083E2 		add	r3, r3, #1
+ 143 0184 0030C4E5 		strb	r3, [r4, #0]
+ 144 0188 4D0000EA 		b	.L33
+ 145              	.L30:
+ 146 018c 015085E2 		add	r5, r5, #1
+ 147 0190 030055E3 		cmp	r5, #3
+ 148 0194 0B00009A 		bls	.L24
+ 149 0198 0000A0E3 		mov	r0, #0
+ 150 019c 3040BDE8 		ldmfd	sp!, {r4, r5, lr}
+ 151 01a0 1EFF2FE1 		bx	lr
+ 152              	.L35:
+ 153              		.align	2
+ 154              	.L34:
+ 155 01a4 00000000 		.word	spi_tx_idx
+ 156 01a8 00000000 		.word	spi_rx_idx
+ 157 01ac 00000000 		.word	spi_message_received
+ 158 01b0 00000000 		.word	spi_buffer_length
+ 159 01b4 0C8006E0 		.word	-536444916
+ 160 01b8 00000000 		.word	spi_buffer_output
+ 161 01bc 088006E0 		.word	-536444920
+ 162 01c0 148006E0 		.word	-536444908
+ 163 01c4 00000000 		.word	spi_buffer_input
+ 165              		.align	2
+ 166              		.global	vnDelay
+ 168              	vnDelay:
+ 169              		@ Function supports interworking.
+ 170              		@ args = 0, pretend = 0, frame = 0
+ 171              		@ frame_needed = 0, uses_anonymous_args = 0
+ 172              		@ link register save eliminated.
+ 173 01c8 000180E0 		add	r0, r0, r0, asl #2
+ 174              		@ lr needed for prologue
+ 175 01cc 8000A0E1 		mov	r0, r0, asl #1
+ 176              	.L37:
+ 177 01d0 010050E2 		subs	r0, r0, #1
+ 178 01d4 7200002A 		bcs	.L37
+ 179 01d8 1EFF2FE1 		bx	lr
+ 181              		.align	2
+ 182              		.global	vnReadRegister
+ 184              	vnReadRegister:
+ 185              		@ Function supports interworking.
+ 186              		@ args = 0, pretend = 0, frame = 0
+ 187              		@ frame_needed = 1, uses_anonymous_args = 0
+ 188 01dc 0DC0A0E1 		mov	ip, sp
+ 189 01e0 30D82DE9 		stmfd	sp!, {r4, r5, fp, ip, lr, pc}
+ 190 01e4 FF4000E2 		and	r4, r0, #255
+ 191 01e8 04B04CE2 		sub	fp, ip, #4
+ 192 01ec 0000A0E3 		mov	r0, #0
+ 193 01f0 0444A0E1 		mov	r4, r4, asl #8
+ 194 01f4 FF5001E2 		and	r5, r1, #255
+ 195 01f8 FEFFFFEB 		bl	vnSetSS
+ 196 01fc 010084E3 		orr	r0, r4, #1
+ 197 0200 FEFFFFEB 		bl	vnSendReceive
+ 198 0204 0000A0E3 		mov	r0, #0
+ 199 0208 FEFFFFEB 		bl	vnSendReceive
+ 200 020c 0100A0E3 		mov	r0, #1
+ 201 0210 FEFFFFEB 		bl	vnSetSS
+ 202 0214 3200A0E3 		mov	r0, #50
+ 203 0218 FEFFFFEB 		bl	vnDelay
+ 204 021c 0000A0E3 		mov	r0, #0
+ 205 0220 FEFFFFEB 		bl	vnSetSS
+ 206 0224 0040A0E3 		mov	r4, #0
+ 207              	.L44:
+ 208 0228 0000A0E3 		mov	r0, #0
+ 209 022c FEFFFFEB 		bl	vnSendReceive
+ 210 0230 20309FE5 		ldr	r3, .L47
+ 211 0234 040183E7 		str	r0, [r3, r4, asl #2]
+ 212 0238 014084E2 		add	r4, r4, #1
+ 213 023c 050054E1 		cmp	r4, r5
+ 214 0240 880000DA 		ble	.L44
+ 215 0244 0100A0E3 		mov	r0, #1
+ 216 0248 FEFFFFEB 		bl	vnSetSS
+ 217 024c 04009FE5 		ldr	r0, .L47
+ 218 0250 30689DE8 		ldmfd	sp, {r4, r5, fp, sp, lr}
+ 219 0254 1EFF2FE1 		bx	lr
+ 220              	.L48:
+ 221              		.align	2
+ 222              	.L47:
+ 223 0258 00000000 		.word	VN_SPI_LastReceivedPacket
+ 225              		.align	2
+ 226              		.global	vnGetAnglesDD
+ 228              	vnGetAnglesDD:
+ 229              		@ Function supports interworking.
+ 230              		@ args = 0, pretend = 0, frame = 0
+ 231              		@ frame_needed = 1, uses_anonymous_args = 0
+ 232 025c 0DC0A0E1 		mov	ip, sp
+ 233 0260 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+ 234 0264 0040A0E1 		mov	r4, r0
+ 235 0268 0160A0E1 		mov	r6, r1
+ 236 026c 04B04CE2 		sub	fp, ip, #4
+ 237 0270 0310A0E3 		mov	r1, #3
+ 238 0274 0800A0E3 		mov	r0, #8
+ 239 0278 0250A0E1 		mov	r5, r2
+ 240 027c FEFFFFEB 		bl	vnReadRegister
+ 241 0280 1C009FE5 		ldr	r0, .L50
+ 242 0284 043090E5 		ldr	r3, [r0, #4]	@ float
+ 243 0288 003084E5 		str	r3, [r4, #0]	@ float
+ 244 028c 083090E5 		ldr	r3, [r0, #8]	@ float
+ 245 0290 003086E5 		str	r3, [r6, #0]	@ float
+ 246 0294 0C3090E5 		ldr	r3, [r0, #12]	@ float
+ 247 0298 003085E5 		str	r3, [r5, #0]	@ float
+ 248 029c 70689DE8 		ldmfd	sp, {r4, r5, r6, fp, sp, lr}
+ 249 02a0 1EFF2FE1 		bx	lr
+ 250              	.L51:
+ 251              		.align	2
+ 252              	.L50:
+ 253 02a4 00000000 		.word	VN_SPI_LastReceivedPacket
+ 255              		.align	2
+ 256              		.global	vn100_periodic
+ 258              	vn100_periodic:
+ 259              		@ Function supports interworking.
+ 260              		@ args = 0, pretend = 0, frame = 0
+ 261              		@ frame_needed = 1, uses_anonymous_args = 0
+ 262 02a8 0DC0A0E1 		mov	ip, sp
+ 263 02ac F0D82DE9 		stmfd	sp!, {r4, r5, r6, r7, fp, ip, lr, pc}
+ 264 02b0 50409FE5 		ldr	r4, .L53
+ 265 02b4 FF35A0E3 		mov	r3, #1069547520
+ 266 02b8 4C509FE5 		ldr	r5, .L53+4
+ 267 02bc 003084E5 		str	r3, [r4, #0]	@ float
+ 268 02c0 48309FE5 		ldr	r3, .L53+8
+ 269 02c4 48609FE5 		ldr	r6, .L53+12
+ 270 02c8 003085E5 		str	r3, [r5, #0]	@ float
+ 271 02cc 44309FE5 		ldr	r3, .L53+16
+ 272 02d0 04B04CE2 		sub	fp, ip, #4
+ 273 02d4 0700A0E1 		mov	r0, r7
+ 274 02d8 0710A0E1 		mov	r1, r7
+ 275 02dc 0720A0E1 		mov	r2, r7
+ 276 02e0 003086E5 		str	r3, [r6, #0]	@ float
+ 277 02e4 FEFFFFEB 		bl	vnGetAnglesDD
+ 278 02e8 003097E5 		ldr	r3, [r7, #0]	@ float
+ 279 02ec 003084E5 		str	r3, [r4, #0]	@ float
+ 280 02f0 003097E5 		ldr	r3, [r7, #0]	@ float
+ 281 02f4 003085E5 		str	r3, [r5, #0]	@ float
+ 282 02f8 003097E5 		ldr	r3, [r7, #0]	@ float
+ 283 02fc 003086E5 		str	r3, [r6, #0]	@ float
+ 284 0300 F0689DE8 		ldmfd	sp, {r4, r5, r6, r7, fp, sp, lr}
+ 285 0304 1EFF2FE1 		bx	lr
+ 286              	.L54:
+ 287              		.align	2
+ 288              	.L53:
+ 289 0308 00000000 		.word	Roll
+ 290 030c 00000000 		.word	Pitch
+ 291 0310 00002040 		.word	1075838976
+ 292 0314 00000000 		.word	Yaw
+ 293 0318 9A995940 		.word	1079613850
+ 295              		.comm	Roll,4,4
+ 296              		.comm	Pitch,4,4
+ 297              		.comm	Yaw,4,4
+ 298              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 ap_vn100.c
+     /tmp/ccz8b5lk.s:7      .bss:00000000 VN_SPI_LastReceivedPacket
+                             .bss:00000000 $d
+     /tmp/ccz8b5lk.s:13     .text:00000000 vn100_init
+     /tmp/ccz8b5lk.s:19     .text:00000000 $a
+     /tmp/ccz8b5lk.s:24     .text:00000004 vnSetSS
+     /tmp/ccz8b5lk.s:42     .text:00000028 $d
+     /tmp/ccz8b5lk.s:47     .text:0000002c vnSendReceive
+     /tmp/ccz8b5lk.s:51     .text:0000002c $a
+     /tmp/ccz8b5lk.s:155    .text:000001a4 $d
+     /tmp/ccz8b5lk.s:168    .text:000001c8 vnDelay
+     /tmp/ccz8b5lk.s:173    .text:000001c8 $a
+     /tmp/ccz8b5lk.s:184    .text:000001dc vnReadRegister
+     /tmp/ccz8b5lk.s:223    .text:00000258 $d
+     /tmp/ccz8b5lk.s:228    .text:0000025c vnGetAnglesDD
+     /tmp/ccz8b5lk.s:232    .text:0000025c $a
+     /tmp/ccz8b5lk.s:253    .text:000002a4 $d
+     /tmp/ccz8b5lk.s:258    .text:000002a8 vn100_periodic
+     /tmp/ccz8b5lk.s:262    .text:000002a8 $a
+     /tmp/ccz8b5lk.s:289    .text:00000308 $d
+                            *COM*:00000004 Roll
+                            *COM*:00000004 Pitch
+                            *COM*:00000004 Yaw
+
+UNDEFINED SYMBOLS
+spi_tx_idx
+spi_rx_idx
+spi_message_received
+spi_buffer_length
+spi_buffer_output
+spi_buffer_input

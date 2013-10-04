@@ -1,0 +1,83 @@
+<flight_plan alt="215" ground_alt="164" lat0="27.096278" lon0="77.913667" max_dist_from_home="750" name="MAV08" qfu="270" security_height="0.2">
+  <waypoints>
+    <waypoint name="HOME" x="389.461688587" y="148.170916001"/>
+    <waypoint name="1" x="348.968909955" y="-184.804119437"/>
+    <waypoint name="2" x="483.165581494" y="-285.670723305"/>
+    <waypoint name="Red Team Halt Point" x="204.79074888" y="679.384209533"/>
+    <waypoint name="Test Point" x="99.9999998533" y="299.999997493"/>
+    <waypoint name="Ingress Point" x="333.603316023" y="-358.913462905"/>
+    <waypoint name="Launch/Landing Point" x="366.595119859" y="-351.937109483"/>
+    <waypoint name="Ground Station" x="322.804592876" y="-368.369171719"/>
+    <waypoint name="NF29" x="496.029520577" y="485.961978898"/>
+    <waypoint name="NF28" x="616.911424299" y="383.964742707"/>
+    <waypoint name="NF27" x="819.756595135" y="197.70035002"/>
+    <waypoint name="NF26" x="906.504879931" y="27.1484701075"/>
+    <waypoint name="NF25" x="869.429696922" y="-158.482337067"/>
+    <waypoint name="NF24" x="755.026445652" y="-339.810450893"/>
+    <waypoint name="NF23" x="629.636936471" y="-518.397859649"/>
+    <waypoint name="NF22" x="506.828964912" y="-453.4869281"/>
+    <waypoint name="NF21" x="241.868821618" y="-323.99974884"/>
+    <waypoint name="NF20" x="71.7823259701" y="-244.765992408"/>
+    <waypoint name="NF19" x="-145.059489499" y="-49.6092875903"/>
+    <waypoint name="NF18" x="-76.3313883272" y="81.4090984818"/>
+    <waypoint name="NF17" x="13.1781753246" y="262.151580174"/>
+    <waypoint name="NF16" x="100.006394217" y="442.832846336"/>
+    <waypoint name="NF15" x="280.264277112" y="634.888435312"/>
+    <waypoint name="NF14" x="276.771388466" y="665.638972087"/>
+    <waypoint name="NF13" x="259.847215367" y="680.661954578"/>
+    <waypoint name="NF12" x="243.0943165" y="692.583588628"/>
+    <waypoint name="NF11" x="234.689423253" y="695.493865295"/>
+    <waypoint name="NF10" x="198.805945337" y="697.766465149"/>
+    <waypoint name="NF9" x="179.633032238" y="694.216225675"/>
+    <waypoint name="NF8" x="174.291267993" y="684.887164239"/>
+    <waypoint name="NF7" x="180.132004976" y="672.712236741"/>
+    <waypoint name="NF5" x="165.494338091" y="589.193877008"/>
+    <waypoint name="NF6" x="144.543954508" y="542.46045385"/>
+    <waypoint name="NF4" x="183.483192007" y="648.058185512"/>
+    <waypoint name="NF3" x="186.588578913" y="629.720015074"/>
+    <waypoint name="NF2" x="364.684984678" y="559.880062356"/>
+    <waypoint name="NF1" x="291.988322978" y="604.439863"/>
+    <waypoint name="A1" x="267.736035163" y="-249.536940346"/>
+    <waypoint name="B1" x="108.6623204" y="-170.048237436"/>
+    <waypoint name="C2" x="162.385448536" y="12.9707708214"/>
+    <waypoint name="C1" x="-4.98257577419e-08" y="-8.36793333292e-07"/>
+    <waypoint name="D2" x="169.396282919" y="185.70138739"/>
+    <waypoint name="D1" x="59.0384800886" y="189.241514152"/>
+    <waypoint name="E2" x="178.82939895" y="373.793152962"/>
+    <waypoint name="E1" x="120.696083476" y="381.012203858"/>
+    <waypoint name="B2" x="298.056134547" y="-131.717770102"/>
+    <waypoint name="C3" x="317.865250565" y="-35.7688661949"/>
+    <waypoint name="D3" x="294.045373599" y="160.867418844"/>
+    <waypoint name="E3" x="261.823286676" y="360.303162226"/>
+    <waypoint name="F1" x="182.634534781" y="564.859762785"/>
+    <waypoint name="F2" x="229.74328388" y="553.642454231"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.3" roll="0.0" throttle="1.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="2wp loiter"/>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2"/>
+      </while>
+    </block>
+    <block name="circle">
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <circle radius="50" wp="HOME"/>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <go alt="GROUND_ALT+2" wp="1"/>
+      <go alt="GROUND_ALT" throttle="0.10" vmode="throttle" wp="2"/>
+    </block>
+  </blocks>
+</flight_plan>

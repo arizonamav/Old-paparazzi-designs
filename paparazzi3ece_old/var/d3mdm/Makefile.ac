@@ -1,0 +1,66 @@
+# This file has been generated from /home/dragonfly/paparazzi_new/test/paparazzi3/conf/airframes/d3_mdm.xml by sw/tools/extract_makefile
+# Please DO NOT EDIT
+include $(PAPARAZZI_SRC)/conf/autopilot/tiny.makefile
+FLASH_MODE=ISP
+#ap.CFLAGS +=  -DFBW -DAP -DCONFIG=\"tiny_0_99.h\" -DLED -DTIME_LED=1
+ap.CFLAGS +=  -DFBW -DAP -DCONFIG=\"tiny_1_1.h\" -DLED -DTIME_LED=1
+ap.srcs = sys_time.c $(SRC_ARCH)/sys_time_hw.c $(SRC_ARCH)/armVIC.c main_fbw.c main_ap.c main.c
+ap.srcs += commands.c
+ap.CFLAGS += -DACTUATORS=\"servos_4015_MAT_hw.h\" -DSERVOS_4015_MAT
+ap.srcs += $(SRC_ARCH)/servos_4015_MAT_hw.c actuators.c
+ap.CFLAGS += -DRADIO_CONTROL -DRADIO_CONTROL_TYPE=RC_FUTABA
+ap.srcs += radio_control.c $(SRC_ARCH)/ppm_hw.c  
+#ap.CFLAGS += -DDOWNLINK -DUSE_UART0 -DDOWNLINK_TRANSPORT=PprzTransport 
+#ap.CFLAGS += -DDOWNLINK_FBW_DEVICE=Uart0 -DDOWNLINK_AP_DEVICE=Uart0 
+#ap.CFLAGS += -DPPRZ_UART=Uart0 -DDATALINK=PPRZ -DUART0_BAUD=B9600
+#ap.srcs += downlink.c $(SRC_ARCH)/uart_hw.c pprz_transport.c datalink.c
+ap.CFLAGS += -DDOWNLINK -DUSE_UART0 -DDOWNLINK_TRANSPORT=XBeeTransport 
+ap.CFLAGS += -DDOWNLINK_FBW_DEVICE=Uart0 -DDOWNLINK_AP_DEVICE=Uart0 
+ap.CFLAGS += -DXBEE_UART=Uart0 -DDATALINK=XBEE -DUART0_BAUD=B9600
+ap.srcs += downlink.c $(SRC_ARCH)/uart_hw.c datalink.c xbee.c
+ap.srcs += traffic_info.c
+ap.CFLAGS += -DINTER_MCU
+ap.srcs += inter_mcu.c 
+ap.CFLAGS += -DADC -DUSE_ADC_0 -DUSE_ADC_1 -DUSE_ADC_4 -DUSE_ADC_5 -DUSE_ADC_6 
+ap.srcs += $(SRC_ARCH)/adc_hw.c
+ap.CFLAGS += -DGPS -DUBX -DUSE_UART1 -DGPS_LINK=Uart1 -DUART1_BAUD=B38400 -DGPS_CONFIGURE
+ap.srcs += gps_ubx.c gps.c
+ap.CFLAGS += -DINFRARED
+ap.srcs += infrared.c estimator.c
+ap.CFLAGS += -DNAV -DH_CTL_RATE_LOOP -DAGR_CLIMB
+ap.srcs += nav.c fw_h_ctl.c fw_v_ctl.c
+ap.CFLAGS += -DGYRO -DIDG300 
+ap.srcs += gyro.c
+ap.CFLAGS += -DACCEL -DADXL330 
+ap.srcs += accel.c
+ap.CFLAGS += -DKALMAN_ROLL_PITCH 
+ap.srcs += kalman_roll_pitch.c
+#ap.CFLAGS += -DMOBILE_CAM
+#ap.srcs += cam.c
+#ap.CFLAGS += -DBOMB
+# Harware In The Loop
+#ap.CFLAGS += -DHITL
+# Config for SITL simulation
+include $(PAPARAZZI_SRC)/conf/autopilot/sitl.makefile
+sim.CFLAGS += -DCONFIG=\"tiny.h\" -DAGR_CLIMB -DH_CTL_RATE_LOOP
+#sim.CFLAGS += -DMOBILE_CAM
+#sim.srcs += cam.c
+# a test program to setup actuators 
+setup_actuators.ARCHDIR = $(ARCHI)
+setup_actuators.ARCH = arm7tdmi
+setup_actuators.TARGET = setup_actuators
+setup_actuators.TARGETDIR = setup_actuators
+setup_actuators.CFLAGS += -DFBW -DCONFIG=\"tiny_0_99.h\" -DLED -DTIME_LED=1 -DACTUATORS=\"servos_4015_MAT_hw.h\" -DSERVOS_4015_MAT 
+setup_actuators.srcs += sys_time.c $(SRC_ARCH)/sys_time_hw.c $(SRC_ARCH)/armVIC.c pprz_transport.c setup_actuators.c $(SRC_ARCH)/servos_4015_MAT_hw.c $(SRC_ARCH)/adc_hw.c main.c
+setup_actuators.CFLAGS += -DDOWNLINK -DDOWNLINK_TRANSPORT=PprzTransport 
+setup_actuators.srcs += downlink.c datalink.c pprz_transport.c traffic_info.c
+setup_actuators.CFLAGS += -DDOWNLINK_FBW_DEVICE=Modem 
+setup_actuators.CFLAGS += -DMODEM
+setup_actuators.srcs += $(SRC_ARCH)/modem_hw.c 
+# a test program to tunnel between both uart
+tunnel.ARCHDIR = $(ARCHI)
+tunnel.ARCH = arm7tdmi
+tunnel.TARGET = tunnel
+tunnel.TARGETDIR = tunnel
+tunnel.CFLAGS += -DFBW -DCONFIG=\"tiny_1_1.h\" -DLED -DTIME_LED=1
+tunnel.srcs += $(SRC_ARCH)/uart_tunnel.c

@@ -1,0 +1,11 @@
+<dump>
+  <flight_plan ground_alt="700." lat0="43.5389" lon0="1.2433" max_dist_from_home="1750." name="hovering indoors" qfu="180." alt="702.0" security_height="0.02" wind_dir="60" wind_mod="3">
+    <header/>
+    <waypoints utm_x0="358070.807805" utm_y0="4822160.58124">
+      <waypoint alt="702" name="HOME" x="753.859003724" y="-51.1591526465"/>
+    </waypoints>
+    <blocks/>
+    <exceptions/>
+  </flight_plan>
+  <stages/>
+</dump>

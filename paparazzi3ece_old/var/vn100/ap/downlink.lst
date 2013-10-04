@@ -1,0 +1,18 @@
+   1              		.file	"downlink.c"
+   2              		.global	telemetry_mode_Ap
+   3              		.bss
+   6              	telemetry_mode_Ap:
+   7 0000 00       		.space	1
+   8              		.global	telemetry_mode_Fbw
+  11              	telemetry_mode_Fbw:
+  12 0001 00       		.space	1
+  13              		.comm	downlink_nb_ovrn,1,1
+  14              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 downlink.c
+     /tmp/ccBzZgsL.s:6      .bss:00000000 telemetry_mode_Ap
+                             .bss:00000000 $d
+     /tmp/ccBzZgsL.s:11     .bss:00000001 telemetry_mode_Fbw
+                            *COM*:00000001 downlink_nb_ovrn
+
+NO UNDEFINED SYMBOLS

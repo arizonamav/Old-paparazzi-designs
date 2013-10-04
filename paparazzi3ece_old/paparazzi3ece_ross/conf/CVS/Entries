@@ -1,0 +1,26 @@
+/Makefile.arm7/1.20/Mon Jun 26 02:26:53 2006//
+/Makefile.avr/1.26/Thu May 25 18:27:32 2006//
+/Makefile.local/1.3/Fri May 12 08:59:40 2006//
+/Makefile.sim/1.8/Thu Sep  7 15:46:23 2006//
+/boa.conf/1.4/Wed Feb  8 02:08:14 2006//
+/conf.xml.example/1.19/Mon Sep 18 15:20:48 2006//
+/gui.xml/1.7/Thu Apr 13 23:51:21 2006//
+/hardware.xml/1.1/Tue Apr 18 00:20:21 2006//
+/hosts_wavecard.xml/1.2/Mon May  1 20:52:34 2006//
+/mapGL_help_keys.txt/1.1/Fri Oct 14 13:01:44 2005//
+/messages.dtd/1.1/Wed Apr 26 22:46:07 2006//
+/ubx.dtd/1.1.1.1/Tue Jan 25 10:57:48 2005//
+/ubx.xml/1.8/Wed Apr 26 22:46:07 2006//
+/wavecard.xml/1.1.1.1/Tue Jan 25 10:57:48 2005//
+/waypoints.xml/1.1/Sun Aug 14 08:49:00 2005//
+D/airframes////
+D/autopilot////
+D/flight_plans////
+D/gcs////
+D/gps////
+D/radios////
+D/settings////
+D/system////
+D/telemetry////
+/control_panel.xml.example/1.17/Thu Feb  1 00:05:55 2007//
+/messages.xml/1.120/Result of merge//

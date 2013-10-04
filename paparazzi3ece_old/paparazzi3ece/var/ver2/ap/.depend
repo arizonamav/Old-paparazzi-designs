@@ -1,0 +1,529 @@
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/sys_time.o: sys_time.c sys_time.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/sys_time_hw.o:  \
+ /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/sys_time.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/servos_4015_MAT_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/ppm.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/armVIC.o: /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/main_fbw.o: main_fbw.c main_fbw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/init_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/interrupt_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h uart.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h spi.h \
+  sys_time.h /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h commands.h \
+  paparazzi.h /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  actuators.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/servos_4015_MAT_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/sys_time.h radio_control.h \
+  ppm.h /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h \
+  fbw_downlink.h /home/mav/Desktop/paparazzivn100/var/include/messages.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/periodic.h inter_mcu.h \
+  downlink.h pprz_transport.h datalink.h \
+  /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h modem.h \
+  aerocomm_new.h xbee.h autopilot.h estimator.h link_imu.h frames.h \
+  control_grz.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/main_ap.o: main_ap.c main_ap.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/interrupt_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/init_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  adc.h /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h \
+  fw_h_ctl.h /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  paparazzi.h fw_v_ctl.h gps.h uart.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  infrared.h /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h gyro.h \
+  accel.h range.h kalman_roll_pitch.h ap_downlink.h downlink.h \
+  pprz_transport.h datalink.h \
+  /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h modem.h \
+  aerocomm_new.h xbee.h \
+  /home/mav/Desktop/paparazzivn100/var/include/messages.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/periodic.h nav.h autopilot.h \
+  sys_time.h /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h estimator.h \
+  rc_settings.h /home/mav/Desktop/paparazzivn100/var/ver2/settings.h \
+  cam.h traffic_info.h link_mcu.h inter_mcu.h main_fbw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/link_mcu_hw.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/flight_plan.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h wavecard.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/gpio.h spi.h spi_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/main.o: main.c sys_time.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h main_fbw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h main_ap.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/commands.o: commands.c commands.h paparazzi.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/servos_4015_MAT_hw.o:  \
+ /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/servos_4015_MAT_hw.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/actuators.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/paparazzi.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/servos_4015_MAT_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/paparazzi.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/actuators.o: actuators.c actuators.h paparazzi.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/servos_4015_MAT_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/radio_control.o: radio_control.c radio_control.h led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h paparazzi.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/ppm_hw.o: /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/ppm.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/downlink.o: downlink.c ap_downlink.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h downlink.h \
+  pprz_transport.h /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  datalink.h /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h \
+  modem.h aerocomm_new.h xbee.h \
+  /home/mav/Desktop/paparazzivn100/var/include/messages.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/periodic.h gyro.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/uart_hw.o: /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/uart.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/datalink.o: datalink.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  traffic_info.h nav.h /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  paparazzi.h /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  fw_v_ctl.h datalink.h \
+  /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/flight_plan.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h autopilot.h \
+  sys_time.h /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h \
+  ap_downlink.h downlink.h pprz_transport.h modem.h aerocomm_new.h xbee.h \
+  /home/mav/Desktop/paparazzivn100/var/include/messages.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/periodic.h gyro.h estimator.h \
+  fw_h_ctl.h cam.h infrared.h accel.h range.h kalman_roll_pitch.h gps.h \
+  uart.h /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/gpio.h control_grz.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/settings.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/aerocomm_new.o: aerocomm_new.c sys_time.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h print.h \
+  uart.h /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  aerocomm_new.h datalink.h \
+  /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/traffic_info.o: traffic_info.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  traffic_info.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/inter_mcu.o: inter_mcu.c inter_mcu.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h paparazzi.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h radio_control.h \
+  led.h /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h main_fbw.h \
+  adc.h /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/adc_hw.o: /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/armVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/estimator.o: estimator.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  estimator.h /home/mav/Desktop/paparazzivn100/sw/include/std.h uart.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  ap_downlink.h /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  downlink.h pprz_transport.h datalink.h \
+  /home/mav/Desktop/paparazzivn100/var/include/dl_protocol.h modem.h \
+  aerocomm_new.h xbee.h \
+  /home/mav/Desktop/paparazzivn100/var/include/messages.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/periodic.h gyro.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/nav.o: nav.c nav.h /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  paparazzi.h /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h \
+  fw_v_ctl.h gps.h uart.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/uart_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/types.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h estimator.h \
+  fw_h_ctl.h autopilot.h sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h inter_mcu.h \
+  main_fbw.h adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h cam.h \
+  traffic_info.h /home/mav/Desktop/paparazzivn100/var/ver2/flight_plan.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/fw_h_ctl.o: fw_h_ctl.c /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h fw_h_ctl.h \
+  paparazzi.h estimator.h nav.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h fw_v_ctl.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/fw_v_ctl.o: fw_v_ctl.c autopilot.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h sys_time.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/sys_time_hw.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/led.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/led_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/radio.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/ppm_hw.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h paparazzi.h \
+  fw_v_ctl.h estimator.h nav.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/gyro.o: gyro.c \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h gyro.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h estimator.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/range.o: range.c \
+  /home/mav/Desktop/paparazzivn100/conf/autopilot/tiny_0_99.h range.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h adc.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/adc_hw.h \
+  /home/mav/Desktop/paparazzivn100/var/ver2/airframe.h estimator.h
+/home/mav/Desktop/paparazzivn100/var/ver2/ap/gpio.o: /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/gpio.c \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/gpio.h \
+  /home/mav/Desktop/paparazzivn100/sw/include/std.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/inttypes.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/LPC21xx.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcWD.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcTMR.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcUART.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcI2C.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSPI.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcRTC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcPIN.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcADC.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcSCB.h \
+  /home/mav/Desktop/paparazzivn100/sw/airborne/arm7/include/lpcVIC.h

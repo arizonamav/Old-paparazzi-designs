@@ -1,0 +1,32 @@
+# This file has been generated from /home/dragonfly/paparazzi_new/test/paparazzi3/conf/airframes/acctest.xml by sw/tools/extract_makefile
+# Please DO NOT EDIT
+include $(PAPARAZZI_SRC)/conf/autopilot/v1_2_1.makefile
+include $(PAPARAZZI_SRC)/conf/autopilot/twin_mcu_avr.makefile
+ap.srcs += $(SRC_ARCH)/sys_time_hw.c
+fbw.srcs += $(SRC_ARCH)/sys_time_hw.c
+#--SERIAL MODE--------
+#ap.CFLAGS += -DDOWNLINK -DUSE_UART0 -DDOWNLINK_TRANSPORT=PprzTransport 
+#ap.CFLAGS += -DDOWNLINK_FBW_DEVICE=Uart0 -DDOWNLINK_AP_DEVICE=Uart0 
+#ap.CFLAGS += -DPPRZ_UART=Uart0 -DUART0_BAUD=B9600
+#ap.srcs += downlink.c $(SRC_ARCH)/uart_hw.c pprz_transport.c
+#--API MODE-----------
+ap.CFLAGS += -DDOWNLINK -DUSE_UART0 -DDOWNLINK_TRANSPORT=XBeeTransport 
+ap.CFLAGS += -DDOWNLINK_FBW_DEVICE=Uart0 -DDOWNLINK_AP_DEVICE=Uart0 
+ap.CFLAGS += -DXBEE_UART=Uart0 -DDATALINK=XBEE -DUART0_BAUD=B9600
+ap.srcs += downlink.c $(SRC_ARCH)/uart_hw.c datalink.c xbee.c
+ap.srcs += traffic_info.c
+#ap.CFLAGS += -DRADIO_CONTROL_SETTINGS -DRADIO_CONTROL_TYPE=RC_FUTABA
+#ap.srcs += rc_settings.c
+ap.CFLAGS += -DRADIO_CONTROL_TYPE=RC_FUTABA
+ap.CFLAGS += -DUART1_BAUD=B38400
+ap.CFLAGS += -DGYRO -DIDG300 
+ap.srcs += gyro.c
+ap.CFLAGS += -DACCEL -DADXL330 
+ap.srcs += accel.c
+ap.CFLAGS += -DKALMAN_ROLL_PITCH 
+ap.srcs += kalman_roll_pitch.c
+ap.CFLAGS += -DH_CTL_RATE_LOOP 
+#ap.CFLAGS += -DAGR_CLIMB -DLOITER_TRIM
+# Config for SITL simulation
+include $(PAPARAZZI_SRC)/conf/autopilot/sitl.makefile
+sim.EXTRA_SRCS += traffic_info.c datalink.c

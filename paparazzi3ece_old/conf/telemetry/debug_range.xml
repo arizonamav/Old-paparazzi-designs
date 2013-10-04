@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--DOCTYPE telemetry SYSTEM "telemetry.dtd"-->
+<telemetry>
+  <process name="Ap">
+    <mode name="default">
+      <message name="CALIB_START"    period="1"/> 
+      <message name="CALIB_CONTRAST" period="1"/>
+      <message name="ATTITUDE"       period="0.5"/>
+      <message name="ADC"            period="0.5"/>
+      <message name="NAVIGATION_REF" period="9"/>
+      <message name="PPRZ_MODE"      period="5"/>
+      <message name="BAT"            period="2"/>
+      <message name="DEBUG_MCU_LINK" period="5"/>
+      <message name="CALIBRATION"    period="2"/>
+      <message name="SETTINGS"       period="0.5"/>
+      <message name="DESIRED"        period="1"/>
+      <message name="CIRCLE"         period="1"/>
+      <message name="SEGMENT"        period="1"/>
+<!--      <message name="IMU"            period="0.5"/> -->
+      <message name="DEBUG_MODEM"    period="5"/>
+      <message name="DL_VALUE"       period="1"/>
+      <message name="WP_MOVED"       period="0.5"/>
+      <message name="RAD_OF_IR"      period="1"/>
+      <message name="IR_SENSORS"     period="1"/>
+      <message name="GYRO_RATES"     period="1"/>
+      <message name="ACCEL_RATES"    period="0.5"/>
+<!--      <message name="GAINS"    period="0.5"/> -->
+     <message name="KALMAN_ROLL_PITCH"    period="0.5"/>
+<!--      <message name="SURVEY"         period="2"/> -->
+      <message name="ESTIMATOR"      period="0.5"/>
+
+
+      <message name="SERVO"          period="2"/>
+      <message name="IR_DEBUG"       period="2"/>
+    <!--  <message name="CLIMB_DEBUG"    period="2"/> -->
+    </mode>
+    <mode name="debug">
+      <message name="CALIB_START"    period="0.5"/> 
+      <message name="ATTITUDE"       period="0.5"/>
+    </mode>
+  </process>
+  <process name="Fbw">
+    <mode name="default">
+      <message name="COMMANDS"       period="1"/>
+      <message name="FBW_STATUS"     period="1"/>
+      <message name="ACTUATORS"      period="5"/> <!-- For trimming -->
+    </mode>
+    <mode name="debug">
+      <message name="PPM"            period="0.5"/>
+      <message name="RC"             period="0.5"/>
+      <message name="COMMANDS"       period="0.5"/>
+      <message name="FBW_STATUS"     period="1"/>
+      <message name="ACTUATORS"      period="5"/> <!-- For trimming -->
+    </mode>
+  </process>
+</telemetry>

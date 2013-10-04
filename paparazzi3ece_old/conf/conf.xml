@@ -1,0 +1,310 @@
+	<?xml version="1.0"?>
+
+<conf>
+
+ <!-- AVR aircrafts -->
+
+
+  <aircraft 
+    name="blademdm"
+    ac_id="32"
+    airframe="airframes/blade_mdm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning.xml"
+    flight_plan="flight_plans/himmel_landing_new.xml"
+  />
+
+  <aircraft 
+    name="zagi"
+    ac_id="12"
+    airframe="airframes/zagi_arm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_nogyro.xml"
+    flight_plan="flight_plans/maxwell.xml"
+  />
+
+  <aircraft 
+    name="irtest"
+    ac_id="33"
+    airframe="airframes/irtest.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/irtest.xml"
+    settings="settings/tuning.xml"
+    flight_plan="flight_plans/himmel_landing_new.xml"
+  />
+  <aircraft 
+    name="acctest"
+    ac_id="40"
+    airframe="airframes/acctest.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_kalman.xml"
+    flight_plan="flight_plans/himmel_landing_new.xml"
+  />
+
+  <aircraft 
+    name="ver"
+    ac_id="10"
+    airframe="airframes/vertigo_arm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+  <aircraft 
+    name="ver1"
+    ac_id="4"
+    airframe="airframes/vertigo_arm_ir_ac_ranger.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_range.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+<!--
+<aircraft 
+    name="ver2"
+    ac_id="3"
+    airframe="airframes/vertigo_arm_ir_ac_ranger_2_throt.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_range.xml"
+    settings="settings/tuning_ver_range_new.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+-->
+
+<aircraft 
+    name="ver2"
+    ac_id="3"
+    airframe="airframes/vertigo_arm_ir_ac_ranger_2.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_range.xml"
+    settings="settings/tuning_ver_range_new.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+
+  <aircraft 
+    name="v1"
+    ac_id="34"
+    airframe="airframes/vertigo_arm_ir_ac_paint.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_vertigo_ir.xml"
+    settings="settings/tuning_ver_ir_transition.xml"
+    flight_plan="flight_plans/searchfollow.xml"
+  />
+ <!-- 
+   <aircraft 
+    name="v2"
+    ac_id="44"
+    airframe="airframes/vertigo_arm_ir_ac2.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_vertigo_ir.xml"
+    settings="settings/tuning_ver_ir_transition.xml"
+    flight_plan="flight_plans/imav09_pnav2.xml"
+  />
+-->
+<!--
+<aircraft 
+    name="v2indoor"
+    ac_id="44"
+    airframe="airframes/vertigo_arm_ir_ac_ranger_3.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_range.xml"
+    settings="settings/tuning_ver_range_new.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+-->
+<aircraft 
+    name="v2indoorthrot"
+    ac_id="44"
+    airframe="airframes/vertigo_arm_ir_ac_ranger_3_throt.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug_range.xml"
+    settings="settings/tuning_ver_range_new.xml"
+    flight_plan="flight_plans/indoors.xml"
+  />
+
+<aircraft 
+    name="vSpin"
+    ac_id="66"
+    airframe="airframes/vertigo_arm_spin.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_ir.xml"
+    flight_plan="flight_plans/maxwell_vertigo.xml"
+  />
+  <aircraft 
+    name="v3"
+    ac_id="5"
+    airframe="airframes/vertigo_arm_ir_ac.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_ir.xml"
+    flight_plan="flight_plans/maxwell_vertigo.xml"
+  />
+  <aircraft 
+    name="v1_i2c"
+    ac_id="8"
+    airframe="airframes/vertigo_arm_ir_ac_i2c.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_i2cworking.xml"
+    flight_plan="flight_plans/maxwell_vertigo.xml"
+  />
+  <aircraft 
+    name="vn100"
+    ac_id="14"
+    airframe="airframes/vertigo_arm_vn100.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_i2cworking.xml"
+    flight_plan="flight_plans/maxwell_vertigo.xml"
+  />
+
+ <aircraft 
+    name="v1_range"
+    ac_id="9"
+    airframe="airframes/vertigo_arm_ir_ac_ranger.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_range.xml"
+    flight_plan="flight_plans/maxwell_vertigo.xml"
+  />
+
+  <aircraft 
+    name="verir"
+    ac_id="13"
+    airframe="airframes/vertigo_arm_ir.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_ver_ir.xml"
+    flight_plan="flight_plans/maxwell.xml"
+  />
+  <aircraft 
+    name="del"
+    ac_id="11"
+    airframe="airframes/dragonfly_aerocomm_api.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_nogyro.xml"
+    flight_plan="flight_plans/mav08.xml"
+  />
+  <aircraft 
+    name="zagixbee"
+    ac_id="35"
+    airframe="airframes/zagi_xbee.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/default.xml"
+    settings="settings/tuning.xml"
+    flight_plan="flight_plans/himmel_landing_new.xml"
+  />
+  <aircraft 
+    name="del2"
+    ac_id="37"
+    airframe="airframes/del2.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_rc.xml"
+    flight_plan="flight_plans/practice.xml"
+  />
+
+  <aircraft 
+    name="orni"
+    ac_id="39"
+    airframe="airframes/orni_mdm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/reduced.xml"
+    settings="settings/tuning_orni.xml"
+    flight_plan="flight_plans/maxwell.xml"
+  />
+  <aircraft 
+    name="ornismall"
+    ac_id="41"
+    airframe="airframes/orni_small_mdm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning.xml"
+    flight_plan="flight_plans/ame.xml"
+  />
+
+  <!-- TINY 0.99 aircrafts -->
+
+  <aircraft 
+    name="d3"
+    ac_id="38"
+    airframe="airframes/d3.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning_rc.xml"
+    flight_plan="flight_plans/ame.xml"
+  />
+
+  <aircraft 
+    name="d3mdm"
+    ac_id="43"
+    airframe="airframes/d3_mdm.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/debug.xml"
+    settings="settings/tuning.xml"
+    flight_plan="flight_plans/ame.xml"
+  />
+
+  <!-- Simulation only aircrafts -->
+  <aircraft 
+    name="Twin1"
+    ac_id="1"
+    airframe="airframes/twinstar1.xml" 
+    radio="radios/mc3030.xml" 
+    flight_plan="flight_plans/mav05_cw.xml"
+    telemetry="telemetry/default.xml"
+    gui_color="blue"
+  />
+
+  <!-- avr aircrafts -->
+  <aircraft 
+    name="Plaster"
+    ac_id="2"
+    airframe="airframes/plaster1.xml" 
+    radio="radios/cockpitMM.xml" 
+    telemetry="telemetry/default.xml"
+    flight_plan="flight_plans/kennedy.xml"
+  />
+
+
+
+<!-- arm7 aircrafts -->
+
+ <!-- tiny -->
+<aircraft 
+    name="MJ7"
+    ac_id="7"
+    airframe="airframes/microjet7.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/default.xml"
+    flight_plan="flight_plans/muret_demo_1.xml"
+    gui_color="#6293ba"
+  />
+<aircraft 
+    name="FOO"
+    ac_id="77"
+    airframe="airframes/foo.xml" 
+    radio="radios/T9cap.xml" 
+    telemetry="telemetry/default.xml"
+    flight_plan="flight_plans/muret_demo_1.xml"
+    gui_color="#6293ba"
+  />
+
+ <!-- classix -->
+  <aircraft 
+    name="TJ1"
+    ac_id="6"
+    airframe="airframes/twinjet1.xml" 
+    radio="radios/cockpitMM.xml" 
+    telemetry="telemetry/default.xml"
+    flight_plan="flight_plans/versatile.xml"
+    settings="settings/tuning.xml"
+    gui_color="#ba6293"
+  />
+
+</conf>

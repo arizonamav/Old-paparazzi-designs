@@ -1,0 +1,269 @@
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/main_ap.o: main_ap.c main_ap.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/interrupt_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/init_hw.h \
+  adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  fw_h_ctl.h paparazzi.h fw_v_ctl.h gps.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  gps_ubx.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  infrared.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  gyro.h ap_downlink.h downlink.h pprz_transport.h datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  xbee.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/periodic.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  estimator.h rc_settings.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/settings.h cam.h \
+  traffic_info.h link_mcu.h inter_mcu.h main_fbw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/link_mcu_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h \
+  wavecard.h spi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/spi_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/sys_time.o: sys_time.c sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/main.o: main.c sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  main_ap.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/inter_mcu.o: inter_mcu.c inter_mcu.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  radio_control.h led.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  link_mcu.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/link_mcu_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/link_mcu.o: link_mcu.c link_mcu.h inter_mcu.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  radio_control.h led.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/link_mcu_hw.h \
+  spi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/spi_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/gps_ubx.o: gps_ubx.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h gps.h \
+  gps_ubx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/ubx_protocol.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/gps.o: gps.c gps.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  gps_ubx.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  estimator.h ap_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  downlink.h pprz_transport.h datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  xbee.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/periodic.h \
+  infrared.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/infrared.o: infrared.c adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  infrared.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h gps.h \
+  gps_ubx.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  paparazzi.h estimator.h ap_downlink.h downlink.h pprz_transport.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  xbee.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/periodic.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/fw_h_ctl.o: fw_h_ctl.c fw_h_ctl.h paparazzi.h estimator.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  fw_v_ctl.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/fw_v_ctl.o: fw_v_ctl.c fw_v_ctl.h paparazzi.h estimator.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/nav.o: nav.c nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h gps.h \
+  gps_ubx.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  estimator.h fw_h_ctl.h paparazzi.h fw_v_ctl.h autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  inter_mcu.h main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  cam.h traffic_info.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/estimator.o: estimator.c estimator.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/cam.o: cam.c cam.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h \
+  estimator.h inter_mcu.h main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  traffic_info.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/spi.o: spi.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h spi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/spi_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/adc_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/uart_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/spi_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/spi_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/spi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/spi_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/autopilot.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/radio_control.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/paparazzi.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/pprz_transport.o: pprz_transport.c pprz_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/downlink.o: downlink.c ap_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  downlink.h pprz_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h xbee.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/periodic.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/modem_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/rc_settings.o: rc_settings.c rc_settings.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  paparazzi.h fw_h_ctl.h infrared.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  estimator.h inter_mcu.h main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/adc_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/settings.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/traffic_info.o: traffic_info.c traffic_info.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/ap/datalink.o: datalink.c traffic_info.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/flight_plan.h \
+  autopilot.h sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  radio_control.h led.h ppm.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/radio.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/ppm_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/airframe.h \
+  paparazzi.h ap_downlink.h downlink.h pprz_transport.h modem.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/modem_hw.h \
+  xbee.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/periodic.h \
+  estimator.h fw_v_ctl.h fw_h_ctl.h cam.h infrared.h gps.h gps_ubx.h \
+  uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  control_grz.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/del2/settings.h

@@ -1,0 +1,26 @@
+<flight_plan ground_alt="700." lat0="43.5389" lon0="1.2433" max_dist_from_home="1750." name="hovering indoors" qfu="180." alt="702.0" security_height="0.02" wind_dir="60" wind_mod="3">
+<header>
+
+</header>
+  <waypoints>
+    <waypoint alt="702" name="HOME" x="753.859003724" y="-51.1591526465"/>
+  </waypoints>
+  <blocks>
+ <!--   <block name="init">
+      <attitude throttle="0.0" until="FALSE" vmode="throttle"/>
+      <deroute block="launch"/>
+    </block>
+    <block name="launch">
+      <attitude alt="ground_alt+1.5" until="FALSE" vmode="alt"/>
+      <deroute block="land"/>
+    </block>
+    <block name="land" strip_button="land">
+      <attitude alt="ground_alt+0.10" until="block_time > 5" vmode="alt"/>
+      <deroute block="kill"/>
+    </block>
+    <block name="kill">
+      <attitude throttle="0.0" vmode="throttle"/>
+      <deroute block="init"/>
+    </block> -->
+  </blocks>
+</flight_plan>

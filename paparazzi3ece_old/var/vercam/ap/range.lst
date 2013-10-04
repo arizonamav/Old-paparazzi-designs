@@ -1,0 +1,391 @@
+   1              		.file	"range.c"
+   2              		.global	c15
+   3              		.data
+   4              		.align	2
+   7              	c15:
+   8 0000 CDCCCCBC 		.word	-1127428915
+   9 0004 0E4FAFBC 		.word	-1129361650
+  10 0008 05A392BC 		.word	-1131240699
+  11 000c 8C4A6ABC 		.word	-1133884788
+  12 0010 0E4F2FBC 		.word	-1137750258
+  13 0014 1EA7E8BB 		.word	-1142380770
+  14 0018 FAED6BBB 		.word	-1150554630
+  15 001c 00000000 		.word	0
+  16 0020 FAED6B3B 		.word	996929018
+  17 0024 1EA7E83B 		.word	1005102878
+  18 0028 0E4F2F3C 		.word	1009733390
+  19 002c 8C4A6A3C 		.word	1013598860
+  20 0030 05A3923C 		.word	1016242949
+  21 0034 0E4FAF3C 		.word	1018121998
+  22 0038 CDCCCC3C 		.word	1020054733
+  23              		.global	c31
+  24              		.align	2
+  27              	c31:
+  28 003c A69BC4BB 		.word	-1144743002
+  29 0040 3480B7BB 		.word	-1145601996
+  30 0044 C364AABB 		.word	-1146460989
+  31 0048 52499DBB 		.word	-1147319982
+  32 004c E02D90BB 		.word	-1148178976
+  33 0050 6F1283BB 		.word	-1149037969
+  34 0054 FAED6BBB 		.word	-1150554630
+  35 0058 17B751BB 		.word	-1152272617
+  36 005c 348037BB 		.word	-1153990604
+  37 0060 52491DBB 		.word	-1155708590
+  38 0064 6F1203BB 		.word	-1157426577
+  39 0068 17B7D1BA 		.word	-1160661225
+  40 006c 52499DBA 		.word	-1164097198
+  41 0070 17B751BA 		.word	-1169049833
+  42 0074 17B7D1B9 		.word	-1177438441
+  43 0078 00000000 		.word	0
+  44 007c 17B7D139 		.word	970045207
+  45 0080 17B7513A 		.word	978433815
+  46 0084 52499D3A 		.word	983386450
+  47 0088 17B7D13A 		.word	986822423
+  48 008c 6F12033B 		.word	990057071
+  49 0090 52491D3B 		.word	991775058
+  50 0094 3480373B 		.word	993493044
+  51 0098 17B7513B 		.word	995211031
+  52 009c FAED6B3B 		.word	996929018
+  53 00a0 6F12833B 		.word	998445679
+  54 00a4 E02D903B 		.word	999304672
+  55 00a8 52499D3B 		.word	1000163666
+  56 00ac C364AA3B 		.word	1001022659
+  57 00b0 3480B73B 		.word	1001881652
+  58 00b4 A69BC43B 		.word	1002740646
+  59              		.text
+  60              		.align	2
+  61              		.global	range_init
+  63              	range_init:
+  64              		@ Function supports interworking.
+  65              		@ args = 0, pretend = 0, frame = 0
+  66              		@ frame_needed = 1, uses_anonymous_args = 0
+  67 0000 0DC0A0E1 		mov	ip, sp
+  68 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+  69 0008 0F00A0E3 		mov	r0, #15
+  70 000c 04B04CE2 		sub	fp, ip, #4
+  71 0010 0120A0E3 		mov	r2, #1
+  72 0014 80109FE5 		ldr	r1, .L8
+  73 0018 FEFFFFEB 		bl	adc_buf_channel
+  74 001c 7C209FE5 		ldr	r2, .L8+4
+  75 0020 7C309FE5 		ldr	r3, .L8+8
+  76 0024 002083E5 		str	r2, [r3, #0]	@ float
+  77 0028 78309FE5 		ldr	r3, .L8+12
+  78 002c 78C09FE5 		ldr	ip, .L8+16
+  79 0030 0020A0E3 		mov	r2, #0
+  80 0034 002083E5 		str	r2, [r3, #0]	@ float
+  81 0038 0020A0E3 		mov	r2, #0	@ movhi
+  82 003c B020CCE1 		strh	r2, [ip, #0]	@ movhi 
+  83 0040 0C00A0E1 		mov	r0, ip
+  84              	.L5:
+  85 0044 B030D0E1 		ldrh	r3, [r0, #0]
+  86 0048 013083E2 		add	r3, r3, #1
+  87 004c F020D0E1 		ldrsh	r2, [r0, #0]
+  88 0050 B030C0E1 		strh	r3, [r0, #0]	@ movhi 
+  89 0054 50009FE5 		ldr	r0, .L8+16
+  90 0058 F030D0E1 		ldrsh	r3, [r0, #0]
+  91 005c 0E0053E3 		cmp	r3, #14
+  92 0060 48309FE5 		ldr	r3, .L8+20
+  93 0064 0010A0E3 		mov	r1, #0
+  94 0068 021183E7 		str	r1, [r3, r2, asl #2]	@ float
+  95 006c 0F0000DA 		ble	.L5
+  96 0070 3C309FE5 		ldr	r3, .L8+24
+  97 0074 001083E5 		str	r1, [r3, #0]	@ float
+  98 0078 38309FE5 		ldr	r3, .L8+28
+  99 007c 001083E5 		str	r1, [r3, #0]	@ float
+ 100 0080 0030A0E3 		mov	r3, #0	@ movhi
+ 101 0084 B030CCE1 		strh	r3, [ip, #0]	@ movhi 
+ 102 0088 2C309FE5 		ldr	r3, .L8+32
+ 103 008c 0020A0E3 		mov	r2, #0	@ movhi
+ 104 0090 B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+ 105 0094 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 106 0098 1EFF2FE1 		bx	lr
+ 107              	.L9:
+ 108              		.align	2
+ 109              	.L8:
+ 110 009c 00000000 		.word	buf_range
+ 111 00a0 CDCCAC3F 		.word	1068289229
+ 112 00a4 00000000 		.word	range_scale
+ 113 00a8 00000000 		.word	range_neutral
+ 114 00ac 00000000 		.word	pos
+ 115 00b0 00000000 		.word	buf_range_tmp
+ 116 00b4 00000000 		.word	range_hovering
+ 117 00b8 00000000 		.word	range_ave
+ 118 00bc 00000000 		.word	pos1
+ 120              		.global	__divsi3
+ 121              		.global	__floatsisf
+ 122              		.global	__subsf3
+ 123              		.global	__fixsfsi
+ 124              		.global	__mulsf3
+ 125              		.global	__addsf3
+ 126              		.global	__ltsf2
+ 127              		.global	__divsf3
+ 128              		.align	2
+ 129              		.global	range_update
+ 131              	range_update:
+ 132              		@ Function supports interworking.
+ 133              		@ args = 0, pretend = 0, frame = 8
+ 134              		@ frame_needed = 1, uses_anonymous_args = 0
+ 135 00c0 0DC0A0E1 		mov	ip, sp
+ 136 00c4 F0DF2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, ip, lr, pc}
+ 137 00c8 A0229FE5 		ldr	r2, .L29
+ 138 00cc 04B04CE2 		sub	fp, ip, #4
+ 139 00d0 08D04DE2 		sub	sp, sp, #8
+ 140 00d4 B020D2E1 		ldrh	r2, [r2, #0]
+ 141 00d8 0F3042E2 		sub	r3, r2, #15
+ 142 00dc 0338A0E1 		mov	r3, r3, asl #16
+ 143 00e0 000053E3 		cmp	r3, #0
+ 144 00e4 2398A0E1 		mov	r9, r3, lsr #16
+ 145 00e8 0F3089B2 		addlt	r3, r9, #15
+ 146 00ec 0338A0B1 		movlt	r3, r3, asl #16
+ 147 00f0 2398A0B1 		movlt	r9, r3, lsr #16
+ 148 00f4 30200BE5 		str	r2, [fp, #-48]
+ 149 00f8 74329FE5 		ldr	r3, .L29+4
+ 150 00fc 0020A0E3 		mov	r2, #0
+ 151 0100 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+ 152 0104 B000D3E1 		ldrh	r0, [r3, #0]
+ 153 0108 2C200BE5 		str	r2, [fp, #-44]
+ 154 010c FEFFFFEB 		bl	__divsi3
+ 155 0110 FEFFFFEB 		bl	__floatsisf
+ 156 0114 5C329FE5 		ldr	r3, .L29+8
+ 157 0118 001093E5 		ldr	r1, [r3, #0]	@ float
+ 158 011c FEFFFFEB 		bl	__subsf3
+ 159 0120 FEFFFFEB 		bl	__fixsfsi
+ 160 0124 50329FE5 		ldr	r3, .L29+12
+ 161 0128 B000C3E1 		strh	r0, [r3, #0]	@ movhi 
+ 162 012c F000D3E1 		ldrsh	r0, [r3, #0]
+ 163 0130 FEFFFFEB 		bl	__floatsisf
+ 164 0134 44329FE5 		ldr	r3, .L29+16
+ 165 0138 0010A0E1 		mov	r1, r0
+ 166 013c 000093E5 		ldr	r0, [r3, #0]	@ float
+ 167 0140 FEFFFFEB 		bl	__mulsf3
+ 168 0144 38A29FE5 		ldr	sl, .L29+20
+ 169 0148 38329FE5 		ldr	r3, .L29+24
+ 170 014c F050DAE1 		ldrsh	r5, [sl, #0]
+ 171 0150 34629FE5 		ldr	r6, .L29+28
+ 172 0154 0080A0E1 		mov	r8, r0
+ 173 0158 008083E5 		str	r8, [r3, #0]	@ float
+ 174 015c 050196E7 		ldr	r0, [r6, r5, asl #2]	@ float
+ 175 0160 FA15A0E3 		mov	r1, #1048576000
+ 176 0164 FEFFFFEB 		bl	__mulsf3
+ 177 0168 20729FE5 		ldr	r7, .L29+32
+ 178 016c 0010A0E1 		mov	r1, r0
+ 179 0170 000097E5 		ldr	r0, [r7, #0]	@ float
+ 180 0174 FEFFFFEB 		bl	__subsf3
+ 181 0178 FA15A0E3 		mov	r1, #1048576000
+ 182 017c 0040A0E1 		mov	r4, r0
+ 183 0180 058186E7 		str	r8, [r6, r5, asl #2]	@ float
+ 184 0184 0800A0E1 		mov	r0, r8
+ 185 0188 FEFFFFEB 		bl	__mulsf3
+ 186 018c 0010A0E1 		mov	r1, r0
+ 187 0190 0400A0E1 		mov	r0, r4
+ 188 0194 FEFFFFEB 		bl	__addsf3
+ 189 0198 B030DAE1 		ldrh	r3, [sl, #0]
+ 190 019c 013083E2 		add	r3, r3, #1
+ 191 01a0 B030CAE1 		strh	r3, [sl, #0]	@ movhi 
+ 192 01a4 F030DAE1 		ldrsh	r3, [sl, #0]
+ 193 01a8 030053E3 		cmp	r3, #3
+ 194 01ac 2C201BC5 		ldrgt	r2, [fp, #-44]
+ 195 01b0 000087E5 		str	r0, [r7, #0]	@ float
+ 196 01b4 B020CAC1 		strgth	r2, [sl, #0]	@ movhi 
+ 197 01b8 0010A0E1 		mov	r1, r0
+ 198 01bc 0800A0E1 		mov	r0, r8
+ 199 01c0 FEFFFFEB 		bl	__subsf3
+ 200 01c4 C8119FE5 		ldr	r1, .L29+36
+ 201 01c8 0201C0E3 		bic	r0, r0, #-2147483648
+ 202 01cc FEFFFFEB 		bl	__ltsf2
+ 203 01d0 000050E3 		cmp	r0, #0
+ 204 01d4 09A8A0E1 		mov	sl, r9, asl #16
+ 205 01d8 B8719FE5 		ldr	r7, .L29+40
+ 206 01dc 920000AA 		bge	.L13
+ 207 01e0 30301BE5 		ldr	r3, [fp, #-48]
+ 208 01e4 0348A0E1 		mov	r4, r3, asl #16
+ 209 01e8 4448A0E1 		mov	r4, r4, asr #16
+ 210 01ec 040197E7 		ldr	r0, [r7, r4, asl #2]	@ float
+ 211 01f0 A4119FE5 		ldr	r1, .L29+44
+ 212 01f4 FEFFFFEB 		bl	__divsf3
+ 213 01f8 A0619FE5 		ldr	r6, .L29+48
+ 214 01fc 0010A0E1 		mov	r1, r0
+ 215 0200 000096E5 		ldr	r0, [r6, #0]	@ float
+ 216 0204 FEFFFFEB 		bl	__subsf3
+ 217 0208 8C119FE5 		ldr	r1, .L29+44
+ 218 020c 0050A0E1 		mov	r5, r0
+ 219 0210 0800A0E1 		mov	r0, r8
+ 220 0214 FEFFFFEB 		bl	__divsf3
+ 221 0218 0010A0E1 		mov	r1, r0
+ 222 021c 0500A0E1 		mov	r0, r5
+ 223 0220 FEFFFFEB 		bl	__addsf3
+ 224 0224 30201BE5 		ldr	r2, [fp, #-48]
+ 225 0228 013082E2 		add	r3, r2, #1
+ 226 022c 3C219FE5 		ldr	r2, .L29
+ 227 0230 B030C2E1 		strh	r3, [r2, #0]	@ movhi 
+ 228 0234 F030D2E1 		ldrsh	r3, [r2, #0]
+ 229 0238 0E0053E3 		cmp	r3, #14
+ 230 023c 2C301BC5 		ldrgt	r3, [fp, #-44]
+ 231 0240 048187E7 		str	r8, [r7, r4, asl #2]	@ float
+ 232 0244 000086E5 		str	r0, [r6, #0]	@ float
+ 233 0248 B030C2C1 		strgth	r3, [r2, #0]	@ movhi 
+ 234 024c 970000EA 		b	.L16
+ 235              	.L13:
+ 236 0250 30201BE5 		ldr	r2, [fp, #-48]
+ 237 0254 0238A0E1 		mov	r3, r2, asl #16
+ 238 0258 433797E7 		ldr	r3, [r7, r3, asr #14]	@ float
+ 239 025c 24219FE5 		ldr	r2, .L29+24
+ 240 0260 003082E5 		str	r3, [r2, #0]	@ float
+ 241              	.L16:
+ 242 0264 38319FE5 		ldr	r3, .L29+52
+ 243 0268 0020A0E3 		mov	r2, #0
+ 244 026c 002083E5 		str	r2, [r3, #0]	@ float
+ 245 0270 0350A0E1 		mov	r5, r3
+ 246 0274 0E085AE3 		cmp	sl, #917504
+ 247 0278 0030A0E3 		mov	r3, #0
+ 248              	.L27:
+ 249 027c B30000CA 		bgt	.L24
+ 250 0280 4308A0E1 		mov	r0, r3, asr #16
+ 251 0284 4A48A0E1 		mov	r4, sl, asr #16
+ 252 0288 08319FE5 		ldr	r3, .L29+40
+ 253 028c 002084E0 		add	r2, r4, r0
+ 254 0290 021193E7 		ldr	r1, [r3, r2, asl #2]	@ float
+ 255 0294 0C319FE5 		ldr	r3, .L29+56
+ 256 0298 000193E7 		ldr	r0, [r3, r0, asl #2]	@ float
+ 257 029c FEFFFFEB 		bl	__mulsf3
+ 258 02a0 0010A0E1 		mov	r1, r0
+ 259 02a4 000095E5 		ldr	r0, [r5, #0]	@ float
+ 260 02a8 FEFFFFEB 		bl	__addsf3
+ 261 02ac 2C201BE5 		ldr	r2, [fp, #-44]
+ 262 02b0 013082E2 		add	r3, r2, #1
+ 263 02b4 0338A0E1 		mov	r3, r3, asl #16
+ 264 02b8 2338A0E1 		mov	r3, r3, lsr #16
+ 265 02bc 2C300BE5 		str	r3, [fp, #-44]
+ 266 02c0 0338A0E1 		mov	r3, r3, asl #16
+ 267 02c4 434884E0 		add	r4, r4, r3, asr #16
+ 268 02c8 0E0054E3 		cmp	r4, #14
+ 269 02cc 000085E5 		str	r0, [r5, #0]	@ float
+ 270 02d0 9D0000EA 		b	.L27
+ 271              	.L24:
+ 272 02d4 2C201BE5 		ldr	r2, [fp, #-44]
+ 273 02d8 0238A0E1 		mov	r3, r2, asl #16
+ 274 02dc 4318A0E1 		mov	r1, r3, asr #16
+ 275 02e0 0E0051E3 		cmp	r1, #14
+ 276              	.L28:
+ 277 02e4 CC0000CA 		bgt	.L26
+ 278 02e8 A8309FE5 		ldr	r3, .L29+40
+ 279 02ec 4A2881E0 		add	r2, r1, sl, asr #16
+ 280 02f0 023183E0 		add	r3, r3, r2, asl #2
+ 281 02f4 AC209FE5 		ldr	r2, .L29+56
+ 282 02f8 010192E7 		ldr	r0, [r2, r1, asl #2]	@ float
+ 283 02fc 3C1013E5 		ldr	r1, [r3, #-60]	@ float
+ 284 0300 FEFFFFEB 		bl	__mulsf3
+ 285 0304 98409FE5 		ldr	r4, .L29+52
+ 286 0308 0010A0E1 		mov	r1, r0
+ 287 030c 000094E5 		ldr	r0, [r4, #0]	@ float
+ 288 0310 FEFFFFEB 		bl	__addsf3
+ 289 0314 2C201BE5 		ldr	r2, [fp, #-44]
+ 290 0318 013082E2 		add	r3, r2, #1
+ 291 031c 0338A0E1 		mov	r3, r3, asl #16
+ 292 0320 4318A0E1 		mov	r1, r3, asr #16
+ 293 0324 0E0051E3 		cmp	r1, #14
+ 294 0328 2338A0E1 		mov	r3, r3, lsr #16
+ 295 032c 000084E5 		str	r0, [r4, #0]	@ float
+ 296 0330 2C300BE5 		str	r3, [fp, #-44]
+ 297 0334 B70000EA 		b	.L28
+ 298              	.L26:
+ 299 0338 64409FE5 		ldr	r4, .L29+52
+ 300 033c 50109FE5 		ldr	r1, .L29+36
+ 301 0340 000094E5 		ldr	r0, [r4, #0]	@ float
+ 302 0344 FEFFFFEB 		bl	__mulsf3
+ 303 0348 38309FE5 		ldr	r3, .L29+24
+ 304 034c 002093E5 		ldr	r2, [r3, #0]	@ float
+ 305 0350 54309FE5 		ldr	r3, .L29+60
+ 306 0354 002083E5 		str	r2, [r3, #0]	@ float
+ 307 0358 50309FE5 		ldr	r3, .L29+64
+ 308 035c 000084E5 		str	r0, [r4, #0]	@ float
+ 309 0360 000083E5 		str	r0, [r3, #0]	@ float
+ 310 0364 28D04BE2 		sub	sp, fp, #40
+ 311 0368 F06F9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, sl, fp, sp, lr}
+ 312 036c 1EFF2FE1 		bx	lr
+ 313              	.L30:
+ 314              		.align	2
+ 315              	.L29:
+ 316 0370 00000000 		.word	pos
+ 317 0374 00000000 		.word	buf_range
+ 318 0378 00000000 		.word	range_neutral
+ 319 037c 00000000 		.word	range_adc
+ 320 0380 00000000 		.word	range_scale
+ 321 0384 00000000 		.word	pos1
+ 322 0388 00000000 		.word	range
+ 323 038c 00000000 		.word	buf_range_tmp1
+ 324 0390 00000000 		.word	range_ave
+ 325 0394 0000A041 		.word	1101004800
+ 326 0398 00000000 		.word	buf_range_tmp
+ 327 039c 00007041 		.word	1097859072
+ 328 03a0 00000000 		.word	range_hovering
+ 329 03a4 00000000 		.word	range_dot
+ 330 03a8 00000000 		.word	c15
+ 331 03ac 00000000 		.word	estimator_range
+ 332 03b0 00000000 		.word	estimator_range_dot
+ 334              		.comm	range_scale,4,4
+ 335              		.comm	range_neutral,4,4
+ 336              		.comm	range,4,4
+ 337              		.comm	range_ave,4,4
+ 338              		.comm	range_hovering,4,4
+ 339              		.comm	range_adc,2,2
+ 340              		.comm	range_dot,4,4
+ 341              		.bss
+ 342              		.align	2
+ 343              	buf_range:
+ 344 0000 00000000 		.space	68
+ 344      00000000 
+ 344      00000000 
+ 344      00000000 
+ 344      00000000 
+ 345              		.comm	buf_range_tmp,60,4
+ 346              		.comm	buf_range_tmp1,16,4
+ 347              		.comm	pos,2,2
+ 348              		.comm	pos1,2,2
+ 349              		.comm	p_2,2,2
+ 350              		.comm	p_1,2,2
+ 351              		.comm	p0,2,2
+ 352              		.comm	p1,2,2
+ 353              		.comm	p2,2,2
+ 354              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 range.c
+     /tmp/cclhkrcy.s:7      .data:00000000 c15
+     /tmp/cclhkrcy.s:8      .data:00000000 $d
+     /tmp/cclhkrcy.s:27     .data:0000003c c31
+     /tmp/cclhkrcy.s:63     .text:00000000 range_init
+     /tmp/cclhkrcy.s:67     .text:00000000 $a
+     /tmp/cclhkrcy.s:110    .text:0000009c $d
+     /tmp/cclhkrcy.s:343    .bss:00000000 buf_range
+                            *COM*:00000004 range_scale
+                            *COM*:00000004 range_neutral
+                            *COM*:00000002 pos
+                            *COM*:0000003c buf_range_tmp
+                            *COM*:00000004 range_hovering
+                            *COM*:00000004 range_ave
+                            *COM*:00000002 pos1
+     /tmp/cclhkrcy.s:131    .text:000000c0 range_update
+     /tmp/cclhkrcy.s:135    .text:000000c0 $a
+     /tmp/cclhkrcy.s:316    .text:00000370 $d
+                            *COM*:00000002 range_adc
+                            *COM*:00000004 range
+                            *COM*:00000010 buf_range_tmp1
+                            *COM*:00000004 range_dot
+                            *COM*:00000002 p_2
+                            *COM*:00000002 p_1
+                            *COM*:00000002 p0
+                            *COM*:00000002 p1
+                            *COM*:00000002 p2
+
+UNDEFINED SYMBOLS
+adc_buf_channel
+__divsi3
+__floatsisf
+__subsf3
+__fixsfsi
+__mulsf3
+__addsf3
+__ltsf2
+__divsf3
+estimator_range
+estimator_range_dot

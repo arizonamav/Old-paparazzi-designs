@@ -1,0 +1,2316 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o (atan)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o (cos)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o) (fabs)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o (sin)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o (atan2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o (sqrt)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__ieee754_atan2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__ieee754_rem_pio2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o) (__ieee754_sqrt)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__kernel_cos)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o) (__kernel_rem_pio2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__kernel_sin)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o) (floor)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (isnan)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__fdlib_version)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (matherr)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o) (scalbn)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o) (copysign)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__errno)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o) (_impure_ptr)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__divsi3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o) (__div0)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o (__subdf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__muldf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o (__gtdf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o (__fixdfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__fixunsdfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__truncdfsf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o (__subsf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__mulsf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__gtsf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o (__fixsfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                              /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o (__fixunssfsi)
+
+Allocating common symbols
+Common symbol       size              file
+
+estimator_z_dot     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+dl_msg_available    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+h_ctl_yaw_rate_mode
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_auto1_rate    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_course_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_flight_time
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+v_ctl_auto_throttle_nominal_cruise_throttle
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+nav_glide_pitch_trim
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+aerocomm_rssi       0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+ir_correction_left  0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+v_ctl_altitude_error
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+accel_az_neutral    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dist2_to_wp         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+rc_event_1          0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_segment_x_1     0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_roll_rate_dgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+desired_pitch       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_psi       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+rc_status           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+uart0_tx_buffer     0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+estimator_z         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+x2_dbg              0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+desired_x           0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ppm_pulses          0x10              /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+estimator_kalman_r_angle
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_top              0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+nav_segment_x_2     0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+estimator_az        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+h_ctl_roll_rate_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ubx_msg_buf         0xff              /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+desired_roll        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_rudder_setpoint
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+nav_circle_radius   0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+vdrop2throt_coeff   0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+vsupply_adc_buf     0x44              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+v_ctl_climb_mode    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_roll_max_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ir_estimated_theta_pi_4
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+h_ctl_lo_throttle_yaw_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+accel_ay_scale      0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_alt             0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ir_pitch            0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+time_since_last_ppm
+                    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+uart1_rx_insert_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+gps_climb           0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+stage_time_ds       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+gps_msg_received    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_nb_channels     0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+nav_throttle_setpoint
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+estimator_t         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+h_ctl_course_pre_bank_correction
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_lo_throttle_pitch_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_rad_of_ir
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_kalman_phi
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+fbw_vsupply_decivolt
+                    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+survey_south        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+wind_east           0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+desired_y           0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ppm_valid           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+h_ctl_pitch_rate_dgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+carrot_x            0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+estimator_ay        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+ppm_cpt             0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+ir_contrast         0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+uart0_tx_insert_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+the_acs             0x1e0             /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_kalman_q_gyro
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ubx_class           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+horizontal_mode     0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ubx_id              0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+v_ctl_alt_sum_err   0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+gps_utm_north       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_utm_east        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+h_ctl_hi_throttle_pitch_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+uart1_tx_buffer     0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+ir_rad_of_ir        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_p         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+v_ctl_auto_throttle_submode
+                    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_elevator_setpoint
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_igain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+fbw_mode            0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ir_correction_down  0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+actuators           0x8               /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+gps_nb_ovrn         0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+h_ctl_hi_throttle_yaw_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+gps_course          0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+rc_values           0x10              /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+estimator_theta     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+nav_block           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+uart1_rx_buffer     0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+send_ck_b           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+v_ctl_auto_throttle_pitch_of_vz_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+aerocomm_cs         0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+last_pprz_mode      0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+servos_4015_idx     0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+gps_gspeed          0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+estimator_ir        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_pitch_neutral    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+nav_circle_y        0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+slider_2_val        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_roll_rate_setpoint_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_kalman_theta
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+too_far_from_home   0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+aerocomm_error      0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+ir_estimated_phi_pi_4
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+uart0_rx_insert_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+adc_pitch_neutral   0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+downlink_nb_ovrn    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+h_ctl_hi_throttle_roll_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+v_ctl_throttle_slew_
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+send_ck_a           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+desc_throttle       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_aileron_of_throttle
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+avg_rc_values       0x20              /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+estimator_hspeed_mod
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+x1_dbg              0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_phi       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+rc_pitch            0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_auto_throttle_cruise_throttle_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_yaw_pgain     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_aileron_setpoint
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+uart1_tx_running    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+v_ctl_altitude_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_pitch_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+servos_values       0x10              /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+slider_1_val        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_mode          0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_auto_throttle_cruise_throttle
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+gps_itow            0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+h_ctl_roll_rate_mode
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+survey_north        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+estimator_r         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+gps_pos_available   0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+v_ctl_altitude_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_pitch_min_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_x         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+ap_ok               0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+estimator_range     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+h_ctl_course_pgain  0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+uart0_tx_extract_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+h_ctl_pitch_pgain   0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+z_contrast_mode     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_kalman_q_angle
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dist2_to_home       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+accel_az_scale      0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_course_pre_bank
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+v_ctl_auto_pitch_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+ir_correction_right
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_estimated_theta_minus_pi_4
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+dl_buffer           0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+rc_event_2          0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_rad       0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+h_ctl_yaw_rate_dgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ir_correction_up    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+h_ctl_pitch_max_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_auto_throttle_igain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+survey_west         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_yaw_dgain     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ir_estimated_phi_minus_pi_4
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+h_ctl_pitch_dgain   0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+time_since_last_ap  0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+nav_stage           0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+uart1_tx_insert_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_rx_extract_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+h_ctl_lo_throttle_roll_rate_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+energy              0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+cpu_time_sec        0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+gpio1_status        0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gpio.o
+survey_east         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+aerocomm_ovrn       0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+v_ctl_throttle_setpoint
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+last_gps_msg_t      0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+v_ctl_climb_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_yaw_rate_igain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_igain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+estimator_q         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+gps_mode            0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+estimator_hspeed_dir
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+accel_ay_neutral    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_ax_scale      0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_yaw_setpoint  0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ir_roll             0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+nav_circle_x        0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_segment_y_2     0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+wind_north          0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+h_ctl_yaw_rate_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ir_roll_neutral     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+nav_segment_y_1     0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+aerocomm_payload    0x100             /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+gps_utm_zone        0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+h_ctl_disabled      0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+commands            0x6               /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+estimator_ax        0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+ground_alt          0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_auto_pitch_igain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+h_ctl_roll_pgain    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+v_ctl_altitude_pre_climb
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+uart0_tx_running    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+carrot_y            0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_throttle_slewed
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+gps_svinfos         0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+accel_ax_neutral    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+alt_kalman_enabled  0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+aerocomm_msg_received
+                    0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+h_ctl_yaw_rate_setpoint_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+stage_time          0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_roll_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+climb_throttle      0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+ir_360              0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_y         0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+v_ctl_auto_throttle_pgain
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+vsupply             0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+last_ppm_cpt        0x1               /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+block_time          0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+cpu_time_ticks      0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+nav_circle_trigo_qdr
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_pitch_rate_mode
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+uart0_rx_buffer     0x80              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+estimator_range_dot
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+flight_altitude     0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_yaw_max_setpoint
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+uart1_tx_extract_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart0_rx_extract_idx
+                    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+h_ctl_elevator_of_roll
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+v_ctl_auto_pitch_sum_err
+                    0x4               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+adc_roll_neutral    0x2               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x0007d000         xr
+RAM              0x40000000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/traffic_info.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+LOAD /home/paparazzi/paparazzi3new/var/zagi/ap/gpio.o
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+                0x00001000                STACK_SIZE = 0x1000
+
+.text           0x00000000     0xeb82
+ *(.init)
+ .init          0x00000000      0x13c /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+                0x00000114                reset
+                0x00000000                _boot
+                0x00000050                _mainCRTStartup
+                0x00000114                abort
+                0x00000050                _start
+                0x00000114                _reset
+                0x00000114                exit
+                0x00000050                start
+ *(.text .text.*)
+ .text          0x0000013c      0x20c /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+                0x0000013c                TIMER0_ISR
+ .text          0x00000348       0x78 /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+                0x00000358                restoreIRQ
+                0x000003b0                enableFIQ
+                0x00000384                disableFIQ
+                0x00000374                enableIRQ
+                0x00000394                restoreFIQ
+                0x00000348                disableIRQ
+ .text          0x000003c0     0x1258 /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                0x000003c0                init_fbw
+                0x00000590                event_task_fbw
+                0x00000b88                periodic_task_fbw
+ .text          0x00001618     0x33ac /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                0x00001f00                periodic_task_ap
+                0x00004004                init_ap
+                0x00004148                event_task_ap
+                0x00001618                telecommand_task
+ .text          0x000049c4       0xdc /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+                0x000049c4                main
+ .text          0x00004aa0       0xc8 /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                0x00004aa0                actuators_init
+ .text          0x00004b68      0x680 /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                0x00004c94                uart0_transmit
+                0x00004d38                uart0_ISR
+                0x00004ea0                uart1_init_tx
+                0x00004f78                uart1_check_free_space
+                0x00005070                uart1_ISR
+                0x00004fc8                uart1_init_rx
+                0x00004c44                uart0_check_free_space
+                0x00004b68                uart0_init_tx
+                0x00004fcc                uart1_transmit
+                0x00004c40                uart0_init_rx
+ .text          0x000051e8      0x7f8 /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                0x000051e8                dl_parse_msg
+ .text          0x000059e0       0xe0 /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                0x000059e0                aerocomm_init
+ .text          0x00005ac0       0x20 /home/paparazzi/paparazzi3new/var/zagi/ap/traffic_info.o
+                0x00005ac0                get_ac_info
+ .text          0x00005ae0      0x21c /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+                0x00005c4c                adcISR1
+                0x00005ae0                adc_buf_channel
+                0x00005af8                adc_init
+                0x00005ba0                adcISR0
+ .text          0x00005cfc     0x17b0 /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                0x00007118                parse_gps_msg
+                0x00005cfc                gps_init
+                0x000072e0                parse_ubx
+                0x00005d10                gps_reset
+                0x00005e90                gps_configure
+ .text          0x000074ac      0x6ac /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                0x0000767c                use_gps_pos
+                0x000074ac                estimator_update_state_gps
+ .text          0x00007b58      0xb54 /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                0x00007f98                estimator_update_ir_estim
+                0x00007ddc                ground_calibrate
+                0x00007c8c                ir_update
+                0x00008430                estimator_update_state_infrared
+                0x00007b58                ir_init
+ .text          0x000086ac       0xe8 /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                0x000086ac                estimator_init
+                0x00008790                estimator_propagate_state
+ .text          0x00008794     0x2190 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                0x00009b5c                nav_init
+                0x00009c10                nav_eight
+                0x000091a4                nav_home
+                0x00009ba0                nav_without_gps
+                0x00008ec0                nav_route_xy
+                0x00008814                nav_circle_XY
+                0x00008db0                nav_approaching_xy
+                0x0000a2ac                nav_oval_init
+                0x00008d4c                nav_goto_block
+                0x0000a2c0                nav_oval
+                0x00009bfc                nav_eight_init
+                0x000092b0                nav_update
+                0x00008794                nav_init_stage
+ .text          0x0000a924      0x6f0 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                0x0000a924                h_ctl_init
+                0x0000ad20                h_ctl_attitude_loop
+                0x0000aac4                h_ctl_course_loop
+ .text          0x0000b014      0x8c8 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                0x0000b188                v_ctl_altitude_loop
+                0x0000b014                v_ctl_init
+                0x0000b334                v_ctl_climb_loop
+                0x0000b710                v_ctl_throttle_slew
+ .text          0x0000b8dc      0x358 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                0x0000b8dc                atan
+ .text          0x0000bc34       0xb4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                0x0000bc34                cos
+ .text          0x0000bce8       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                0x0000bce8                fabs
+ .text          0x0000bd08       0xbc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                0x0000bd08                sin
+ .text          0x0000bdc4       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                0x0000bdc4                atan2
+ .text          0x0000be90       0xc8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                0x0000be90                sqrt
+ .text          0x0000bf58      0x21c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                0x0000bf58                __ieee754_atan2
+ .text          0x0000c174      0x4a0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                0x0000c174                __ieee754_rem_pio2
+ .text          0x0000c614      0x1e4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                0x0000c614                __ieee754_sqrt
+ .text          0x0000c7f8      0x1e8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                0x0000c7f8                __kernel_cos
+ .text          0x0000c9e0      0x7ec /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                0x0000c9e0                __kernel_rem_pio2
+ .text          0x0000d1cc      0x15c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                0x0000d1cc                __kernel_sin
+ .text          0x0000d328      0x144 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                0x0000d328                floor
+ .text          0x0000d46c       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                0x0000d46c                isnan
+ .text          0x0000d494        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                0x0000d494                matherr
+ .text          0x0000d498      0x120 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                0x0000d498                scalbn
+ .text          0x0000d5b8       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                0x0000d5b8                copysign
+ .text          0x0000d5d4        0xc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                0x0000d5d4                __errno
+ .text          0x0000d5e0       0x94 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                0x0000d5e0                __divsi3
+ .text          0x0000d674        0x4 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                0x0000d674                __div0
+ .text          0x0000d678      0x3a8 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                0x0000d9a8                __floatsidf
+                0x0000d9d4                __extendsfdf2
+                0x0000d67c                __adddf3
+                0x0000d980                __floatunsidf
+                0x0000d678                __subdf3
+ .text          0x0000da20      0x4ec /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                0x0000dc98                __divdf3
+                0x0000da20                __muldf3
+ .text          0x0000df0c       0xb4 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                0x0000df1c                __cmpdf2
+                0x0000df1c                __eqdf2
+                0x0000df0c                __gtdf2
+                0x0000df14                __ltdf2
+                0x0000df14                __ledf2
+                0x0000df1c                __nedf2
+                0x0000df0c                __gedf2
+ .text          0x0000dfc0       0x80 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                0x0000dfc0                __fixdfsi
+ .text          0x0000e040       0x74 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                0x0000e040                __fixunsdfsi
+ .text          0x0000e0b4       0xf8 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                0x0000e0b4                __truncdfsf2
+ .text          0x0000e1ac      0x218 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                0x0000e1ac                __subsf3
+                0x0000e378                __floatsisf
+                0x0000e370                __floatunsisf
+                0x0000e1b0                __addsf3
+ .text          0x0000e3c4      0x330 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                0x0000e554                __divsf3
+                0x0000e3c4                __mulsf3
+ .text          0x0000e6f4       0x9c /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                0x0000e6fc                __lesf2
+                0x0000e704                __nesf2
+                0x0000e6f4                __gtsf2
+                0x0000e704                __eqsf2
+                0x0000e704                __cmpsf2
+                0x0000e6fc                __ltsf2
+                0x0000e6f4                __gesf2
+ .text          0x0000e790       0x68 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                0x0000e790                __fixsfsi
+ .text          0x0000e7f8       0x5c /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000e7f8                __fixunssfsi
+ *(.gnu.linkonce.t.*)
+ *(.glue_7)
+ .glue_7        0x0000e854       0x48 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000e860                __atan2_from_arm
+                0x0000e878                __cos_from_arm
+                0x0000e86c                __atan_from_arm
+                0x0000e854                ____divsi3_from_arm
+                0x0000e884                __sin_from_arm
+                0x0000e890                __sqrt_from_arm
+ *(.glue_7t)
+ .glue_7t       0x0000e89c       0x50 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000e8b4                ____gtdf2_from_thumb
+                0x0000e8ac                ____subdf3_from_thumb
+                0x0000e8d0                ____ltdf2_change_to_arm
+                0x0000e8b0                ____subdf3_change_to_arm
+                0x0000e8e8                ____gedf2_change_to_arm
+                0x0000e8c4                ____eqdf2_from_thumb
+                0x0000e8d4                ____fixdfsi_from_thumb
+                0x0000e8c0                ____divdf3_change_to_arm
+                0x0000e8e4                ____gedf2_from_thumb
+                0x0000e8a8                ____muldf3_change_to_arm
+                0x0000e8d8                ____fixdfsi_change_to_arm
+                0x0000e8bc                ____divdf3_from_thumb
+                0x0000e8a0                ____adddf3_change_to_arm
+                0x0000e8b8                ____gtdf2_change_to_arm
+                0x0000e8dc                ____floatsidf_from_thumb
+                0x0000e8cc                ____ltdf2_from_thumb
+                0x0000e89c                ____adddf3_from_thumb
+                0x0000e8c8                ____eqdf2_change_to_arm
+                0x0000e8a4                ____muldf3_from_thumb
+                0x0000e8e0                ____floatsidf_change_to_arm
+ *(.gcc_except_table)
+ *(.rodata)
+ .rodata        0x0000e8ec        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ .rodata        0x0000e8ee        0x6 /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+                0x0000e8ee                commands_failsafe
+ .rodata        0x0000e8f4        0x1 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                0x0000e8f4                nb_waypoint
+ *fill*         0x0000e8f5        0x3 00
+ .rodata        0x0000e8f8       0x98 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .rodata        0x0000e990      0x188 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .rodata        0x0000eb18       0x50 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .rodata        0x0000eb68        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                0x0000eb68                __fdlib_version
+ .rodata        0x0000eb6c        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x0000eb6c                _global_impure_ptr
+ *(.rodata*)
+ .rodata.str1.4
+                0x0000eb70        0x6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                  0x8 (size before relaxing)
+ *fill*         0x0000eb76        0x2 00
+ .rodata.str1.4
+                0x0000eb78        0x5 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                  0x8 (size before relaxing)
+ *fill*         0x0000eb7d        0x3 00
+ .rodata.str1.4
+                0x0000eb80        0x2 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                  0x4 (size before relaxing)
+ *(.gnu.linkonce.r.*)
+                0x0000eb84                . = ALIGN (0x4)
+
+.ctors          0x0000eb82        0x0
+                0x0000eb82                PROVIDE (__ctors_start__, .)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0000eb82                PROVIDE (__ctors_end__, .)
+
+.dtors          0x0000eb82        0x0
+                0x0000eb82                PROVIDE (__dtors_start__, .)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0000eb82                PROVIDE (__dtors_end__, .)
+                0x0000eb84                . = ALIGN (0x4)
+                0x0000eb84                _etext = .
+                0x0000eb84                PROVIDE (etext, .)
+
+.data           0x40000000      0x488 load address 0x0000eb84
+                0x40000000                _data = .
+ *(.data)
+ .data          0x40000000        0x1 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+ .data          0x40000001        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                0x40000001                ac_ident
+                0x40000002                light_mode
+                0x40000003                pprz_mode
+ *fill*         0x40000005        0x3 00
+ .data          0x40000008        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                0x40000008                servos_delay
+ .data          0x4000000c        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                0x4000000c                aerocomm_confirmation_status
+                0x4000000d                aerocomm_confirmation_received
+ *fill*         0x4000000e        0x2 00
+ .data          0x40000010        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                0x40000010                ap_state
+                0x40000014                fbw_state
+ .data          0x40000018       0x20 /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+                0x40000018                adc1_val
+                0x40000028                adc0_val
+ .data          0x40000038       0x4c /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                0x40000078                nav_utm_zone0
+                0x40000080                nav_utm_east0
+                0x4000007c                nav_utm_north0
+                0x40000038                waypoints
+                0x40000074                nav_altitude
+ .data          0x40000084      0x404 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x40000484                _impure_ptr
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x40000488                . = ALIGN (0x4)
+ *(.fastrun)
+                0x40000488                . = ALIGN (0x4)
+                0x40000488                _edata = .
+                0x40000488                PROVIDE (edata, .)
+
+.bss            0x40000488      0xca4
+                0x40000488                __bss_start = .
+                0x40000488                __bss_start__ = .
+ *(.bss)
+ .bss           0x40000488        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+ .bss           0x4000048c        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+ .bss           0x40000494       0x10 /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ .bss           0x400004a4       0x2c /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                0x400004ac                lateral_mode
+                0x400004a9                launch
+                0x400004a4                empty_bay
+                0x400004a8                gps_lost
+                0x400004ab                ir_estim_mode
+                0x400004aa                kill_throttle
+                0x400004ad                fatal_error_nb
+                0x400004ae                rc_settings_mode
+ .bss           0x400004d0        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+ .bss           0x400004d4        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+ .bss           0x400004d8        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+ .bss           0x400004dc        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                0x400004dc                rc_values_contains_avg_channels
+ .bss           0x400004e4        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+ .bss           0x400004e8        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+                0x400004e9                telemetry_mode_Fbw
+                0x400004e8                telemetry_mode_Ap
+ *fill*         0x400004ea        0x2 00
+ .bss           0x400004ec        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+ .bss           0x400004f0        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                0x400004f0                aerocomm_payload_len
+ .bss           0x400004f8       0x24 /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                0x400004f8                inter_mcu_received_ap
+                0x400004f9                inter_mcu_received_fbw
+ .bss           0x4000051c       0x40 /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+ .bss           0x4000055c        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ .bss           0x40000564        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+ .bss           0x4000056c       0xa4 /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                0x4000056c                calib_status
+ .bss           0x40000610       0x60 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                0x4000061d                nav_in_circle
+                0x40000618                circle_bank
+                0x40000610                nav_pitch
+                0x4000061c                nav_in_segment
+                0x40000614                altitude_shift
+ .bss           0x40000670        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                0x40000670                h_ctl_attitude_enabled
+ .bss           0x40000678       0x58 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+ *(.gnu.linkonce.b*)
+ *(COMMON)
+ COMMON         0x400006d0        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+                0x400006d0                cpu_time_sec
+ *fill*         0x400006d2        0x2 00
+ COMMON         0x400006d4        0x4 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+                0x400006d4                cpu_time_ticks
+ COMMON         0x400006d8       0x46 /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                0x400006d8                vsupply_adc_buf
+                0x4000071c                fbw_vsupply_decivolt
+                0x4000071d                fbw_mode
+ *fill*         0x4000071e        0x2 00
+ COMMON         0x40000720      0x229 /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                0x40000720                accel_az_neutral
+                0x40000724                rc_event_1
+                0x40000728                estimator_kalman_r_angle
+                0x4000072c                vdrop2throt_coeff
+                0x40000730                accel_ay_scale
+                0x40000734                estimator_kalman_phi
+                0x40000738                the_acs
+                0x40000918                estimator_kalman_q_gyro
+                0x4000091c                last_pprz_mode
+                0x40000920                slider_2_val
+                0x40000924                estimator_kalman_theta
+                0x40000928                slider_1_val
+                0x4000092c                estimator_kalman_q_angle
+                0x40000930                accel_az_scale
+                0x40000934                rc_event_2
+                0x40000938                energy
+                0x4000093c                accel_ay_neutral
+                0x40000940                accel_ax_scale
+                0x40000944                accel_ax_neutral
+                0x40000948                vsupply
+ *fill*         0x40000949        0x1 00
+ COMMON         0x4000094a        0x6 /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+                0x4000094a                commands
+ COMMON         0x40000950       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                0x40000950                servos_4015_idx
+                0x40000952                servos_values
+ COMMON         0x40000962        0x8 /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+                0x40000962                actuators
+ *fill*         0x4000096a        0x2 00
+ COMMON         0x4000096c       0x35 /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                0x4000096c                rc_status
+                0x4000096d                time_since_last_ppm
+                0x4000096e                ppm_cpt
+                0x40000970                rc_values
+                0x40000980                avg_rc_values
+                0x400009a0                last_ppm_cpt
+ *fill*         0x400009a1        0x1 00
+ COMMON         0x400009a2       0x11 /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+                0x400009a2                ppm_pulses
+                0x400009b2                ppm_valid
+ COMMON         0x400009b3        0x1 /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+                0x400009b3                downlink_nb_ovrn
+ COMMON         0x400009b4      0x214 /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                0x400009b4                uart0_tx_buffer
+                0x40000a34                uart1_rx_insert_idx
+                0x40000a36                uart0_tx_insert_idx
+                0x40000a38                uart1_tx_buffer
+                0x40000ab8                uart1_rx_buffer
+                0x40000b38                uart0_rx_insert_idx
+                0x40000b3a                uart1_tx_running
+                0x40000b3c                uart0_tx_extract_idx
+                0x40000b3e                uart1_tx_insert_idx
+                0x40000b40                uart1_rx_extract_idx
+                0x40000b42                uart0_tx_running
+                0x40000b43                uart0_rx_buffer
+                0x40000bc4                uart1_tx_extract_idx
+                0x40000bc6                uart0_rx_extract_idx
+ COMMON         0x40000bc8       0x84 /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                0x40000bc8                dl_msg_available
+                0x40000bcc                dl_buffer
+ COMMON         0x40000c4c      0x105 /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                0x40000c4c                aerocomm_rssi
+                0x40000c4d                aerocomm_cs
+                0x40000c4e                aerocomm_error
+                0x40000c4f                aerocomm_ovrn
+                0x40000c50                aerocomm_payload
+                0x40000d50                aerocomm_msg_received
+ COMMON         0x40000d51        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                0x40000d51                ap_ok
+                0x40000d52                time_since_last_ap
+ *fill*         0x40000d53        0x1 00
+ COMMON         0x40000d54      0x1a8 /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                0x40000d54                ubx_msg_buf
+                0x40000e54                gps_alt
+                0x40000e58                gps_climb
+                0x40000e5a                gps_msg_received
+                0x40000e5b                gps_nb_channels
+                0x40000e5c                ubx_class
+                0x40000e5d                ubx_id
+                0x40000e60                gps_utm_north
+                0x40000e64                gps_utm_east
+                0x40000e68                gps_nb_ovrn
+                0x40000e6a                gps_course
+                0x40000e6c                send_ck_b
+                0x40000e6e                gps_gspeed
+                0x40000e70                send_ck_a
+                0x40000e74                gps_itow
+                0x40000e78                gps_pos_available
+                0x40000e79                gps_mode
+                0x40000e7a                gps_utm_zone
+                0x40000e7c                gps_svinfos
+ COMMON         0x40000efc        0x2 /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                0x40000efc                last_gps_msg_t
+ *fill*         0x40000efe        0x2 00
+ COMMON         0x40000f00       0x54 /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                0x40000f00                ir_correction_left
+                0x40000f04                x2_dbg
+                0x40000f06                ir_top
+                0x40000f08                ir_estimated_theta_pi_4
+                0x40000f0c                ir_pitch
+                0x40000f10                estimator_rad_of_ir
+                0x40000f14                ir_contrast
+                0x40000f18                ir_rad_of_ir
+                0x40000f1c                ir_correction_down
+                0x40000f20                estimator_ir
+                0x40000f24                ir_pitch_neutral
+                0x40000f28                ir_estimated_phi_pi_4
+                0x40000f2c                adc_pitch_neutral
+                0x40000f2e                x1_dbg
+                0x40000f30                z_contrast_mode
+                0x40000f34                ir_correction_right
+                0x40000f38                ir_estimated_theta_minus_pi_4
+                0x40000f3c                estimator_rad
+                0x40000f40                ir_correction_up
+                0x40000f44                ir_estimated_phi_minus_pi_4
+                0x40000f48                ir_roll
+                0x40000f4c                ir_roll_neutral
+                0x40000f50                ir_360
+                0x40000f52                adc_roll_neutral
+ COMMON         0x40000f54       0x58 /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                0x40000f54                estimator_z_dot
+                0x40000f58                estimator_flight_time
+                0x40000f5c                estimator_psi
+                0x40000f60                estimator_z
+                0x40000f64                estimator_az
+                0x40000f68                estimator_t
+                0x40000f6c                wind_east
+                0x40000f70                estimator_ay
+                0x40000f74                estimator_p
+                0x40000f78                estimator_theta
+                0x40000f7c                estimator_hspeed_mod
+                0x40000f80                estimator_phi
+                0x40000f84                estimator_r
+                0x40000f88                estimator_x
+                0x40000f8c                estimator_range
+                0x40000f90                estimator_q
+                0x40000f94                estimator_hspeed_dir
+                0x40000f98                wind_north
+                0x40000f9c                estimator_ax
+                0x40000fa0                alt_kalman_enabled
+                0x40000fa4                estimator_y
+                0x40000fa8                estimator_range_dot
+ COMMON         0x40000fac       0x64 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                0x40000fac                nav_glide_pitch_trim
+                0x40000fb0                dist2_to_wp
+                0x40000fb4                nav_segment_x_1
+                0x40000fb8                desired_x
+                0x40000fbc                nav_segment_x_2
+                0x40000fbe                nav_circle_radius
+                0x40000fc0                stage_time_ds
+                0x40000fc4                nav_throttle_setpoint
+                0x40000fc8                survey_south
+                0x40000fcc                desired_y
+                0x40000fd0                carrot_x
+                0x40000fd4                horizontal_mode
+                0x40000fd5                nav_block
+                0x40000fd6                nav_circle_y
+                0x40000fd8                too_far_from_home
+                0x40000fdc                rc_pitch
+                0x40000fe0                survey_north
+                0x40000fe4                dist2_to_home
+                0x40000fe8                survey_west
+                0x40000fec                nav_stage
+                0x40000ff0                survey_east
+                0x40000ff4                nav_circle_x
+                0x40000ff6                nav_segment_y_2
+                0x40000ff8                nav_segment_y_1
+                0x40000ffc                ground_alt
+                0x40001000                carrot_y
+                0x40001004                stage_time
+                0x40001006                block_time
+                0x40001008                nav_circle_trigo_qdr
+                0x4000100c                flight_altitude
+ COMMON         0x40001010       0xb8 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                0x40001010                h_ctl_yaw_rate_mode
+                0x40001014                h_ctl_auto1_rate
+                0x40001018                h_ctl_course_setpoint
+                0x4000101c                h_ctl_roll_rate_dgain
+                0x40001020                desired_pitch
+                0x40001024                h_ctl_roll_rate_setpoint
+                0x40001028                desired_roll
+                0x4000102c                h_ctl_rudder_setpoint
+                0x40001030                h_ctl_roll_max_setpoint
+                0x40001034                h_ctl_lo_throttle_yaw_rate_pgain
+                0x40001038                h_ctl_course_pre_bank_correction
+                0x4000103c                h_ctl_lo_throttle_pitch_rate_pgain
+                0x40001040                h_ctl_pitch_rate_dgain
+                0x40001044                h_ctl_hi_throttle_pitch_rate_pgain
+                0x40001048                h_ctl_elevator_setpoint
+                0x4000104c                h_ctl_roll_rate_igain
+                0x40001050                h_ctl_hi_throttle_yaw_rate_pgain
+                0x40001054                h_ctl_roll_rate_setpoint_pgain
+                0x40001058                h_ctl_hi_throttle_roll_rate_pgain
+                0x4000105c                h_ctl_aileron_of_throttle
+                0x40001060                h_ctl_yaw_pgain
+                0x40001064                h_ctl_aileron_setpoint
+                0x40001068                h_ctl_pitch_setpoint
+                0x4000106c                h_ctl_roll_rate_mode
+                0x40001070                h_ctl_pitch_min_setpoint
+                0x40001074                h_ctl_course_pgain
+                0x40001078                h_ctl_pitch_pgain
+                0x4000107c                h_ctl_course_pre_bank
+                0x40001080                h_ctl_yaw_rate_dgain
+                0x40001084                h_ctl_pitch_max_setpoint
+                0x40001088                h_ctl_pitch_rate_setpoint
+                0x4000108c                h_ctl_yaw_dgain
+                0x40001090                h_ctl_pitch_dgain
+                0x40001094                h_ctl_lo_throttle_roll_rate_pgain
+                0x40001098                h_ctl_yaw_rate_igain
+                0x4000109c                h_ctl_pitch_rate_igain
+                0x400010a0                h_ctl_pitch_rate_setpoint_pgain
+                0x400010a4                h_ctl_yaw_setpoint
+                0x400010a8                h_ctl_yaw_rate_setpoint
+                0x400010ac                h_ctl_disabled
+                0x400010b0                h_ctl_roll_pgain
+                0x400010b4                h_ctl_yaw_rate_setpoint_pgain
+                0x400010b8                h_ctl_roll_setpoint
+                0x400010bc                h_ctl_pitch_rate_mode
+                0x400010c0                h_ctl_yaw_max_setpoint
+                0x400010c4                h_ctl_elevator_of_roll
+ COMMON         0x400010c8       0x60 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                0x400010c8                v_ctl_auto_throttle_nominal_cruise_throttle
+                0x400010cc                v_ctl_altitude_error
+                0x400010d0                v_ctl_climb_mode
+                0x400010d4                v_ctl_alt_sum_err
+                0x400010d8                v_ctl_auto_throttle_submode
+                0x400010dc                v_ctl_auto_throttle_pitch_of_vz_pgain
+                0x400010e0                v_ctl_throttle_slew_
+                0x400010e4                desc_throttle
+                0x400010e8                v_ctl_auto_throttle_cruise_throttle_pgain
+                0x400010ec                v_ctl_altitude_setpoint
+                0x400010f0                v_ctl_mode
+                0x400010f4                v_ctl_auto_throttle_cruise_throttle
+                0x400010f8                v_ctl_altitude_pgain
+                0x400010fc                v_ctl_auto_pitch_pgain
+                0x40001100                v_ctl_auto_throttle_climb_throttle_increment
+                0x40001104                v_ctl_auto_throttle_igain
+                0x40001108                v_ctl_throttle_setpoint
+                0x4000110c                v_ctl_climb_setpoint
+                0x40001110                v_ctl_auto_pitch_igain
+                0x40001114                v_ctl_altitude_pre_climb
+                0x40001118                v_ctl_throttle_slewed
+                0x4000111c                climb_throttle
+                0x40001120                v_ctl_auto_throttle_pgain
+                0x40001124                v_ctl_auto_pitch_sum_err
+ COMMON         0x40001128        0x1 /home/paparazzi/paparazzi3new/var/zagi/ap/gpio.o
+                0x40001128                gpio1_status
+                0x4000112c                . = ALIGN (0x4)
+ *fill*         0x40001129        0x3 00
+                0x4000112c                . = ALIGN (0x4)
+                0x4000112c                __bss_end__ = .
+                0x4000112c                PROVIDE (__bss_end, .)
+
+.stack          0x40001200     0x1000
+                0x40002200                . = (. + STACK_SIZE)
+ *fill*         0x40001200     0x1000 00
+                0x40002200                PROVIDE (_stack, .)
+                0x40002200                _end = .
+                0x40002200                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x33c
+ *(.comment)
+ .comment       0x00000000       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+ .comment       0x00000012       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+ .comment       0x00000024       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+ .comment       0x00000036       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ .comment       0x00000048       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ .comment       0x0000005a       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+ .comment       0x0000006c       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+ .comment       0x0000007e       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+ .comment       0x00000090       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+ .comment       0x000000a2       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+ .comment       0x000000b4       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+ .comment       0x000000c6       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+ .comment       0x000000d8       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+ .comment       0x000000ea       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+ .comment       0x000000fc       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+ .comment       0x0000010e       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/traffic_info.o
+ .comment       0x00000120       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+ .comment       0x00000132       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+ .comment       0x00000144       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ .comment       0x00000156       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+ .comment       0x00000168       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ .comment       0x0000017a       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+ .comment       0x0000018c       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ .comment       0x0000019e       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+ .comment       0x000001b0       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+ .comment       0x000001c2       0x12 /home/paparazzi/paparazzi3new/var/zagi/ap/gpio.o
+ .comment       0x000001d4       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .comment       0x000001e6       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .comment       0x000001f8       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .comment       0x0000020a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .comment       0x0000021c       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .comment       0x0000022e       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .comment       0x00000240       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .comment       0x00000252       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .comment       0x00000264       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .comment       0x00000276       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .comment       0x00000288       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .comment       0x0000029a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .comment       0x000002ac       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .comment       0x000002be       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .comment       0x000002d0       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .comment       0x000002e2       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .comment       0x000002f4       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .comment       0x00000306       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .comment       0x00000318       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .comment       0x0000032a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x240
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_aranges
+                0x000000a0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_aranges
+                0x000000c0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_aranges
+                0x000000e0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_aranges
+                0x00000100       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_aranges
+                0x00000120       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_aranges
+                0x00000140       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_aranges
+                0x00000160       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_aranges
+                0x00000180       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_aranges
+                0x000001a0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_aranges
+                0x000001c0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_aranges
+                0x000001e0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_aranges
+                0x00000200       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_aranges
+                0x00000220       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+
+.debug_pubnames
+                0x00000000      0x292
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_pubnames
+                0x0000001b       0x1a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_pubnames
+                0x00000035       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_pubnames
+                0x00000050       0x1a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_pubnames
+                0x0000006a       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_pubnames
+                0x00000086       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_pubnames
+                0x000000a1       0x26 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_pubnames
+                0x000000c7       0x29 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_pubnames
+                0x000000f0       0x25 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_pubnames
+                0x00000115       0x23 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_pubnames
+                0x00000138       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_pubnames
+                0x00000160       0x23 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_pubnames
+                0x00000183       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_pubnames
+                0x0000019f       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_pubnames
+                0x000001bb       0x26 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_pubnames
+                0x000001e1       0x1e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_pubnames
+                0x000001ff       0x1d /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_pubnames
+                0x0000021c       0x1f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_pubnames
+                0x0000023b       0x1e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_pubnames
+                0x00000259       0x39 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_info     0x00000000     0x314a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x25d /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_info    0x0000025d       0xee /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_info    0x0000034b      0x151 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_info    0x0000049c       0xee /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_info    0x0000058a      0x17e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_info    0x00000708      0x172 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_info    0x0000087a      0x29b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_info    0x00000b15      0x390 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_info    0x00000ea5      0x211 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_info    0x000010b6      0x20c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_info    0x000012c2      0x2c0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_info    0x00001582      0x18b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_info    0x0000170d      0x1a0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_info    0x000018ad      0x147 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_info    0x000019f4       0xbe /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_info    0x00001ab2      0x125 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_info    0x00001bd7      0x1f4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_info    0x00001dcb      0x14a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_info    0x00001f15      0x913 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_info    0x00002828      0x922 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_abbrev   0x00000000     0x113f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x11f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_abbrev  0x0000011f       0x8b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_abbrev  0x000001aa       0xd0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_abbrev  0x0000027a       0x8b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_abbrev  0x00000305       0xc7 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_abbrev  0x000003cc       0xc7 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_abbrev  0x00000493      0x10f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_abbrev  0x000005a2      0x128 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_abbrev  0x000006ca      0x104 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_abbrev  0x000007ce       0xea /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_abbrev  0x000008b8       0xe6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_abbrev  0x0000099e       0x93 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_abbrev  0x00000a31       0xe8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_abbrev  0x00000b19       0xd4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_abbrev  0x00000bed       0x5a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_abbrev  0x00000c47       0x95 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_abbrev  0x00000cdc       0xe8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_abbrev  0x00000dc4       0xc5 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_abbrev  0x00000e89      0x15f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_abbrev  0x00000fe8      0x157 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_line     0x00000000     0x13e0
+ *(.debug_line)
+ .debug_line    0x00000000      0x137 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_line    0x00000137       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_line    0x00000203       0xf3 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_line    0x000002f6       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_line    0x000003c2       0xca /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_line    0x0000048c       0xc9 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_line    0x00000555      0x14c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_line    0x000006a1      0x17c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_line    0x0000081d      0x163 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_line    0x00000980      0x115 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_line    0x00000a95      0x187 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_line    0x00000c1c       0xc6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_line    0x00000ce2      0x12a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_line    0x00000e0c       0xfb /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_line    0x00000f07       0xa0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_line    0x00000fa7       0xb0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_line    0x00001057       0xeb /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_line    0x00001142       0xc4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_line    0x00001206       0xf4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_line    0x000012fa       0xe6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_frame    0x00000000      0x388
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_frame   0x00000038       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_frame   0x00000068       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_frame   0x00000090       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_frame   0x000000c0       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_frame   0x000000f8       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_frame   0x00000130       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_frame   0x00000168       0x3c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_frame   0x000001a4       0x3c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_frame   0x000001e0       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_frame   0x00000218       0x40 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_frame   0x00000258       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_frame   0x00000288       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_frame   0x000002c0       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_frame   0x000002e8       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_frame   0x00000308       0x34 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_frame   0x0000033c       0x2c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_frame   0x00000368       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+
+.debug_str      0x00000000      0xbad
+ *(.debug_str)
+ .debug_str     0x00000000      0x148 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x00000148       0x32 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                0x12a (size before relaxing)
+ .debug_str     0x0000017a       0x42 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                                0x163 (size before relaxing)
+ .debug_str     0x000001bc       0x32 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                0x12a (size before relaxing)
+ .debug_str     0x000001ee       0xaf /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x0000029d       0x33 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                0x1a6 (size before relaxing)
+ .debug_str     0x000002d0       0x67 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                0x197 (size before relaxing)
+ .debug_str     0x00000337       0xa4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                0x1e3 (size before relaxing)
+ .debug_str     0x000003db       0x47 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00000422       0x3f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                0x16a (size before relaxing)
+ .debug_str     0x00000461       0x78 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x000004d9       0x3f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                0x13c (size before relaxing)
+ .debug_str     0x00000518       0x3a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                0x16f (size before relaxing)
+ .debug_str     0x00000552       0x3a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x0000058c       0x92 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                                0x183 (size before relaxing)
+ .debug_str     0x0000061e       0x40 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                                0x155 (size before relaxing)
+ .debug_str     0x0000065e       0x4b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                0x187 (size before relaxing)
+ .debug_str     0x000006a9       0x42 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x000006eb      0x416 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                                0x4be (size before relaxing)
+ .debug_str     0x00000b01       0xac /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                0x4d6 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(/home/paparazzi/paparazzi3new/var/zagi/ap/ap.elf elf32-littlearm)
+
+.debug_ranges   0x00000000       0xc8
+ .debug_ranges  0x00000000       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_ranges  0x00000028       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_ranges  0x00000048       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_ranges  0x00000060       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_ranges  0x00000078       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_ranges  0x00000090       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_ranges  0x000000b0       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+
+Cross Reference Table
+
+Symbol                                            File
+TIMER0_ISR                                        /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+____adddf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____adddf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divdf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divdf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divsi3_from_arm                               /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____eqdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____eqdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____fixdfsi_change_to_arm                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____fixdfsi_from_thumb                            /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____floatsidf_change_to_arm                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____floatsidf_from_thumb                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gedf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gedf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gtdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gtdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____ltdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____ltdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____muldf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____muldf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____subdf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____subdf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__adddf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__addsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__atan2_from_arm                                  /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__atan_from_arm                                   /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__bss_end__                                       /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+__bss_start                                       /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+__cmpdf2                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+__cmpsf2                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__cos_from_arm                                    /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__ctors_end__                                     /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+__ctors_start__                                   /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+__div0                                            /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+__divdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__divsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__divsi3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__eqdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__eqsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__errno                                           /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__extendsfdf2                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__fdlib_version                                   /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__fixdfsi                                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__fixsfsi                                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__fixunsdfsi                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__fixunssfsi                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+__floatsidf                                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__floatsisf                                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__floatunsidf                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+__floatunsisf                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+__gedf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+__gesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+__gtdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__gtsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__ieee754_atan2                                   /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__ieee754_rem_pio2                                /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__ieee754_sqrt                                    /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+__kernel_cos                                      /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__kernel_rem_pio2                                 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+__kernel_sin                                      /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__ledf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+__lesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__ltdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+__ltsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+__muldf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__mulsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+__nedf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+__nesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__sin_from_arm                                    /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__sqrt_from_arm                                   /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__subdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+__subsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+__truncdfsf2                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+_boot                                             /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_data                                             /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_edata                                            /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_etext                                            /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_global_impure_ptr                                /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+_impure_ptr                                       /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+_mainCRTStartup                                   /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_reset                                            /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_stack                                            /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+_start                                            /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+abort                                             /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+ac_ident                                          /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_ax_neutral                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_ax_scale                                    /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_ay_neutral                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_ay_scale                                    /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_az_neutral                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+accel_az_scale                                    /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+actuators                                         /home/paparazzi/paparazzi3new/var/zagi/ap/actuators.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+actuators_init                                    /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+adc0_val                                          /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+adc1_val                                          /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+adcISR0                                           /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+adcISR1                                           /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+adc_buf_channel                                   /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+adc_init                                          /home/paparazzi/paparazzi3new/var/zagi/ap/adc_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+adc_pitch_neutral                                 /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+adc_roll_neutral                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+aerocomm_confirmation_received                    /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_confirmation_status                      /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_cs                                       /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+aerocomm_error                                    /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_init                                     /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_msg_received                             /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_ovrn                                     /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_payload                                  /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_payload_len                              /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+aerocomm_rssi                                     /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+alt_kalman_enabled                                /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+altitude_shift                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ap_ok                                             /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ap_state                                          /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+atan                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+atan2                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+avg_rc_values                                     /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+block_time                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+calib_status                                      /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+carrot_x                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+carrot_y                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+circle_bank                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+climb_throttle                                    /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+commands                                          /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+commands_failsafe                                 /home/paparazzi/paparazzi3new/var/zagi/ap/commands.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+copysign                                          /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+cos                                               /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+cpu_time_sec                                      /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time.o
+cpu_time_ticks                                    /home/paparazzi/paparazzi3new/var/zagi/ap/aerocomm_new.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+desc_throttle                                     /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+desired_pitch                                     /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+desired_roll                                      /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+desired_x                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+desired_y                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+disableFIQ                                        /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+disableIRQ                                        /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+dist2_to_home                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dist2_to_wp                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dl_buffer                                         /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dl_msg_available                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+dl_parse_msg                                      /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+downlink_nb_ovrn                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+empty_bay                                         /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+enableFIQ                                         /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+enableIRQ                                         /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+energy                                            /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_ax                                      /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_ay                                      /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_az                                      /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_flight_time                             /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_hspeed_dir                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+estimator_hspeed_mod                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_init                                    /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_ir                                      /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+estimator_kalman_phi                              /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_kalman_q_angle                          /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_kalman_q_gyro                           /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_kalman_r_angle                          /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_kalman_theta                            /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_p                                       /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_phi                                     /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_propagate_state                         /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_psi                                     /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_q                                       /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_r                                       /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_rad                                     /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_rad_of_ir                               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_range                                   /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_range_dot                               /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_t                                       /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+estimator_theta                                   /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_update_ir_estim                         /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+estimator_update_state_gps                        /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+estimator_update_state_infrared                   /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_x                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_y                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_z                                       /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+estimator_z_dot                                   /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+event_task_ap                                     /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+event_task_fbw                                    /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+exit                                              /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+fabs                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+fatal_error_nb                                    /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+fbw_mode                                          /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+fbw_state                                         /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+fbw_vsupply_decivolt                              /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+flight_altitude                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+floor                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+get_ac_info                                       /home/paparazzi/paparazzi3new/var/zagi/ap/traffic_info.o
+gpio1_status                                      /home/paparazzi/paparazzi3new/var/zagi/ap/gpio.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_alt                                           /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_climb                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_configure                                     /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_course                                        /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_gspeed                                        /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_init                                          /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_itow                                          /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_lost                                          /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_mode                                          /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_msg_received                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_nb_channels                                   /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_nb_ovrn                                       /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_pos_available                                 /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_reset                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+gps_svinfos                                       /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_utm_east                                      /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_utm_north                                     /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+gps_utm_zone                                      /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ground_alt                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+ground_calibrate                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_aileron_of_throttle                         /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_aileron_setpoint                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_attitude_enabled                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_attitude_loop                               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_auto1_rate                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_course_loop                                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_course_pgain                                /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_course_pre_bank                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_course_pre_bank_correction                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_course_setpoint                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+h_ctl_disabled                                    /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_elevator_of_roll                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_elevator_setpoint                           /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_hi_throttle_pitch_rate_pgain                /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_hi_throttle_roll_rate_pgain                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_hi_throttle_yaw_rate_pgain                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_init                                        /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_lo_throttle_pitch_rate_pgain                /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_lo_throttle_roll_rate_pgain                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_lo_throttle_yaw_rate_pgain                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_pitch_dgain                                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_max_setpoint                          /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_pitch_min_setpoint                          /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_pgain                                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_dgain                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_igain                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_mode                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint                         /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint_pgain                   /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_pitch_setpoint                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_roll_max_setpoint                           /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_roll_pgain                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_dgain                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_igain                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_mode                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_setpoint                          /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_roll_rate_setpoint_pgain                    /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_roll_setpoint                               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_rudder_setpoint                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_dgain                                   /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_max_setpoint                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_pgain                                   /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_rate_dgain                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_rate_igain                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_rate_mode                               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_rate_setpoint                           /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+h_ctl_yaw_rate_setpoint_pgain                     /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+h_ctl_yaw_setpoint                                /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+horizontal_mode                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+init_ap                                           /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+init_fbw                                          /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+inter_mcu_received_ap                             /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+inter_mcu_received_fbw                            /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ir_360                                            /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_contrast                                       /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_correction_down                                /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_correction_left                                /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_correction_right                               /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_correction_up                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_estim_mode                                     /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+ir_estimated_phi_minus_pi_4                       /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_estimated_phi_pi_4                             /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_estimated_theta_minus_pi_4                     /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_estimated_theta_pi_4                           /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_init                                           /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_pitch                                          /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_pitch_neutral                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_rad_of_ir                                      /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+ir_roll                                           /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_roll_neutral                                   /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_top                                            /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+ir_update                                         /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+isnan                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+kill_throttle                                     /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+last_gps_msg_t                                    /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+last_ppm_cpt                                      /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+last_pprz_mode                                    /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+lateral_mode                                      /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+launch                                            /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+light_mode                                        /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+main                                              /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+matherr                                           /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+nav_altitude                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_approaching_xy                                /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_block                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_circle_XY                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_circle_radius                                 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_circle_trigo_qdr                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_circle_x                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_circle_y                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_eight                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_eight_init                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_glide_pitch_trim                              /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_goto_block                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+nav_home                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_in_circle                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_in_segment                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_init                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_init_stage                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_oval                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_oval_init                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_pitch                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_route_xy                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+nav_segment_x_1                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_segment_x_2                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_segment_y_1                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_segment_y_2                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_stage                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_throttle_setpoint                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_update                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_utm_east0                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_utm_north0                                    /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_utm_zone0                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nav_without_gps                                   /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+nb_waypoint                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+parse_gps_msg                                     /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+parse_ubx                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+periodic_task_ap                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+periodic_task_fbw                                 /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main.o
+ppm_cpt                                           /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+ppm_pulses                                        /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+ppm_valid                                         /home/paparazzi/paparazzi3new/var/zagi/ap/ppm_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+pprz_mode                                         /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+rc_event_1                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+rc_event_2                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+rc_pitch                                          /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+rc_settings_mode                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+rc_status                                         /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+rc_values                                         /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+rc_values_contains_avg_channels                   /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+reset                                             /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+restoreFIQ                                        /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+restoreIRQ                                        /home/paparazzi/paparazzi3new/var/zagi/ap/armVIC.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+scalbn                                            /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+send_ck_a                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+send_ck_b                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+servos_4015_idx                                   /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+servos_delay                                      /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+servos_values                                     /home/paparazzi/paparazzi3new/var/zagi/ap/servos_4015_MAT_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/sys_time_hw.o
+sin                                               /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+slider_1_val                                      /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+slider_2_val                                      /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+sqrt                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+stage_time                                        /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+stage_time_ds                                     /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+start                                             /home/paparazzi/paparazzi3new/var/zagi/ap/crt0.o
+survey_east                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+survey_north                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+survey_south                                      /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+survey_west                                       /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+telecommand_task                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+telemetry_mode_Ap                                 /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+telemetry_mode_Fbw                                /home/paparazzi/paparazzi3new/var/zagi/ap/downlink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+the_acs                                           /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/traffic_info.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+time_since_last_ap                                /home/paparazzi/paparazzi3new/var/zagi/ap/inter_mcu.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+time_since_last_ppm                               /home/paparazzi/paparazzi3new/var/zagi/ap/radio_control.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+too_far_from_home                                 /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart0_ISR                                         /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart0_check_free_space                            /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+uart0_init_rx                                     /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart0_init_tx                                     /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+uart0_rx_buffer                                   /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart0_rx_extract_idx                              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart0_rx_insert_idx                               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart0_transmit                                    /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+uart0_tx_buffer                                   /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart0_tx_extract_idx                              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart0_tx_insert_idx                               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart0_tx_running                                  /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_ISR                                         /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_check_free_space                            /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_init_rx                                     /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart1_init_tx                                     /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+uart1_rx_buffer                                   /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart1_rx_extract_idx                              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart1_rx_insert_idx                               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+uart1_transmit                                    /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+uart1_tx_buffer                                   /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_tx_extract_idx                              /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_tx_insert_idx                               /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+uart1_tx_running                                  /home/paparazzi/paparazzi3new/var/zagi/ap/uart_hw.o
+ubx_class                                         /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ubx_id                                            /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+ubx_msg_buf                                       /home/paparazzi/paparazzi3new/var/zagi/ap/gps_ubx.o
+use_gps_pos                                       /home/paparazzi/paparazzi3new/var/zagi/ap/gps.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_alt_sum_err                                 /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_altitude_error                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_altitude_loop                               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_altitude_pgain                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_altitude_pre_climb                          /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_altitude_setpoint                           /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_auto_pitch_igain                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_pitch_pgain                            /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_pitch_sum_err                          /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment      /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_throttle_cruise_throttle               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_throttle_cruise_throttle_pgain         /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_throttle_igain                         /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_throttle_nominal_cruise_throttle       /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_auto_throttle_pgain                         /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_auto_throttle_pitch_of_vz_pgain             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+v_ctl_auto_throttle_submode                       /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_climb_loop                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_climb_mode                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+v_ctl_climb_setpoint                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_init                                        /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_mode                                        /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_throttle_setpoint                           /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/fw_h_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_throttle_slew                               /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_throttle_slew_                              /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+v_ctl_throttle_slewed                             /home/paparazzi/paparazzi3new/var/zagi/ap/fw_v_ctl.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+vdrop2throt_coeff                                 /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+vsupply                                           /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+vsupply_adc_buf                                   /home/paparazzi/paparazzi3new/var/zagi/ap/main_fbw.o
+waypoints                                         /home/paparazzi/paparazzi3new/var/zagi/ap/nav.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+wind_east                                         /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+wind_north                                        /home/paparazzi/paparazzi3new/var/zagi/ap/estimator.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/datalink.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+x1_dbg                                            /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+x2_dbg                                            /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o
+                                                  /home/paparazzi/paparazzi3new/var/zagi/ap/main_ap.o
+z_contrast_mode                                   /home/paparazzi/paparazzi3new/var/zagi/ap/infrared.o

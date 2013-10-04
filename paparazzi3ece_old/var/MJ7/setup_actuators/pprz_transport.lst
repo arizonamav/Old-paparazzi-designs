@@ -1,0 +1,24 @@
+   1              		.file	"pprz_transport.c"
+   2              		.global	pprz_msg_received
+   3              		.bss
+   6              	pprz_msg_received:
+   7 0000 00       		.space	1
+   8              		.comm	ck_a,1,1
+   9              		.comm	ck_b,1,1
+  10              		.comm	pprz_payload,256,1
+  11              		.comm	pprz_ovrn,1,1
+  12              		.comm	pprz_error,1,1
+  13              		.comm	pprz_payload_len,1,1
+  14              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 pprz_transport.c
+     /tmp/cc7bVcrS.s:6      .bss:00000000 pprz_msg_received
+                             .bss:00000000 $d
+                            *COM*:00000001 ck_a
+                            *COM*:00000001 ck_b
+                            *COM*:00000100 pprz_payload
+                            *COM*:00000001 pprz_ovrn
+                            *COM*:00000001 pprz_error
+                            *COM*:00000001 pprz_payload_len
+
+NO UNDEFINED SYMBOLS

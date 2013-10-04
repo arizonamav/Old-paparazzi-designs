@@ -1,0 +1,51 @@
+   1              		.file	"inter_mcu.c"
+   2              		.global	inter_mcu_received_ap
+   3              		.bss
+   6              	inter_mcu_received_ap:
+   7 0000 00       		.space	1
+   8              		.global	inter_mcu_received_fbw
+  11              	inter_mcu_received_fbw:
+  12 0001 00       		.space	1
+  13              		.global	ap_state
+  14              		.data
+  15              		.align	2
+  18              	ap_state:
+  19 0000 1C000000 		.word	_ap_state
+  20              		.global	fbw_state
+  21              		.align	2
+  24              	fbw_state:
+  25 0004 08000000 		.word	_fbw_state
+  26              		.bss
+  27 0002 0000     		.align	2
+  28              	last_periodic_event:
+  29 0004 00000000 		.space	4
+  30              		.comm	time_since_last_ap,1,1
+  31              		.comm	ap_ok,1,1
+  32              		.align	2
+  33              	_fbw_state:
+  34 0008 00000000 		.space	20
+  34      00000000 
+  34      00000000 
+  34      00000000 
+  34      00000000 
+  35              		.align	2
+  36              	_ap_state:
+  37 001c 00000000 		.space	12
+  37      00000000 
+  37      00000000 
+  38              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 inter_mcu.c
+     /tmp/ccNC5RiJ.s:6      .bss:00000000 inter_mcu_received_ap
+                             .bss:00000000 $d
+     /tmp/ccNC5RiJ.s:11     .bss:00000001 inter_mcu_received_fbw
+     /tmp/ccNC5RiJ.s:18     .data:00000000 ap_state
+     /tmp/ccNC5RiJ.s:19     .data:00000000 $d
+     /tmp/ccNC5RiJ.s:36     .bss:0000001c _ap_state
+     /tmp/ccNC5RiJ.s:24     .data:00000004 fbw_state
+     /tmp/ccNC5RiJ.s:33     .bss:00000008 _fbw_state
+     /tmp/ccNC5RiJ.s:28     .bss:00000004 last_periodic_event
+                            *COM*:00000001 time_since_last_ap
+                            *COM*:00000001 ap_ok
+
+NO UNDEFINED SYMBOLS

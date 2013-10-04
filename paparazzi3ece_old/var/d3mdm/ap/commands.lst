@@ -1,0 +1,19 @@
+   1              		.file	"commands.c"
+   2              		.global	commands_failsafe
+   3              		.section	.rodata
+   4              		.align	1
+   7              	commands_failsafe:
+   8 0000 0000     		.short	0
+   9 0002 0000     		.short	0
+  10 0004 0000     		.short	0
+  11 0006 0000     		.short	0
+  12 0008 0000     		.short	0
+  13 000a 0000     		.short	0
+  14              		.comm	commands,12,2
+  15              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 commands.c
+     /tmp/cczldTxs.s:7      .rodata:00000000 commands_failsafe
+                            *COM*:0000000c commands
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,17 @@
+<flight_plan SECURITY_HEIGHT="25" alt="755" ground_alt="380" lat0="32.232980" lon0="-110.932430" max_dist_from_home="500" name="Test flight" qfu="270">
+  <waypoints>
+    <waypoint alt="820" name="HOME" x="-46.940531389" y="-133.739884972"/>
+  </waypoints>
+  <blocks>
+    <block NAME="init">
+      <while COND="(!launch)"/>
+      <heading COURSE="QFU" GAZ="0.8" PITCH="0.15" UNTIL="(estimator_flight_time > 8)" VMODE="gaz"/>
+      <heading CLIMB="3.0" COURSE="QFU" PITCH="0.15" UNTIL="(estimator_z > SECURITY_HEIGHT)" VMODE="climb"/>
+      <deroute BLOCK="circlehome"/>
+    </block>
+    <block NAME="circlehome">
+      <exception COND="(RcEvent1())" DEROUTE="init"/>
+      <circle ALT="GROUND_ALT+50" RADIUS="75" WP="HOME"/>
+    </block>
+  </blocks>
+</flight_plan>

@@ -1,0 +1,12 @@
+<flight_plan NAME="ame" WIND_MOD="3" WIND_DIR="60" LON0="-110.951954" MAX_DIST_FROM_HOME="1500" GROUND_ALT="750" SECURITY_HEIGHT="60" QFU="180" ALT="850" LAT0="32.236525">
+  <waypoints>
+    <waypoint name="HOME" x="-94.522471131" y="17.319972877" alt="850."/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <while COND="(!launch)"/>
+      <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle" throttle="1.0" pitch="0.3"/>
+    </block>
+      </blocks>
+</flight_plan>
+

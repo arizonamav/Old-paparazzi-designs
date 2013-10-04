@@ -1,0 +1,232 @@
+   1              		.file	"adc_hw.c"
+   2              		.global	adc1_val
+   3              		.data
+   4              		.align	1
+   7              	adc1_val:
+   8 0000 0900     		.short	9
+   9 0002 0A00     		.short	10
+  10 0004 0B00     		.short	11
+  11 0006 0C00     		.short	12
+  12 0008 0D00     		.short	13
+  13 000a 0E00     		.short	14
+  14 000c 0F00     		.short	15
+  15 000e 1000     		.short	16
+  16              		.global	adc0_val
+  17              		.align	1
+  20              	adc0_val:
+  21 0010 0100     		.short	1
+  22 0012 0200     		.short	2
+  23 0014 0300     		.short	3
+  24 0016 0400     		.short	4
+  25 0018 0500     		.short	5
+  26 001a 0600     		.short	6
+  27 001c 0700     		.short	7
+  28 001e 0800     		.short	8
+  29              		.text
+  30              		.align	2
+  31              		.global	adc_buf_channel
+  33              	adc_buf_channel:
+  34              		@ Function supports interworking.
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 0, uses_anonymous_args = 0
+  37              		@ link register save eliminated.
+  38 0000 0C309FE5 		ldr	r3, .L2
+  39 0004 FF0000E2 		and	r0, r0, #255
+  40 0008 001183E7 		str	r1, [r3, r0, asl #2]
+  41              		@ lr needed for prologue
+  42 000c 4320C1E5 		strb	r2, [r1, #67]
+  43 0010 1EFF2FE1 		bx	lr
+  44              	.L3:
+  45              		.align	2
+  46              	.L2:
+  47 0014 00000000 		.word	buffers
+  49              		.align	2
+  50              		.global	adc_init
+  52              	adc_init:
+  53              		@ Function supports interworking.
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              		@ link register save eliminated.
+  57 0018 80209FE5 		ldr	r2, .L5
+  58 001c 003092E5 		ldr	r3, [r2, #0]
+  59 0020 CF3483E3 		orr	r3, r3, #-822083584
+  60 0024 003082E5 		str	r3, [r2, #0]
+  61 0028 043092E5 		ldr	r3, [r2, #4]
+  62 002c 053383E3 		orr	r3, r3, #335544320
+  63 0030 063B83E3 		orr	r3, r3, #6144
+  64 0034 043082E5 		str	r3, [r2, #4]
+  65 0038 64209FE5 		ldr	r2, .L5+4
+  66 003c 64309FE5 		ldr	r3, .L5+8
+  67 0040 002083E5 		str	r2, [r3, #0]
+  68 0044 60209FE5 		ldr	r2, .L5+12
+  69 0048 0C3092E5 		ldr	r3, [r2, #12]
+  70 004c 0137C3E3 		bic	r3, r3, #262144
+  71 0050 0C3082E5 		str	r3, [r2, #12]
+  72 0054 0137A0E3 		mov	r3, #262144
+  73 0058 103082E5 		str	r3, [r2, #16]
+  74 005c 3230A0E3 		mov	r3, #50
+  75 0060 0C3282E5 		str	r3, [r2, #524]
+  76 0064 44309FE5 		ldr	r3, .L5+16
+  77 0068 44109FE5 		ldr	r1, .L5+20
+  78 006c 0C3182E5 		str	r3, [r2, #268]
+  79 0070 40309FE5 		ldr	r3, .L5+24
+  80 0074 001083E5 		str	r1, [r3, #0]
+  81 0078 0C3092E5 		ldr	r3, [r2, #12]
+  82 007c 0236C3E3 		bic	r3, r3, #2097152
+  83 0080 0C3082E5 		str	r3, [r2, #12]
+  84 0084 0236A0E3 		mov	r3, #2097152
+  85 0088 103082E5 		str	r3, [r2, #16]
+  86 008c 3530A0E3 		mov	r3, #53
+  87 0090 103282E5 		str	r3, [r2, #528]
+  88 0094 20309FE5 		ldr	r3, .L5+28
+  89              		@ lr needed for prologue
+  90 0098 103182E5 		str	r3, [r2, #272]
+  91 009c 1EFF2FE1 		bx	lr
+  92              	.L6:
+  93              		.align	2
+  94              	.L5:
+  95 00a0 00C002E0 		.word	-536690688
+  96 00a4 0CFF2100 		.word	2227980
+  97 00a8 004003E0 		.word	-536657920
+  98 00ac 00F0FFFF 		.word	-4096
+  99 00b0 00000000 		.word	adcISR0
+ 100 00b4 F8FF2100 		.word	2228216
+ 101 00b8 000006E0 		.word	-536477696
+ 102 00bc 00000000 		.word	adcISR1
+ 104              		.align	2
+ 105              		.global	adcISR0
+ 107              	adcISR0:
+ 108              		@ Function supports interworking.
+ 109              		@ Naked Function: prologue and epilogue provided by programmer.
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112 00c0 04E04EE2 		 sub   lr, lr,#4
+ 113 00c4 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+ 114 00c8 00104FE1 	 mrs   r1, spsr
+ 115 00cc 02002DE9 	 stmfd sp!,{r1}
+ 116 00d0 84309FE5 		ldr	r3, .L10
+ 117 00d4 042093E5 		ldr	r2, [r3, #4]
+ 118 00d8 80309FE5 		ldr	r3, .L10+4
+ 119 00dc 221CA0E1 		mov	r1, r2, lsr #24
+ 120 00e0 071001E2 		and	r1, r1, #7
+ 121 00e4 01C193E7 		ldr	ip, [r3, r1, asl #2]
+ 122 00e8 0228A0E1 		mov	r2, r2, asl #16
+ 123 00ec 70309FE5 		ldr	r3, .L10+8
+ 124 00f0 22EBA0E1 		mov	lr, r2, lsr #22
+ 125 00f4 8110A0E1 		mov	r1, r1, asl #1
+ 126 00f8 00005CE3 		cmp	ip, #0
+ 127 00fc B3E081E1 		strh	lr, [r1, r3]	@ movhi 
+ 128 0100 4F00000A 		beq	.L8
+ 129 0104 4220DCE5 		ldrb	r2, [ip, #66]	@ zero_extendqisi2
+ 130 0108 4330DCE5 		ldrb	r3, [ip, #67]	@ zero_extendqisi2
+ 131 010c 012082E2 		add	r2, r2, #1
+ 132 0110 FF2002E2 		and	r2, r2, #255
+ 133 0114 020053E1 		cmp	r3, r2
+ 134 0118 0020A093 		movls	r2, #0
+ 135 011c 82008CE0 		add	r0, ip, r2, asl #1
+ 136 0120 B030DCE1 		ldrh	r3, [ip, #0]
+ 137 0124 B210D0E1 		ldrh	r1, [r0, #2]
+ 138 0128 033061E0 		rsb	r3, r1, r3
+ 139 012c B030CCE1 		strh	r3, [ip, #0]	@ movhi 
+ 140 0130 B030DCE1 		ldrh	r3, [ip, #0]
+ 141 0134 03308EE0 		add	r3, lr, r3
+ 142 0138 4220CCE5 		strb	r2, [ip, #66]
+ 143 013c B2E0C0E1 		strh	lr, [r0, #2]	@ movhi 
+ 144 0140 B030CCE1 		strh	r3, [ip, #0]	@ movhi 
+ 145              	.L8:
+ 146 0144 1C309FE5 		ldr	r3, .L10+12
+ 147 0148 0020A0E3 		mov	r2, #0
+ 148 014c 302083E5 		str	r2, [r3, #48]
+ 149 0150 0200BDE8 		 ldmfd sp!,{r1}
+ 150 0154 01F061E1 	 msr   spsr_c,r1
+ 151 0158 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+ 152              	.L11:
+ 153              		.align	2
+ 154              	.L10:
+ 155 015c 004003E0 		.word	-536657920
+ 156 0160 00000000 		.word	buffers
+ 157 0164 00000000 		.word	adc0_val
+ 158 0168 00F0FFFF 		.word	-4096
+ 160              		.align	2
+ 161              		.global	adcISR1
+ 163              	adcISR1:
+ 164              		@ Function supports interworking.
+ 165              		@ Naked Function: prologue and epilogue provided by programmer.
+ 166              		@ args = 0, pretend = 0, frame = 0
+ 167              		@ frame_needed = 0, uses_anonymous_args = 0
+ 168 016c 04E04EE2 		 sub   lr, lr,#4
+ 169 0170 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+ 170 0174 00104FE1 	 mrs   r1, spsr
+ 171 0178 02002DE9 	 stmfd sp!,{r1}
+ 172 017c 88309FE5 		ldr	r3, .L15
+ 173 0180 042093E5 		ldr	r2, [r3, #4]
+ 174 0184 84309FE5 		ldr	r3, .L15+4
+ 175 0188 221CA0E1 		mov	r1, r2, lsr #24
+ 176 018c 071001E2 		and	r1, r1, #7
+ 177 0190 013183E0 		add	r3, r3, r1, asl #2
+ 178 0194 20C093E5 		ldr	ip, [r3, #32]
+ 179 0198 0228A0E1 		mov	r2, r2, asl #16
+ 180 019c 70309FE5 		ldr	r3, .L15+8
+ 181 01a0 22EBA0E1 		mov	lr, r2, lsr #22
+ 182 01a4 8110A0E1 		mov	r1, r1, asl #1
+ 183 01a8 00005CE3 		cmp	ip, #0
+ 184 01ac B3E081E1 		strh	lr, [r1, r3]	@ movhi 
+ 185 01b0 7B00000A 		beq	.L13
+ 186 01b4 4220DCE5 		ldrb	r2, [ip, #66]	@ zero_extendqisi2
+ 187 01b8 4330DCE5 		ldrb	r3, [ip, #67]	@ zero_extendqisi2
+ 188 01bc 012082E2 		add	r2, r2, #1
+ 189 01c0 FF2002E2 		and	r2, r2, #255
+ 190 01c4 020053E1 		cmp	r3, r2
+ 191 01c8 0020A093 		movls	r2, #0
+ 192 01cc 82008CE0 		add	r0, ip, r2, asl #1
+ 193 01d0 B030DCE1 		ldrh	r3, [ip, #0]
+ 194 01d4 B210D0E1 		ldrh	r1, [r0, #2]
+ 195 01d8 033061E0 		rsb	r3, r1, r3
+ 196 01dc B030CCE1 		strh	r3, [ip, #0]	@ movhi 
+ 197 01e0 B030DCE1 		ldrh	r3, [ip, #0]
+ 198 01e4 03308EE0 		add	r3, lr, r3
+ 199 01e8 4220CCE5 		strb	r2, [ip, #66]
+ 200 01ec B2E0C0E1 		strh	lr, [r0, #2]	@ movhi 
+ 201 01f0 B030CCE1 		strh	r3, [ip, #0]	@ movhi 
+ 202              	.L13:
+ 203 01f4 1C309FE5 		ldr	r3, .L15+12
+ 204 01f8 0020A0E3 		mov	r2, #0
+ 205 01fc 302083E5 		str	r2, [r3, #48]
+ 206 0200 0200BDE8 		 ldmfd sp!,{r1}
+ 207 0204 01F061E1 	 msr   spsr_c,r1
+ 208 0208 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+ 209              	.L16:
+ 210              		.align	2
+ 211              	.L15:
+ 212 020c 000006E0 		.word	-536477696
+ 213 0210 00000000 		.word	buffers
+ 214 0214 00000000 		.word	adc1_val
+ 215 0218 00F0FFFF 		.word	-4096
+ 217              		.bss
+ 218              		.align	2
+ 219              	buffers:
+ 220 0000 00000000 		.space	64
+ 220      00000000 
+ 220      00000000 
+ 220      00000000 
+ 220      00000000 
+ 221              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 adc_hw.c
+     /tmp/cccaVSiP.s:7      .data:00000000 adc1_val
+     /tmp/cccaVSiP.s:20     .data:00000010 adc0_val
+     /tmp/cccaVSiP.s:33     .text:00000000 adc_buf_channel
+     /tmp/cccaVSiP.s:38     .text:00000000 $a
+     /tmp/cccaVSiP.s:47     .text:00000014 $d
+     /tmp/cccaVSiP.s:219    .bss:00000000 buffers
+     /tmp/cccaVSiP.s:52     .text:00000018 adc_init
+     /tmp/cccaVSiP.s:57     .text:00000018 $a
+     /tmp/cccaVSiP.s:95     .text:000000a0 $d
+     /tmp/cccaVSiP.s:107    .text:000000c0 adcISR0
+     /tmp/cccaVSiP.s:163    .text:0000016c adcISR1
+     /tmp/cccaVSiP.s:112    .text:000000c0 $a
+     /tmp/cccaVSiP.s:155    .text:0000015c $d
+     /tmp/cccaVSiP.s:168    .text:0000016c $a
+     /tmp/cccaVSiP.s:212    .text:0000020c $d
+
+NO UNDEFINED SYMBOLS

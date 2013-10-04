@@ -1,0 +1,162 @@
+   1              		.file	"modem_hw.c"
+   2              		.bss
+   3              	modem_sample_idx:
+   4 0000 00       		.space	1
+   5              	modem_phase:
+   6 0001 00       		.space	1
+   7              		.section	.rodata
+   8              		.align	1
+  11              	modem_sample:
+  12 0000 0002     		.short	512
+  13 0002 FF03     		.short	1023
+  14 0004 0002     		.short	512
+  15 0006 0100     		.short	1
+  16 0008 0002     		.short	512
+  17 000a 0100     		.short	1
+  18 000c 0002     		.short	512
+  19 000e FF03     		.short	1023
+  20 0010 0002     		.short	512
+  21 0012 6A03     		.short	874
+  22 0014 FF03     		.short	1023
+  23 0016 6A03     		.short	874
+  24 0018 0002     		.short	512
+  25 001a 9600     		.short	150
+  26 001c 0100     		.short	1
+  27 001e 9600     		.short	150
+  28              		.bss
+  29              	modem_bit.0:
+  30 0002 00       		.space	1
+  31              		.text
+  32              		.align	2
+  33              		.global	TIMER1_ISR
+  35              	TIMER1_ISR:
+  36              		@ Function supports interworking.
+  37              		@ Naked Function: prologue and epilogue provided by programmer.
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 0, uses_anonymous_args = 0
+  40 0000 04E04EE2 		 sub   lr, lr,#4
+  41 0004 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+  42 0008 00104FE1 	 mrs   r1, spsr
+  43 000c 02002DE9 	 stmfd sp!,{r1}
+  44 0010 20019FE5 		ldr	r0, .L12
+  45 0014 20619FE5 		ldr	r6, .L12+4
+  46 0018 20519FE5 		ldr	r5, .L12+8
+  47 001c 0020D0E5 		ldrb	r2, [r0, #0]	@ zero_extendqisi2
+  48 0020 0040D6E5 		ldrb	r4, [r6, #0]	@ zero_extendqisi2
+  49 0024 00C0D5E5 		ldrb	ip, [r5, #0]	@ zero_extendqisi2
+  50 0028 013082E2 		add	r3, r2, #1
+  51 002c 84108CE0 		add	r1, ip, r4, asl #1
+  52 0030 0030C0E5 		strb	r3, [r0, #0]
+  53 0034 012182E0 		add	r2, r2, r1, asl #2
+  54 0038 04319FE5 		ldr	r3, .L12+12
+  55 003c 8220A0E1 		mov	r2, r2, asl #1
+  56 0040 B32092E1 		ldrh	r2, [r2, r3]
+  57 0044 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  58 0048 040053E3 		cmp	r3, #4
+  59 004c F4309FE5 		ldr	r3, .L12+16
+  60 0050 0223A0E1 		mov	r2, r2, asl #6
+  61 0054 002083E5 		str	r2, [r3, #0]
+  62 0058 4300001A 		bne	.L2
+  63 005c E8E09FE5 		ldr	lr, .L12+20
+  64 0060 0010DEE5 		ldrb	r1, [lr, #0]	@ zero_extendqisi2
+  65 0064 04202CE0 		eor	r2, ip, r4
+  66 0068 000051E3 		cmp	r1, #0
+  67 006c 0030A0E3 		mov	r3, #0
+  68 0070 0030C0E5 		strb	r3, [r0, #0]
+  69 0074 0020C5E5 		strb	r2, [r5, #0]
+  70 0078 0640A0E1 		mov	r4, r6
+  71 007c 01C0A001 		moveq	ip, r1
+  72 0080 2600000A 		beq	.L4
+  73 0084 080051E3 		cmp	r1, #8
+  74 0088 C0309F95 		ldrls	r3, .L12+24
+  75 008c 0020D395 		ldrlsb	r2, [r3, #0]	@ zero_extendqisi2
+  76 0090 A210A091 		movls	r1, r2, lsr #1
+  77 0094 0010C395 		strlsb	r1, [r3, #0]
+  78 0098 01C00292 		andls	ip, r2, #1
+  79 009c 01C0A083 		movhi	ip, #1
+  80              	.L4:
+  81 00a0 0030DEE5 		ldrb	r3, [lr, #0]	@ zero_extendqisi2
+  82 00a4 013083E2 		add	r3, r3, #1
+  83 00a8 0030CEE5 		strb	r3, [lr, #0]
+  84 00ac 0010DEE5 		ldrb	r1, [lr, #0]	@ zero_extendqisi2
+  85 00b0 090051E3 		cmp	r1, #9
+  86 00b4 4200009A 		bls	.L7
+  87 00b8 94309FE5 		ldr	r3, .L12+28
+  88 00bc 94009FE5 		ldr	r0, .L12+32
+  89 00c0 0020D3E5 		ldrb	r2, [r3, #0]	@ zero_extendqisi2
+  90 00c4 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  91 00c8 030052E1 		cmp	r2, r3
+  92 00cc 01304102 		subeq	r3, r1, #1
+  93 00d0 0030CE05 		streqb	r3, [lr, #0]
+  94 00d4 4200000A 		beq	.L7
+  95 00d8 0010D0E5 		ldrb	r1, [r0, #0]	@ zero_extendqisi2
+  96 00dc 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  97 00e0 013083E2 		add	r3, r3, #1
+  98 00e4 0030C0E5 		strb	r3, [r0, #0]
+  99 00e8 6C309FE5 		ldr	r3, .L12+36
+ 100 00ec 0110D3E7 		ldrb	r1, [r3, r1]	@ zero_extendqisi2
+ 101 00f0 58309FE5 		ldr	r3, .L12+24
+ 102 00f4 0020D0E5 		ldrb	r2, [r0, #0]	@ zero_extendqisi2
+ 103 00f8 0010C3E5 		strb	r1, [r3, #0]
+ 104 00fc 48309FE5 		ldr	r3, .L12+20
+ 105 0100 FF0052E3 		cmp	r2, #255
+ 106 0104 0020A0E3 		mov	r2, #0
+ 107 0108 0020C3E5 		strb	r2, [r3, #0]
+ 108 010c 0020C005 		streqb	r2, [r0, #0]
+ 109              	.L7:
+ 110 0110 00C0C4E5 		strb	ip, [r4, #0]
+ 111              	.L2:
+ 112 0114 44309FE5 		ldr	r3, .L12+40
+ 113 0118 0120A0E3 		mov	r2, #1
+ 114 011c 002083E5 		str	r2, [r3, #0]
+ 115 0120 3C309FE5 		ldr	r3, .L12+44
+ 116 0124 012042E2 		sub	r2, r2, #1
+ 117 0128 302083E5 		str	r2, [r3, #48]
+ 118 012c 0200BDE8 		 ldmfd sp!,{r1}
+ 119 0130 01F061E1 	 msr   spsr_c,r1
+ 120 0134 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+ 121              	.L13:
+ 122              		.align	2
+ 123              	.L12:
+ 124 0138 00000000 		.word	modem_sample_idx
+ 125 013c 02000000 		.word	modem_bit.0
+ 126 0140 01000000 		.word	modem_phase
+ 127 0144 00000000 		.word	modem_sample
+ 128 0148 00C006E0 		.word	-536428544
+ 129 014c 00000000 		.word	tx_bit_idx
+ 130 0150 00000000 		.word	tx_byte
+ 131 0154 00000000 		.word	tx_head
+ 132 0158 00000000 		.word	tx_tail
+ 133 015c 00000000 		.word	tx_buf
+ 134 0160 008000E0 		.word	-536838144
+ 135 0164 00F0FFFF 		.word	-4096
+ 137              		.comm	modem_nb_ovrn,1,1
+ 138              		.comm	tx_head,1,1
+ 139              		.comm	tx_tail,1,1
+ 140              		.comm	tx_buf,255,1
+ 141              		.comm	tx_byte,1,1
+ 142              		.comm	ck_a,1,1
+ 143              		.comm	ck_b,1,1
+ 144              		.comm	tx_bit_idx,1,1
+ 145              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 modem_hw.c
+                             .bss:00000000 $d
+     /tmp/ccHZevxy.s:3      .bss:00000000 modem_sample_idx
+     /tmp/ccHZevxy.s:5      .bss:00000001 modem_phase
+     /tmp/ccHZevxy.s:11     .rodata:00000000 modem_sample
+     /tmp/ccHZevxy.s:7      .bss:00000002 $d
+     /tmp/ccHZevxy.s:29     .bss:00000002 modem_bit.0
+     /tmp/ccHZevxy.s:35     .text:00000000 TIMER1_ISR
+     /tmp/ccHZevxy.s:40     .text:00000000 $a
+     /tmp/ccHZevxy.s:124    .text:00000138 $d
+                            *COM*:00000001 tx_bit_idx
+                            *COM*:00000001 tx_byte
+                            *COM*:00000001 tx_head
+                            *COM*:00000001 tx_tail
+                            *COM*:000000ff tx_buf
+                            *COM*:00000001 modem_nb_ovrn
+                            *COM*:00000001 ck_a
+                            *COM*:00000001 ck_b
+
+NO UNDEFINED SYMBOLS

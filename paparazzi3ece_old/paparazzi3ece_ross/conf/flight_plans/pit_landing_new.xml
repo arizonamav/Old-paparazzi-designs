@@ -1,0 +1,50 @@
+<flight_plan NAME="PIT LANDING" LON0="-110.90600" MAX_DIST_FROM_HOME="500" GROUND_ALT="800" SECURITY_HEIGHT="50" QFU="270" ALT="850" LAT0="32.13100">
+  <rc_control>
+    <mode NAME="AUTO1">
+      <setting VAR="ir_pitch_neutral" RANGE="60." RC="gain_1_up" TYPE="int16"/>
+      <setting VAR="ir_roll_neutral" RANGE="60." RC="gain_2_up" TYPE="int16"/>
+      <setting VAR="static_pitch" RANGE="0.000005" RC="gain_1_down" TYPE="int16"/>
+    </mode>
+    <mode NAME="AUTO2">
+      <setting VAR="course_pgain" RANGE="0.1" RC="gain_1_up" TYPE="float"/>
+      <setting VAR="pitch_of_roll" RANGE=".2" RC="gain_2_up" TYPE="float"/>
+      <setting VAR="static_pitch" RANGE="0.000005" RC="gain_1_down" TYPE="int16"/>
+    </mode>
+  </rc_control>
+  <waypoints>
+    <waypoint name="HOME" x="20" y="50" alt="850."/>
+    <waypoint name="4" x="-50" y="-130" alt="850."/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception COND="(RcEvent1())" DEROUTE="one"/>
+      <exception COND="(RcEvent2())" DEROUTE="one"/>
+      <while COND="(!launch)"/>
+      <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="gaz" gaz="1.0" pitch="0.0"/>
+      <deroute block="one"/>
+    </block>
+    <block name="one">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="two1"/>
+	<go wp="4" alt="GROUND_ALT+60" hmode="route"/>
+      	<go wp="HOME" alt="GROUND_ALT+60" hmode="route" vmode="alt"/>
+	<go wp="4" alt="GROUND_ALT+60" hmode="route"/>
+      	<go wp="HOME" alt="GROUND_ALT+60" hmode="route" vmode="alt"/>
+	<go wp="4" alt="GROUND_ALT+60" hmode="route"/>
+      	<go wp="HOME" alt="GROUND_ALT+60" hmode="route" vmode="alt"/>
+    </block>
+    <block name="two1">
+      <exception cond="(RcEvent1())" deroute="one"/>
+      <exception cond="(RcEvent2())" deroute="two"/>
+      <go wp="4" alt="GROUND_ALT+50" hmode="route"/>
+      <go wp="HOME" alt="GROUND_ALT" hmode="route" gaz="0.20" vmode="gaz"/>
+    </block>
+    <block name="two">
+      <exception cond="(RcEvent1())" deroute="two1"/>
+      <exception cond="(RcEvent2())" deroute="init"/>
+      <go wp="4" alt="GROUND_ALT+60" hmode="route"/>
+      <go wp="HOME" alt="GROUND_ALT-40" hmode="route" gaz="0.20" vmode="gaz"/>
+    </block>
+  </blocks>
+</flight_plan>
+

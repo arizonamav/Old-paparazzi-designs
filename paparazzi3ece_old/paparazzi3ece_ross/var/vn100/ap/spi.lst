@@ -1,0 +1,18 @@
+   1              		.file	"spi.c"
+   2              		.comm	spi_buffer_input,4,4
+   3              		.comm	spi_buffer_output,4,4
+   4              		.comm	spi_buffer_length,1,1
+   5              		.comm	spi_message_received,1,1
+   6              		.comm	spi_cur_slave,1,1
+   7              		.comm	spi_nb_ovrn,1,1
+   8              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 spi.c
+                            *COM*:00000004 spi_buffer_input
+                            *COM*:00000004 spi_buffer_output
+                            *COM*:00000001 spi_buffer_length
+                            *COM*:00000001 spi_message_received
+                            *COM*:00000001 spi_cur_slave
+                            *COM*:00000001 spi_nb_ovrn
+
+NO UNDEFINED SYMBOLS

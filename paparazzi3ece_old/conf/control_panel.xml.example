@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<control_panel name="paparazzi control panel">
+
+  <section name="variables">
+    <variable name="downlink_serial_port" value="/dev/ttyUSB0"/>
+    <variable name="fbw_serial_port"      value="/dev/ttyS1"/>
+    <variable name="ap_serial_port"       value="/dev/ttyS0"/>
+    <variable name="ivy_bus"              value="127:2010"/>
+    <variable name="map"                  value="muret_UTM.xml"/>
+    <variable name="flight_plan"          value="flight_plans/muret1.xml"/>
+  </section>
+
+  <section name="programs">
+    <program name="server" command="sw/ground_segment/tmtc/server">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="link" command="sw/ground_segment/tmtc/link">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="gcs" command="sw/ground_segment/cockpit/gcs">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="messages" command="sw/ground_segment/tmtc/messages">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="plot" command ="sw/logalizer/plot.pl"/>
+
+    <program name="play" command="sw/logalizer/play">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="sim" command="sw/simulator/simsitl.pl">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="hitl" command="sw/simulator/simhitl">
+      <arg flag="-fbw" variable="fbw_serial_port"/>
+      <arg flag="-ap" variable="ap_serial_port"/>
+    </program>
+
+    <program name="gaia" command="sw/simulator/gaia">
+      <arg flag="-b" variable="ivy_bus"/>
+    </program>
+
+    <program name="http server" command="sw/ground_segment/tmtc/boa"/>
+ </section>
+  
+
+
+
+  <section name="sessions">
+
+    <session name="1 Simple Sim">
+      <program name="server"><arg flag="-n"/></program>
+      <program name="sim"><arg flag="-a" constant="MJ5"/></program>
+      <program name="gcs">
+        <arg flag="-ref" constant="WGS84 43.4623 1.2730"/>
+        <arg flag="-center" constant="WGS84 43.4623 1.2730"/>
+        <arg flag="-zoom" constant="0.75"/>
+        <arg flag="-speech"/>
+      </program> 
+      <program name="gaia"/>
+    </session>
+
+    <session name="2 Versatile Sim">
+      <program name="server"/>     
+      <program name="gcs">
+<!--    <arg flag="-mplayer" constant="rtsp://localhost:7070/webcam"/> -->
+      </program>
+      <program name="sim"><arg flag="-a" constant="TJ1"/></program>
+      <program name="messages"><arg flag="-c" constant="telemetry:*"/><arg flag="-c" constant="ground:ground"/></program>
+    </session>
+
+    <session name="3 Multi-A/C Sim">
+      <program name="sim"><arg flag="-a" constant="MJ5"/></program>
+      <program name="sim"><arg flag="-a" constant="TJ1"/></program>
+      <program name="server"/>
+      <program name="gcs">
+        <arg flag="-track_size" constant="10"/>
+      </program>
+    </session>
+
+   <session name="4 Versatile Flight">
+      <program name="link">
+        <arg flag="-d" constant="/dev/paparazzi/xbee"/>
+        <arg flag="-transport" constant="xbee"/>
+        <arg flag="-uplink" constant=""/>
+      </program>
+      <program name="server"/>
+      <program name="gcs"/>
+    </session>
+
+  </section>
+
+</control_panel>

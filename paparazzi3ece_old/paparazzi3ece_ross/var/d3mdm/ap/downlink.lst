@@ -1,0 +1,38 @@
+   1              		.file	"downlink.c"
+   2              		.global	telemetry_mode_Ap
+   3              		.bss
+   6              	telemetry_mode_Ap:
+   7 0000 00       		.space	1
+   8              		.global	telemetry_mode_Fbw
+  11              	telemetry_mode_Fbw:
+  12 0001 00       		.space	1
+  13              		.comm	downlink_nb_ovrn,1,1
+  14              		.comm	gyro_roll_scale,4,4
+  15              		.comm	gyro_pitch_scale,4,4
+  16              		.comm	gyro_roll_adc,4,4
+  17              		.comm	gyro_pitch_adc,4,4
+  18              		.comm	accel_ax_scale,4,4
+  19              		.comm	accel_ay_scale,4,4
+  20              		.comm	accel_az_scale,4,4
+  21              		.comm	accel_ax_neutral,4,4
+  22              		.comm	accel_ay_neutral,4,4
+  23              		.comm	accel_az_neutral,4,4
+  24              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 downlink.c
+     /tmp/ccPdDCvI.s:6      .bss:00000000 telemetry_mode_Ap
+                             .bss:00000000 $d
+     /tmp/ccPdDCvI.s:11     .bss:00000001 telemetry_mode_Fbw
+                            *COM*:00000001 downlink_nb_ovrn
+                            *COM*:00000004 gyro_roll_scale
+                            *COM*:00000004 gyro_pitch_scale
+                            *COM*:00000004 gyro_roll_adc
+                            *COM*:00000004 gyro_pitch_adc
+                            *COM*:00000004 accel_ax_scale
+                            *COM*:00000004 accel_ay_scale
+                            *COM*:00000004 accel_az_scale
+                            *COM*:00000004 accel_ax_neutral
+                            *COM*:00000004 accel_ay_neutral
+                            *COM*:00000004 accel_az_neutral
+
+NO UNDEFINED SYMBOLS

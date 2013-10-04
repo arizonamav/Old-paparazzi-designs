@@ -1,0 +1,30 @@
+<flight_plan alt="800" ground_alt="655" lat0="32.264897" lon0="-111.273852" max_dist_from_home="1000" name="TIMPA" qfu="180" security_height="7" wind_dir="60" wind_mod="3">
+  <waypoints>
+    <waypoint alt="740." name="HOME" x="-73.5401595418" y="34.2456246042"/>
+    <waypoint alt="740." name="4" x="13.5556140051" y="42.7654076088"/>
+    <waypoint alt="673." name="rw1" x="-30.5556140051" y="38.7654076088"/>
+    <waypoint alt="673." name="rw2" x="13.5556140051" y="42.7654076088"/>
+    <waypoint alt="740." name="3" x="-30.5556140051" y="38.7654076088"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <while cond="(!launch)"/>
+      <attitude pitch="0.3" roll="0.0" throttle="0.8" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="loiter"/>
+    </block>
+    <block name="loiter">
+      <go approaching_time="1" wp="4" from="3"/>
+      <go approaching_time="1" wp="rw1" from="4" hmode="route"/>
+      <go approaching_time="1" wp="rw2" from="rw1" hmode="route"/>
+      <go approaching_time="1" wp="3"/>
+      <deroute block="loiter"/>
+    </block>
+    <block name="circle">
+      <circle alt="GROUND_ALT+50" radius="50" wp="HOME"/>
+    </block>
+    <block name="landing">
+      <go alt="GROUND_ALT+10" wp="4"/>
+      <go alt="GROUND_ALT" throttle="0.10" vmode="throttle" wp="HOME"/>
+    </block>
+  </blocks>
+</flight_plan>

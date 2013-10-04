@@ -1,0 +1,22 @@
+<dump>
+  <flight_plan name="ame" wind_mod="3" wind_dir="60" lon0="-110.951954" max_dist_from_home="1500" ground_alt="750" security_height="60" qfu="180" alt="850" lat0="32.236525">
+    <waypoints utm_x0="504526.513005" utm_y0="3566654.20711">
+      <waypoint name="HOME" x="-94.522471131" y="17.319972877" alt="850."/>
+    </waypoints>
+    <blocks>
+      <block name="init" no="0">
+        <while cond="(!launch)" no="0"/>
+        <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle" throttle="1.0" pitch="0.3" no="2"/>
+      </block>
+    </blocks>
+    <exceptions/>
+  </flight_plan>
+  <stages>
+    <stage block="0" block_name="init" stage="2">
+      <attitude roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="throttle" throttle="1.0" pitch="0.3" no="2"/>
+    </stage>
+    <stage block="0" block_name="init" stage="0">
+      <while cond="(!launch)" no="0"/>
+    </stage>
+  </stages>
+</dump>

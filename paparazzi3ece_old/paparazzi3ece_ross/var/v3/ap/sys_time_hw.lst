@@ -1,0 +1,184 @@
+   1              		.file	"sys_time_hw.c"
+   2              		.data
+   5              	state.0:
+   6 0000 08       		.byte	8
+   7              		.bss
+   8              		.align	2
+   9              	last.1:
+  10 0000 00000000 		.space	4
+  11              		.text
+  12              		.align	2
+  13              		.global	TIMER0_ISR
+  15              	TIMER0_ISR:
+  16              		@ Function supports interworking.
+  17              		@ Naked Function: prologue and epilogue provided by programmer.
+  18              		@ args = 0, pretend = 0, frame = 0
+  19              		@ frame_needed = 0, uses_anonymous_args = 0
+  20 0000 04E04EE2 		 sub   lr, lr,#4
+  21 0004 FF5F2DE9 	 stmfd sp!,{r0-r12,lr}
+  22 0008 00104FE1 	 mrs   r1, spsr
+  23 000c 02002DE9 	 stmfd sp!,{r1}
+  24              	.L23:
+  25 0010 C0219FE5 		ldr	r2, .L24
+  26 0014 003092E5 		ldr	r3, [r2, #0]
+  27 0018 420013E3 		tst	r3, #66
+  28 001c 6E00000A 		beq	.L19
+  29 0020 003092E5 		ldr	r3, [r2, #0]
+  30 0024 400013E3 		tst	r3, #64
+  31 0028 2F00000A 		beq	.L4
+  32 002c A8019FE5 		ldr	r0, .L24+4
+  33 0030 A8319FE5 		ldr	r3, .L24+8
+  34 0034 00C0D0E5 		ldrb	ip, [r0, #0]	@ zero_extendqisi2
+  35 0038 342092E5 		ldr	r2, [r2, #52]
+  36 003c 001093E5 		ldr	r1, [r3, #0]
+  37 0040 FFE00CE2 		and	lr, ip, #255
+  38 0044 08005EE3 		cmp	lr, #8
+  39 0048 002083E5 		str	r2, [r3, #0]
+  40 004c 021061E0 		rsb	r1, r1, r2
+  41 0050 1A00001A 		bne	.L5
+  42 0054 493B41E2 		sub	r3, r1, #74752
+  43 0058 84219FE5 		ldr	r2, .L24+12
+  44 005c F93043E2 		sub	r3, r3, #249
+  45 0060 020053E1 		cmp	r3, r2
+  46 0064 0030A093 		movls	r3, #0
+  47 0068 2B00009A 		bls	.L21
+  48 006c 2C0000EA 		b	.L7
+  49              	.L5:
+  50 0070 D23D41E2 		sub	r3, r1, #13440
+  51 0074 6C219FE5 		ldr	r2, .L24+16
+  52 0078 3D3043E2 		sub	r3, r3, #61
+  53 007c 020053E1 		cmp	r3, r2
+  54 0080 0830A083 		movhi	r3, #8
+  55 0084 2B00008A 		bhi	.L21
+  56 0088 01308CE2 		add	r3, ip, #1
+  57 008c 0030C0E5 		strb	r3, [r0, #0]
+  58 0090 0030D0E5 		ldrb	r3, [r0, #0]	@ zero_extendqisi2
+  59 0094 080053E3 		cmp	r3, #8
+  60 0098 4C319FE5 		ldr	r3, .L24+20
+  61 009c 8E20A0E1 		mov	r2, lr, asl #1
+  62 00a0 B31082E1 		strh	r1, [r2, r3]	@ movhi 
+  63 00a4 44319F05 		ldreq	r3, .L24+24
+  64 00a8 0120A003 		moveq	r2, #1
+  65 00ac 0020C305 		streqb	r2, [r3, #0]
+  66 00b0 2C0000EA 		b	.L7
+  67              	.L21:
+  68 00b4 0030C0E5 		strb	r3, [r0, #0]
+  69              	.L7:
+  70 00b8 18319FE5 		ldr	r3, .L24
+  71 00bc 4020A0E3 		mov	r2, #64
+  72 00c0 002083E5 		str	r2, [r3, #0]
+  73              	.L4:
+  74 00c4 0C419FE5 		ldr	r4, .L24
+  75 00c8 003094E5 		ldr	r3, [r4, #0]
+  76 00cc 020013E3 		tst	r3, #2
+  77 00d0 0200000A 		beq	.L23
+  78 00d4 18519FE5 		ldr	r5, .L24+28
+  79 00d8 00E0D5E5 		ldrb	lr, [r5, #0]	@ zero_extendqisi2
+  80 00dc FFC00EE2 		and	ip, lr, #255
+  81 00e0 00005CE3 		cmp	ip, #0
+  82 00e4 3F00001A 		bne	.L12
+  83 00e8 08019FE5 		ldr	r0, .L24+32
+  84 00ec 1C2090E5 		ldr	r2, [r0, #28]
+  85 00f0 04119FE5 		ldr	r1, .L24+36
+  86 00f4 04319FE5 		ldr	r3, .L24+40
+  87 00f8 012682E3 		orr	r2, r2, #1048576
+  88 00fc 001083E5 		str	r1, [r3, #0]
+  89 0100 1C2080E5 		str	r2, [r0, #28]
+  90              	.L12:
+  91 0104 07005CE3 		cmp	ip, #7
+  92 0108 4E00008A 		bhi	.L13
+  93 010c EC009FE5 		ldr	r0, .L24+40
+  94 0110 EC309FE5 		ldr	r3, .L24+44
+  95 0114 8C20A0E1 		mov	r2, ip, asl #1
+  96 0118 B31092E1 		ldrh	r1, [r2, r3]
+  97 011c 1C3094E5 		ldr	r3, [r4, #28]
+  98 0120 002090E5 		ldr	r2, [r0, #0]
+  99 0124 013083E0 		add	r3, r3, r1
+ 100 0128 022061E0 		rsb	r2, r1, r2
+ 101 012c 01108EE2 		add	r1, lr, #1
+ 102 0130 1C3084E5 		str	r3, [r4, #28]
+ 103 0134 002080E5 		str	r2, [r0, #0]
+ 104 0138 0010C5E5 		strb	r1, [r5, #0]
+ 105 013c 670000EA 		b	.L14
+ 106              	.L13:
+ 107 0140 08005CE3 		cmp	ip, #8
+ 108 0144 B4109FE5 		ldr	r1, .L24+40
+ 109 0148 5A00001A 		bne	.L15
+ 110 014c A4209FE5 		ldr	r2, .L24+32
+ 111 0150 143092E5 		ldr	r3, [r2, #20]
+ 112 0154 023283E3 		orr	r3, r3, #536870912
+ 113 0158 143082E5 		str	r3, [r2, #20]
+ 114 015c 002091E5 		ldr	r2, [r1, #0]
+ 115 0160 1C3094E5 		ldr	r3, [r4, #28]
+ 116 0164 A23083E0 		add	r3, r3, r2, lsr #1
+ 117 0168 01208EE2 		add	r2, lr, #1
+ 118 016c 650000EA 		b	.L22
+ 119              	.L15:
+ 120 0170 80209FE5 		ldr	r2, .L24+32
+ 121 0174 143092E5 		ldr	r3, [r2, #20]
+ 122 0178 013683E3 		orr	r3, r3, #1048576
+ 123 017c 143082E5 		str	r3, [r2, #20]
+ 124 0180 1C3092E5 		ldr	r3, [r2, #28]
+ 125 0184 023283E3 		orr	r3, r3, #536870912
+ 126 0188 1C3082E5 		str	r3, [r2, #28]
+ 127 018c 002091E5 		ldr	r2, [r1, #0]
+ 128 0190 1C3094E5 		ldr	r3, [r4, #28]
+ 129 0194 A23083E0 		add	r3, r3, r2, lsr #1
+ 130 0198 0020A0E3 		mov	r2, #0
+ 131              	.L22:
+ 132 019c 0020C5E5 		strb	r2, [r5, #0]
+ 133 01a0 1C3084E5 		str	r3, [r4, #28]
+ 134              	.L14:
+ 135 01a4 2C309FE5 		ldr	r3, .L24
+ 136 01a8 3C2093E5 		ldr	r2, [r3, #60]
+ 137 01ac 0220C2E3 		bic	r2, r2, #2
+ 138 01b0 3C2083E5 		str	r2, [r3, #60]
+ 139 01b4 0220A0E3 		mov	r2, #2
+ 140 01b8 002083E5 		str	r2, [r3, #0]
+ 141 01bc 020000EA 		b	.L23
+ 142              	.L19:
+ 143 01c0 40309FE5 		ldr	r3, .L24+48
+ 144 01c4 0020A0E3 		mov	r2, #0
+ 145 01c8 302083E5 		str	r2, [r3, #48]
+ 146 01cc 0200BDE8 		 ldmfd sp!,{r1}
+ 147 01d0 01F061E1 	 msr   spsr_c,r1
+ 148 01d4 FF9FFDE8 	 ldmfd sp!,{r0-r12,pc}^
+ 149              	.L25:
+ 150              		.align	2
+ 151              	.L24:
+ 152 01d8 004000E0 		.word	-536854528
+ 153 01dc 00000000 		.word	state.0
+ 154 01e0 00000000 		.word	last.1
+ 155 01e4 EE490200 		.word	149998
+ 156 01e8 4E460000 		.word	17998
+ 157 01ec 00000000 		.word	ppm_pulses
+ 158 01f0 00000000 		.word	ppm_valid
+ 159 01f4 00000000 		.word	servos_4015_idx
+ 160 01f8 008002E0 		.word	-536707072
+ 161 01fc E0930400 		.word	300000
+ 162 0200 00000000 		.word	servos_delay
+ 163 0204 00000000 		.word	servos_values
+ 164 0208 00F0FFFF 		.word	-4096
+ 166              		.comm	cpu_time_ticks,4,4
+ 167              		.bss
+ 168              		.align	2
+ 169              	last_periodic_event:
+ 170 0004 00000000 		.space	4
+ 171              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 sys_time_hw.c
+     /tmp/ccuHVt4l.s:5      .data:00000000 state.0
+                             .bss:00000000 $d
+     /tmp/ccuHVt4l.s:9      .bss:00000000 last.1
+     /tmp/ccuHVt4l.s:15     .text:00000000 TIMER0_ISR
+     /tmp/ccuHVt4l.s:20     .text:00000000 $a
+     /tmp/ccuHVt4l.s:152    .text:000001d8 $d
+                            *COM*:00000004 cpu_time_ticks
+     /tmp/ccuHVt4l.s:169    .bss:00000004 last_periodic_event
+
+UNDEFINED SYMBOLS
+ppm_pulses
+ppm_valid
+servos_4015_idx
+servos_delay
+servos_values

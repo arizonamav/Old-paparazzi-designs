@@ -1,0 +1,27 @@
+<flight_plan security_height="25" alt="430" ground_alt="380" lat0="30.686697" lon0="86.393367" max_dist_from_home="500" name="Precise Navigation" qfu="270">
+  <waypoints>
+    <waypoint name="Rally Point" x="30.686722222222222" y="86.39466666666667"/>
+    <waypoint name="Waypoint 2" x="30.688111111111112" y="86.39605555555555"/>
+    <waypoint name="Waypoint 3" x="30.689555555555554" y="86.39519444444444"/>
+    <waypoint name="Waypoint 4" x="30.691472222222224" y="86.39730555555556"/>
+    <waypoint name="Waypoint 5" x="30.69263888888889" y="86.39283333333333"/>
+    <waypoint name="Waypoint 6" x="30.69175" y="86.39341666666667"/>
+    <waypoint name="Waypoint 7" x="30.691444444444443" y="86.39283333333333"/>
+  </waypoints>
+  <include name="up_and_down" procedure="circles.xml" rotate="0" x="00" y="100">
+    <arg name="bottom" value="GROUND_ALT+50"/>
+    <with from="event1" to="circlehome"/>
+  </include>
+  <blocks>
+    <block name="init">
+      <while cond="(!launch)"/>
+      <heading course="QFU" pitch="0.15" throttle="0.8" until="(estimator_flight_time > 8)" vmode="throttle"/>
+      <heading climb="3.0" course="QFU" pitch="0.15" until="(estimator_z > SECURITY_ALT)" vmode="climb"/>
+      <deroute block="circlehome"/>
+    </block>
+    <block name="circlehome">
+      <exception cond="(RcEvent1())" deroute="up_and_down.climb"/>
+      <circle alt="GROUND_ALT+50" radius="75" wp="HOME"/>
+    </block>
+  </blocks>
+</flight_plan>

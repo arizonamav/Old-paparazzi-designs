@@ -1,0 +1,16 @@
+   1              		.file	"ppm_hw.c"
+   2              		.comm	ppm_pulses,16,2
+   3              		.comm	ppm_valid,1,1
+   4              		.bss
+   5              		.align	2
+   6              	last_periodic_event:
+   7 0000 00000000 		.space	4
+   8              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 ppm_hw.c
+                            *COM*:00000010 ppm_pulses
+                            *COM*:00000001 ppm_valid
+                             .bss:00000000 $d
+     /tmp/ccRo9U5A.s:6      .bss:00000000 last_periodic_event
+
+NO UNDEFINED SYMBOLS

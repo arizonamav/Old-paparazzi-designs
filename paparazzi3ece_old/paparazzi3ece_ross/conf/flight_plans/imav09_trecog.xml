@@ -1,0 +1,70 @@
+<flight_plan alt="119" ground_alt="59" lat0="30.686697" lon0="-86.393367" max_dist_from_home="750" name="Precise Navigation" qfu="270" security_height="30">
+  <waypoints>
+    <waypoint name="HOME" x="-32.4513251706" y="-298.42568979"/>
+    <waypoint alt="89." name="GCS" x="0." y="0."/>
+    <waypoint alt="100." name="TWP1" x="-11.265148602" y="-62.1452660011"/>
+    <waypoint alt="100." name="TWP2" x="-103.570381598" y="24.2819409426"/>
+    <waypoint alt="108.6" name="B1" x="-24.1836722116" y="150.481868628"/>
+    <waypoint name="B2" x="34.132526326" y="-803.635975068"/>
+    <waypoint alt="89." name="B3" x="-418.996831618" y="-652.138674997"/>
+    <waypoint alt="89." name="B4" x="-474.797325234" y="-159.817037125"/>
+    <waypoint alt="108.6" name="NFZ" x="154.926843944" y="-8.69276050525"/>
+    <waypoint alt="139." name="1" x="-339.193228105" y="-178.523999558"/>
+    <waypoint alt="139." name="2" x="-345.087031704" y="-332.350151397"/>
+    <waypoint alt="139." name="3" x="-47.1593579903" y="-332.974821497"/>
+    <waypoint alt="139." name="4" x="-52.9267115357" y="-94.5137924966"/>
+    <waypoint name="A" x="-86.7539657209" y="-52.3478296511"/>
+    <waypoint alt="89." name="B" x="-255.80007842" y="-273.918421551"/>
+    <waypoint alt="89." name="C" x="-263.059415853" y="-173.65698511"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.1" roll="0.0" throttle="0.56" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="2wp loiter"/>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="High Search"/>
+      <exception cond="(RcEvent2())" deroute="Low Search"/>
+      <exception cond="(RcEvent2())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="TWP1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="TWP2"/>
+      </while>
+    </block>
+    <block name="High Search">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent2())" deroute="Low Search"/>
+      <exception cond="(RcEvent2())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="3"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="4"/>
+      </while>
+    </block>
+    <block name="Low Search">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent2())" deroute="High Search"/>
+      <exception cond="(RcEvent2())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="A"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="B"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="C"/>
+      </while>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent2())" deroute="High Search"/>
+      <exception cond="(RcEvent2())" deroute="Low Search"/>
+      <go alt="GROUND_ALT+40" wp="TWP2"/>
+      <go alt="GROUND_ALT" throttle="0.10" vmode="throttle" wp="TWP1"/>
+    </block>
+  </blocks>
+</flight_plan>

@@ -1,0 +1,2209 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o (memcpy)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (atan)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (cos)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o) (fabs)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (sin)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (atan2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (sqrt)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__ieee754_atan2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__ieee754_rem_pio2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o) (__ieee754_sqrt)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__kernel_cos)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o) (__kernel_rem_pio2)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o) (__kernel_sin)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o) (floor)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (isnan)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__fdlib_version)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (matherr)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o) (scalbn)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o) (copysign)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o) (__errno)
+/usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o) (_impure_ptr)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__divsi3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o) (__div0)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o (__subdf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__muldf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o (__gtdf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__fixdfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__fixunsdfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__truncdfsf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__subsf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__mulsf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__gtsf2)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o (__fixsfsi)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o (__fixunssfsi)
+
+Allocating common symbols
+Common symbol       size              file
+
+estimator_z_dot     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+dl_msg_available    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+xbee_rssi           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+h_ctl_yaw_rate_mode
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_auto1_rate    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+phi_c               0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+h_ctl_course_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_flight_time
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+p0                  0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+v_ctl_auto_throttle_nominal_cruise_throttle
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+nav_glide_pitch_trim
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_altitude_error
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+xbee_ovrn           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+accel_az_neutral    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dist2_to_wp         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+rc_event_1          0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_segment_x_1     0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+theta_c             0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+h_ctl_roll_rate_dgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_psi       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+rc_status           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+uart0_tx_buffer     0x80              /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+estimator_z         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+desired_x           0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+ppm_pulses          0x10              /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+xbee_msg_received   0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+estimator_kalman_r_angle
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_segment_x_2     0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+estimator_az        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+range_dot           0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_roll_rate_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+p2                  0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_rudder_setpoint
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+nav_circle_radius   0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+vdrop2throt_coeff   0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+vsupply_adc_buf     0x44              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+v_ctl_climb_mode    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+xbee_payload_len    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+h_ctl_roll_max_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_lo_throttle_yaw_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+accel_ay_scale      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+time_since_last_ppm
+                    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+gyro_yaw_scale      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+stage_time_ds       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+pos                 0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+nav_throttle_setpoint
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+estimator_t         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+h_ctl_course_pre_bank_correction
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_lo_throttle_pitch_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_kalman_phi
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+fbw_vsupply_decivolt
+                    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+survey_south        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+wind_east           0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+desired_y           0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+ppm_valid           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+h_ctl_pitch_rate_dgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+xbee_error          0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+carrot_x            0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_throttle_igain_minus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+estimator_ay        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+ppm_cpt             0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+target_x            0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+uart0_tx_insert_idx
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+the_acs             0x1e0             /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_q_gyro
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_roll_scale     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+horizontal_mode     0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_alt_sum_err   0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+range_hovering      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_hi_throttle_pitch_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_p         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+v_ctl_auto_throttle_submode
+                    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_elevator_setpoint
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+p_2                 0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_roll_rate_igain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+fbw_mode            0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+buf_range_tmp1      0x10              /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+v_ctl_auto_throttle_igain_plus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+actuators           0xc               /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+h_ctl_hi_throttle_yaw_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+rc_values           0x10              /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+estimator_theta     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+nav_block           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+buf_range_tmp       0x3c              /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+v_ctl_auto_throttle_pitch_of_vz_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment_plus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+p1                  0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+last_pprz_mode      0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+servos_4015_idx     0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+nav_circle_y        0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+slider_2_val        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_roll_rate_setpoint_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_kalman_theta
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+too_far_from_home   0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_throttle_pgain_minus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+uart0_rx_insert_idx
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+downlink_nb_ovrn    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+h_ctl_hi_throttle_roll_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_throttle_slew_
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment_minus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+buf_roll            0x44              /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+desc_throttle       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+pos1                0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_aileron_of_throttle
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+avg_rc_values       0x20              /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+xbee_payload        0x100             /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+estimator_hspeed_mod
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+range_ave           0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+estimator_phi       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+rc_pitch            0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_throttle_cruise_throttle_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_yaw_pgain     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_aileron_setpoint
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_altitude_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_pitch_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+servos_values       0x10              /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+slider_1_val        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_mode          0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_cruise_throttle
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_roll_rate_mode
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+survey_north        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+estimator_r         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+v_ctl_altitude_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_pitch_min_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_x         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+ap_ok               0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+estimator_range     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+h_ctl_course_pgain  0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+uart0_tx_extract_idx
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+h_ctl_pitch_pgain   0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+target_y            0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+estimator_kalman_q_angle
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dist2_to_home       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+accel_az_scale      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_course_pre_bank
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_auto_pitch_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+range_adc           0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+dl_buffer           0x80              /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+rc_event_2          0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_yaw_rate_dgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_max_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+gyro_pitch_adc      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+h_ctl_pitch_rate_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_igain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+survey_west         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_yaw_dgain     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_dgain   0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+time_since_last_ap  0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+nav_stage           0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_lo_throttle_roll_rate_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+gyro_roll_adc       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+energy              0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+cpu_time_sec        0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+gpio1_status        0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gpio.o
+survey_east         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+range_scale         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+roll_rate_adc       0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+v_ctl_throttle_setpoint
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_climb_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_yaw_rate_igain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_igain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+estimator_q         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_hspeed_dir
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+accel_ay_neutral    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_ax_scale      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_yaw_adc        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+h_ctl_yaw_setpoint  0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+nav_circle_x        0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+p_1                 0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+nav_segment_y_2     0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+wind_north          0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+h_ctl_yaw_rate_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+gyro_pitch_scale    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+nav_segment_y_1     0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+target_alt          0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+yaw_rate_adc        0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+h_ctl_disabled      0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+commands            0xa               /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+estimator_ax        0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+ground_alt          0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_pitch_igain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+h_ctl_roll_pgain    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_altitude_pre_climb
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+xbee_cs             0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+uart0_tx_running    0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+carrot_y            0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_throttle_pgain_plus
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+pitch_rate_adc      0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+v_ctl_throttle_slewed
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+accel_ax_neutral    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+alt_kalman_enabled  0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+range               0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+h_ctl_yaw_rate_setpoint_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+stage_time          0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_roll_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+climb_throttle      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+estimator_y         0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+range_neutral       0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+v_ctl_auto_throttle_pgain
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+vsupply             0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+last_ppm_cpt        0x1               /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+block_time          0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+cpu_time_ticks      0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+nav_circle_trigo_qdr
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_pitch_rate_mode
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+uart0_rx_buffer     0x80              /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+estimator_range_dot
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+flight_altitude     0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_yaw_max_setpoint
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+uart0_rx_extract_idx
+                    0x2               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+h_ctl_elevator_of_roll
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+v_ctl_auto_pitch_sum_err
+                    0x4               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x0007d000         xr
+RAM              0x40000000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/traffic_info.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+LOAD /home/mav/Desktop/paparazzi3new/var/vercam/ap/gpio.o
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+                0x00001000                STACK_SIZE = 0x1000
+
+.text           0x00000000     0xcc82
+ *(.init)
+ .init          0x00000000      0x13c /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+                0x00000114                reset
+                0x00000000                _boot
+                0x00000050                _mainCRTStartup
+                0x00000114                abort
+                0x00000050                _start
+                0x00000114                _reset
+                0x00000114                exit
+                0x00000050                start
+ *(.text .text.*)
+ .text          0x0000013c      0x20c /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+                0x0000013c                TIMER0_ISR
+ .text          0x00000348       0x78 /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+                0x00000358                restoreIRQ
+                0x000003b0                enableFIQ
+                0x00000384                disableFIQ
+                0x00000374                enableIRQ
+                0x00000394                restoreFIQ
+                0x00000348                disableIRQ
+ .text          0x000003c0     0x1664 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                0x000003c0                init_fbw
+                0x0000058c                event_task_fbw
+                0x00000b6c                periodic_task_fbw
+ .text          0x00001a24     0x371c /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                0x00002448                periodic_task_ap
+                0x000048a0                init_ap
+                0x000049d8                event_task_ap
+                0x00001a24                telecommand_task
+ .text          0x00005140       0xdc /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+                0x00005140                main
+ .text          0x0000521c       0xc8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                0x0000521c                actuators_init
+ .text          0x000052e4      0x338 /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                0x00005410                uart0_transmit
+                0x000054b4                uart0_ISR
+                0x000053c0                uart0_check_free_space
+                0x000052e4                uart0_init_tx
+                0x000053bc                uart0_init_rx
+ .text          0x0000561c      0x8e4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                0x0000561c                dl_parse_msg
+ .text          0x00005f00      0x240 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                0x00005f00                xbee_init
+ .text          0x00006140       0x20 /home/mav/Desktop/paparazzi3new/var/vercam/ap/traffic_info.o
+                0x00006140                get_ac_info
+ .text          0x00006160      0x21c /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+                0x000062cc                adcISR1
+                0x00006160                adc_buf_channel
+                0x00006178                adc_init
+                0x00006220                adcISR0
+ .text          0x0000637c       0xe8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                0x0000637c                estimator_init
+                0x00006460                estimator_propagate_state
+ .text          0x00006464     0x1a0c /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                0x000070a8                nav_init
+                0x0000715c                nav_eight
+                0x00006e74                nav_home
+                0x000070ec                nav_without_gps
+                0x00006b90                nav_route_xy
+                0x000064e4                nav_circle_XY
+                0x00006a80                nav_approaching_xy
+                0x000077f8                nav_oval_init
+                0x00006a1c                nav_goto_block
+                0x0000780c                nav_oval
+                0x00007148                nav_eight_init
+                0x00006f90                nav_update
+                0x00006464                nav_init_stage
+ .text          0x00007e70      0xd34 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                0x00007e70                h_ctl_init
+                0x000082dc                h_ctl_attitude_loop
+                0x000080b4                h_ctl_course_loop
+ .text          0x00008ba4      0x784 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                0x00008d18                v_ctl_altitude_loop
+                0x00008ba4                v_ctl_init
+                0x00008e5c                v_ctl_climb_loop
+                0x0000915c                v_ctl_throttle_slew
+ .text          0x00009328      0x26c /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                0x00009328                gyro_init
+                0x000093dc                gyro_update
+ .text          0x00009594      0x3b4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                0x00009594                range_init
+                0x00009654                range_update
+ .text          0x00009948       0x58 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                0x00009948                memcpy
+ .text          0x000099a0      0x358 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                0x000099a0                atan
+ .text          0x00009cf8       0xb4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                0x00009cf8                cos
+ .text          0x00009dac       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                0x00009dac                fabs
+ .text          0x00009dcc       0xbc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                0x00009dcc                sin
+ .text          0x00009e88       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                0x00009e88                atan2
+ .text          0x00009f54       0xc8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                0x00009f54                sqrt
+ .text          0x0000a01c      0x21c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                0x0000a01c                __ieee754_atan2
+ .text          0x0000a238      0x4a0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                0x0000a238                __ieee754_rem_pio2
+ .text          0x0000a6d8      0x1e4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                0x0000a6d8                __ieee754_sqrt
+ .text          0x0000a8bc      0x1e8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                0x0000a8bc                __kernel_cos
+ .text          0x0000aaa4      0x7ec /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                0x0000aaa4                __kernel_rem_pio2
+ .text          0x0000b290      0x15c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                0x0000b290                __kernel_sin
+ .text          0x0000b3ec      0x144 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                0x0000b3ec                floor
+ .text          0x0000b530       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                0x0000b530                isnan
+ .text          0x0000b558        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                0x0000b558                matherr
+ .text          0x0000b55c      0x120 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                0x0000b55c                scalbn
+ .text          0x0000b67c       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                0x0000b67c                copysign
+ .text          0x0000b698        0xc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                0x0000b698                __errno
+ .text          0x0000b6a4       0x94 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                0x0000b6a4                __divsi3
+ .text          0x0000b738        0x4 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                0x0000b738                __div0
+ .text          0x0000b73c      0x3a8 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                0x0000ba6c                __floatsidf
+                0x0000ba98                __extendsfdf2
+                0x0000b740                __adddf3
+                0x0000ba44                __floatunsidf
+                0x0000b73c                __subdf3
+ .text          0x0000bae4      0x4ec /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                0x0000bd5c                __divdf3
+                0x0000bae4                __muldf3
+ .text          0x0000bfd0       0xb4 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                0x0000bfe0                __cmpdf2
+                0x0000bfe0                __eqdf2
+                0x0000bfd0                __gtdf2
+                0x0000bfd8                __ltdf2
+                0x0000bfd8                __ledf2
+                0x0000bfe0                __nedf2
+                0x0000bfd0                __gedf2
+ .text          0x0000c084       0x80 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                0x0000c084                __fixdfsi
+ .text          0x0000c104       0x74 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                0x0000c104                __fixunsdfsi
+ .text          0x0000c178       0xf8 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                0x0000c178                __truncdfsf2
+ .text          0x0000c270      0x218 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                0x0000c270                __subsf3
+                0x0000c43c                __floatsisf
+                0x0000c434                __floatunsisf
+                0x0000c274                __addsf3
+ .text          0x0000c488      0x330 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                0x0000c618                __divsf3
+                0x0000c488                __mulsf3
+ .text          0x0000c7b8       0x9c /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                0x0000c7c0                __lesf2
+                0x0000c7c8                __nesf2
+                0x0000c7b8                __gtsf2
+                0x0000c7c8                __eqsf2
+                0x0000c7c8                __cmpsf2
+                0x0000c7c0                __ltsf2
+                0x0000c7b8                __gesf2
+ .text          0x0000c854       0x68 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                0x0000c854                __fixsfsi
+ .text          0x0000c8bc       0x5c /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000c8bc                __fixunssfsi
+ *(.gnu.linkonce.t.*)
+ *(.glue_7)
+ .glue_7        0x0000c918       0x54 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000c930                __atan2_from_arm
+                0x0000c948                __cos_from_arm
+                0x0000c93c                __atan_from_arm
+                0x0000c918                ____divsi3_from_arm
+                0x0000c924                __memcpy_from_arm
+                0x0000c954                __sin_from_arm
+                0x0000c960                __sqrt_from_arm
+ *(.glue_7t)
+ .glue_7t       0x0000c96c       0x50 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                0x0000c984                ____gtdf2_from_thumb
+                0x0000c97c                ____subdf3_from_thumb
+                0x0000c9a0                ____ltdf2_change_to_arm
+                0x0000c980                ____subdf3_change_to_arm
+                0x0000c9b8                ____gedf2_change_to_arm
+                0x0000c994                ____eqdf2_from_thumb
+                0x0000c9a4                ____fixdfsi_from_thumb
+                0x0000c990                ____divdf3_change_to_arm
+                0x0000c9b4                ____gedf2_from_thumb
+                0x0000c978                ____muldf3_change_to_arm
+                0x0000c9a8                ____fixdfsi_change_to_arm
+                0x0000c98c                ____divdf3_from_thumb
+                0x0000c970                ____adddf3_change_to_arm
+                0x0000c988                ____gtdf2_change_to_arm
+                0x0000c9ac                ____floatsidf_from_thumb
+                0x0000c99c                ____ltdf2_from_thumb
+                0x0000c96c                ____adddf3_from_thumb
+                0x0000c998                ____eqdf2_change_to_arm
+                0x0000c974                ____muldf3_from_thumb
+                0x0000c9b0                ____floatsidf_change_to_arm
+ *(.gcc_except_table)
+ *(.rodata)
+ .rodata        0x0000c9bc        0x2 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+ .rodata        0x0000c9be        0xa /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+                0x0000c9be                commands_failsafe
+ .rodata        0x0000c9c8       0x10 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+ .rodata        0x0000c9d8        0x1 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                0x0000c9d8                nb_waypoint
+ *fill*         0x0000c9d9        0x3 00
+ .rodata        0x0000c9dc       0x98 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .rodata        0x0000ca74      0x188 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .rodata        0x0000cbfc       0x50 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .rodata        0x0000cc4c        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                0x0000cc4c                __fdlib_version
+ .rodata        0x0000cc50        0x4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x0000cc50                _global_impure_ptr
+ *(.rodata*)
+ .rodata.str1.4
+                0x0000cc54       0x1a /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                 0x20 (size before relaxing)
+ *fill*         0x0000cc6e        0x2 00
+ .rodata.str1.4
+                0x0000cc70        0x6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                  0x8 (size before relaxing)
+ *fill*         0x0000cc76        0x2 00
+ .rodata.str1.4
+                0x0000cc78        0x5 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                  0x8 (size before relaxing)
+ *fill*         0x0000cc7d        0x3 00
+ .rodata.str1.4
+                0x0000cc80        0x2 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                  0x4 (size before relaxing)
+ *(.gnu.linkonce.r.*)
+                0x0000cc84                . = ALIGN (0x4)
+
+.ctors          0x0000cc82        0x0
+                0x0000cc82                PROVIDE (__ctors_start__, .)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0000cc82                PROVIDE (__ctors_end__, .)
+
+.dtors          0x0000cc82        0x0
+                0x0000cc82                PROVIDE (__dtors_start__, .)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0000cc82                PROVIDE (__dtors_end__, .)
+                0x0000cc84                . = ALIGN (0x4)
+                0x0000cc84                _etext = .
+                0x0000cc84                PROVIDE (etext, .)
+
+.data           0x40000000      0x528 load address 0x0000cc84
+                0x40000000                _data = .
+ *(.data)
+ .data          0x40000000        0x1 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+ .data          0x40000001        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                0x40000001                ac_ident
+                0x40000002                light_mode
+                0x40000003                pprz_mode
+ *fill*         0x40000005        0x3 00
+ .data          0x40000008        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                0x40000008                servos_delay
+ .data          0x4000000c        0x8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                0x4000000c                ap_state
+                0x40000010                fbw_state
+ .data          0x40000014       0x20 /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+                0x40000014                adc1_val
+                0x40000024                adc0_val
+ .data          0x40000034       0x34 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                0x4000005c                nav_utm_zone0
+                0x40000064                nav_utm_east0
+                0x40000060                nav_utm_north0
+                0x40000034                waypoints
+                0x40000058                nav_altitude
+ .data          0x40000068       0xb8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                0x40000068                c15
+                0x400000a4                c31
+ .data          0x40000120        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+                0x40000120                cam_pitch
+ .data          0x40000124      0x404 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                0x40000524                _impure_ptr
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x40000528                . = ALIGN (0x4)
+ *(.fastrun)
+                0x40000528                . = ALIGN (0x4)
+                0x40000528                _edata = .
+                0x40000528                PROVIDE (edata, .)
+
+.bss            0x40000528      0xb14
+                0x40000528                __bss_start = .
+                0x40000528                __bss_start__ = .
+ *(.bss)
+ .bss           0x40000528        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+ .bss           0x4000052c        0x8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+ .bss           0x40000534       0x10 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+ .bss           0x40000544       0x2c /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                0x4000054c                lateral_mode
+                0x40000549                launch
+                0x40000544                empty_bay
+                0x40000548                gps_lost
+                0x4000054b                ir_estim_mode
+                0x4000054a                kill_throttle
+                0x4000054d                fatal_error_nb
+                0x4000054e                rc_settings_mode
+ .bss           0x40000570        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+ .bss           0x40000574        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+ .bss           0x40000578        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+ .bss           0x4000057c        0x8 /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                0x4000057c                rc_values_contains_avg_channels
+ .bss           0x40000584        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+ .bss           0x40000588        0x2 /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+                0x40000589                telemetry_mode_Fbw
+                0x40000588                telemetry_mode_Ap
+ *fill*         0x4000058a        0x2 00
+ .bss           0x4000058c        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+ .bss           0x40000590        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+ .bss           0x40000594       0x28 /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                0x40000594                inter_mcu_received_ap
+                0x40000595                inter_mcu_received_fbw
+ .bss           0x400005bc       0x40 /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+ .bss           0x400005fc       0x60 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                0x40000609                nav_in_circle
+                0x40000604                circle_bank
+                0x400005fc                nav_pitch
+                0x40000608                nav_in_segment
+                0x40000600                altitude_shift
+ .bss           0x4000065c       0x58 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                0x4000065c                h_ctl_attitude_enabled
+ .bss           0x400006b4       0x58 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+ .bss           0x4000070c       0x88 /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+ .bss           0x40000794       0x44 /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+ .bss           0x400007d8        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+ *(.gnu.linkonce.b*)
+ *(COMMON)
+ COMMON         0x400007dc        0x2 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+                0x400007dc                cpu_time_sec
+ *fill*         0x400007de        0x2 00
+ COMMON         0x400007e0        0x4 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+                0x400007e0                cpu_time_ticks
+ COMMON         0x400007e4       0x46 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                0x400007e4                vsupply_adc_buf
+                0x40000828                fbw_vsupply_decivolt
+                0x40000829                fbw_mode
+ *fill*         0x4000082a        0x2 00
+ COMMON         0x4000082c      0x229 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                0x4000082c                accel_az_neutral
+                0x40000830                rc_event_1
+                0x40000834                estimator_kalman_r_angle
+                0x40000838                vdrop2throt_coeff
+                0x4000083c                accel_ay_scale
+                0x40000840                estimator_kalman_phi
+                0x40000844                the_acs
+                0x40000a24                estimator_kalman_q_gyro
+                0x40000a28                last_pprz_mode
+                0x40000a2c                slider_2_val
+                0x40000a30                estimator_kalman_theta
+                0x40000a34                slider_1_val
+                0x40000a38                estimator_kalman_q_angle
+                0x40000a3c                accel_az_scale
+                0x40000a40                rc_event_2
+                0x40000a44                energy
+                0x40000a48                accel_ay_neutral
+                0x40000a4c                accel_ax_scale
+                0x40000a50                accel_ax_neutral
+                0x40000a54                vsupply
+ *fill*         0x40000a55        0x1 00
+ COMMON         0x40000a56        0xa /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+                0x40000a56                commands
+ COMMON         0x40000a60       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                0x40000a60                servos_4015_idx
+                0x40000a62                servos_values
+ COMMON         0x40000a72        0xc /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+                0x40000a72                actuators
+ *fill*         0x40000a7e        0x2 00
+ COMMON         0x40000a80       0x35 /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                0x40000a80                rc_status
+                0x40000a81                time_since_last_ppm
+                0x40000a82                ppm_cpt
+                0x40000a84                rc_values
+                0x40000a94                avg_rc_values
+                0x40000ab4                last_ppm_cpt
+ *fill*         0x40000ab5        0x1 00
+ COMMON         0x40000ab6       0x11 /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+                0x40000ab6                ppm_pulses
+                0x40000ac6                ppm_valid
+ COMMON         0x40000ac7        0x1 /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+                0x40000ac7                downlink_nb_ovrn
+ COMMON         0x40000ac8      0x10a /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                0x40000ac8                uart0_tx_buffer
+                0x40000b48                uart0_tx_insert_idx
+                0x40000b4a                uart0_rx_insert_idx
+                0x40000b4c                uart0_tx_extract_idx
+                0x40000b4e                uart0_tx_running
+                0x40000b4f                uart0_rx_buffer
+                0x40000bd0                uart0_rx_extract_idx
+ *fill*         0x40000bd2        0x2 00
+ COMMON         0x40000bd4       0x84 /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                0x40000bd4                dl_msg_available
+                0x40000bd8                dl_buffer
+ COMMON         0x40000c58      0x106 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                0x40000c58                xbee_rssi
+                0x40000c59                xbee_ovrn
+                0x40000c5a                xbee_msg_received
+                0x40000c5b                xbee_payload_len
+                0x40000c5c                xbee_error
+                0x40000c5d                xbee_payload
+                0x40000d5d                xbee_cs
+ COMMON         0x40000d5e        0x2 /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                0x40000d5e                ap_ok
+                0x40000d5f                time_since_last_ap
+ COMMON         0x40000d60       0x58 /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                0x40000d60                estimator_z_dot
+                0x40000d64                estimator_flight_time
+                0x40000d68                estimator_psi
+                0x40000d6c                estimator_z
+                0x40000d70                estimator_az
+                0x40000d74                estimator_t
+                0x40000d78                wind_east
+                0x40000d7c                estimator_ay
+                0x40000d80                estimator_p
+                0x40000d84                estimator_theta
+                0x40000d88                estimator_hspeed_mod
+                0x40000d8c                estimator_phi
+                0x40000d90                estimator_r
+                0x40000d94                estimator_x
+                0x40000d98                estimator_range
+                0x40000d9c                estimator_q
+                0x40000da0                estimator_hspeed_dir
+                0x40000da4                wind_north
+                0x40000da8                estimator_ax
+                0x40000dac                alt_kalman_enabled
+                0x40000db0                estimator_y
+                0x40000db4                estimator_range_dot
+ COMMON         0x40000db8       0x64 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                0x40000db8                nav_glide_pitch_trim
+                0x40000dbc                dist2_to_wp
+                0x40000dc0                nav_segment_x_1
+                0x40000dc4                desired_x
+                0x40000dc8                nav_segment_x_2
+                0x40000dca                nav_circle_radius
+                0x40000dcc                stage_time_ds
+                0x40000dd0                nav_throttle_setpoint
+                0x40000dd4                survey_south
+                0x40000dd8                desired_y
+                0x40000ddc                carrot_x
+                0x40000de0                horizontal_mode
+                0x40000de1                nav_block
+                0x40000de2                nav_circle_y
+                0x40000de4                too_far_from_home
+                0x40000de8                rc_pitch
+                0x40000dec                survey_north
+                0x40000df0                dist2_to_home
+                0x40000df4                survey_west
+                0x40000df8                nav_stage
+                0x40000dfc                survey_east
+                0x40000e00                nav_circle_x
+                0x40000e02                nav_segment_y_2
+                0x40000e04                nav_segment_y_1
+                0x40000e08                ground_alt
+                0x40000e0c                carrot_y
+                0x40000e10                stage_time
+                0x40000e12                block_time
+                0x40000e14                nav_circle_trigo_qdr
+                0x40000e18                flight_altitude
+ COMMON         0x40000e1c       0xb0 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                0x40000e1c                h_ctl_yaw_rate_mode
+                0x40000e20                h_ctl_auto1_rate
+                0x40000e24                h_ctl_course_setpoint
+                0x40000e28                h_ctl_roll_rate_dgain
+                0x40000e2c                h_ctl_roll_rate_setpoint
+                0x40000e30                h_ctl_rudder_setpoint
+                0x40000e34                h_ctl_roll_max_setpoint
+                0x40000e38                h_ctl_lo_throttle_yaw_rate_pgain
+                0x40000e3c                h_ctl_course_pre_bank_correction
+                0x40000e40                h_ctl_lo_throttle_pitch_rate_pgain
+                0x40000e44                h_ctl_pitch_rate_dgain
+                0x40000e48                h_ctl_hi_throttle_pitch_rate_pgain
+                0x40000e4c                h_ctl_elevator_setpoint
+                0x40000e50                h_ctl_roll_rate_igain
+                0x40000e54                h_ctl_hi_throttle_yaw_rate_pgain
+                0x40000e58                h_ctl_roll_rate_setpoint_pgain
+                0x40000e5c                h_ctl_hi_throttle_roll_rate_pgain
+                0x40000e60                h_ctl_aileron_of_throttle
+                0x40000e64                h_ctl_yaw_pgain
+                0x40000e68                h_ctl_aileron_setpoint
+                0x40000e6c                h_ctl_pitch_setpoint
+                0x40000e70                h_ctl_roll_rate_mode
+                0x40000e74                h_ctl_pitch_min_setpoint
+                0x40000e78                h_ctl_course_pgain
+                0x40000e7c                h_ctl_pitch_pgain
+                0x40000e80                h_ctl_course_pre_bank
+                0x40000e84                h_ctl_yaw_rate_dgain
+                0x40000e88                h_ctl_pitch_max_setpoint
+                0x40000e8c                h_ctl_pitch_rate_setpoint
+                0x40000e90                h_ctl_yaw_dgain
+                0x40000e94                h_ctl_pitch_dgain
+                0x40000e98                h_ctl_lo_throttle_roll_rate_pgain
+                0x40000e9c                h_ctl_yaw_rate_igain
+                0x40000ea0                h_ctl_pitch_rate_igain
+                0x40000ea4                h_ctl_pitch_rate_setpoint_pgain
+                0x40000ea8                h_ctl_yaw_setpoint
+                0x40000eac                h_ctl_yaw_rate_setpoint
+                0x40000eb0                h_ctl_disabled
+                0x40000eb4                h_ctl_roll_pgain
+                0x40000eb8                h_ctl_yaw_rate_setpoint_pgain
+                0x40000ebc                h_ctl_roll_setpoint
+                0x40000ec0                h_ctl_pitch_rate_mode
+                0x40000ec4                h_ctl_yaw_max_setpoint
+                0x40000ec8                h_ctl_elevator_of_roll
+ COMMON         0x40000ecc       0x78 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                0x40000ecc                v_ctl_auto_throttle_nominal_cruise_throttle
+                0x40000ed0                v_ctl_altitude_error
+                0x40000ed4                v_ctl_climb_mode
+                0x40000ed8                v_ctl_auto_throttle_igain_minus
+                0x40000edc                v_ctl_alt_sum_err
+                0x40000ee0                v_ctl_auto_throttle_submode
+                0x40000ee4                v_ctl_auto_throttle_igain_plus
+                0x40000ee8                v_ctl_auto_throttle_pitch_of_vz_pgain
+                0x40000eec                v_ctl_auto_throttle_climb_throttle_increment_plus
+                0x40000ef0                v_ctl_auto_throttle_pgain_minus
+                0x40000ef4                v_ctl_throttle_slew_
+                0x40000ef8                v_ctl_auto_throttle_climb_throttle_increment_minus
+                0x40000efc                desc_throttle
+                0x40000f00                v_ctl_auto_throttle_cruise_throttle_pgain
+                0x40000f04                v_ctl_altitude_setpoint
+                0x40000f08                v_ctl_mode
+                0x40000f0c                v_ctl_auto_throttle_cruise_throttle
+                0x40000f10                v_ctl_altitude_pgain
+                0x40000f14                v_ctl_auto_pitch_pgain
+                0x40000f18                v_ctl_auto_throttle_climb_throttle_increment
+                0x40000f1c                v_ctl_auto_throttle_igain
+                0x40000f20                v_ctl_throttle_setpoint
+                0x40000f24                v_ctl_climb_setpoint
+                0x40000f28                v_ctl_auto_pitch_igain
+                0x40000f2c                v_ctl_altitude_pre_climb
+                0x40000f30                v_ctl_auto_throttle_pgain_plus
+                0x40000f34                v_ctl_throttle_slewed
+                0x40000f38                climb_throttle
+                0x40000f3c                v_ctl_auto_throttle_pgain
+                0x40000f40                v_ctl_auto_pitch_sum_err
+ COMMON         0x40000f44       0x64 /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                0x40000f44                gyro_yaw_scale
+                0x40000f48                gyro_roll_scale
+                0x40000f4c                buf_roll
+                0x40000f90                gyro_pitch_adc
+                0x40000f94                gyro_roll_adc
+                0x40000f98                roll_rate_adc
+                0x40000f9c                gyro_yaw_adc
+                0x40000fa0                gyro_pitch_scale
+                0x40000fa4                yaw_rate_adc
+                0x40000fa6                pitch_rate_adc
+ COMMON         0x40000fa8       0x7c /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                0x40000fa8                p0
+                0x40000fac                range_dot
+                0x40000fb0                p2
+                0x40000fb2                pos
+                0x40000fb4                range_hovering
+                0x40000fb8                p_2
+                0x40000fbc                buf_range_tmp1
+                0x40000fcc                buf_range_tmp
+                0x40001008                p1
+                0x4000100a                pos1
+                0x4000100c                range_ave
+                0x40001010                range_adc
+                0x40001014                range_scale
+                0x40001018                p_1
+                0x4000101c                range
+                0x40001020                range_neutral
+ COMMON         0x40001024       0x14 /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+                0x40001024                phi_c
+                0x40001028                theta_c
+                0x4000102c                target_x
+                0x40001030                target_y
+                0x40001034                target_alt
+ COMMON         0x40001038        0x1 /home/mav/Desktop/paparazzi3new/var/vercam/ap/gpio.o
+                0x40001038                gpio1_status
+                0x4000103c                . = ALIGN (0x4)
+ *fill*         0x40001039        0x3 00
+                0x4000103c                . = ALIGN (0x4)
+                0x4000103c                __bss_end__ = .
+                0x4000103c                PROVIDE (__bss_end, .)
+
+.stack          0x40001100     0x1000
+                0x40002100                . = (. + STACK_SIZE)
+ *fill*         0x40001100     0x1000 00
+                0x40002100                PROVIDE (_stack, .)
+                0x40002100                _end = .
+                0x40002100                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x34e
+ *(.comment)
+ .comment       0x00000000       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+ .comment       0x00000012       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+ .comment       0x00000024       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+ .comment       0x00000036       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+ .comment       0x00000048       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+ .comment       0x0000005a       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+ .comment       0x0000006c       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+ .comment       0x0000007e       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+ .comment       0x00000090       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+ .comment       0x000000a2       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+ .comment       0x000000b4       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+ .comment       0x000000c6       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+ .comment       0x000000d8       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+ .comment       0x000000ea       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+ .comment       0x000000fc       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+ .comment       0x0000010e       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/traffic_info.o
+ .comment       0x00000120       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+ .comment       0x00000132       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+ .comment       0x00000144       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+ .comment       0x00000156       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+ .comment       0x00000168       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+ .comment       0x0000017a       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+ .comment       0x0000018c       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+ .comment       0x0000019e       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+ .comment       0x000001b0       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+ .comment       0x000001c2       0x12 /home/mav/Desktop/paparazzi3new/var/vercam/ap/gpio.o
+ .comment       0x000001d4       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .comment       0x000001e6       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .comment       0x000001f8       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .comment       0x0000020a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .comment       0x0000021c       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .comment       0x0000022e       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .comment       0x00000240       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .comment       0x00000252       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .comment       0x00000264       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .comment       0x00000276       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .comment       0x00000288       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .comment       0x0000029a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .comment       0x000002ac       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .comment       0x000002be       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .comment       0x000002d0       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .comment       0x000002e2       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .comment       0x000002f4       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .comment       0x00000306       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .comment       0x00000318       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .comment       0x0000032a       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .comment       0x0000033c       0x12 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x260
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_aranges
+                0x000000a0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_aranges
+                0x000000c0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_aranges
+                0x000000e0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_aranges
+                0x00000100       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_aranges
+                0x00000120       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_aranges
+                0x00000140       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_aranges
+                0x00000160       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_aranges
+                0x00000180       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_aranges
+                0x000001a0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_aranges
+                0x000001c0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_aranges
+                0x000001e0       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_aranges
+                0x00000200       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_aranges
+                0x00000220       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_aranges
+                0x00000240       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+
+.debug_pubnames
+                0x00000000      0x2af
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x1d /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_pubnames
+                0x0000001d       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_pubnames
+                0x00000038       0x1a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_pubnames
+                0x00000052       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_pubnames
+                0x0000006d       0x1a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_pubnames
+                0x00000087       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_pubnames
+                0x000000a3       0x1b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_pubnames
+                0x000000be       0x26 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_pubnames
+                0x000000e4       0x29 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_pubnames
+                0x0000010d       0x25 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_pubnames
+                0x00000132       0x23 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_pubnames
+                0x00000155       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_pubnames
+                0x0000017d       0x23 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_pubnames
+                0x000001a0       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_pubnames
+                0x000001bc       0x1c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_pubnames
+                0x000001d8       0x26 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_pubnames
+                0x000001fe       0x1e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_pubnames
+                0x0000021c       0x1d /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_pubnames
+                0x00000239       0x1f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_pubnames
+                0x00000258       0x1e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_pubnames
+                0x00000276       0x39 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_info     0x00000000     0x3246
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0xfc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_info    0x000000fc      0x25d /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_info    0x00000359       0xee /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_info    0x00000447      0x151 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_info    0x00000598       0xee /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_info    0x00000686      0x17e /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_info    0x00000804      0x172 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_info    0x00000976      0x29b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_info    0x00000c11      0x390 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_info    0x00000fa1      0x211 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_info    0x000011b2      0x20c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_info    0x000013be      0x2c0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_info    0x0000167e      0x18b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_info    0x00001809      0x1a0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_info    0x000019a9      0x147 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_info    0x00001af0       0xbe /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_info    0x00001bae      0x125 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_info    0x00001cd3      0x1f4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_info    0x00001ec7      0x14a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_info    0x00002011      0x913 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_info    0x00002924      0x922 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_abbrev   0x00000000     0x11d8
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x99 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_abbrev  0x00000099      0x11f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_abbrev  0x000001b8       0x8b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_abbrev  0x00000243       0xd0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_abbrev  0x00000313       0x8b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_abbrev  0x0000039e       0xc7 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_abbrev  0x00000465       0xc7 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_abbrev  0x0000052c      0x10f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_abbrev  0x0000063b      0x128 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_abbrev  0x00000763      0x104 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_abbrev  0x00000867       0xea /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_abbrev  0x00000951       0xe6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_abbrev  0x00000a37       0x93 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_abbrev  0x00000aca       0xe8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_abbrev  0x00000bb2       0xd4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_abbrev  0x00000c86       0x5a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_abbrev  0x00000ce0       0x95 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_abbrev  0x00000d75       0xe8 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_abbrev  0x00000e5d       0xc5 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_abbrev  0x00000f22      0x15f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_abbrev  0x00001081      0x157 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_line     0x00000000     0x1487
+ *(.debug_line)
+ .debug_line    0x00000000       0xa7 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_line    0x000000a7      0x137 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_line    0x000001de       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_line    0x000002aa       0xf3 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_line    0x0000039d       0xcc /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_line    0x00000469       0xca /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_line    0x00000533       0xc9 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_line    0x000005fc      0x14c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_line    0x00000748      0x17c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_line    0x000008c4      0x163 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_line    0x00000a27      0x115 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_line    0x00000b3c      0x187 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_line    0x00000cc3       0xc6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_line    0x00000d89      0x12a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_line    0x00000eb3       0xfb /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_line    0x00000fae       0xa0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+ .debug_line    0x0000104e       0xb0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_line    0x000010fe       0xeb /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_line    0x000011e9       0xc4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_line    0x000012ad       0xf4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+ .debug_line    0x000013a1       0xe6 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+
+.debug_frame    0x00000000      0x3b4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+ .debug_frame   0x0000002c       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_frame   0x00000064       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+ .debug_frame   0x00000094       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+ .debug_frame   0x000000bc       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+ .debug_frame   0x000000ec       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+ .debug_frame   0x00000124       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+ .debug_frame   0x0000015c       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_frame   0x00000194       0x3c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_frame   0x000001d0       0x3c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_frame   0x0000020c       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_frame   0x00000244       0x40 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+ .debug_frame   0x00000284       0x30 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+ .debug_frame   0x000002b4       0x38 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_frame   0x000002ec       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+ .debug_frame   0x00000314       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+ .debug_frame   0x00000334       0x34 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+ .debug_frame   0x00000368       0x2c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+ .debug_frame   0x00000394       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+
+.debug_str      0x00000000      0xc71
+ *(.debug_str)
+ .debug_str     0x00000000       0xd0 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                                 0xf0 (size before relaxing)
+ .debug_str     0x000000d0      0x13c /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x0000020c       0x32 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                0x12a (size before relaxing)
+ .debug_str     0x0000023e       0x42 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                                0x163 (size before relaxing)
+ .debug_str     0x00000280       0x32 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                0x12a (size before relaxing)
+ .debug_str     0x000002b2       0xaf /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00000361       0x33 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                0x1a6 (size before relaxing)
+ .debug_str     0x00000394       0x67 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                0x197 (size before relaxing)
+ .debug_str     0x000003fb       0xa4 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                0x1e3 (size before relaxing)
+ .debug_str     0x0000049f       0x47 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x000004e6       0x3f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                0x16a (size before relaxing)
+ .debug_str     0x00000525       0x78 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x0000059d       0x3f /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                0x13c (size before relaxing)
+ .debug_str     0x000005dc       0x3a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                0x16f (size before relaxing)
+ .debug_str     0x00000616       0x3a /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x00000650       0x92 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                                0x183 (size before relaxing)
+ .debug_str     0x000006e2       0x40 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                                0x155 (size before relaxing)
+ .debug_str     0x00000722       0x4b /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                0x187 (size before relaxing)
+ .debug_str     0x0000076d       0x42 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x000007af      0x416 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                                0x4be (size before relaxing)
+ .debug_str     0x00000bc5       0xac /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                0x4d6 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(/home/mav/Desktop/paparazzi3new/var/vercam/ap/ap.elf elf32-littlearm)
+
+.debug_ranges   0x00000000       0xc8
+ .debug_ranges  0x00000000       0x28 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+ .debug_ranges  0x00000028       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+ .debug_ranges  0x00000048       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+ .debug_ranges  0x00000060       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+ .debug_ranges  0x00000078       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+ .debug_ranges  0x00000090       0x20 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+ .debug_ranges  0x000000b0       0x18 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+
+Cross Reference Table
+
+Symbol                                            File
+TIMER0_ISR                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+____adddf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____adddf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divdf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divdf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____divsi3_from_arm                               /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____eqdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____eqdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____fixdfsi_change_to_arm                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____fixdfsi_from_thumb                            /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____floatsidf_change_to_arm                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____floatsidf_from_thumb                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gedf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gedf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gtdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____gtdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____ltdf2_change_to_arm                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____ltdf2_from_thumb                              /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____muldf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____muldf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____subdf3_change_to_arm                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+____subdf3_from_thumb                             /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__adddf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__addsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+__atan2_from_arm                                  /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__atan_from_arm                                   /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__bss_end__                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+__bss_start                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+__cmpdf2                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+__cmpsf2                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__cos_from_arm                                    /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__ctors_end__                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+__ctors_start__                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+__div0                                            /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_dvmd_tls.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+__divdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+__divsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+__divsi3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_divsi3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__eqdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__eqsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__errno                                           /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__extendsfdf2                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__fdlib_version                                   /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_lib_ver.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__fixdfsi                                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixdfsi.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__fixsfsi                                         /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixsfsi.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__fixunsdfsi                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__fixunssfsi                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+__floatsidf                                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__floatsisf                                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__floatunsidf                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+__floatunsisf                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+__gedf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+__gesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+__gtdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+__gtsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__ieee754_atan2                                   /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+__ieee754_rem_pio2                                /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__ieee754_sqrt                                    /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+__kernel_cos                                      /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__kernel_rem_pio2                                 /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+__kernel_sin                                      /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+__ledf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+__lesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__ltdf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+__ltsf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+__memcpy_from_arm                                 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__muldf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__mulsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivsf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__nedf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpdf2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+__nesf2                                           /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_cmpsf2.o)
+__sin_from_arm                                    /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__sqrt_from_arm                                   /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunssfsi.o)
+__subdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+__subsf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubsf3.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+__truncdfsf2                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_truncdfsf2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+_boot                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_data                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_edata                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_etext                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_global_impure_ptr                                /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+_impure_ptr                                       /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(impure.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(errno.o)
+_mainCRTStartup                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_reset                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_stack                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+_start                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+abort                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+ac_ident                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_ax_neutral                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_ax_scale                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_ay_neutral                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_ay_scale                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_az_neutral                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+accel_az_scale                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+actuators                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/actuators.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+actuators_init                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+adc0_val                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+adc1_val                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+adcISR0                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+adcISR1                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+adc_buf_channel                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+adc_init                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/adc_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+alt_kalman_enabled                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+altitude_shift                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+ap_ok                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+ap_state                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+atan                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+atan2                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+avg_rc_values                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+block_time                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+buf_range_tmp                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+buf_range_tmp1                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+buf_roll                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+c15                                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+c31                                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+cam_pitch                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+carrot_x                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+carrot_y                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+circle_bank                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+climb_throttle                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+commands                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+commands_failsafe                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/commands.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+copysign                                          /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_copysign.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+cos                                               /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_cos.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+cpu_time_sec                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time.o
+cpu_time_ticks                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+desc_throttle                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+desired_x                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+desired_y                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+disableFIQ                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+disableIRQ                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+dist2_to_home                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dist2_to_wp                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dl_buffer                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dl_msg_available                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+dl_parse_msg                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+downlink_nb_ovrn                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+empty_bay                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+enableFIQ                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+enableIRQ                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+energy                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_ax                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_ay                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_az                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_flight_time                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_hspeed_dir                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_hspeed_mod                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_init                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_phi                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_q_angle                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_q_gyro                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_r_angle                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_kalman_theta                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_p                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_phi                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_propagate_state                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_psi                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_q                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_r                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_range                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_range_dot                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_t                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+estimator_theta                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_x                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_y                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_z                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+estimator_z_dot                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+event_task_ap                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+event_task_fbw                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+exit                                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+fabs                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_fabs.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_rem_pio2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(e_atan2.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_atan.o)
+fatal_error_nb                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+fbw_mode                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+fbw_state                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+fbw_vsupply_decivolt                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+flight_altitude                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+floor                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_floor.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+get_ac_info                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/traffic_info.o
+gpio1_status                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/gpio.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gps_lost                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+ground_alt                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+gyro_init                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_pitch_adc                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_pitch_scale                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+gyro_roll_adc                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_roll_scale                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+gyro_update                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_yaw_adc                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+gyro_yaw_scale                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+h_ctl_aileron_of_throttle                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_aileron_setpoint                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_attitude_enabled                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_attitude_loop                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_auto1_rate                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_course_loop                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_course_pgain                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_course_pre_bank                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_course_pre_bank_correction                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_course_setpoint                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+h_ctl_disabled                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_elevator_of_roll                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_elevator_setpoint                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_hi_throttle_pitch_rate_pgain                /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_hi_throttle_roll_rate_pgain                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_hi_throttle_yaw_rate_pgain                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_init                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_lo_throttle_pitch_rate_pgain                /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_lo_throttle_roll_rate_pgain                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_lo_throttle_yaw_rate_pgain                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_pitch_dgain                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_max_setpoint                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_pitch_min_setpoint                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_pgain                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_dgain                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_igain                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_mode                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_pitch_rate_setpoint_pgain                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_pitch_setpoint                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_roll_max_setpoint                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_roll_pgain                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_roll_rate_dgain                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_roll_rate_igain                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_roll_rate_mode                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_roll_rate_setpoint                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_roll_rate_setpoint_pgain                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_roll_setpoint                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_rudder_setpoint                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_yaw_dgain                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_max_setpoint                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_yaw_pgain                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_rate_dgain                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_rate_igain                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_rate_mode                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_rate_setpoint                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+h_ctl_yaw_rate_setpoint_pgain                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+h_ctl_yaw_setpoint                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+horizontal_mode                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+init_ap                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+init_fbw                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+inter_mcu_received_ap                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+inter_mcu_received_fbw                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+ir_estim_mode                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+isnan                                             /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_isnan.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+kill_throttle                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+last_ppm_cpt                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+last_pprz_mode                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+lateral_mode                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+launch                                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+light_mode                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+main                                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+matherr                                           /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_matherr.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_atan2.o)
+memcpy                                            /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a(memcpy.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+nav_altitude                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_approaching_xy                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_block                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_circle_XY                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_circle_radius                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_circle_trigo_qdr                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_circle_x                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_circle_y                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_eight                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_eight_init                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_glide_pitch_trim                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_goto_block                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+nav_home                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_in_circle                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_in_segment                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_init                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_init_stage                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_oval                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_oval_init                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_pitch                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+nav_route_xy                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+nav_segment_x_1                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_segment_x_2                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_segment_y_1                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_segment_y_2                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_stage                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_throttle_setpoint                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_update                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_utm_east0                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_utm_north0                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_utm_zone0                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nav_without_gps                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+nb_waypoint                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+p0                                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+p1                                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+p2                                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+p_1                                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+p_2                                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+periodic_task_ap                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+periodic_task_fbw                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main.o
+phi_c                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+pitch_rate_adc                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+pos                                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+pos1                                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+ppm_cpt                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+ppm_pulses                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+ppm_valid                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/ppm_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+pprz_mode                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+range                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+range_adc                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+range_ave                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+range_dot                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+range_hovering                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+range_init                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+range_neutral                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+range_scale                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+range_update                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/range.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+rc_event_1                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+rc_event_2                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+rc_pitch                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+rc_settings_mode                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+rc_status                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+rc_values                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+rc_values_contains_avg_channels                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+reset                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+restoreFIQ                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+restoreIRQ                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/armVIC.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+roll_rate_adc                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+scalbn                                            /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_scalbn.o)
+                                                  /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(k_rem_pio2.o)
+servos_4015_idx                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+servos_delay                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+servos_values                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/servos_4015_MAT_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/sys_time_hw.o
+sin                                               /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(s_sin.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+slider_1_val                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+slider_2_val                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+sqrt                                              /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a(w_sqrt.o)
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+stage_time                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+stage_time_ds                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+start                                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/crt0.o
+survey_east                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+survey_north                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+survey_south                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+survey_west                                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+target_alt                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+target_x                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+target_y                                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+telecommand_task                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+telemetry_mode_Ap                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+telemetry_mode_Fbw                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/downlink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+the_acs                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/traffic_info.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+theta_c                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/cam.o
+time_since_last_ap                                /home/mav/Desktop/paparazzi3new/var/vercam/ap/inter_mcu.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+time_since_last_ppm                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/radio_control.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+too_far_from_home                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+uart0_ISR                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+uart0_check_free_space                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+uart0_init_rx                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+uart0_init_tx                                     /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+uart0_rx_buffer                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+uart0_rx_extract_idx                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+uart0_rx_insert_idx                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+uart0_transmit                                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+uart0_tx_buffer                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+uart0_tx_extract_idx                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+uart0_tx_insert_idx                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+uart0_tx_running                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/uart_hw.o
+v_ctl_alt_sum_err                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_altitude_error                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_altitude_loop                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_altitude_pgain                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_altitude_pre_climb                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_altitude_setpoint                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+v_ctl_auto_pitch_igain                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_pitch_pgain                            /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_pitch_sum_err                          /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_climb_throttle_increment      /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_climb_throttle_increment_minus /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_climb_throttle_increment_plus /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_cruise_throttle               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_cruise_throttle_pgain         /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_igain                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_igain_minus                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_igain_plus                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_nominal_cruise_throttle       /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_pgain                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_pgain_minus                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_pgain_plus                    /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_auto_throttle_pitch_of_vz_pgain             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_auto_throttle_submode                       /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+v_ctl_climb_loop                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_climb_mode                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_climb_setpoint                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_init                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_mode                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_throttle_setpoint                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_h_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_throttle_slew                               /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_throttle_slew_                              /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+v_ctl_throttle_slewed                             /home/mav/Desktop/paparazzi3new/var/vercam/ap/fw_v_ctl.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+vdrop2throt_coeff                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+vsupply                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+vsupply_adc_buf                                   /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+waypoints                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/nav.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+wind_east                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+wind_north                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/estimator.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_cs                                           /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/datalink.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_fbw.o
+xbee_error                                        /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_init                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_msg_received                                 /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_ovrn                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_payload                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_payload_len                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+xbee_rssi                                         /home/mav/Desktop/paparazzi3new/var/vercam/ap/xbee.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o
+yaw_rate_adc                                      /home/mav/Desktop/paparazzi3new/var/vercam/ap/gyro.o
+                                                  /home/mav/Desktop/paparazzi3new/var/vercam/ap/main_ap.o

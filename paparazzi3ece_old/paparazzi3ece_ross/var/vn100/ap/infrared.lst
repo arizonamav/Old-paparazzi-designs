@@ -1,0 +1,980 @@
+   1              		.file	"infrared.c"
+   2              		.global	calib_status
+   3              		.bss
+   6              	calib_status:
+   7 0000 00       		.space	1
+   8              		.text
+   9              		.align	2
+  10              		.global	ir_init
+  12              	ir_init:
+  13              		@ Function supports interworking.
+  14              		@ args = 0, pretend = 0, frame = 0
+  15              		@ frame_needed = 1, uses_anonymous_args = 0
+  16 0000 0DC0A0E1 		mov	ip, sp
+  17 0004 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+  18 0008 D4409FE5 		ldr	r4, .L2
+  19 000c D4609FE5 		ldr	r6, .L2+4
+  20 0010 04B04CE2 		sub	fp, ip, #4
+  21 0014 0F00A0E3 		mov	r0, #15
+  22 0018 CC109FE5 		ldr	r1, .L2+8
+  23 001c 1020A0E3 		mov	r2, #16
+  24 0020 006084E5 		str	r6, [r4, #0]	@ float
+  25 0024 FEFFFFEB 		bl	adc_buf_channel
+  26 0028 0B00A0E3 		mov	r0, #11
+  27 002c BC109FE5 		ldr	r1, .L2+12
+  28 0030 1020A0E3 		mov	r2, #16
+  29 0034 FEFFFFEB 		bl	adc_buf_channel
+  30 0038 B4309FE5 		ldr	r3, .L2+16
+  31 003c 00E0A0E3 		mov	lr, #0
+  32 0040 B0209FE5 		ldr	r2, .L2+20
+  33 0044 00E083E5 		str	lr, [r3, #0]	@ float
+  34 0048 AC309FE5 		ldr	r3, .L2+24
+  35 004c 002083E5 		str	r2, [r3, #0]	@ float
+  36 0050 A8309FE5 		ldr	r3, .L2+28
+  37 0054 0050A0E3 		mov	r5, #0
+  38 0058 00C094E5 		ldr	ip, [r4, #0]	@ float
+  39 005c B050C3E1 		strh	r5, [r3, #0]	@ movhi 
+  40 0060 9C309FE5 		ldr	r3, .L2+32
+  41 0064 00C083E5 		str	ip, [r3, #0]	@ float
+  42 0068 98309FE5 		ldr	r3, .L2+36
+  43 006c FF15A0E3 		mov	r1, #1069547520
+  44 0070 001083E5 		str	r1, [r3, #0]	@ float
+  45 0074 90309FE5 		ldr	r3, .L2+40
+  46 0078 0120A0E3 		mov	r2, #1
+  47 007c 8C009FE5 		ldr	r0, .L2+44
+  48 0080 0020C3E5 		strb	r2, [r3, #0]
+  49 0084 88309FE5 		ldr	r3, .L2+48
+  50 0088 000083E5 		str	r0, [r3, #0]	@ float
+  51 008c 84309FE5 		ldr	r3, .L2+52
+  52 0090 00E083E5 		str	lr, [r3, #0]	@ float
+  53 0094 80309FE5 		ldr	r3, .L2+56
+  54 0098 B050C3E1 		strh	r5, [r3, #0]	@ movhi 
+  55 009c 7C309FE5 		ldr	r3, .L2+60
+  56 00a0 001083E5 		str	r1, [r3, #0]	@ float
+  57 00a4 78309FE5 		ldr	r3, .L2+64
+  58 00a8 001083E5 		str	r1, [r3, #0]	@ float
+  59 00ac 74309FE5 		ldr	r3, .L2+68
+  60 00b0 001083E5 		str	r1, [r3, #0]	@ float
+  61 00b4 70309FE5 		ldr	r3, .L2+72
+  62 00b8 000083E5 		str	r0, [r3, #0]	@ float
+  63 00bc 6C309FE5 		ldr	r3, .L2+76
+  64 00c0 000083E5 		str	r0, [r3, #0]	@ float
+  65 00c4 68309FE5 		ldr	r3, .L2+80
+  66 00c8 000083E5 		str	r0, [r3, #0]	@ float
+  67 00cc 64309FE5 		ldr	r3, .L2+84
+  68 00d0 E12FA0E3 		mov	r2, #900	@ movhi
+  69 00d4 006084E5 		str	r6, [r4, #0]	@ float
+  70 00d8 B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+  71 00dc 70689DE8 		ldmfd	sp, {r4, r5, r6, fp, sp, lr}
+  72 00e0 1EFF2FE1 		bx	lr
+  73              	.L3:
+  74              		.align	2
+  75              	.L2:
+  76 00e4 00000000 		.word	ir_rad_of_ir
+  77 00e8 915A0A3B 		.word	990534289
+  78 00ec 1C000000 		.word	buf_ir1
+  79 00f0 60000000 		.word	buf_ir2
+  80 00f4 00000000 		.word	ir_roll_neutral
+  81 00f8 29E3ABC2 		.word	-1028922583
+  82 00fc 00000000 		.word	ir_pitch_neutral
+  83 0100 00000000 		.word	adc_pitch_neutral
+  84 0104 00000000 		.word	estimator_rad_of_ir
+  85 0108 00000000 		.word	ir_correction_down
+  86 010c 00000000 		.word	ir_360
+  87 0110 3A46F13E 		.word	1055999546
+  88 0114 00000000 		.word	ir_estimated_theta_minus_pi_4
+  89 0118 00000000 		.word	z_contrast_mode
+  90 011c 00000000 		.word	adc_roll_neutral
+  91 0120 00000000 		.word	ir_correction_left
+  92 0124 00000000 		.word	ir_correction_right
+  93 0128 00000000 		.word	ir_correction_up
+  94 012c 00000000 		.word	ir_estimated_phi_pi_4
+  95 0130 00000000 		.word	ir_estimated_phi_minus_pi_4
+  96 0134 00000000 		.word	ir_estimated_theta_pi_4
+  97 0138 00000000 		.word	ir_contrast
+  99              		.global	__divsi3
+ 100              		.global	__floatsidf
+ 101              		.global	__muldf3
+ 102              		.global	__adddf3
+ 103              		.global	__fixdfsi
+ 104              		.align	2
+ 105              		.global	ir_update
+ 107              	ir_update:
+ 108              		@ Function supports interworking.
+ 109              		@ args = 0, pretend = 0, frame = 8
+ 110              		@ frame_needed = 1, uses_anonymous_args = 0
+ 111 013c 0DC0A0E1 		mov	ip, sp
+ 112 0140 F0DB2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, fp, ip, lr, pc}
+ 113 0144 20319FE5 		ldr	r3, .L5+16
+ 114 0148 04B04CE2 		sub	fp, ip, #4
+ 115 014c 08D04DE2 		sub	sp, sp, #8
+ 116 0150 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+ 117 0154 B000D3E1 		ldrh	r0, [r3, #0]
+ 118 0158 FEFFFFEB 		bl	__divsi3
+ 119 015c 0C319FE5 		ldr	r3, .L5+20
+ 120 0160 0048A0E1 		mov	r4, r0, asl #16
+ 121 0164 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+ 122 0168 B000D3E1 		ldrh	r0, [r3, #0]
+ 123 016c FEFFFFEB 		bl	__divsi3
+ 124 0170 2448A0E1 		mov	r4, r4, lsr #16
+ 125 0174 0438A0E1 		mov	r3, r4, asl #16
+ 126 0178 0058A0E1 		mov	r5, r0, asl #16
+ 127 017c 4308A0E1 		mov	r0, r3, asr #16
+ 128 0180 EC309FE5 		ldr	r3, .L5+24
+ 129 0184 B040C3E1 		strh	r4, [r3, #0]	@ movhi 
+ 130 0188 E8309FE5 		ldr	r3, .L5+28
+ 131 018c 2558A0E1 		mov	r5, r5, lsr #16
+ 132 0190 B050C3E1 		strh	r5, [r3, #0]	@ movhi 
+ 133 0194 FEFFFFEB 		bl	__floatsidf
+ 134 0198 30304BE2 		sub	r3, fp, #48
+ 135 019c 030083E9 		stmib	r3, {r0-r1}
+ 136 01a0 B4208FE2 		adr	r2, .L5
+ 137 01a4 0C0092E8 		ldmia	r2, {r2-r3}
+ 138 01a8 FEFFFFEB 		bl	__muldf3
+ 139 01ac 0558A0E1 		mov	r5, r5, asl #16
+ 140 01b0 AC808FE2 		adr	r8, .L5+8
+ 141 01b4 000398E8 		ldmia	r8, {r8-r9}
+ 142 01b8 0170A0E1 		mov	r7, r1
+ 143 01bc 0060A0E1 		mov	r6, r0
+ 144 01c0 4508A0E1 		mov	r0, r5, asr #16
+ 145 01c4 FEFFFFEB 		bl	__floatsidf
+ 146 01c8 0930A0E1 		mov	r3, r9
+ 147 01cc 0820A0E1 		mov	r2, r8
+ 148 01d0 FEFFFFEB 		bl	__muldf3
+ 149 01d4 0150A0E1 		mov	r5, r1
+ 150 01d8 0040A0E1 		mov	r4, r0
+ 151 01dc 0530A0E1 		mov	r3, r5
+ 152 01e0 0420A0E1 		mov	r2, r4
+ 153 01e4 0710A0E1 		mov	r1, r7
+ 154 01e8 0600A0E1 		mov	r0, r6
+ 155 01ec FEFFFFEB 		bl	__adddf3
+ 156 01f0 FEFFFFEB 		bl	__fixdfsi
+ 157 01f4 80609FE5 		ldr	r6, .L5+32
+ 158 01f8 30C04BE2 		sub	ip, fp, #48
+ 159 01fc B000C6E1 		strh	r0, [r6, #0]	@ movhi 
+ 160 0200 0930A0E1 		mov	r3, r9
+ 161 0204 0820A0E1 		mov	r2, r8
+ 162 0208 03009CE9 		ldmib	ip, {r0-r1}
+ 163 020c FEFFFFEB 		bl	__muldf3
+ 164 0210 0530A0E1 		mov	r3, r5
+ 165 0214 0420A0E1 		mov	r2, r4
+ 166 0218 FEFFFFEB 		bl	__adddf3
+ 167 021c FEFFFFEB 		bl	__fixdfsi
+ 168 0220 58109FE5 		ldr	r1, .L5+36
+ 169 0224 58309FE5 		ldr	r3, .L5+40
+ 170 0228 B000C1E1 		strh	r0, [r1, #0]	@ movhi 
+ 171 022c B0C0D3E1 		ldrh	ip, [r3, #0]
+ 172 0230 50309FE5 		ldr	r3, .L5+44
+ 173 0234 B020D1E1 		ldrh	r2, [r1, #0]
+ 174 0238 B000D3E1 		ldrh	r0, [r3, #0]
+ 175 023c B030D6E1 		ldrh	r3, [r6, #0]
+ 176 0240 022060E0 		rsb	r2, r0, r2
+ 177 0244 03306CE0 		rsb	r3, ip, r3
+ 178 0248 B030C6E1 		strh	r3, [r6, #0]	@ movhi 
+ 179 024c B020C1E1 		strh	r2, [r1, #0]	@ movhi 
+ 180 0250 24D04BE2 		sub	sp, fp, #36
+ 181 0254 F06B9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, fp, sp, lr}
+ 182 0258 1EFF2FE1 		bx	lr
+ 183              	.L6:
+ 184              		.align	2
+ 185              	.L5:
+ 186 025c 6666E63F 		.word	1072064102
+ 187 0260 66666666 		.word	1717986918
+ 188 0264 6666E6BF 		.word	-1075419546
+ 189 0268 66666666 		.word	1717986918
+ 190 026c 1C000000 		.word	buf_ir1
+ 191 0270 60000000 		.word	buf_ir2
+ 192 0274 00000000 		.word	x1_dbg
+ 193 0278 00000000 		.word	x2_dbg
+ 194 027c 00000000 		.word	ir_roll
+ 195 0280 00000000 		.word	ir_pitch
+ 196 0284 00000000 		.word	adc_roll_neutral
+ 197 0288 00000000 		.word	adc_pitch_neutral
+ 199              		.global	__divdf3
+ 200              		.global	__truncdfsf2
+ 201              		.align	2
+ 202              		.global	ground_calibrate
+ 204              	ground_calibrate:
+ 205              		@ Function supports interworking.
+ 206              		@ args = 0, pretend = 0, frame = 0
+ 207              		@ frame_needed = 1, uses_anonymous_args = 0
+ 208 028c 0DC0A0E1 		mov	ip, sp
+ 209 0290 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+ 210 0294 DC419FE5 		ldr	r4, .L20+8
+ 211 0298 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 212 029c 000053E3 		cmp	r3, #0
+ 213 02a0 04B04CE2 		sub	fp, ip, #4
+ 214 02a4 FF0000E2 		and	r0, r0, #255
+ 215 02a8 AC00000A 		beq	.L9
+ 216 02ac 010053E3 		cmp	r3, #1
+ 217 02b0 CD00000A 		beq	.L13
+ 218 02b4 180100EA 		b	.L7
+ 219              	.L9:
+ 220 02b8 BC319FE5 		ldr	r3, .L20+12
+ 221 02bc B030D3E1 		ldrh	r3, [r3, #0]
+ 222 02c0 090053E3 		cmp	r3, #9
+ 223 02c4 1801008A 		bhi	.L7
+ 224 02c8 B0319FE5 		ldr	r3, .L20+16
+ 225 02cc 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 226 02d0 010053E3 		cmp	r3, #1
+ 227 02d4 1801001A 		bne	.L7
+ 228 02d8 0600A0E3 		mov	r0, #6
+ 229 02dc 0030C4E5 		strb	r3, [r4, #0]
+ 230 02e0 FEFFFFEB 		bl	uart0_check_free_space
+ 231 02e4 FF0010E3 		tst	r0, #255
+ 232 02e8 1401000A 		beq	.L16
+ 233 02ec 9900A0E3 		mov	r0, #153
+ 234 02f0 FEFFFFEB 		bl	uart0_transmit
+ 235 02f4 88419FE5 		ldr	r4, .L20+20
+ 236 02f8 0600A0E3 		mov	r0, #6
+ 237 02fc FEFFFFEB 		bl	uart0_transmit
+ 238 0300 80519FE5 		ldr	r5, .L20+24
+ 239 0304 1430A0E3 		mov	r3, #20
+ 240 0308 0030C4E5 		strb	r3, [r4, #0]
+ 241 030c 063083E2 		add	r3, r3, #6
+ 242 0310 0E00A0E3 		mov	r0, #14
+ 243 0314 0030C5E5 		strb	r3, [r5, #0]
+ 244 0318 FEFFFFEB 		bl	uart0_transmit
+ 245 031c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 246 0320 023083E2 		add	r3, r3, #2
+ 247 0324 0030C4E5 		strb	r3, [r4, #0]
+ 248 0328 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 249 032c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 250 0330 0200A0E3 		mov	r0, #2
+ 251 0334 023083E0 		add	r3, r3, r2
+ 252 0338 0D0100EA 		b	.L19
+ 253              	.L13:
+ 254 033c 000050E3 		cmp	r0, #0
+ 255 0340 1801000A 		beq	.L7
+ 256 0344 40319FE5 		ldr	r3, .L20+28
+ 257 0348 F030D3E1 		ldrsh	r3, [r3, #0]
+ 258 034c 3C619FE5 		ldr	r6, .L20+32
+ 259 0350 000053E3 		cmp	r3, #0
+ 260 0354 003063B2 		rsblt	r3, r3, #0
+ 261 0358 B030C6E1 		strh	r3, [r6, #0]	@ movhi 
+ 262 035c F000D6E1 		ldrsh	r0, [r6, #0]
+ 263 0360 FEFFFFEB 		bl	__floatsidf
+ 264 0364 0130A0E1 		mov	r3, r1
+ 265 0368 0020A0E1 		mov	r2, r0
+ 266 036c FC008FE2 		adr	r0, .L20
+ 267 0370 030090E8 		ldmia	r0, {r0-r1}
+ 268 0374 FEFFFFEB 		bl	__divdf3
+ 269 0378 FEFFFFEB 		bl	__truncdfsf2
+ 270 037c 10319FE5 		ldr	r3, .L20+36
+ 271 0380 0020A0E1 		mov	r2, r0
+ 272 0384 002083E5 		str	r2, [r3, #0]	@ float
+ 273 0388 0230A0E3 		mov	r3, #2
+ 274 038c 0030C4E5 		strb	r3, [r4, #0]
+ 275 0390 00319FE5 		ldr	r3, .L20+40
+ 276 0394 0800A0E3 		mov	r0, #8
+ 277 0398 002083E5 		str	r2, [r3, #0]	@ float
+ 278 039c FEFFFFEB 		bl	uart0_check_free_space
+ 279 03a0 FF0010E3 		tst	r0, #255
+ 280 03a4 1401000A 		beq	.L16
+ 281 03a8 9900A0E3 		mov	r0, #153
+ 282 03ac D0409FE5 		ldr	r4, .L20+20
+ 283 03b0 FEFFFFEB 		bl	uart0_transmit
+ 284 03b4 0800A0E3 		mov	r0, #8
+ 285 03b8 C8509FE5 		ldr	r5, .L20+24
+ 286 03bc FEFFFFEB 		bl	uart0_transmit
+ 287 03c0 1630A0E3 		mov	r3, #22
+ 288 03c4 0030C4E5 		strb	r3, [r4, #0]
+ 289 03c8 083083E2 		add	r3, r3, #8
+ 290 03cc 0E00A0E3 		mov	r0, #14
+ 291 03d0 0030C5E5 		strb	r3, [r5, #0]
+ 292 03d4 FEFFFFEB 		bl	uart0_transmit
+ 293 03d8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 294 03dc 033083E2 		add	r3, r3, #3
+ 295 03e0 0030C4E5 		strb	r3, [r4, #0]
+ 296 03e4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 297 03e8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 298 03ec 023083E0 		add	r3, r3, r2
+ 299 03f0 0300A0E3 		mov	r0, #3
+ 300 03f4 0030C5E5 		strb	r3, [r5, #0]
+ 301 03f8 FEFFFFEB 		bl	uart0_transmit
+ 302 03fc 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 303 0400 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 304 0404 033080E0 		add	r3, r0, r3
+ 305 0408 0030C4E5 		strb	r3, [r4, #0]
+ 306 040c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 307 0410 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 308 0414 023083E0 		add	r3, r3, r2
+ 309 0418 0030C5E5 		strb	r3, [r5, #0]
+ 310 041c FEFFFFEB 		bl	uart0_transmit
+ 311 0420 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 312 0424 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 313 0428 033080E0 		add	r3, r0, r3
+ 314 042c 0030C4E5 		strb	r3, [r4, #0]
+ 315 0430 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 316 0434 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 317 0438 023083E0 		add	r3, r3, r2
+ 318              	.L19:
+ 319 043c 0030C5E5 		strb	r3, [r5, #0]
+ 320 0440 FEFFFFEB 		bl	uart0_transmit
+ 321 0444 0000D4E5 		ldrb	r0, [r4, #0]	@ zero_extendqisi2
+ 322 0448 FEFFFFEB 		bl	uart0_transmit
+ 323 044c 0000D5E5 		ldrb	r0, [r5, #0]	@ zero_extendqisi2
+ 324 0450 FEFFFFEB 		bl	uart0_transmit
+ 325 0454 180100EA 		b	.L7
+ 326              	.L16:
+ 327 0458 3C209FE5 		ldr	r2, .L20+44
+ 328 045c 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 329 0460 013083E2 		add	r3, r3, #1
+ 330 0464 0030C2E5 		strb	r3, [r2, #0]
+ 331              	.L7:
+ 332 0468 70689DE8 		ldmfd	sp, {r4, r5, r6, fp, sp, lr}
+ 333 046c 1EFF2FE1 		bx	lr
+ 334              	.L21:
+ 335              		.align	2
+ 336              	.L20:
+ 337 0470 6666FE3F 		.word	1073636966
+ 338 0474 66666666 		.word	1717986918
+ 339 0478 00000000 		.word	calib_status
+ 340 047c 00000000 		.word	cpu_time_sec
+ 341 0480 00000000 		.word	pprz_mode
+ 342 0484 00000000 		.word	ck_a
+ 343 0488 00000000 		.word	ck_b
+ 344 048c 00000000 		.word	ir_pitch
+ 345 0490 00000000 		.word	ir_contrast
+ 346 0494 00000000 		.word	estimator_rad_of_ir
+ 347 0498 00000000 		.word	ir_rad_of_ir
+ 348 049c 00000000 		.word	downlink_nb_ovrn
+ 350              		.bss
+ 351 0001 000000   		.align	2
+ 352              	last_hspeed_dir.0:
+ 353 0004 00000000 		.space	4
+ 354              		.align	2
+ 355              	last_t.1:
+ 356 0008 00000000 		.space	4
+ 357              	initialized.2:
+ 358 000c 00       		.space	1
+ 359 000d 000000   		.align	2
+ 360              	sum_xy.3:
+ 361 0010 00000000 		.space	4
+ 362              		.align	2
+ 363              	sum_xx.4:
+ 364 0014 00000000 		.space	4
+ 365              		.global	__floatsisf
+ 366              		.global	__addsf3
+ 367              		.global	__divsf3
+ 368              		.global	__extendsfdf2
+ 369              		.global	__gtdf2
+ 370              		.global	__subsf3
+ 371              		.global	__subdf3
+ 372              		.global	__ltdf2
+ 373              		.global	__ltsf2
+ 374              		.global	__mulsf3
+ 375              		.text
+ 376              		.align	2
+ 377              		.global	estimator_update_ir_estim
+ 379              	estimator_update_ir_estim:
+ 380              		@ Function supports interworking.
+ 381              		@ args = 0, pretend = 0, frame = 0
+ 382              		@ frame_needed = 1, uses_anonymous_args = 0
+ 383 04a0 0DC0A0E1 		mov	ip, sp
+ 384 04a4 F0D92DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, fp, ip, lr, pc}
+ 385 04a8 48249FE5 		ldr	r2, .L55+88
+ 386 04ac 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 387 04b0 000053E3 		cmp	r3, #0
+ 388 04b4 04B04CE2 		sub	fp, ip, #4
+ 389 04b8 FD01000A 		beq	.L23
+ 390 04bc 38349FE5 		ldr	r3, .L55+92
+ 391 04c0 002093E5 		ldr	r2, [r3, #0]
+ 392 04c4 34349FE5 		ldr	r3, .L55+96
+ 393 04c8 003093E5 		ldr	r3, [r3, #0]
+ 394 04cc 032052E0 		subs	r2, r2, r3
+ 395 04d0 3601004A 		bmi	.L25
+ 396 04d4 0200A0E1 		mov	r0, r2
+ 397 04d8 FEFFFFEB 		bl	__floatsisf
+ 398 04dc 3B0100EA 		b	.L24
+ 399              	.L25:
+ 400 04e0 010002E2 		and	r0, r2, #1
+ 401 04e4 A20080E1 		orr	r0, r0, r2, lsr #1
+ 402 04e8 FEFFFFEB 		bl	__floatsisf
+ 403 04ec 0010A0E1 		mov	r1, r0
+ 404 04f0 FEFFFFEB 		bl	__addsf3
+ 405              	.L24:
+ 406 04f4 08149FE5 		ldr	r1, .L55+100
+ 407 04f8 FEFFFFEB 		bl	__divsf3
+ 408 04fc 0070A0E1 		mov	r7, r0
+ 409 0500 FEFFFFEB 		bl	__extendsfdf2
+ 410 0504 E52F8FE2 		adr	r2, .L55
+ 411 0508 0C0092E8 		ldmia	r2, {r2-r3}
+ 412 050c FEFFFFEB 		bl	__gtdf2
+ 413 0510 000050E3 		cmp	r0, #0
+ 414 0514 1C0200DA 		ble	.L53
+ 415 0518 E8339FE5 		ldr	r3, .L55+104
+ 416 051c 000093E5 		ldr	r0, [r3, #0]	@ float
+ 417 0520 E4339FE5 		ldr	r3, .L55+108
+ 418 0524 001093E5 		ldr	r1, [r3, #0]	@ float
+ 419 0528 FEFFFFEB 		bl	__subsf3
+ 420 052c 4C0100EA 		b	.L54
+ 421              	.L31:
+ 422 0530 FEFFFFEB 		bl	__subdf3
+ 423 0534 FEFFFFEB 		bl	__truncdfsf2
+ 424              	.L54:
+ 425 0538 0060A0E1 		mov	r6, r0
+ 426 053c FEFFFFEB 		bl	__extendsfdf2
+ 427 0540 362E8FE2 		adr	r2, .L55+8
+ 428 0544 0C0092E8 		ldmia	r2, {r2-r3}
+ 429 0548 0150A0E1 		mov	r5, r1
+ 430 054c 0040A0E1 		mov	r4, r0
+ 431 0550 FEFFFFEB 		bl	__gtdf2
+ 432 0554 000050E3 		cmp	r0, #0
+ 433 0558 352E8FE2 		adr	r2, .L55+16
+ 434 055c 0C0092E8 		ldmia	r2, {r2-r3}
+ 435 0560 0510A0E1 		mov	r1, r5
+ 436 0564 0400A0E1 		mov	r0, r4
+ 437 0568 4A0100CA 		bgt	.L31
+ 438 056c 5D0100EA 		b	.L32
+ 439              	.L35:
+ 440 0570 FEFFFFEB 		bl	__adddf3
+ 441 0574 FEFFFFEB 		bl	__truncdfsf2
+ 442 0578 0060A0E1 		mov	r6, r0
+ 443              	.L32:
+ 444 057c 0600A0E1 		mov	r0, r6
+ 445 0580 FEFFFFEB 		bl	__extendsfdf2
+ 446 0584 CB2F8FE2 		adr	r2, .L55+24
+ 447 0588 0C0092E8 		ldmia	r2, {r2-r3}
+ 448 058c 0150A0E1 		mov	r5, r1
+ 449 0590 0040A0E1 		mov	r4, r0
+ 450 0594 FEFFFFEB 		bl	__ltdf2
+ 451 0598 000050E3 		cmp	r0, #0
+ 452 059c C32F8FE2 		adr	r2, .L55+16
+ 453 05a0 0C0092E8 		ldmia	r2, {r2-r3}
+ 454 05a4 0510A0E1 		mov	r1, r5
+ 455 05a8 0400A0E1 		mov	r0, r4
+ 456 05ac 5A0100BA 		blt	.L35
+ 457 05b0 0710A0E1 		mov	r1, r7
+ 458 05b4 0600A0E1 		mov	r0, r6
+ 459 05b8 FEFFFFEB 		bl	__divsf3
+ 460 05bc FEFFFFEB 		bl	__extendsfdf2
+ 461 05c0 BE2F8FE2 		adr	r2, .L55+32
+ 462 05c4 0C0092E8 		ldmia	r2, {r2-r3}
+ 463 05c8 FEFFFFEB 		bl	__muldf3
+ 464 05cc BD2F8FE2 		adr	r2, .L55+40
+ 465 05d0 0C0092E8 		ldmia	r2, {r2-r3}
+ 466 05d4 FEFFFFEB 		bl	__divdf3
+ 467 05d8 FEFFFFEB 		bl	__truncdfsf2
+ 468 05dc 2C739FE5 		ldr	r7, .L55+112
+ 469 05e0 000087E5 		str	r0, [r7, #0]	@ float
+ 470 05e4 7C0100EA 		b	.L36
+ 471              	.L39:
+ 472 05e8 FEFFFFEB 		bl	__subdf3
+ 473 05ec FEFFFFEB 		bl	__truncdfsf2
+ 474 05f0 18339FE5 		ldr	r3, .L55+112
+ 475 05f4 000083E5 		str	r0, [r3, #0]	@ float
+ 476              	.L36:
+ 477 05f8 000097E5 		ldr	r0, [r7, #0]	@ float
+ 478 05fc FEFFFFEB 		bl	__extendsfdf2
+ 479 0600 2A2E8FE2 		adr	r2, .L55+8
+ 480 0604 0C0092E8 		ldmia	r2, {r2-r3}
+ 481 0608 0150A0E1 		mov	r5, r1
+ 482 060c 0040A0E1 		mov	r4, r0
+ 483 0610 FEFFFFEB 		bl	__gtdf2
+ 484 0614 000050E3 		cmp	r0, #0
+ 485 0618 292E8FE2 		adr	r2, .L55+16
+ 486 061c 0C0092E8 		ldmia	r2, {r2-r3}
+ 487 0620 0510A0E1 		mov	r1, r5
+ 488 0624 0400A0E1 		mov	r0, r4
+ 489 0628 780100CA 		bgt	.L39
+ 490 062c 8D0100EA 		b	.L40
+ 491              	.L43:
+ 492 0630 FEFFFFEB 		bl	__adddf3
+ 493 0634 FEFFFFEB 		bl	__truncdfsf2
+ 494 0638 000085E5 		str	r0, [r5, #0]	@ float
+ 495              	.L40:
+ 496 063c 000097E5 		ldr	r0, [r7, #0]	@ float
+ 497 0640 FEFFFFEB 		bl	__extendsfdf2
+ 498 0644 9B2F8FE2 		adr	r2, .L55+24
+ 499 0648 0C0092E8 		ldmia	r2, {r2-r3}
+ 500 064c 0150A0E1 		mov	r5, r1
+ 501 0650 0040A0E1 		mov	r4, r0
+ 502 0654 FEFFFFEB 		bl	__ltdf2
+ 503 0658 000050E3 		cmp	r0, #0
+ 504 065c 932F8FE2 		adr	r2, .L55+16
+ 505 0660 0C0092E8 		ldmia	r2, {r2-r3}
+ 506 0664 0510A0E1 		mov	r1, r5
+ 507 0668 0400A0E1 		mov	r0, r4
+ 508 066c 9C529FE5 		ldr	r5, .L55+112
+ 509 0670 8A0100BA 		blt	.L43
+ 510 0674 98329FE5 		ldr	r3, .L55+116
+ 511 0678 F060D3E1 		ldrsh	r6, [r3, #0]
+ 512 067c 0600A0E1 		mov	r0, r6
+ 513 0680 FEFFFFEB 		bl	__floatsisf
+ 514 0684 003097E5 		ldr	r3, [r7, #0]
+ 515 0688 0241C3E3 		bic	r4, r3, #-2147483648
+ 516 068c 84329FE5 		ldr	r3, .L55+120
+ 517 0690 0080A0E1 		mov	r8, r0
+ 518 0694 FE15A0E3 		mov	r1, #1065353216
+ 519 0698 0400A0E1 		mov	r0, r4
+ 520 069c 008083E5 		str	r8, [r3, #0]	@ float
+ 521 06a0 FEFFFFEB 		bl	__ltsf2
+ 522 06a4 000050E3 		cmp	r0, #0
+ 523 06a8 1C0200AA 		bge	.L53
+ 524 06ac 0400A0E1 		mov	r0, r4
+ 525 06b0 FEFFFFEB 		bl	__extendsfdf2
+ 526 06b4 852F8FE2 		adr	r2, .L55+48
+ 527 06b8 0C0092E8 		ldmia	r2, {r2-r3}
+ 528 06bc FEFFFFEB 		bl	__gtdf2
+ 529 06c0 000050E3 		cmp	r0, #0
+ 530 06c4 1C0200DA 		ble	.L53
+ 531 06c8 4C329FE5 		ldr	r3, .L55+124
+ 532 06cc B030D3E1 		ldrh	r3, [r3, #0]
+ 533 06d0 0318A0E1 		mov	r1, r3, asl #16
+ 534 06d4 4128A0E1 		mov	r2, r1, asr #16
+ 535 06d8 003062E2 		rsb	r3, r2, #0
+ 536 06dc A33F83E0 		add	r3, r3, r3, lsr #31
+ 537 06e0 C30056E1 		cmp	r6, r3, asr #1
+ 538 06e4 1C0200DA 		ble	.L53
+ 539 06e8 A13F82E0 		add	r3, r2, r1, lsr #31
+ 540 06ec C30056E1 		cmp	r6, r3, asr #1
+ 541 06f0 1C0200AA 		bge	.L53
+ 542 06f4 000095E5 		ldr	r0, [r5, #0]	@ float
+ 543 06f8 0810A0E1 		mov	r1, r8
+ 544 06fc FEFFFFEB 		bl	__mulsf3
+ 545 0700 FEFFFFEB 		bl	__extendsfdf2
+ 546 0704 14629FE5 		ldr	r6, .L55+128
+ 547 0708 0150A0E1 		mov	r5, r1
+ 548 070c 0040A0E1 		mov	r4, r0
+ 549 0710 000096E5 		ldr	r0, [r6, #0]	@ float
+ 550 0714 FEFFFFEB 		bl	__extendsfdf2
+ 551 0718 6E2F8FE2 		adr	r2, .L55+56
+ 552 071c 0C0092E8 		ldmia	r2, {r2-r3}
+ 553 0720 FEFFFFEB 		bl	__muldf3
+ 554 0724 0130A0E1 		mov	r3, r1
+ 555 0728 0020A0E1 		mov	r2, r0
+ 556 072c 0510A0E1 		mov	r1, r5
+ 557 0730 0400A0E1 		mov	r0, r4
+ 558 0734 FEFFFFEB 		bl	__adddf3
+ 559 0738 FEFFFFEB 		bl	__truncdfsf2
+ 560 073c 0070A0E1 		mov	r7, r0
+ 561 0740 007086E5 		str	r7, [r6, #0]	@ float
+ 562 0744 0810A0E1 		mov	r1, r8
+ 563 0748 0800A0E1 		mov	r0, r8
+ 564 074c FEFFFFEB 		bl	__mulsf3
+ 565 0750 FEFFFFEB 		bl	__extendsfdf2
+ 566 0754 C8619FE5 		ldr	r6, .L55+132
+ 567 0758 0150A0E1 		mov	r5, r1
+ 568 075c 0040A0E1 		mov	r4, r0
+ 569 0760 000096E5 		ldr	r0, [r6, #0]	@ float
+ 570 0764 FEFFFFEB 		bl	__extendsfdf2
+ 571 0768 5A2F8FE2 		adr	r2, .L55+56
+ 572 076c 0C0092E8 		ldmia	r2, {r2-r3}
+ 573 0770 FEFFFFEB 		bl	__muldf3
+ 574 0774 0130A0E1 		mov	r3, r1
+ 575 0778 0020A0E1 		mov	r2, r0
+ 576 077c 0510A0E1 		mov	r1, r5
+ 577 0780 0400A0E1 		mov	r0, r4
+ 578 0784 FEFFFFEB 		bl	__adddf3
+ 579 0788 FEFFFFEB 		bl	__truncdfsf2
+ 580 078c 0030A0E1 		mov	r3, r0
+ 581 0790 003086E5 		str	r3, [r6, #0]	@ float
+ 582 0794 0010A0E1 		mov	r1, r0
+ 583 0798 0700A0E1 		mov	r0, r7
+ 584 079c FEFFFFEB 		bl	__divsf3
+ 585 07a0 0040A0E1 		mov	r4, r0
+ 586 07a4 FEFFFFEB 		bl	__extendsfdf2
+ 587 07a8 132E8FE2 		adr	r2, .L55+64
+ 588 07ac 0C0092E8 		ldmia	r2, {r2-r3}
+ 589 07b0 0170A0E1 		mov	r7, r1
+ 590 07b4 0060A0E1 		mov	r6, r0
+ 591 07b8 FEFFFFEB 		bl	__ltdf2
+ 592 07bc 000050E3 		cmp	r0, #0
+ 593 07c0 60219FB5 		ldrlt	r2, .L55+136
+ 594 07c4 60319FB5 		ldrlt	r3, .L55+140
+ 595 07c8 002083B5 		strlt	r2, [r3, #0]	@ float
+ 596 07cc 1C0200BA 		blt	.L53
+ 597 07d0 112E8FE2 		adr	r2, .L55+72
+ 598 07d4 0C0092E8 		ldmia	r2, {r2-r3}
+ 599 07d8 0710A0E1 		mov	r1, r7
+ 600 07dc 0600A0E1 		mov	r0, r6
+ 601 07e0 FEFFFFEB 		bl	__gtdf2
+ 602 07e4 000050E3 		cmp	r0, #0
+ 603 07e8 3C219FE5 		ldr	r2, .L55+140
+ 604 07ec 3C319FC5 		ldrgt	r3, .L55+144
+ 605 07f0 004082D5 		strle	r4, [r2, #0]	@ float
+ 606 07f4 003082C5 		strgt	r3, [r2, #0]	@ float
+ 607 07f8 1C0200EA 		b	.L53
+ 608              	.L23:
+ 609 07fc 18319FE5 		ldr	r3, .L55+124
+ 610 0800 F000D3E1 		ldrsh	r0, [r3, #0]
+ 611 0804 0130A0E3 		mov	r3, #1
+ 612 0808 0030C2E5 		strb	r3, [r2, #0]
+ 613 080c FEFFFFEB 		bl	__floatsisf
+ 614 0810 0010A0E1 		mov	r1, r0
+ 615 0814 FEFFFFEB 		bl	__mulsf3
+ 616 0818 0C319FE5 		ldr	r3, .L55+140
+ 617 081c 0060A0E1 		mov	r6, r0
+ 618 0820 000093E5 		ldr	r0, [r3, #0]	@ float
+ 619 0824 FEFFFFEB 		bl	__extendsfdf2
+ 620 0828 C0208FE2 		adr	r2, .L55+80
+ 621 082c 0C0092E8 		ldmia	r2, {r2-r3}
+ 622 0830 FEFFFFEB 		bl	__muldf3
+ 623 0834 0150A0E1 		mov	r5, r1
+ 624 0838 0040A0E1 		mov	r4, r0
+ 625 083c 0600A0E1 		mov	r0, r6
+ 626 0840 FEFFFFEB 		bl	__extendsfdf2
+ 627 0844 0130A0E1 		mov	r3, r1
+ 628 0848 0020A0E1 		mov	r2, r0
+ 629 084c 0510A0E1 		mov	r1, r5
+ 630 0850 0400A0E1 		mov	r0, r4
+ 631 0854 FEFFFFEB 		bl	__muldf3
+ 632 0858 FEFFFFEB 		bl	__truncdfsf2
+ 633 085c BC309FE5 		ldr	r3, .L55+128
+ 634 0860 CC109FE5 		ldr	r1, .L55+148
+ 635 0864 000083E5 		str	r0, [r3, #0]	@ float
+ 636 0868 0600A0E1 		mov	r0, r6
+ 637 086c FEFFFFEB 		bl	__mulsf3
+ 638 0870 AC309FE5 		ldr	r3, .L55+132
+ 639 0874 000083E5 		str	r0, [r3, #0]	@ float
+ 640              	.L53:
+ 641 0878 88309FE5 		ldr	r3, .L55+104
+ 642 087c 002093E5 		ldr	r2, [r3, #0]	@ float
+ 643 0880 74309FE5 		ldr	r3, .L55+92
+ 644 0884 001093E5 		ldr	r1, [r3, #0]
+ 645 0888 7C309FE5 		ldr	r3, .L55+108
+ 646 088c 002083E5 		str	r2, [r3, #0]	@ float
+ 647 0890 68309FE5 		ldr	r3, .L55+96
+ 648 0894 001083E5 		str	r1, [r3, #0]
+ 649 0898 F0699DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, fp, sp, lr}
+ 650 089c 1EFF2FE1 		bx	lr
+ 651              	.L56:
+ 652              		.align	2
+ 653              	.L55:
+ 654 08a0 9999B93F 		.word	1069128089
+ 655 08a4 9A999999 		.word	-1717986918
+ 656 08a8 FB210940 		.word	1074340347
+ 657 08ac 182D4454 		.word	1413754136
+ 658 08b0 FB211940 		.word	1075388923
+ 659 08b4 182D4454 		.word	1413754136
+ 660 08b8 FB2109C0 		.word	-1073143301
+ 661 08bc 182D4454 		.word	1413754136
+ 662 08c0 00001C40 		.word	1075576832
+ 663 08c4 00000000 		.word	0
+ 664 08c8 B89E2340 		.word	1076076216
+ 665 08cc 1F85EB51 		.word	1374389535
+ 666 08d0 9999A93F 		.word	1068079513
+ 667 08d4 9A999999 		.word	-1717986918
+ 668 08d8 0AD7EF3F 		.word	1072682762
+ 669 08dc D7A3703D 		.word	1030792151
+ 670 08e0 7493483F 		.word	1061720948
+ 671 08e4 FA7E6ABC 		.word	-1133871366
+ 672 08e8 976E723F 		.word	1064464023
+ 673 08ec 3BDF4F8D 		.word	-1924145349
+ 674 08f0 00005940 		.word	1079574528
+ 675 08f4 00000000 		.word	0
+ 676 08f8 0C000000 		.word	initialized.2
+ 677 08fc 00000000 		.word	gps_itow
+ 678 0900 08000000 		.word	last_t.1
+ 679 0904 00007A44 		.word	1148846080
+ 680 0908 00000000 		.word	estimator_hspeed_dir
+ 681 090c 04000000 		.word	last_hspeed_dir.0
+ 682 0910 00000000 		.word	estimator_rad
+ 683 0914 00000000 		.word	ir_roll
+ 684 0918 00000000 		.word	estimator_ir
+ 685 091c 00000000 		.word	ir_contrast
+ 686 0920 10000000 		.word	sum_xy.3
+ 687 0924 14000000 		.word	sum_xx.4
+ 688 0928 A69B443A 		.word	977574822
+ 689 092c 00000000 		.word	estimator_rad_of_ir
+ 690 0930 BC74933B 		.word	999519420
+ 691 0934 0000C842 		.word	1120403456
+ 693              		.global	__gesf2
+ 694              		.align	2
+ 695              		.global	estimator_update_state_infrared
+ 697              	estimator_update_state_infrared:
+ 698              		@ Function supports interworking.
+ 699              		@ args = 0, pretend = 0, frame = 0
+ 700              		@ frame_needed = 1, uses_anonymous_args = 0
+ 701 0938 0DC0A0E1 		mov	ip, sp
+ 702 093c F0DF2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, ip, lr, pc}
+ 703 0940 30329FE5 		ldr	r3, .L68+32
+ 704 0944 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 705 0948 010053E3 		cmp	r3, #1
+ 706 094c 28329F05 		ldreq	r3, .L68+36
+ 707 0950 28329F15 		ldrne	r3, .L68+40
+ 708 0954 28429FE5 		ldr	r4, .L68+44
+ 709 0958 006093E5 		ldr	r6, [r3, #0]	@ float
+ 710 095c 24329FE5 		ldr	r3, .L68+48
+ 711 0960 005093E5 		ldr	r5, [r3, #0]	@ float
+ 712 0964 F030D4E1 		ldrsh	r3, [r4, #0]
+ 713 0968 010053E3 		cmp	r3, #1
+ 714 096c 0130A0B3 		movlt	r3, #1
+ 715 0970 04B04CE2 		sub	fp, ip, #4
+ 716 0974 B030C4E1 		strh	r3, [r4, #0]	@ movhi 
+ 717 0978 0510A0E1 		mov	r1, r5
+ 718 097c FE05A0E3 		mov	r0, #1065353216
+ 719 0980 FEFFFFEB 		bl	__subsf3
+ 720 0984 0010A0E1 		mov	r1, r0
+ 721 0988 0600A0E1 		mov	r0, r6
+ 722 098c FEFFFFEB 		bl	__mulsf3
+ 723 0990 FEFFFFEB 		bl	__extendsfdf2
+ 724 0994 0180A0E1 		mov	r8, r1
+ 725 0998 0070A0E1 		mov	r7, r0
+ 726 099c 0500A0E1 		mov	r0, r5
+ 727 09a0 FEFFFFEB 		bl	__extendsfdf2
+ 728 09a4 0160A0E1 		mov	r6, r1
+ 729 09a8 0050A0E1 		mov	r5, r0
+ 730 09ac F000D4E1 		ldrsh	r0, [r4, #0]
+ 731 09b0 FEFFFFEB 		bl	__floatsidf
+ 732 09b4 673F8FE2 		adr	r3, .L68
+ 733 09b8 180093E8 		ldmia	r3, {r3-r4}
+ 734 09bc 04A001E0 		and	sl, r1, r4
+ 735 09c0 039000E0 		and	r9, r0, r3
+ 736 09c4 0A30A0E1 		mov	r3, sl
+ 737 09c8 0920A0E1 		mov	r2, r9
+ 738 09cc 630F8FE2 		adr	r0, .L68+8
+ 739 09d0 030090E8 		ldmia	r0, {r0-r1}
+ 740 09d4 FEFFFFEB 		bl	__divdf3
+ 741 09d8 0130A0E1 		mov	r3, r1
+ 742 09dc 0020A0E1 		mov	r2, r0
+ 743 09e0 0610A0E1 		mov	r1, r6
+ 744 09e4 0500A0E1 		mov	r0, r5
+ 745 09e8 FEFFFFEB 		bl	__muldf3
+ 746 09ec 0130A0E1 		mov	r3, r1
+ 747 09f0 0020A0E1 		mov	r2, r0
+ 748 09f4 0810A0E1 		mov	r1, r8
+ 749 09f8 0700A0E1 		mov	r0, r7
+ 750 09fc FEFFFFEB 		bl	__adddf3
+ 751 0a00 FEFFFFEB 		bl	__truncdfsf2
+ 752 0a04 80319FE5 		ldr	r3, .L68+52
+ 753 0a08 0060A0E1 		mov	r6, r0
+ 754 0a0c F000D3E1 		ldrsh	r0, [r3, #0]
+ 755 0a10 FEFFFFEB 		bl	__floatsisf
+ 756 0a14 0010A0E1 		mov	r1, r0
+ 757 0a18 0600A0E1 		mov	r0, r6
+ 758 0a1c FEFFFFEB 		bl	__mulsf3
+ 759 0a20 FEFFFFEB 		bl	__extendsfdf2
+ 760 0a24 64319FE5 		ldr	r3, .L68+56
+ 761 0a28 0150A0E1 		mov	r5, r1
+ 762 0a2c 0040A0E1 		mov	r4, r0
+ 763 0a30 000093E5 		ldr	r0, [r3, #0]	@ float
+ 764 0a34 FEFFFFEB 		bl	__extendsfdf2
+ 765 0a38 4A2F8FE2 		adr	r2, .L68+16
+ 766 0a3c 0C0092E8 		ldmia	r2, {r2-r3}
+ 767 0a40 FEFFFFEB 		bl	__divdf3
+ 768 0a44 492F8FE2 		adr	r2, .L68+24
+ 769 0a48 0C0092E8 		ldmia	r2, {r2-r3}
+ 770 0a4c FEFFFFEB 		bl	__muldf3
+ 771 0a50 0130A0E1 		mov	r3, r1
+ 772 0a54 0020A0E1 		mov	r2, r0
+ 773 0a58 0510A0E1 		mov	r1, r5
+ 774 0a5c 0400A0E1 		mov	r0, r4
+ 775 0a60 FEFFFFEB 		bl	__subdf3
+ 776 0a64 FEFFFFEB 		bl	__truncdfsf2
+ 777 0a68 24819FE5 		ldr	r8, .L68+60
+ 778 0a6c 24319FE5 		ldr	r3, .L68+64
+ 779 0a70 0070A0E1 		mov	r7, r0
+ 780 0a74 007088E5 		str	r7, [r8, #0]	@ float
+ 781 0a78 F000D3E1 		ldrsh	r0, [r3, #0]
+ 782 0a7c FEFFFFEB 		bl	__floatsisf
+ 783 0a80 0010A0E1 		mov	r1, r0
+ 784 0a84 0600A0E1 		mov	r0, r6
+ 785 0a88 FEFFFFEB 		bl	__mulsf3
+ 786 0a8c FEFFFFEB 		bl	__extendsfdf2
+ 787 0a90 04319FE5 		ldr	r3, .L68+68
+ 788 0a94 0150A0E1 		mov	r5, r1
+ 789 0a98 0040A0E1 		mov	r4, r0
+ 790 0a9c 000093E5 		ldr	r0, [r3, #0]	@ float
+ 791 0aa0 FEFFFFEB 		bl	__extendsfdf2
+ 792 0aa4 BC208FE2 		adr	r2, .L68+16
+ 793 0aa8 0C0092E8 		ldmia	r2, {r2-r3}
+ 794 0aac FEFFFFEB 		bl	__divdf3
+ 795 0ab0 B8208FE2 		adr	r2, .L68+24
+ 796 0ab4 0C0092E8 		ldmia	r2, {r2-r3}
+ 797 0ab8 FEFFFFEB 		bl	__muldf3
+ 798 0abc 0130A0E1 		mov	r3, r1
+ 799 0ac0 0020A0E1 		mov	r2, r0
+ 800 0ac4 0510A0E1 		mov	r1, r5
+ 801 0ac8 0400A0E1 		mov	r0, r4
+ 802 0acc FEFFFFEB 		bl	__subdf3
+ 803 0ad0 FEFFFFEB 		bl	__truncdfsf2
+ 804 0ad4 C4509FE5 		ldr	r5, .L68+72
+ 805 0ad8 0010A0E3 		mov	r1, #0
+ 806 0adc 000085E5 		str	r0, [r5, #0]	@ float
+ 807 0ae0 0700A0E1 		mov	r0, r7
+ 808 0ae4 FEFFFFEB 		bl	__gesf2
+ 809 0ae8 000050E3 		cmp	r0, #0
+ 810 0aec B0309FA5 		ldrge	r3, .L68+76
+ 811 0af0 B0309FB5 		ldrlt	r3, .L68+80
+ 812 0af4 0700A0A1 		movge	r0, r7
+ 813 0af8 001093E5 		ldr	r1, [r3, #0]	@ float
+ 814 0afc 0700A0B1 		movlt	r0, r7
+ 815 0b00 FEFFFFEB 		bl	__mulsf3
+ 816 0b04 004095E5 		ldr	r4, [r5, #0]	@ float
+ 817 0b08 000088E5 		str	r0, [r8, #0]	@ float
+ 818 0b0c 0010A0E3 		mov	r1, #0
+ 819 0b10 0400A0E1 		mov	r0, r4
+ 820 0b14 FEFFFFEB 		bl	__gesf2
+ 821 0b18 000050E3 		cmp	r0, #0
+ 822 0b1c CC0200BA 		blt	.L63
+ 823 0b20 84309FE5 		ldr	r3, .L68+84
+ 824 0b24 0400A0E1 		mov	r0, r4
+ 825 0b28 001093E5 		ldr	r1, [r3, #0]	@ float
+ 826 0b2c FEFFFFEB 		bl	__mulsf3
+ 827 0b30 000085E5 		str	r0, [r5, #0]	@ float
+ 828 0b34 D20200EA 		b	.L57
+ 829              	.L63:
+ 830 0b38 70309FE5 		ldr	r3, .L68+88
+ 831 0b3c 0400A0E1 		mov	r0, r4
+ 832 0b40 001093E5 		ldr	r1, [r3, #0]	@ float
+ 833 0b44 FEFFFFEB 		bl	__mulsf3
+ 834 0b48 50309FE5 		ldr	r3, .L68+72
+ 835 0b4c 000083E5 		str	r0, [r3, #0]	@ float
+ 836              	.L57:
+ 837 0b50 F06F9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, sl, fp, sp, lr}
+ 838 0b54 1EFF2FE1 		bx	lr
+ 839              	.L69:
+ 840              		.align	2
+ 841              	.L68:
+ 842 0b58 FFFFFF7F 		.word	2147483647
+ 843 0b5c FFFFFFFF 		.word	-1
+ 844 0b60 6666FE3F 		.word	1073636966
+ 845 0b64 00000060 		.word	1610612736
+ 846 0b68 00806640 		.word	1080459264
+ 847 0b6c 00000000 		.word	0
+ 848 0b70 FB210940 		.word	1074340347
+ 849 0b74 182D4454 		.word	1413754136
+ 850 0b78 00000000 		.word	ir_estim_mode
+ 851 0b7c 00000000 		.word	estimator_rad_of_ir
+ 852 0b80 00000000 		.word	ir_rad_of_ir
+ 853 0b84 00000000 		.word	ir_top
+ 854 0b88 00000000 		.word	z_contrast_mode
+ 855 0b8c 00000000 		.word	ir_roll
+ 856 0b90 00000000 		.word	ir_roll_neutral
+ 857 0b94 00000000 		.word	estimator_phi
+ 858 0b98 00000000 		.word	ir_pitch
+ 859 0b9c 00000000 		.word	ir_pitch_neutral
+ 860 0ba0 00000000 		.word	estimator_theta
+ 861 0ba4 00000000 		.word	ir_correction_right
+ 862 0ba8 00000000 		.word	ir_correction_left
+ 863 0bac 00000000 		.word	ir_correction_up
+ 864 0bb0 00000000 		.word	ir_correction_down
+ 866              		.comm	ir_roll,2,2
+ 867              		.comm	ir_pitch,2,2
+ 868              		.comm	ir_top,2,2
+ 869              		.comm	x1_dbg,2,2
+ 870              		.comm	x2_dbg,2,2
+ 871              		.comm	ir_rad_of_ir,4,4
+ 872              		.comm	ir_contrast,2,2
+ 873              		.comm	z_contrast_mode,4,4
+ 874              		.comm	ir_360,1,1
+ 875              		.comm	ir_estimated_phi_pi_4,4,4
+ 876              		.comm	ir_estimated_phi_minus_pi_4,4,4
+ 877              		.comm	ir_estimated_theta_pi_4,4,4
+ 878              		.comm	ir_estimated_theta_minus_pi_4,4,4
+ 879              		.comm	adc_roll_neutral,2,2
+ 880              		.comm	adc_pitch_neutral,2,2
+ 881              		.comm	ir_correction_left,4,4
+ 882              		.comm	ir_correction_right,4,4
+ 883              		.comm	ir_correction_up,4,4
+ 884              		.comm	ir_correction_down,4,4
+ 885              		.comm	estimator_rad_of_ir,4,4
+ 886              		.comm	estimator_ir,4,4
+ 887              		.comm	estimator_rad,4,4
+ 888              		.bss
+ 889              		.align	2
+ 890              	last_periodic_event:
+ 891 0018 00000000 		.space	4
+ 892              		.comm	ir_roll_neutral,4,4
+ 893              		.comm	ir_pitch_neutral,4,4
+ 894              		.align	2
+ 895              	buf_ir1:
+ 896 001c 00000000 		.space	68
+ 896      00000000 
+ 896      00000000 
+ 896      00000000 
+ 896      00000000 
+ 897              		.align	2
+ 898              	buf_ir2:
+ 899 0060 00000000 		.space	68
+ 899      00000000 
+ 899      00000000 
+ 899      00000000 
+ 899      00000000 
+ 900              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 infrared.c
+     /tmp/cc1ToixF.s:6      .bss:00000000 calib_status
+                             .bss:00000000 $d
+     /tmp/cc1ToixF.s:12     .text:00000000 ir_init
+     /tmp/cc1ToixF.s:16     .text:00000000 $a
+     /tmp/cc1ToixF.s:76     .text:000000e4 $d
+                            *COM*:00000004 ir_rad_of_ir
+     /tmp/cc1ToixF.s:895    .bss:0000001c buf_ir1
+     /tmp/cc1ToixF.s:898    .bss:00000060 buf_ir2
+                            *COM*:00000004 ir_roll_neutral
+                            *COM*:00000004 ir_pitch_neutral
+                            *COM*:00000002 adc_pitch_neutral
+                            *COM*:00000004 estimator_rad_of_ir
+                            *COM*:00000004 ir_correction_down
+                            *COM*:00000001 ir_360
+                            *COM*:00000004 ir_estimated_theta_minus_pi_4
+                            *COM*:00000004 z_contrast_mode
+                            *COM*:00000002 adc_roll_neutral
+                            *COM*:00000004 ir_correction_left
+                            *COM*:00000004 ir_correction_right
+                            *COM*:00000004 ir_correction_up
+                            *COM*:00000004 ir_estimated_phi_pi_4
+                            *COM*:00000004 ir_estimated_phi_minus_pi_4
+                            *COM*:00000004 ir_estimated_theta_pi_4
+                            *COM*:00000002 ir_contrast
+     /tmp/cc1ToixF.s:107    .text:0000013c ir_update
+     /tmp/cc1ToixF.s:111    .text:0000013c $a
+     /tmp/cc1ToixF.s:186    .text:0000025c $d
+                            *COM*:00000002 x1_dbg
+                            *COM*:00000002 x2_dbg
+                            *COM*:00000002 ir_roll
+                            *COM*:00000002 ir_pitch
+     /tmp/cc1ToixF.s:204    .text:0000028c ground_calibrate
+     /tmp/cc1ToixF.s:208    .text:0000028c $a
+     /tmp/cc1ToixF.s:337    .text:00000470 $d
+     /tmp/cc1ToixF.s:352    .bss:00000004 last_hspeed_dir.0
+     /tmp/cc1ToixF.s:355    .bss:00000008 last_t.1
+     /tmp/cc1ToixF.s:357    .bss:0000000c initialized.2
+     /tmp/cc1ToixF.s:360    .bss:00000010 sum_xy.3
+     /tmp/cc1ToixF.s:363    .bss:00000014 sum_xx.4
+     /tmp/cc1ToixF.s:379    .text:000004a0 estimator_update_ir_estim
+     /tmp/cc1ToixF.s:383    .text:000004a0 $a
+     /tmp/cc1ToixF.s:654    .text:000008a0 $d
+                            *COM*:00000004 estimator_rad
+                            *COM*:00000004 estimator_ir
+     /tmp/cc1ToixF.s:697    .text:00000938 estimator_update_state_infrared
+     /tmp/cc1ToixF.s:701    .text:00000938 $a
+     /tmp/cc1ToixF.s:842    .text:00000b58 $d
+                            *COM*:00000002 ir_top
+     /tmp/cc1ToixF.s:890    .bss:00000018 last_periodic_event
+
+UNDEFINED SYMBOLS
+adc_buf_channel
+__divsi3
+__floatsidf
+__muldf3
+__adddf3
+__fixdfsi
+__divdf3
+__truncdfsf2
+uart0_check_free_space
+uart0_transmit
+cpu_time_sec
+pprz_mode
+ck_a
+ck_b
+downlink_nb_ovrn
+__floatsisf
+__addsf3
+__divsf3
+__extendsfdf2
+__gtdf2
+__subsf3
+__subdf3
+__ltdf2
+__ltsf2
+__mulsf3
+gps_itow
+estimator_hspeed_dir
+__gesf2
+ir_estim_mode
+estimator_phi
+estimator_theta

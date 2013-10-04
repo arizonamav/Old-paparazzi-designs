@@ -1,0 +1,366 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o (__adddf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o (__muldf3)
+/usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o (__fixunsdfsi)
+
+Allocating common symbols
+Common symbol       size              file
+
+dl_msg_available    0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+cpu_time            0x2               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+uart0_tx_buffer     0x80              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+ck_b                0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+uart0_tx_insert_idx
+                    0x2               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_rx_insert_idx
+                    0x2               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+pprz_payload_len    0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+servos_values       0x10              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+uart0_tx_extract_idx
+                    0x2               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+pprz_ovrn           0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+dl_buffer           0x80              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+pprz_payload        0x100             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+ck_a                0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+pprz_error          0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+uart0_tx_running    0x1               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_rx_buffer     0x80              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_rx_extract_idx
+                    0x2               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00004000         0x00079000         xr
+RAM              0x40000000         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+LOAD /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libm.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/../../../../arm-elf/lib/thumb/interwork/libc.a
+LOAD /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a
+                0x00001000                STACK_SIZE = 0x1000
+
+.text           0x00004000     0x1520
+ *(.init)
+ .init          0x00004000      0x13c /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+                0x00004114                reset
+                0x00004000                _boot
+                0x00004050                _mainCRTStartup
+                0x00004114                abort
+                0x00004050                _start
+                0x00004114                _reset
+                0x00004114                exit
+                0x00004050                start
+ *(.text .text.*)
+ .text          0x0000413c       0x3c /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o
+                0x0000413c                TIMER0_ISR
+ .text          0x00004178       0x78 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+                0x00004188                restoreIRQ
+                0x000041e0                enableFIQ
+                0x000041b4                disableFIQ
+                0x000041a4                enableIRQ
+                0x000041c4                restoreFIQ
+                0x00004178                disableIRQ
+ .text          0x000041f0      0x474 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                0x000042a4                init_fbw
+                0x00004420                event_task_fbw
+                0x0000441c                periodic_task_fbw
+                0x000041f0                dl_parse_msg
+ .text          0x00004664      0x338 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                0x00004790                uart0_transmit
+                0x00004834                uart0_ISR
+                0x00004740                uart0_check_free_space
+                0x00004664                uart0_init_tx
+                0x0000473c                uart0_init_rx
+ .text          0x0000499c      0x1f8 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+                0x00004a78                PWM_ISR
+                0x0000499c                actuators_init
+ .text          0x00004b94       0x84 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+                0x00004b94                main
+ .text          0x00004c18      0x3a8 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                0x00004f48                __floatsidf
+                0x00004f74                __extendsfdf2
+                0x00004c1c                __adddf3
+                0x00004f20                __floatunsidf
+                0x00004c18                __subdf3
+ .text          0x00004fc0      0x4ec /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                0x00005238                __divdf3
+                0x00004fc0                __muldf3
+ .text          0x000054ac       0x74 /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                0x000054ac                __fixunsdfsi
+ *(.gnu.linkonce.t.*)
+ *(.glue_7)
+ *(.glue_7t)
+ *(.gcc_except_table)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r.*)
+                0x00005520                . = ALIGN (0x4)
+
+.ctors          0x00005520        0x0
+                0x00005520                PROVIDE (__ctors_start__, .)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x00005520                PROVIDE (__ctors_end__, .)
+
+.dtors          0x00005520        0x0
+                0x00005520                PROVIDE (__dtors_start__, .)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x00005520                PROVIDE (__dtors_end__, .)
+                0x00005520                . = ALIGN (0x4)
+                0x00005520                _etext = .
+                0x00005520                PROVIDE (etext, .)
+
+.data           0x40000000        0x0 load address 0x00005520
+                0x40000000                _data = .
+ *(.data)
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x40000000                . = ALIGN (0x4)
+ *(.fastrun)
+                0x40000000                . = ALIGN (0x4)
+                0x40000000                _edata = .
+                0x40000000                PROVIDE (edata, .)
+
+.bss            0x40000000      0x2cc
+                0x40000000                __bss_start = .
+                0x40000000                __bss_start__ = .
+ *(.bss)
+ .bss           0x40000000        0x4 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+ .bss           0x40000004        0x4 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o
+ .bss           0x40000008        0x1 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+                0x40000008                pprz_msg_received
+ *fill*         0x40000009        0x3 00
+ .bss           0x4000000c        0x8 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+ .bss           0x40000014        0xc /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+ .bss           0x40000020        0x4 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+ *(.gnu.linkonce.b*)
+ *(COMMON)
+ COMMON         0x40000024        0x2 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+                0x40000024                cpu_time
+ COMMON         0x40000026      0x105 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+                0x40000026                ck_b
+                0x40000027                pprz_payload_len
+                0x40000028                pprz_ovrn
+                0x40000029                pprz_payload
+                0x40000129                ck_a
+                0x4000012a                pprz_error
+ *fill*         0x4000012b        0x1 00
+ COMMON         0x4000012c       0x84 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                0x4000012c                dl_msg_available
+                0x40000130                dl_buffer
+ COMMON         0x400001b0      0x10a /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                0x400001b0                uart0_tx_buffer
+                0x40000230                uart0_tx_insert_idx
+                0x40000232                uart0_rx_insert_idx
+                0x40000234                uart0_tx_extract_idx
+                0x40000236                uart0_tx_running
+                0x40000237                uart0_rx_buffer
+                0x400002b8                uart0_rx_extract_idx
+ COMMON         0x400002ba       0x10 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+                0x400002ba                servos_values
+                0x400002cc                . = ALIGN (0x4)
+ *fill*         0x400002ca        0x2 00
+                0x400002cc                . = ALIGN (0x4)
+                0x400002cc                __bss_end__ = .
+                0x400002cc                PROVIDE (__bss_end, .)
+
+.stack          0x40000300     0x1000
+                0x40001300                . = (. + STACK_SIZE)
+ *fill*         0x40000300     0x1000 00
+                0x40001300                PROVIDE (_stack, .)
+                0x40001300                _end = .
+                0x40001300                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x90
+ *(.comment)
+ .comment       0x00000000       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+ .comment       0x00000012       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o
+ .comment       0x00000024       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+ .comment       0x00000036       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+ .comment       0x00000048       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+ .comment       0x0000005a       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+ .comment       0x0000006c       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+ .comment       0x0000007e       0x12 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.elf elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+PWM_ISR                                           /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+TIMER0_ISR                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+__adddf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+__bss_end__                                       /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+__bss_start                                       /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+__ctors_end__                                     /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+__ctors_start__                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+__divdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+__extendsfdf2                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+__fixunsdfsi                                      /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_fixunsdfsi.o)
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+__floatsidf                                       /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+__floatunsidf                                     /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+__muldf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_muldivdf3.o)
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+__subdf3                                          /usr/lib/gcc/arm-elf/3.4.4/thumb/interwork/libgcc.a(_addsubdf3.o)
+_boot                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_data                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_edata                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_etext                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_mainCRTStartup                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_reset                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_stack                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+_start                                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+abort                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+actuators_init                                    /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+adc_init                                          /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+ck_a                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+ck_b                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+cpu_time                                          /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o
+disableFIQ                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+disableIRQ                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+dl_buffer                                         /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+dl_msg_available                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+dl_parse_msg                                      /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+enableFIQ                                         /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+enableIRQ                                         /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+event_task_fbw                                    /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+exit                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+init_fbw                                          /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+main                                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+periodic_task_fbw                                 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o
+pprz_error                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+pprz_msg_received                                 /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+pprz_ovrn                                         /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+pprz_payload                                      /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+pprz_payload_len                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o
+reset                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+restoreFIQ                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+restoreIRQ                                        /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+servos_values                                     /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+start                                             /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/crt0.o
+uart0_ISR                                         /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_check_free_space                            /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_init_rx                                     /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+uart0_init_tx                                     /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+uart0_rx_buffer                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+uart0_rx_extract_idx                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+uart0_rx_insert_idx                               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+                                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o
+uart0_transmit                                    /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_tx_buffer                                   /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_tx_extract_idx                              /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_tx_insert_idx                               /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o
+uart0_tx_running                                  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o

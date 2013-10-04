@@ -1,0 +1,88 @@
+   1              		.file	"servos_4015_MAT_hw.c"
+   2              		.global	servos_delay
+   3              		.data
+   4              		.align	2
+   7              	servos_delay:
+   8 0000 E0930400 		.word	300000
+   9              		.text
+  10              		.align	2
+  11              		.global	actuators_init
+  13              	actuators_init:
+  14              		@ Function supports interworking.
+  15              		@ args = 0, pretend = 0, frame = 0
+  16              		@ frame_needed = 0, uses_anonymous_args = 0
+  17              		@ link register save eliminated.
+  18 0000 A8209FE5 		ldr	r2, .L8
+  19 0004 083092E5 		ldr	r3, [r2, #8]
+  20 0008 203083E3 		orr	r3, r3, #32
+  21 000c 083082E5 		str	r3, [r2, #8]
+  22 0010 9C109FE5 		ldr	r1, .L8+4
+  23 0014 003091E5 		ldr	r3, [r1, #0]
+  24 0018 023B83E3 		orr	r3, r3, #2048
+  25 001c 003081E5 		str	r3, [r1, #0]
+  26 0020 183092E5 		ldr	r3, [r2, #24]
+  27 0024 023283E3 		orr	r3, r3, #536870912
+  28 0028 183082E5 		str	r3, [r2, #24]
+  29 002c 143091E5 		ldr	r3, [r1, #20]
+  30 0030 0830C3E3 		bic	r3, r3, #8
+  31 0034 143081E5 		str	r3, [r1, #20]
+  32 0038 0232A0E3 		mov	r3, #536870912
+  33 003c 143082E5 		str	r3, [r2, #20]
+  34 0040 183092E5 		ldr	r3, [r2, #24]
+  35 0044 013683E3 		orr	r3, r3, #1048576
+  36 0048 183082E5 		str	r3, [r2, #24]
+  37 004c 092942E2 		sub	r2, r2, #147456
+  38 0050 143092E5 		ldr	r3, [r2, #20]
+  39 0054 083083E3 		orr	r3, r3, #8
+  40 0058 143082E5 		str	r3, [r2, #20]
+  41 005c 3C3092E5 		ldr	r3, [r2, #60]
+  42 0060 0230C3E3 		bic	r3, r3, #2
+  43 0064 3C3082E5 		str	r3, [r2, #60]
+  44 0068 48309FE5 		ldr	r3, .L8+8
+  45 006c 3C1092E5 		ldr	r1, [r2, #60]
+  46 0070 0800A0E3 		mov	r0, #8
+  47 0074 0000C3E5 		strb	r0, [r3, #0]
+  48 0078 3C309FE5 		ldr	r3, .L8+12
+  49 007c 801081E3 		orr	r1, r1, #128
+  50 0080 3C1082E5 		str	r1, [r2, #60]
+  51 0084 1C3082E5 		str	r3, [r2, #28]
+  52              		@ lr needed for prologue
+  53 0088 080040E2 		sub	r0, r0, #8
+  54              	.L5:
+  55 008c 013080E2 		add	r3, r0, #1
+  56 0090 8010A0E1 		mov	r1, r0, asl #1
+  57 0094 24209FE5 		ldr	r2, .L8+16
+  58 0098 FF0003E2 		and	r0, r3, #255
+  59 009c 20309FE5 		ldr	r3, .L8+20
+  60 00a0 070050E3 		cmp	r0, #7
+  61 00a4 B32081E1 		strh	r2, [r1, r3]	@ movhi 
+  62 00a8 2100009A 		bls	.L5
+  63 00ac 1EFF2FE1 		bx	lr
+  64              	.L9:
+  65              		.align	2
+  66              	.L8:
+  67 00b0 008002E0 		.word	-536707072
+  68 00b4 00C002E0 		.word	-536690688
+  69 00b8 00000000 		.word	servos_4015_idx
+  70 00bc FFFF0000 		.word	65535
+  71 00c0 E4570000 		.word	22500
+  72 00c4 00000000 		.word	servos_values
+  74              		.bss
+  75              		.align	2
+  76              	last_periodic_event:
+  77 0000 00000000 		.space	4
+  78              		.comm	servos_values,16,2
+  79              		.comm	servos_4015_idx,1,1
+  80              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 servos_4015_MAT_hw.c
+     /tmp/ccn38kI7.s:7      .data:00000000 servos_delay
+     /tmp/ccn38kI7.s:8      .data:00000000 $d
+     /tmp/ccn38kI7.s:13     .text:00000000 actuators_init
+     /tmp/ccn38kI7.s:18     .text:00000000 $a
+     /tmp/ccn38kI7.s:67     .text:000000b0 $d
+                            *COM*:00000001 servos_4015_idx
+                            *COM*:00000010 servos_values
+     /tmp/ccn38kI7.s:76     .bss:00000000 last_periodic_event
+
+NO UNDEFINED SYMBOLS

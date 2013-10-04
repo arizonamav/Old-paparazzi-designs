@@ -1,0 +1,636 @@
+   1              		.file	"gps.c"
+   2              		.global	__floatsidf
+   3              		.global	__divdf3
+   4              		.global	__subdf3
+   5              		.global	__truncdfsf2
+   6              		.global	__muldf3
+   7              		.text
+   8              		.align	2
+   9              		.global	estimator_update_state_gps
+  11              	estimator_update_state_gps:
+  12              		@ Function supports interworking.
+  13              		@ args = 0, pretend = 0, frame = 0
+  14              		@ frame_needed = 1, uses_anonymous_args = 0
+  15 0000 0DC0A0E1 		mov	ip, sp
+  16 0004 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+  17 0008 84319FE5 		ldr	r3, .L3+32
+  18 000c 04B04CE2 		sub	fp, ip, #4
+  19 0010 000093E5 		ldr	r0, [r3, #0]
+  20 0014 FEFFFFEB 		bl	__floatsidf
+  21 0018 552F8FE2 		adr	r2, .L3
+  22 001c 0C0092E8 		ldmia	r2, {r2-r3}
+  23 0020 FEFFFFEB 		bl	__divdf3
+  24 0024 6C319FE5 		ldr	r3, .L3+36
+  25 0028 0150A0E1 		mov	r5, r1
+  26 002c 0040A0E1 		mov	r4, r0
+  27 0030 000093E5 		ldr	r0, [r3, #0]
+  28 0034 FEFFFFEB 		bl	__floatsidf
+  29 0038 0130A0E1 		mov	r3, r1
+  30 003c 0020A0E1 		mov	r2, r0
+  31 0040 0510A0E1 		mov	r1, r5
+  32 0044 0400A0E1 		mov	r0, r4
+  33 0048 FEFFFFEB 		bl	__subdf3
+  34 004c FEFFFFEB 		bl	__truncdfsf2
+  35 0050 44319FE5 		ldr	r3, .L3+40
+  36 0054 0060A0E1 		mov	r6, r0
+  37 0058 000093E5 		ldr	r0, [r3, #0]
+  38 005c FEFFFFEB 		bl	__floatsidf
+  39 0060 432F8FE2 		adr	r2, .L3
+  40 0064 0C0092E8 		ldmia	r2, {r2-r3}
+  41 0068 FEFFFFEB 		bl	__divdf3
+  42 006c 2C319FE5 		ldr	r3, .L3+44
+  43 0070 0150A0E1 		mov	r5, r1
+  44 0074 0040A0E1 		mov	r4, r0
+  45 0078 000093E5 		ldr	r0, [r3, #0]
+  46 007c FEFFFFEB 		bl	__floatsidf
+  47 0080 0130A0E1 		mov	r3, r1
+  48 0084 0020A0E1 		mov	r2, r0
+  49 0088 0510A0E1 		mov	r1, r5
+  50 008c 0400A0E1 		mov	r0, r4
+  51 0090 FEFFFFEB 		bl	__subdf3
+  52 0094 FEFFFFEB 		bl	__truncdfsf2
+  53 0098 04319FE5 		ldr	r3, .L3+48
+  54 009c 0040A0E1 		mov	r4, r0
+  55 00a0 000093E5 		ldr	r0, [r3, #0]
+  56 00a4 FEFFFFEB 		bl	__floatsidf
+  57 00a8 C4208FE2 		adr	r2, .L3
+  58 00ac 0C0092E8 		ldmia	r2, {r2-r3}
+  59 00b0 FEFFFFEB 		bl	__divdf3
+  60 00b4 FEFFFFEB 		bl	__truncdfsf2
+  61 00b8 E8309FE5 		ldr	r3, .L3+52
+  62 00bc 000083E5 		str	r0, [r3, #0]	@ float
+  63 00c0 E4309FE5 		ldr	r3, .L3+56
+  64 00c4 B000D3E1 		ldrh	r0, [r3, #0]
+  65 00c8 E0309FE5 		ldr	r3, .L3+60
+  66 00cc 006083E5 		str	r6, [r3, #0]	@ float
+  67 00d0 DC309FE5 		ldr	r3, .L3+64
+  68 00d4 004083E5 		str	r4, [r3, #0]	@ float
+  69 00d8 FEFFFFEB 		bl	__floatsidf
+  70 00dc 90208FE2 		adr	r2, .L3
+  71 00e0 0C0092E8 		ldmia	r2, {r2-r3}
+  72 00e4 FEFFFFEB 		bl	__divdf3
+  73 00e8 FEFFFFEB 		bl	__truncdfsf2
+  74 00ec C4309FE5 		ldr	r3, .L3+68
+  75 00f0 0050A0E1 		mov	r5, r0
+  76 00f4 F000D3E1 		ldrsh	r0, [r3, #0]
+  77 00f8 FEFFFFEB 		bl	__floatsidf
+  78 00fc 70208FE2 		adr	r2, .L3
+  79 0100 0C0092E8 		ldmia	r2, {r2-r3}
+  80 0104 FEFFFFEB 		bl	__divdf3
+  81 0108 FEFFFFEB 		bl	__truncdfsf2
+  82 010c A8309FE5 		ldr	r3, .L3+72
+  83 0110 0040A0E1 		mov	r4, r0
+  84 0114 F000D3E1 		ldrsh	r0, [r3, #0]
+  85 0118 FEFFFFEB 		bl	__floatsidf
+  86 011c 58208FE2 		adr	r2, .L3+8
+  87 0120 0C0092E8 		ldmia	r2, {r2-r3}
+  88 0124 FEFFFFEB 		bl	__divdf3
+  89 0128 54208FE2 		adr	r2, .L3+16
+  90 012c 0C0092E8 		ldmia	r2, {r2-r3}
+  91 0130 FEFFFFEB 		bl	__divdf3
+  92 0134 50208FE2 		adr	r2, .L3+24
+  93 0138 0C0092E8 		ldmia	r2, {r2-r3}
+  94 013c FEFFFFEB 		bl	__muldf3
+  95 0140 FEFFFFEB 		bl	__truncdfsf2
+  96 0144 74309FE5 		ldr	r3, .L3+76
+  97 0148 B030D3E1 		ldrh	r3, [r3, #0]
+  98 014c 000053E3 		cmp	r3, #0
+  99 0150 6C309FE5 		ldr	r3, .L3+80
+ 100 0154 005083E5 		str	r5, [r3, #0]	@ float
+ 101 0158 68309FE5 		ldr	r3, .L3+84
+ 102 015c 000083E5 		str	r0, [r3, #0]	@ float
+ 103 0160 64309FE5 		ldr	r3, .L3+88
+ 104 0164 004083E5 		str	r4, [r3, #0]	@ float
+ 105 0168 FEFFFF1B 		blne	estimator_update_ir_estim
+ 106              	.L1:
+ 107 016c 70689DE8 		ldmfd	sp, {r4, r5, r6, fp, sp, lr}
+ 108 0170 1EFF2FE1 		bx	lr
+ 109              	.L4:
+ 110              		.align	2
+ 111              	.L3:
+ 112 0174 00005940 		.word	1079574528
+ 113 0178 00000000 		.word	0
+ 114 017c 00002440 		.word	1076101120
+ 115 0180 00000000 		.word	0
+ 116 0184 00806640 		.word	1080459264
+ 117 0188 00000000 		.word	0
+ 118 018c FB210940 		.word	1074340347
+ 119 0190 182D4454 		.word	1413754136
+ 120 0194 00000000 		.word	gps_utm_east
+ 121 0198 00000000 		.word	nav_utm_east0
+ 122 019c 00000000 		.word	gps_utm_north
+ 123 01a0 00000000 		.word	nav_utm_north0
+ 124 01a4 00000000 		.word	gps_alt
+ 125 01a8 00000000 		.word	estimator_z
+ 126 01ac 00000000 		.word	gps_gspeed
+ 127 01b0 00000000 		.word	estimator_x
+ 128 01b4 00000000 		.word	estimator_y
+ 129 01b8 00000000 		.word	gps_climb
+ 130 01bc 00000000 		.word	gps_course
+ 131 01c0 00000000 		.word	estimator_flight_time
+ 132 01c4 00000000 		.word	estimator_hspeed_mod
+ 133 01c8 00000000 		.word	estimator_hspeed_dir
+ 134 01cc 00000000 		.word	estimator_z_dot
+ 136              		.bss
+ 137              	i.0:
+ 138 0000 00       		.space	1
+ 139              		.text
+ 140              		.align	2
+ 141              		.global	use_gps_pos
+ 143              	use_gps_pos:
+ 144              		@ Function supports interworking.
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 1, uses_anonymous_args = 0
+ 147 01d0 0DC0A0E1 		mov	ip, sp
+ 148 01d4 F0D92DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, fp, ip, lr, pc}
+ 149 01d8 74669FE5 		ldr	r6, .L13
+ 150 01dc 0030D6E5 		ldrb	r3, [r6, #0]	@ zero_extendqisi2
+ 151 01e0 030053E3 		cmp	r3, #3
+ 152 01e4 04B04CE2 		sub	fp, ip, #4
+ 153 01e8 68269F05 		ldreq	r2, .L13+4
+ 154 01ec 68369F05 		ldreq	r3, .L13+8
+ 155 01f0 B020D201 		ldreqh	r2, [r2, #0]
+ 156 01f4 B020C301 		streqh	r2, [r3, #0]	@ movhi 
+ 157 01f8 FEFFFF0B 		bleq	estimator_update_state_gps
+ 158              	.L6:
+ 159 01fc 1F00A0E3 		mov	r0, #31
+ 160 0200 FEFFFFEB 		bl	uart0_check_free_space
+ 161 0204 FF0010E3 		tst	r0, #255
+ 162 0208 50269F05 		ldreq	r2, .L13+12
+ 163 020c 0030D205 		ldreqb	r3, [r2, #0]	@ zero_extendqisi2
+ 164 0210 01308302 		addeq	r3, r3, #1
+ 165 0214 0030C205 		streqb	r3, [r2, #0]
+ 166 0218 8801000A 		beq	.L8
+ 167 021c 9900A0E3 		mov	r0, #153
+ 168 0220 3C469FE5 		ldr	r4, .L13+16
+ 169 0224 FEFFFFEB 		bl	uart0_transmit
+ 170 0228 1F00A0E3 		mov	r0, #31
+ 171 022c 34569FE5 		ldr	r5, .L13+20
+ 172 0230 FEFFFFEB 		bl	uart0_transmit
+ 173 0234 2D30A0E3 		mov	r3, #45
+ 174 0238 0030C4E5 		strb	r3, [r4, #0]
+ 175 023c 1F3083E2 		add	r3, r3, #31
+ 176 0240 0E00A0E3 		mov	r0, #14
+ 177 0244 0030C5E5 		strb	r3, [r5, #0]
+ 178 0248 FEFFFFEB 		bl	uart0_transmit
+ 179 024c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 180 0250 083083E2 		add	r3, r3, #8
+ 181 0254 0030C4E5 		strb	r3, [r4, #0]
+ 182 0258 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 183 025c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 184 0260 023083E0 		add	r3, r3, r2
+ 185 0264 0800A0E3 		mov	r0, #8
+ 186 0268 0030C5E5 		strb	r3, [r5, #0]
+ 187 026c FEFFFFEB 		bl	uart0_transmit
+ 188 0270 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 189 0274 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 190 0278 033080E0 		add	r3, r0, r3
+ 191 027c 0030C4E5 		strb	r3, [r4, #0]
+ 192 0280 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 193 0284 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 194 0288 DC659FE5 		ldr	r6, .L13+24
+ 195 028c 023083E0 		add	r3, r3, r2
+ 196 0290 0030C5E5 		strb	r3, [r5, #0]
+ 197 0294 FEFFFFEB 		bl	uart0_transmit
+ 198 0298 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 199 029c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 200 02a0 033080E0 		add	r3, r0, r3
+ 201 02a4 0030C4E5 		strb	r3, [r4, #0]
+ 202 02a8 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 203 02ac 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 204 02b0 023083E0 		add	r3, r3, r2
+ 205 02b4 0030C5E5 		strb	r3, [r5, #0]
+ 206 02b8 FEFFFFEB 		bl	uart0_transmit
+ 207 02bc 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 208 02c0 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 209 02c4 033080E0 		add	r3, r0, r3
+ 210 02c8 0030C4E5 		strb	r3, [r4, #0]
+ 211 02cc 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 212 02d0 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 213 02d4 023083E0 		add	r3, r3, r2
+ 214 02d8 0030C5E5 		strb	r3, [r5, #0]
+ 215 02dc FEFFFFEB 		bl	uart0_transmit
+ 216 02e0 0200D6E5 		ldrb	r0, [r6, #2]	@ zero_extendqisi2
+ 217 02e4 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 218 02e8 033080E0 		add	r3, r0, r3
+ 219 02ec 0030C4E5 		strb	r3, [r4, #0]
+ 220 02f0 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 221 02f4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 222 02f8 023083E0 		add	r3, r3, r2
+ 223 02fc 0030C5E5 		strb	r3, [r5, #0]
+ 224 0300 FEFFFFEB 		bl	uart0_transmit
+ 225 0304 0300D6E5 		ldrb	r0, [r6, #3]	@ zero_extendqisi2
+ 226 0308 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 227 030c 033080E0 		add	r3, r0, r3
+ 228 0310 0030C4E5 		strb	r3, [r4, #0]
+ 229 0314 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 230 0318 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 231 031c 4C659FE5 		ldr	r6, .L13+28
+ 232 0320 023083E0 		add	r3, r3, r2
+ 233 0324 0030C5E5 		strb	r3, [r5, #0]
+ 234 0328 FEFFFFEB 		bl	uart0_transmit
+ 235 032c 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 236 0330 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 237 0334 033080E0 		add	r3, r0, r3
+ 238 0338 0030C4E5 		strb	r3, [r4, #0]
+ 239 033c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 240 0340 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 241 0344 023083E0 		add	r3, r3, r2
+ 242 0348 0030C5E5 		strb	r3, [r5, #0]
+ 243 034c FEFFFFEB 		bl	uart0_transmit
+ 244 0350 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 245 0354 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 246 0358 033080E0 		add	r3, r0, r3
+ 247 035c 0030C4E5 		strb	r3, [r4, #0]
+ 248 0360 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 249 0364 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 250 0368 023083E0 		add	r3, r3, r2
+ 251 036c 0030C5E5 		strb	r3, [r5, #0]
+ 252 0370 FEFFFFEB 		bl	uart0_transmit
+ 253 0374 0200D6E5 		ldrb	r0, [r6, #2]	@ zero_extendqisi2
+ 254 0378 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 255 037c 033080E0 		add	r3, r0, r3
+ 256 0380 0030C4E5 		strb	r3, [r4, #0]
+ 257 0384 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 258 0388 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 259 038c 023083E0 		add	r3, r3, r2
+ 260 0390 0030C5E5 		strb	r3, [r5, #0]
+ 261 0394 FEFFFFEB 		bl	uart0_transmit
+ 262 0398 0300D6E5 		ldrb	r0, [r6, #3]	@ zero_extendqisi2
+ 263 039c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 264 03a0 033080E0 		add	r3, r0, r3
+ 265 03a4 0030C4E5 		strb	r3, [r4, #0]
+ 266 03a8 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 267 03ac 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 268 03b0 BC649FE5 		ldr	r6, .L13+32
+ 269 03b4 023083E0 		add	r3, r3, r2
+ 270 03b8 0030C5E5 		strb	r3, [r5, #0]
+ 271 03bc FEFFFFEB 		bl	uart0_transmit
+ 272 03c0 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 273 03c4 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 274 03c8 033080E0 		add	r3, r0, r3
+ 275 03cc 0030C4E5 		strb	r3, [r4, #0]
+ 276 03d0 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 277 03d4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 278 03d8 023083E0 		add	r3, r3, r2
+ 279 03dc 0030C5E5 		strb	r3, [r5, #0]
+ 280 03e0 FEFFFFEB 		bl	uart0_transmit
+ 281 03e4 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 282 03e8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 283 03ec 033080E0 		add	r3, r0, r3
+ 284 03f0 0030C4E5 		strb	r3, [r4, #0]
+ 285 03f4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 286 03f8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 287 03fc 74649FE5 		ldr	r6, .L13+36
+ 288 0400 023083E0 		add	r3, r3, r2
+ 289 0404 0030C5E5 		strb	r3, [r5, #0]
+ 290 0408 FEFFFFEB 		bl	uart0_transmit
+ 291 040c 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 292 0410 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 293 0414 033080E0 		add	r3, r0, r3
+ 294 0418 0030C4E5 		strb	r3, [r4, #0]
+ 295 041c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 296 0420 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 297 0424 023083E0 		add	r3, r3, r2
+ 298 0428 0030C5E5 		strb	r3, [r5, #0]
+ 299 042c FEFFFFEB 		bl	uart0_transmit
+ 300 0430 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 301 0434 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 302 0438 033080E0 		add	r3, r0, r3
+ 303 043c 0030C4E5 		strb	r3, [r4, #0]
+ 304 0440 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 305 0444 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 306 0448 023083E0 		add	r3, r3, r2
+ 307 044c 0030C5E5 		strb	r3, [r5, #0]
+ 308 0450 FEFFFFEB 		bl	uart0_transmit
+ 309 0454 0200D6E5 		ldrb	r0, [r6, #2]	@ zero_extendqisi2
+ 310 0458 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 311 045c 033080E0 		add	r3, r0, r3
+ 312 0460 0030C4E5 		strb	r3, [r4, #0]
+ 313 0464 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 314 0468 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 315 046c 023083E0 		add	r3, r3, r2
+ 316 0470 0030C5E5 		strb	r3, [r5, #0]
+ 317 0474 FEFFFFEB 		bl	uart0_transmit
+ 318 0478 0300D6E5 		ldrb	r0, [r6, #3]	@ zero_extendqisi2
+ 319 047c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 320 0480 033080E0 		add	r3, r0, r3
+ 321 0484 0030C4E5 		strb	r3, [r4, #0]
+ 322 0488 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 323 048c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 324 0490 E4639FE5 		ldr	r6, .L13+40
+ 325 0494 023083E0 		add	r3, r3, r2
+ 326 0498 0030C5E5 		strb	r3, [r5, #0]
+ 327 049c FEFFFFEB 		bl	uart0_transmit
+ 328 04a0 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 329 04a4 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 330 04a8 033080E0 		add	r3, r0, r3
+ 331 04ac 0030C4E5 		strb	r3, [r4, #0]
+ 332 04b0 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 333 04b4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 334 04b8 023083E0 		add	r3, r3, r2
+ 335 04bc 0030C5E5 		strb	r3, [r5, #0]
+ 336 04c0 FEFFFFEB 		bl	uart0_transmit
+ 337 04c4 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 338 04c8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 339 04cc 033080E0 		add	r3, r0, r3
+ 340 04d0 0030C4E5 		strb	r3, [r4, #0]
+ 341 04d4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 342 04d8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 343 04dc 9C639FE5 		ldr	r6, .L13+44
+ 344 04e0 023083E0 		add	r3, r3, r2
+ 345 04e4 0030C5E5 		strb	r3, [r5, #0]
+ 346 04e8 FEFFFFEB 		bl	uart0_transmit
+ 347 04ec 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 348 04f0 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 349 04f4 033080E0 		add	r3, r0, r3
+ 350 04f8 0030C4E5 		strb	r3, [r4, #0]
+ 351 04fc 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 352 0500 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 353 0504 023083E0 		add	r3, r3, r2
+ 354 0508 0030C5E5 		strb	r3, [r5, #0]
+ 355 050c FEFFFFEB 		bl	uart0_transmit
+ 356 0510 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 357 0514 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 358 0518 033080E0 		add	r3, r0, r3
+ 359 051c 0030C4E5 		strb	r3, [r4, #0]
+ 360 0520 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 361 0524 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 362 0528 54639FE5 		ldr	r6, .L13+48
+ 363 052c 023083E0 		add	r3, r3, r2
+ 364 0530 0030C5E5 		strb	r3, [r5, #0]
+ 365 0534 FEFFFFEB 		bl	uart0_transmit
+ 366 0538 0000D6E5 		ldrb	r0, [r6, #0]	@ zero_extendqisi2
+ 367 053c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 368 0540 033080E0 		add	r3, r0, r3
+ 369 0544 0030C4E5 		strb	r3, [r4, #0]
+ 370 0548 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 371 054c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 372 0550 023083E0 		add	r3, r3, r2
+ 373 0554 0030C5E5 		strb	r3, [r5, #0]
+ 374 0558 FEFFFFEB 		bl	uart0_transmit
+ 375 055c 0100D6E5 		ldrb	r0, [r6, #1]	@ zero_extendqisi2
+ 376 0560 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 377 0564 033080E0 		add	r3, r0, r3
+ 378 0568 0030C4E5 		strb	r3, [r4, #0]
+ 379 056c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 380 0570 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 381 0574 023083E0 		add	r3, r3, r2
+ 382 0578 0030C5E5 		strb	r3, [r5, #0]
+ 383 057c FEFFFFEB 		bl	uart0_transmit
+ 384 0580 0200D6E5 		ldrb	r0, [r6, #2]	@ zero_extendqisi2
+ 385 0584 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 386 0588 033080E0 		add	r3, r0, r3
+ 387 058c 0030C4E5 		strb	r3, [r4, #0]
+ 388 0590 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 389 0594 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 390 0598 023083E0 		add	r3, r3, r2
+ 391 059c 0030C5E5 		strb	r3, [r5, #0]
+ 392 05a0 FEFFFFEB 		bl	uart0_transmit
+ 393 05a4 0300D6E5 		ldrb	r0, [r6, #3]	@ zero_extendqisi2
+ 394 05a8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 395 05ac 033080E0 		add	r3, r0, r3
+ 396 05b0 0030C4E5 		strb	r3, [r4, #0]
+ 397 05b4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 398 05b8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 399 05bc 023083E0 		add	r3, r3, r2
+ 400 05c0 0030C5E5 		strb	r3, [r5, #0]
+ 401 05c4 FEFFFFEB 		bl	uart0_transmit
+ 402 05c8 B8329FE5 		ldr	r3, .L13+52
+ 403 05cc 0000D3E5 		ldrb	r0, [r3, #0]	@ zero_extendqisi2
+ 404 05d0 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 405 05d4 033080E0 		add	r3, r0, r3
+ 406 05d8 0030C4E5 		strb	r3, [r4, #0]
+ 407 05dc 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 408 05e0 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 409 05e4 023083E0 		add	r3, r3, r2
+ 410 05e8 0030C5E5 		strb	r3, [r5, #0]
+ 411 05ec FEFFFFEB 		bl	uart0_transmit
+ 412 05f0 94329FE5 		ldr	r3, .L13+56
+ 413 05f4 0000D3E5 		ldrb	r0, [r3, #0]	@ zero_extendqisi2
+ 414 05f8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 415 05fc 033080E0 		add	r3, r0, r3
+ 416 0600 0030C4E5 		strb	r3, [r4, #0]
+ 417 0604 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 418 0608 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 419 060c 023083E0 		add	r3, r3, r2
+ 420 0610 0030C5E5 		strb	r3, [r5, #0]
+ 421 0614 FEFFFFEB 		bl	uart0_transmit
+ 422 0618 0000D4E5 		ldrb	r0, [r4, #0]	@ zero_extendqisi2
+ 423 061c FEFFFFEB 		bl	uart0_transmit
+ 424 0620 0000D5E5 		ldrb	r0, [r5, #0]	@ zero_extendqisi2
+ 425 0624 FEFFFFEB 		bl	uart0_transmit
+ 426              	.L8:
+ 427 0628 60729FE5 		ldr	r7, .L13+60
+ 428 062c 60329FE5 		ldr	r3, .L13+64
+ 429 0630 0020D3E5 		ldrb	r2, [r3, #0]	@ zero_extendqisi2
+ 430 0634 0030D7E5 		ldrb	r3, [r7, #0]	@ zero_extendqisi2
+ 431 0638 020053E1 		cmp	r3, r2
+ 432 063c 0030A003 		moveq	r3, #0
+ 433 0640 0030C705 		streqb	r3, [r7, #0]
+ 434 0644 0030D7E5 		ldrb	r3, [r7, #0]	@ zero_extendqisi2
+ 435 0648 020053E1 		cmp	r3, r2
+ 436 064c 0E02002A 		bcs	.L10
+ 437 0650 40829FE5 		ldr	r8, .L13+68
+ 438 0654 833188E0 		add	r3, r8, r3, asl #3
+ 439 0658 0330D3E5 		ldrb	r3, [r3, #3]	@ zero_extendqisi2
+ 440 065c 000053E3 		cmp	r3, #0
+ 441 0660 0E02000A 		beq	.L10
+ 442 0664 0E00A0E3 		mov	r0, #14
+ 443 0668 FEFFFFEB 		bl	uart0_check_free_space
+ 444 066c FF0010E3 		tst	r0, #255
+ 445 0670 E8219F05 		ldreq	r2, .L13+12
+ 446 0674 0030D205 		ldreqb	r3, [r2, #0]	@ zero_extendqisi2
+ 447 0678 01308302 		addeq	r3, r3, #1
+ 448 067c 0030C205 		streqb	r3, [r2, #0]
+ 449 0680 0E02000A 		beq	.L10
+ 450 0684 0E60A0E3 		mov	r6, #14
+ 451 0688 9900A0E3 		mov	r0, #153
+ 452 068c D0419FE5 		ldr	r4, .L13+16
+ 453 0690 FEFFFFEB 		bl	uart0_transmit
+ 454 0694 0600A0E1 		mov	r0, r6
+ 455 0698 C8519FE5 		ldr	r5, .L13+20
+ 456 069c FEFFFFEB 		bl	uart0_transmit
+ 457 06a0 1C30A0E3 		mov	r3, #28
+ 458 06a4 0030C4E5 		strb	r3, [r4, #0]
+ 459 06a8 063083E0 		add	r3, r3, r6
+ 460 06ac 0600A0E1 		mov	r0, r6
+ 461 06b0 0030C5E5 		strb	r3, [r5, #0]
+ 462 06b4 FEFFFFEB 		bl	uart0_transmit
+ 463 06b8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 464 06bc 193083E2 		add	r3, r3, #25
+ 465 06c0 0030C4E5 		strb	r3, [r4, #0]
+ 466 06c4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 467 06c8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 468 06cc 023083E0 		add	r3, r3, r2
+ 469 06d0 1900A0E3 		mov	r0, #25
+ 470 06d4 0030C5E5 		strb	r3, [r5, #0]
+ 471 06d8 FEFFFFEB 		bl	uart0_transmit
+ 472 06dc 0000D7E5 		ldrb	r0, [r7, #0]	@ zero_extendqisi2
+ 473 06e0 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 474 06e4 033080E0 		add	r3, r0, r3
+ 475 06e8 0030C4E5 		strb	r3, [r4, #0]
+ 476 06ec 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 477 06f0 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 478 06f4 023083E0 		add	r3, r3, r2
+ 479 06f8 0030C5E5 		strb	r3, [r5, #0]
+ 480 06fc FEFFFFEB 		bl	uart0_transmit
+ 481 0700 0030D7E5 		ldrb	r3, [r7, #0]	@ zero_extendqisi2
+ 482 0704 8301D8E7 		ldrb	r0, [r8, r3, asl #3]	@ zero_extendqisi2
+ 483 0708 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 484 070c 033080E0 		add	r3, r0, r3
+ 485 0710 0030C4E5 		strb	r3, [r4, #0]
+ 486 0714 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 487 0718 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 488 071c 023083E0 		add	r3, r3, r2
+ 489 0720 0030C5E5 		strb	r3, [r5, #0]
+ 490 0724 FEFFFFEB 		bl	uart0_transmit
+ 491 0728 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 492 072c 013088E2 		add	r3, r8, #1
+ 493 0730 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 494 0734 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 495 0738 033080E0 		add	r3, r0, r3
+ 496 073c 0030C4E5 		strb	r3, [r4, #0]
+ 497 0740 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 498 0744 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 499 0748 023083E0 		add	r3, r3, r2
+ 500 074c 0030C5E5 		strb	r3, [r5, #0]
+ 501 0750 FEFFFFEB 		bl	uart0_transmit
+ 502 0754 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 503 0758 023088E2 		add	r3, r8, #2
+ 504 075c 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 505 0760 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 506 0764 033080E0 		add	r3, r0, r3
+ 507 0768 0030C4E5 		strb	r3, [r4, #0]
+ 508 076c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 509 0770 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 510 0774 023083E0 		add	r3, r3, r2
+ 511 0778 0030C5E5 		strb	r3, [r5, #0]
+ 512 077c FEFFFFEB 		bl	uart0_transmit
+ 513 0780 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 514 0784 033088E2 		add	r3, r8, #3
+ 515 0788 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 516 078c 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 517 0790 033080E0 		add	r3, r0, r3
+ 518 0794 0030C4E5 		strb	r3, [r4, #0]
+ 519 0798 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 520 079c 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 521 07a0 023083E0 		add	r3, r3, r2
+ 522 07a4 0030C5E5 		strb	r3, [r5, #0]
+ 523 07a8 FEFFFFEB 		bl	uart0_transmit
+ 524 07ac 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 525 07b0 043088E2 		add	r3, r8, #4
+ 526 07b4 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 527 07b8 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 528 07bc 033080E0 		add	r3, r0, r3
+ 529 07c0 0030C4E5 		strb	r3, [r4, #0]
+ 530 07c4 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 531 07c8 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 532 07cc 023083E0 		add	r3, r3, r2
+ 533 07d0 0030C5E5 		strb	r3, [r5, #0]
+ 534 07d4 FEFFFFEB 		bl	uart0_transmit
+ 535 07d8 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 536 07dc 063088E2 		add	r3, r8, #6
+ 537 07e0 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 538 07e4 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 539 07e8 033080E0 		add	r3, r0, r3
+ 540 07ec 0030C4E5 		strb	r3, [r4, #0]
+ 541 07f0 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 542 07f4 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 543 07f8 023083E0 		add	r3, r3, r2
+ 544 07fc 0030C5E5 		strb	r3, [r5, #0]
+ 545 0800 FEFFFFEB 		bl	uart0_transmit
+ 546 0804 0020D7E5 		ldrb	r2, [r7, #0]	@ zero_extendqisi2
+ 547 0808 073088E2 		add	r3, r8, #7
+ 548 080c 8201D3E7 		ldrb	r0, [r3, r2, asl #3]	@ zero_extendqisi2
+ 549 0810 0030D4E5 		ldrb	r3, [r4, #0]	@ zero_extendqisi2
+ 550 0814 033080E0 		add	r3, r0, r3
+ 551 0818 0030C4E5 		strb	r3, [r4, #0]
+ 552 081c 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 553 0820 0020D4E5 		ldrb	r2, [r4, #0]	@ zero_extendqisi2
+ 554 0824 023083E0 		add	r3, r3, r2
+ 555 0828 0030C5E5 		strb	r3, [r5, #0]
+ 556 082c FEFFFFEB 		bl	uart0_transmit
+ 557 0830 0000D4E5 		ldrb	r0, [r4, #0]	@ zero_extendqisi2
+ 558 0834 FEFFFFEB 		bl	uart0_transmit
+ 559 0838 0000D5E5 		ldrb	r0, [r5, #0]	@ zero_extendqisi2
+ 560 083c FEFFFFEB 		bl	uart0_transmit
+ 561              	.L10:
+ 562 0840 0030D7E5 		ldrb	r3, [r7, #0]	@ zero_extendqisi2
+ 563 0844 013083E2 		add	r3, r3, #1
+ 564 0848 0030C7E5 		strb	r3, [r7, #0]
+ 565 084c F0699DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, fp, sp, lr}
+ 566 0850 1EFF2FE1 		bx	lr
+ 567              	.L14:
+ 568              		.align	2
+ 569              	.L13:
+ 570 0854 00000000 		.word	gps_mode
+ 571 0858 00000000 		.word	cpu_time_sec
+ 572 085c 00000000 		.word	last_gps_msg_t
+ 573 0860 00000000 		.word	downlink_nb_ovrn
+ 574 0864 00000000 		.word	ck_a
+ 575 0868 00000000 		.word	ck_b
+ 576 086c 00000000 		.word	gps_utm_east
+ 577 0870 00000000 		.word	gps_utm_north
+ 578 0874 00000000 		.word	gps_course
+ 579 0878 00000000 		.word	gps_alt
+ 580 087c 00000000 		.word	gps_gspeed
+ 581 0880 00000000 		.word	gps_climb
+ 582 0884 00000000 		.word	gps_itow
+ 583 0888 00000000 		.word	gps_utm_zone
+ 584 088c 00000000 		.word	gps_nb_ovrn
+ 585 0890 00000000 		.word	i.0
+ 586 0894 00000000 		.word	gps_nb_channels
+ 587 0898 00000000 		.word	gps_svinfos
+ 589              		.comm	last_gps_msg_t,2,2
+ 590              		.bss
+ 591 0001 000000   		.align	2
+ 592              	last_periodic_event:
+ 593 0004 00000000 		.space	4
+ 594              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 gps.c
+     /tmp/ccP1Of3k.s:11     .text:00000000 estimator_update_state_gps
+     /tmp/ccP1Of3k.s:15     .text:00000000 $a
+     /tmp/ccP1Of3k.s:112    .text:00000174 $d
+     /tmp/ccP1Of3k.s:137    .bss:00000000 i.0
+     /tmp/ccP1Of3k.s:143    .text:000001d0 use_gps_pos
+     /tmp/ccP1Of3k.s:147    .text:000001d0 $a
+     /tmp/ccP1Of3k.s:570    .text:00000854 $d
+                            *COM*:00000002 last_gps_msg_t
+     /tmp/ccP1Of3k.s:592    .bss:00000004 last_periodic_event
+
+UNDEFINED SYMBOLS
+__floatsidf
+__divdf3
+__subdf3
+__truncdfsf2
+__muldf3
+estimator_update_ir_estim
+gps_utm_east
+nav_utm_east0
+gps_utm_north
+nav_utm_north0
+gps_alt
+estimator_z
+gps_gspeed
+estimator_x
+estimator_y
+gps_climb
+gps_course
+estimator_flight_time
+estimator_hspeed_mod
+estimator_hspeed_dir
+estimator_z_dot
+uart0_check_free_space
+uart0_transmit
+gps_mode
+cpu_time_sec
+downlink_nb_ovrn
+ck_a
+ck_b
+gps_itow
+gps_utm_zone
+gps_nb_ovrn
+gps_nb_channels
+gps_svinfos

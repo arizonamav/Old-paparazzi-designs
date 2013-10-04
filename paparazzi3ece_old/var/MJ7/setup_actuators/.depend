@@ -1,0 +1,182 @@
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time.o: sys_time.c sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/led_hw.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/sys_time_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/led_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/servos_4015_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/ppm.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/armVIC.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/types.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/pprz_transport.o: pprz_transport.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  pprz_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/types.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/setup_actuators.o: setup_actuators.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/init_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/interrupt_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.h \
+  sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/led_hw.h \
+  led.h actuators.h paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/airframe.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/servos_4015_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/sys_time.h \
+  datalink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/dl_protocol.h \
+  uart.h /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/types.h \
+  pprz_transport.h main_fbw.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/adc_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  fbw_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/periodic.h \
+  commands.h radio_control.h inter_mcu.h downlink.h modem.h xbee.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/uart_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/uart_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/types.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/servos_4015_hw.o:  \
+ /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/servos_4015_hw.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/actuators.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/airframe.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/servos_4015_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/led_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/armVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/airframe.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/MJ7/setup_actuators/main.o: main.c sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/inttypes.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/LPC21xx.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcWD.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcTMR.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcUART.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcI2C.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSPI.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcRTC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcGPIO.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcPIN.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcADC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcSCB.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/include/lpcVIC.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/tiny.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/led.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/led_hw.h \
+  main_fbw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h adc.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/arm7/adc_hw.h

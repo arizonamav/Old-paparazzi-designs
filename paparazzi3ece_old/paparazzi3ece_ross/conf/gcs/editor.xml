@@ -1,0 +1,8 @@
+
+
+<layout width="512" height="384">
+ <rows>
+  <widget size="256" name="map2d"/>
+  <widget name="editor"/>
+ </rows>
+</layout>

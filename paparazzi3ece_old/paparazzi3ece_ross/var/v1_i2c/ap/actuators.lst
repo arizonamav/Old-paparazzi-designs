@@ -1,0 +1,14 @@
+   1              		.file	"actuators.c"
+   2              		.comm	actuators,10,2
+   3              		.bss
+   4              		.align	2
+   5              	last_periodic_event:
+   6 0000 00000000 		.space	4
+   7              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 actuators.c
+                            *COM*:0000000a actuators
+                             .bss:00000000 $d
+     /tmp/ccc6FA3R.s:5      .bss:00000000 last_periodic_event
+
+NO UNDEFINED SYMBOLS

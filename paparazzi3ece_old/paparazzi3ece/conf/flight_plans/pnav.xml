@@ -1,0 +1,66 @@
+<flight_plan alt="119" ground_alt="59" lat0="30.686697" lon0="-86.393367" max_dist_from_home="750" name="Precise Navigation" qfu="270" security_height="40">
+  <waypoints>
+    <waypoint name="HOME" x="-2.09132424742" y="-0.0113004506566"/>
+    <waypoint name="Rally Point" x="-124.528075709" y="2.09847173234"/>
+    <waypoint name="2" x="-258.393642635" y="155.314733346"/>
+    <waypoint alt="229." name="3" x="-176.695842689" y="315.898112311"/>
+    <waypoint alt="229." name="4" x="-388.065145426" y="527.103935151"/>
+    <waypoint alt="229." name="5" x="47.584414309" y="658.785596446"/>
+    <waypoint alt="229." name="6" x="-7.81488428882" y="559.961685493"/>
+    <waypoint name="7" x="48.3007717961" y="526.352297641"/>
+    <waypoint alt="229." name="6a" x="-281.474342205" y="405.960981351"/>
+    <waypoint alt="108.6" name="T1" x="-13.0185696655" y="47.9847441362"/>
+    <waypoint alt="108.6" name="T2" x="-139.638186967" y="174.18777607"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="7wp loiter"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.1" roll="0.0" throttle="0.54" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="circle"/>
+    </block>
+    <block name="circle">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent3())" deroute="7wp loiter"/>
+      <circle wp="Rally Point" radius="50"/>
+    </block>
+    <block name="7wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent3())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent4())" deroute="landing"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="Rally Point"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="2"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="3"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="4"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="5"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="6"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="6a"/>
+        <go wp="7" approaching_time="1" pitch="0.0" throttle="auto" vmode="alt"/>
+      </while>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent4())" deroute="landing"/>
+      <exception cond="(RcEvent3())" deroute="7wp loiter"/>
+      <while>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="T1"/>
+        <go approaching_time="1" pitch="0.0" throttle="auto" vmode="alt" wp="T2"/>
+      </while>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent3())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent4())" deroute="7wp loiter"/>
+      <exception cond="(RcEvent4())" deroute="7wp loiter"/>
+      <go alt="GROUND_ALT+40" wp="T2"/>
+      <go alt="GROUND_ALT" throttle="0.10" vmode="throttle" wp="T1"/>
+    </block>
+  </blocks>
+</flight_plan>

@@ -1,0 +1,35 @@
+<flight_plan ALT="700" WIND_MOD="4" WIND_DIR="90" GROUND_ALT="623" LAT0="32.429615" LON0="-111.158466" MAX_DIST_FROM_HOME="500" NAME="tangerine" QFU="180" SECURITY_HEIGHT="60">
+  <waypoints>
+    <waypoint alt="700" name="HOME" x="12.7207323754" y="48.4758641846"/>
+    <waypoint alt="700" name="4" x="147.47148046" y="0.483796624467"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception COND="(RcEvent1())" DEROUTE="two"/>
+      <exception COND="(RcEvent2())" DEROUTE="one"/>
+      <while COND="(!launch)"/>
+      <attitude gaz="1.0" pitch="0.3" roll="0.0" until="(estimator_z > SECURITY_ALT)" vmode="gaz"/>
+      <deroute block="one"/>
+    </block>
+    <block name="one">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="two1"/>
+      <while>
+      <go WP="4" GAZ="auto" PITCH="0.0" alt="GROUND_ALT+60" vmode="alt" approaching_time="1"/>
+      <go WP="HOME" GAZ="auto" PITCH="0.0" alt="GROUND_ALT+60" vmode="alt" approaching_time="1"/>
+      </while>
+    </block>
+    <block name="two1">
+      <exception cond="(RcEvent1())" deroute="one"/>
+      <exception cond="(RcEvent2())" deroute="two"/>
+      <go WP="4" alt="GROUND_ALT+80"/>
+      <go WP="HOME" alt="GROUND_ALT" gaz="0.20" vmode="gaz"/>
+    </block>
+    <block name="two">
+      <exception cond="(RcEvent2())" deroute="two1"/>
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <go WP="4" alt="GROUND_ALT+60"/>
+      <go WP="HOME" alt="GROUND_ALT-40" gaz="0.20" vmode="gaz"/>
+    </block>
+  </blocks>
+</flight_plan>

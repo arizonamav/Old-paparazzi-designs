@@ -1,0 +1,264 @@
+   1              		.file	"enose.c"
+   2              		.global	Gnostim3
+   3              		.data
+   4              		.align	2
+   7              	Gnostim3:
+   8 0000 FAEDEB39 		.word	971763194
+   9              		.global	Gnostim2
+  10              		.align	2
+  13              	Gnostim2:
+  14 0004 99BB963A 		.word	982956953
+  15              		.global	Gnostim1
+  16              		.align	2
+  19              	Gnostim1:
+  20 0008 8BDEA938 		.word	950656651
+  21              		.text
+  22              		.align	2
+  23              		.global	enose_init
+  25              	enose_init:
+  26              		@ Function supports interworking.
+  27              		@ args = 0, pretend = 0, frame = 0
+  28              		@ frame_needed = 0, uses_anonymous_args = 0
+  29              		@ link register save eliminated.
+  30              		@ lr needed for prologue
+  31 0000 0000A0E3 		mov	r0, #0
+  32              	.L5:
+  33 0004 3C309FE5 		ldr	r3, .L8
+  34 0008 011080E2 		add	r1, r0, #1
+  35 000c 1220E0E3 		mvn	r2, #18
+  36 0010 0020C3E7 		strb	r2, [r3, r0]
+  37 0014 8020A0E1 		mov	r2, r0, asl #1
+  38 0018 2C309FE5 		ldr	r3, .L8+4
+  39 001c FF0001E2 		and	r0, r1, #255
+  40 0020 020050E3 		cmp	r0, #2
+  41 0024 0010A0E3 		mov	r1, #0
+  42 0028 B31082E1 		strh	r1, [r2, r3]	@ movhi 
+  43 002c FFFFFF9A 		bls	.L5
+  44 0030 18309FE5 		ldr	r3, .L8+8
+  45 0034 0010C3E5 		strb	r1, [r3, #0]
+  46 0038 14309FE5 		ldr	r3, .L8+12
+  47 003c 0120A0E3 		mov	r2, #1
+  48 0040 0020C3E5 		strb	r2, [r3, #0]
+  49 0044 1EFF2FE1 		bx	lr
+  50              	.L9:
+  51              		.align	2
+  52              	.L8:
+  53 0048 00000000 		.word	enose_heating_setting
+  54 004c 00000000 		.word	enose_sensor_data
+  55 0050 00000000 		.word	enose_status
+  56 0054 00000000 		.word	enose_i2c_completed
+  58              		.global	__floatsisf
+  59              		.global	__addsf3
+  60              		.global	__divsf3
+  61              		.global	__subsf3
+  62              		.align	2
+  63              		.global	enose_periodic
+  65              	enose_periodic:
+  66              		@ Function supports interworking.
+  67              		@ args = 0, pretend = 0, frame = 8
+  68              		@ frame_needed = 1, uses_anonymous_args = 0
+  69 0058 0DC0A0E1 		mov	ip, sp
+  70 005c F0DF2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, ip, lr, pc}
+  71 0060 04B04CE2 		sub	fp, ip, #4
+  72 0064 08D04DE2 		sub	sp, sp, #8
+  73 0068 FC719FE5 		ldr	r7, .L20
+  74 006c 0010D7E5 		ldrb	r1, [r7, #0]	@ zero_extendqisi2
+  75 0070 000051E3 		cmp	r1, #0
+  76 0074 2E00001A 		bne	.L11
+  77 0078 F0319FE5 		ldr	r3, .L20+4
+  78 007c 0240D3E5 		ldrb	r4, [r3, #2]	@ zero_extendqisi2
+  79 0080 00C0D3E5 		ldrb	ip, [r3, #0]	@ zero_extendqisi2
+  80 0084 01E0D3E5 		ldrb	lr, [r3, #1]	@ zero_extendqisi2
+  81 0088 2C104BE2 		sub	r1, fp, #44
+  82 008c 0630A0E3 		mov	r3, #6
+  83 0090 0420A0E3 		mov	r2, #4
+  84 0094 D8019FE5 		ldr	r0, .L20+8
+  85 0098 2C304BE5 		strb	r3, [fp, #-44]
+  86 009c 2BC04BE5 		strb	ip, [fp, #-43]
+  87 00a0 2AE04BE5 		strb	lr, [fp, #-42]
+  88 00a4 29404BE5 		strb	r4, [fp, #-41]
+  89 00a8 FEFFFFEB 		bl	memcpy
+  90 00ac AE00A0E3 		mov	r0, #174
+  91 00b0 0410A0E3 		mov	r1, #4
+  92 00b4 BC219FE5 		ldr	r2, .L20+12
+  93 00b8 FEFFFFEB 		bl	i2c_transmit
+  94 00bc 940000EA 		b	.L19
+  95              	.L11:
+  96 00c0 010051E3 		cmp	r1, #1
+  97 00c4 3900001A 		bne	.L12
+  98 00c8 A4C19FE5 		ldr	ip, .L20+8
+  99 00cc 0030A0E3 		mov	r3, #0
+ 100 00d0 0030CCE5 		strb	r3, [ip, #0]
+ 101 00d4 AE00A0E3 		mov	r0, #174
+ 102 00d8 98219FE5 		ldr	r2, .L20+12
+ 103 00dc 2D304BE5 		strb	r3, [fp, #-45]
+ 104 00e0 FEFFFFEB 		bl	i2c_transmit
+ 105 00e4 0230A0E3 		mov	r3, #2
+ 106 00e8 950000EA 		b	.L18
+ 107              	.L12:
+ 108 00ec 020051E3 		cmp	r1, #2
+ 109 00f0 4100001A 		bne	.L13
+ 110 00f4 AE00A0E3 		mov	r0, #174
+ 111 00f8 041081E2 		add	r1, r1, #4
+ 112 00fc 74219FE5 		ldr	r2, .L20+12
+ 113 0100 FEFFFFEB 		bl	i2c_receive
+ 114 0104 0330A0E3 		mov	r3, #3
+ 115 0108 950000EA 		b	.L18
+ 116              	.L13:
+ 117 010c 030051E3 		cmp	r1, #3
+ 118 0110 9600001A 		bne	.L10
+ 119 0114 58519FE5 		ldr	r5, .L20+8
+ 120 0118 0030D5E5 		ldrb	r3, [r5, #0]	@ zero_extendqisi2
+ 121 011c 0120D5E5 		ldrb	r2, [r5, #1]	@ zero_extendqisi2
+ 122 0120 032482E1 		orr	r2, r2, r3, asl #8
+ 123 0124 0248A0E1 		mov	r4, r2, asl #16
+ 124 0128 4448A0E1 		mov	r4, r4, asr #16
+ 125 012c 48819FE5 		ldr	r8, .L20+16
+ 126 0130 48A19FE5 		ldr	sl, .L20+20
+ 127 0134 48919FE5 		ldr	r9, .L20+24
+ 128 0138 48619FE5 		ldr	r6, .L20+28
+ 129 013c 0030A0E3 		mov	r3, #0
+ 130 0140 0400A0E1 		mov	r0, r4
+ 131 0144 003089E5 		str	r3, [r9, #0]	@ float
+ 132 0148 003088E5 		str	r3, [r8, #0]	@ float
+ 133 014c 00308AE5 		str	r3, [sl, #0]	@ float
+ 134 0150 B020C6E1 		strh	r2, [r6, #0]	@ movhi 
+ 135 0154 FEFFFFEB 		bl	__floatsisf
+ 136 0158 000054E3 		cmp	r4, #0
+ 137 015c 28119FB5 		ldrlt	r1, .L20+32
+ 138 0160 FEFFFFBB 		bllt	__addsf3
+ 139              	.L15:
+ 140 0164 0010A0E1 		mov	r1, r0
+ 141 0168 FE05A0E3 		mov	r0, #1065353216
+ 142 016c FEFFFFEB 		bl	__divsf3
+ 143 0170 18319FE5 		ldr	r3, .L20+36
+ 144 0174 004093E5 		ldr	r4, [r3, #0]	@ float
+ 145 0178 14319FE5 		ldr	r3, .L20+40
+ 146 017c 0020A0E1 		mov	r2, r0
+ 147 0180 002083E5 		str	r2, [r3, #0]	@ float
+ 148 0184 0410A0E1 		mov	r1, r4
+ 149 0188 FEFFFFEB 		bl	__subsf3
+ 150 018c 0410A0E1 		mov	r1, r4
+ 151 0190 FEFFFFEB 		bl	__divsf3
+ 152 0194 0220D5E5 		ldrb	r2, [r5, #2]	@ zero_extendqisi2
+ 153 0198 0330D5E5 		ldrb	r3, [r5, #3]	@ zero_extendqisi2
+ 154 019c 023483E1 		orr	r3, r3, r2, asl #8
+ 155 01a0 0348A0E1 		mov	r4, r3, asl #16
+ 156 01a4 4448A0E1 		mov	r4, r4, asr #16
+ 157 01a8 000088E5 		str	r0, [r8, #0]	@ float
+ 158 01ac 0400A0E1 		mov	r0, r4
+ 159 01b0 B230C6E1 		strh	r3, [r6, #2]	@ movhi 
+ 160 01b4 FEFFFFEB 		bl	__floatsisf
+ 161 01b8 000054E3 		cmp	r4, #0
+ 162 01bc C8109FB5 		ldrlt	r1, .L20+32
+ 163 01c0 FEFFFFBB 		bllt	__addsf3
+ 164              	.L16:
+ 165 01c4 0010A0E1 		mov	r1, r0
+ 166 01c8 FE05A0E3 		mov	r0, #1065353216
+ 167 01cc FEFFFFEB 		bl	__divsf3
+ 168 01d0 C0309FE5 		ldr	r3, .L20+44
+ 169 01d4 004093E5 		ldr	r4, [r3, #0]	@ float
+ 170 01d8 BC309FE5 		ldr	r3, .L20+48
+ 171 01dc 0020A0E1 		mov	r2, r0
+ 172 01e0 002083E5 		str	r2, [r3, #0]	@ float
+ 173 01e4 0410A0E1 		mov	r1, r4
+ 174 01e8 FEFFFFEB 		bl	__subsf3
+ 175 01ec 0410A0E1 		mov	r1, r4
+ 176 01f0 FEFFFFEB 		bl	__divsf3
+ 177 01f4 0420D5E5 		ldrb	r2, [r5, #4]	@ zero_extendqisi2
+ 178 01f8 0530D5E5 		ldrb	r3, [r5, #5]	@ zero_extendqisi2
+ 179 01fc 023483E1 		orr	r3, r3, r2, asl #8
+ 180 0200 0348A0E1 		mov	r4, r3, asl #16
+ 181 0204 4448A0E1 		mov	r4, r4, asr #16
+ 182 0208 00008AE5 		str	r0, [sl, #0]	@ float
+ 183 020c 0400A0E1 		mov	r0, r4
+ 184 0210 B430C6E1 		strh	r3, [r6, #4]	@ movhi 
+ 185 0214 FEFFFFEB 		bl	__floatsisf
+ 186 0218 000054E3 		cmp	r4, #0
+ 187 021c 68109FB5 		ldrlt	r1, .L20+32
+ 188 0220 FEFFFFBB 		bllt	__addsf3
+ 189              	.L17:
+ 190 0224 0010A0E1 		mov	r1, r0
+ 191 0228 FE05A0E3 		mov	r0, #1065353216
+ 192 022c FEFFFFEB 		bl	__divsf3
+ 193 0230 68309FE5 		ldr	r3, .L20+52
+ 194 0234 004093E5 		ldr	r4, [r3, #0]	@ float
+ 195 0238 64309FE5 		ldr	r3, .L20+56
+ 196 023c 0020A0E1 		mov	r2, r0
+ 197 0240 0410A0E1 		mov	r1, r4
+ 198 0244 002083E5 		str	r2, [r3, #0]	@ float
+ 199 0248 FEFFFFEB 		bl	__subsf3
+ 200 024c 0410A0E1 		mov	r1, r4
+ 201 0250 FEFFFFEB 		bl	__divsf3
+ 202 0254 000089E5 		str	r0, [r9, #0]	@ float
+ 203              	.L19:
+ 204 0258 0130A0E3 		mov	r3, #1
+ 205              	.L18:
+ 206 025c 0030C7E5 		strb	r3, [r7, #0]
+ 207              	.L10:
+ 208 0260 28D04BE2 		sub	sp, fp, #40
+ 209 0264 F06F9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, sl, fp, sp, lr}
+ 210 0268 1EFF2FE1 		bx	lr
+ 211              	.L21:
+ 212              		.align	2
+ 213              	.L20:
+ 214 026c 00000000 		.word	enose_status
+ 215 0270 00000000 		.word	enose_heating_setting
+ 216 0274 00000000 		.word	i2c_buf
+ 217 0278 00000000 		.word	enose_i2c_completed
+ 218 027c 00000000 		.word	FCG1
+ 219 0280 00000000 		.word	FCG2
+ 220 0284 00000000 		.word	FCG3
+ 221 0288 00000000 		.word	enose_sensor_data
+ 222 028c 00008047 		.word	1199570944
+ 223 0290 00000000 		.word	Gnostim1
+ 224 0294 00000000 		.word	Gstim1
+ 225 0298 00000000 		.word	Gnostim2
+ 226 029c 00000000 		.word	Gstim2
+ 227 02a0 00000000 		.word	Gnostim3
+ 228 02a4 00000000 		.word	Gstim3
+ 230              		.comm	enose_heating_setting,3,1
+ 231              		.comm	enose_sensor_data,6,2
+ 232              		.comm	FCG1,4,4
+ 233              		.comm	FCG2,4,4
+ 234              		.comm	FCG3,4,4
+ 235              		.comm	enose_status,1,1
+ 236              		.comm	Gstim1,4,4
+ 237              		.comm	Gstim2,4,4
+ 238              		.comm	Gstim3,4,4
+ 239              		.bss
+ 240              	enose_i2c_completed:
+ 241 0000 00       		.space	1
+ 242              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 enose.c
+     /tmp/ccLrpbi3.s:7      .data:00000000 Gnostim3
+     /tmp/ccLrpbi3.s:8      .data:00000000 $d
+     /tmp/ccLrpbi3.s:13     .data:00000004 Gnostim2
+     /tmp/ccLrpbi3.s:19     .data:00000008 Gnostim1
+     /tmp/ccLrpbi3.s:25     .text:00000000 enose_init
+     /tmp/ccLrpbi3.s:31     .text:00000000 $a
+     /tmp/ccLrpbi3.s:53     .text:00000048 $d
+                            *COM*:00000003 enose_heating_setting
+                            *COM*:00000006 enose_sensor_data
+                            *COM*:00000001 enose_status
+     /tmp/ccLrpbi3.s:240    .bss:00000000 enose_i2c_completed
+     /tmp/ccLrpbi3.s:65     .text:00000058 enose_periodic
+     /tmp/ccLrpbi3.s:69     .text:00000058 $a
+     /tmp/ccLrpbi3.s:214    .text:0000026c $d
+                            *COM*:00000004 FCG1
+                            *COM*:00000004 FCG2
+                            *COM*:00000004 FCG3
+                            *COM*:00000004 Gstim1
+                            *COM*:00000004 Gstim2
+                            *COM*:00000004 Gstim3
+
+UNDEFINED SYMBOLS
+__floatsisf
+__addsf3
+__divsf3
+__subsf3
+memcpy
+i2c_transmit
+i2c_receive
+i2c_buf

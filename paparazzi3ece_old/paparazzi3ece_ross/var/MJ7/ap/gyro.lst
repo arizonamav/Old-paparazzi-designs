@@ -1,0 +1,149 @@
+   1              		.file	"gyro.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	gyro_init
+   6              	gyro_init:
+   7              		@ Function supports interworking.
+   8              		@ args = 0, pretend = 0, frame = 0
+   9              		@ frame_needed = 1, uses_anonymous_args = 0
+  10 0000 0DC0A0E1 		mov	ip, sp
+  11 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+  12 0008 0F00A0E3 		mov	r0, #15
+  13 000c 04B04CE2 		sub	fp, ip, #4
+  14 0010 1C109FE5 		ldr	r1, .L2
+  15 0014 1020A0E3 		mov	r2, #16
+  16 0018 FEFFFFEB 		bl	adc_buf_channel
+  17 001c 0B00A0E3 		mov	r0, #11
+  18 0020 10109FE5 		ldr	r1, .L2+4
+  19 0024 1020A0E3 		mov	r2, #16
+  20 0028 FEFFFFEB 		bl	adc_buf_channel
+  21 002c 00689DE8 		ldmfd	sp, {fp, sp, lr}
+  22 0030 1EFF2FE1 		bx	lr
+  23              	.L3:
+  24              		.align	2
+  25              	.L2:
+  26 0034 00000000 		.word	buf_roll
+  27 0038 44000000 		.word	buf_temp
+  29              		.global	__divsi3
+  30              		.global	__floatsisf
+  31              		.global	__mulsf3
+  32              		.global	__addsf3
+  33              		.global	__fixsfsi
+  34              		.global	__floatsidf
+  35              		.global	__muldf3
+  36              		.global	__divdf3
+  37              		.global	__truncdfsf2
+  38              		.align	2
+  39              		.global	gyro_update
+  41              	gyro_update:
+  42              		@ Function supports interworking.
+  43              		@ args = 0, pretend = 0, frame = 0
+  44              		@ frame_needed = 1, uses_anonymous_args = 0
+  45 003c 0DC0A0E1 		mov	ip, sp
+  46 0040 70D82DE9 		stmfd	sp!, {r4, r5, r6, fp, ip, lr, pc}
+  47 0044 CC309FE5 		ldr	r3, .L5+24
+  48 0048 04B04CE2 		sub	fp, ip, #4
+  49 004c 4310D3E5 		ldrb	r1, [r3, #67]	@ zero_extendqisi2
+  50 0050 B000D3E1 		ldrh	r0, [r3, #0]
+  51 0054 FEFFFFEB 		bl	__divsi3
+  52 0058 BC209FE5 		ldr	r2, .L5+28
+  53 005c BC509FE5 		ldr	r5, .L5+32
+  54 0060 4310D2E5 		ldrb	r1, [r2, #67]	@ zero_extendqisi2
+  55 0064 7D3F40E2 		sub	r3, r0, #500
+  56 0068 B000D2E1 		ldrh	r0, [r2, #0]
+  57 006c B030C5E1 		strh	r3, [r5, #0]	@ movhi 
+  58 0070 FEFFFFEB 		bl	__divsi3
+  59 0074 770F40E2 		sub	r0, r0, #476
+  60 0078 FEFFFFEB 		bl	__floatsisf
+  61 007c A0309FE5 		ldr	r3, .L5+36
+  62 0080 0040A0E1 		mov	r4, r0
+  63 0084 004083E5 		str	r4, [r3, #0]	@ float
+  64 0088 F000D5E1 		ldrsh	r0, [r5, #0]
+  65 008c FEFFFFEB 		bl	__floatsisf
+  66 0090 0060A0E1 		mov	r6, r0
+  67 0094 0400A0E1 		mov	r0, r4
+  68 0098 0040A0E3 		mov	r4, #0
+  69 009c 0410A0E1 		mov	r1, r4
+  70 00a0 FEFFFFEB 		bl	__mulsf3
+  71 00a4 0010A0E1 		mov	r1, r0
+  72 00a8 0600A0E1 		mov	r0, r6
+  73 00ac FEFFFFEB 		bl	__addsf3
+  74 00b0 FEFFFFEB 		bl	__fixsfsi
+  75 00b4 B000C5E1 		strh	r0, [r5, #0]	@ movhi 
+  76 00b8 F000D5E1 		ldrsh	r0, [r5, #0]
+  77 00bc FEFFFFEB 		bl	__floatsidf
+  78 00c0 38208FE2 		adr	r2, .L5
+  79 00c4 0C0092E8 		ldmia	r2, {r2-r3}
+  80 00c8 FEFFFFEB 		bl	__muldf3
+  81 00cc 34208FE2 		adr	r2, .L5+8
+  82 00d0 0C0092E8 		ldmia	r2, {r2-r3}
+  83 00d4 FEFFFFEB 		bl	__divdf3
+  84 00d8 30208FE2 		adr	r2, .L5+16
+  85 00dc 0C0092E8 		ldmia	r2, {r2-r3}
+  86 00e0 FEFFFFEB 		bl	__muldf3
+  87 00e4 FEFFFFEB 		bl	__truncdfsf2
+  88 00e8 38309FE5 		ldr	r3, .L5+40
+  89 00ec 000083E5 		str	r0, [r3, #0]	@ float
+  90 00f0 34309FE5 		ldr	r3, .L5+44
+  91 00f4 004083E5 		str	r4, [r3, #0]	@ float
+  92 00f8 70689DE8 		ldmfd	sp, {r4, r5, r6, fp, sp, lr}
+  93 00fc 1EFF2FE1 		bx	lr
+  94              	.L6:
+  95              		.align	2
+  96              	.L5:
+  97 0100 F528DC3F 		.word	1071393013
+  98 0104 295C8FC2 		.word	-1030792151
+  99 0108 00806640 		.word	1080459264
+ 100 010c 00000000 		.word	0
+ 101 0110 FB210940 		.word	1074340347
+ 102 0114 182D4454 		.word	1413754136
+ 103 0118 00000000 		.word	buf_roll
+ 104 011c 44000000 		.word	buf_temp
+ 105 0120 00000000 		.word	roll_rate_adc
+ 106 0124 00000000 		.word	temp_comp
+ 107 0128 00000000 		.word	estimator_p
+ 108 012c 00000000 		.word	estimator_q
+ 110              		.comm	roll_rate_adc,2,2
+ 111              		.comm	temp_comp,4,4
+ 112              		.bss
+ 113              		.align	2
+ 114              	buf_roll:
+ 115 0000 00000000 		.space	68
+ 115      00000000 
+ 115      00000000 
+ 115      00000000 
+ 115      00000000 
+ 116              		.align	2
+ 117              	buf_temp:
+ 118 0044 00000000 		.space	68
+ 118      00000000 
+ 118      00000000 
+ 118      00000000 
+ 118      00000000 
+ 119              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 gyro.c
+     /tmp/ccc4umdP.s:6      .text:00000000 gyro_init
+     /tmp/ccc4umdP.s:10     .text:00000000 $a
+     /tmp/ccc4umdP.s:26     .text:00000034 $d
+     /tmp/ccc4umdP.s:114    .bss:00000000 buf_roll
+     /tmp/ccc4umdP.s:117    .bss:00000044 buf_temp
+     /tmp/ccc4umdP.s:41     .text:0000003c gyro_update
+     /tmp/ccc4umdP.s:45     .text:0000003c $a
+     /tmp/ccc4umdP.s:97     .text:00000100 $d
+                            *COM*:00000002 roll_rate_adc
+                            *COM*:00000004 temp_comp
+
+UNDEFINED SYMBOLS
+adc_buf_channel
+__divsi3
+__floatsisf
+__mulsf3
+__addsf3
+__fixsfsi
+__floatsidf
+__muldf3
+__divdf3
+__truncdfsf2
+estimator_p
+estimator_q

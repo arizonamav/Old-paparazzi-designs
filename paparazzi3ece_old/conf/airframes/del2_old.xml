@@ -1,0 +1,79 @@
+<airframe name="DragonFly_Lite" ctl_board="V1_2_1" gps="SAM_LS">
+  <section name="adc" prefix="ADC_CHANNEL_">
+    <define name="IR1" value="1"/>
+    <define name="IR2" value="0"/>
+  </section>
+  <servos min="800" neutral="1500" max="2600">
+    <servo name="GAZ" no="3" min="1000" neutral="1000" max="2000"/>
+    <servo name="AILERON" no="1" min="1200" neutral="1600" max="2000"/>
+    <servo name="ELEVATOR" no="0" min="1200" neutral="1600" max="2000"/>
+    <servo name="CAMERA" no="2" min="900" neutral="1600" max="2100"/>
+  </servos>
+  <command>
+    <set servo="GAZ" value="2 * @THROTTLE"/>
+    <let var="roll" value="@ROLL"/>
+    <let var="rollofthr" value="2 * @THROTTLE * ROLL_TGAIN"/>
+    <let var="pitch" value="@PITCH"/>
+    <let var="pitchofthr" value="2 * @THROTTLE * PITCH_TGAIN"/>
+    <set servo="ELEVATOR" value="$pitch + $pitchofthr"/>
+    <set servo="AILERON" value="$roll + $rollofthr"/>
+    <set servo="CAMERA" value="@CAMERA"/>
+   </command>
+  <section name="MIXER">
+    <define name="ROLL_TGAIN" value="0.005"/>
+    <define name="PITCH_TGAIN" value="-0.0"/>
+  </section>
+  <section name="INFRARED" prefix="IR_">
+    <define name="ROLL_NEUTRAL_DEFAULT" value="0"/>
+    <define name="PITCH_NEUTRAL_DEFAULT" value="1068"/>
+    <define name="DEFAULT_CONTRAST" value="200"/>
+    <define name="RAD_OF_IR_CONTRAST" value="0.75"/>
+    <linear name="RollOfIrs" arity="2" coeff1="+1" coeff2="-1"/>
+    <linear name="PitchOfIrs" arity="2" coeff1="+1" coeff2="+1"/>
+    <define name="RAD_OF_IR_MAX_VALUE" value="0.02"/>
+    <define name="RAD_OF_IR_MIN_VALUE" value="0.00075"/>
+   </section>
+  <section name="PID">
+    <define name="ROLL_PGAIN" value="8000."/>
+    <define name="ROLL_DGAIN" value="-8000."/>
+    <define name="ROLL_IGAIN" value="3500.0"/>
+    <define name="PITCH_OF_ROLL" value="0.6"/>
+    <define name="PITCH_PGAIN" value="8000."/>
+    <define name="CAMERA_PGAIN" value="10000."/>
+    <define name="MAX_ROLL" value=".52"/>
+    <define name="MAX_PITCH" value="0.17"/>
+    <define name="MIN_PITCH" value="-0.085"/>
+  </section>
+  <section name="ALT" prefix="CLIMB_">
+    <define name="PGAIN" value="-0.03"/>
+    <define name="IGAIN" value="0.15"/>
+    <define name="MAX" value="1."/>
+    <define name="LEVEL_GAZ" value="0.50"/>
+    <define name="GAZ_OF_CLIMB" value="0.27" unit="% / m/s"/>
+    <define name="PITCH_OF_VZ_PGAIN" value="0.4"/>
+     <define name="PITCH_PGAIN" value="-2.0"/>
+    <define name="PITCH_IGAIN" value="0.5"/>
+  </section>
+  <section name="NAV">
+    <define name="COURSE_PGAIN" value="-0.5"/>
+    <define name="ALTITUDE_PGAIN" value="-0.065"/>
+    <define name="NAV_PITCH" value="0."/>
+  </section>
+ 
+  <section name="BAT">
+    <define name="VOLTAGE_ADC_A" value="0.0175"/>
+    <define name="VOLTAGE_ADC_B" value="0.088"/>
+    <define name="VoltageOfAdc(adc)" value="(VOLTAGE_ADC_A * adc + VOLTAGE_ADC_B)"/>
+    <define name="LOW_BATTERY" value="96" unit="1e-1V"/>
+  </section>
+  <section name="MISC">
+    <define name="NOMINAL_AIRSPEED" value="16." unit="m/s"/>
+    <define name="CARROT" value="2.5" unit="s"/>
+  </section>
+ <section name="SIMU">
+    <define name="ROLL_RESPONSE_FACTOR" value="1."/>
+    <define name="YAW_RESPONSE_FACTOR" value="3"/>
+    <define name="WEIGHT" value="0.45"/>
+  </section>
+
+</airframe>

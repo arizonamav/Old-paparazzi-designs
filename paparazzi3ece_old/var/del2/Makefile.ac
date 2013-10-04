@@ -1,0 +1,21 @@
+# This file has been generated from /home/dragonfly/paparazzi_new/test/paparazzi3/conf/airframes/del2.xml by sw/tools/extract_makefile
+# Please DO NOT EDIT
+include $(PAPARAZZI_SRC)/conf/autopilot/v1_2_1.makefile
+include $(PAPARAZZI_SRC)/conf/autopilot/twin_mcu_avr.makefile
+ap.CFLAGS +=  -DDOWNLINK -DDOWNLINK_TRANSPORT=PprzTransport
+ap.srcs += pprz_transport.c downlink.c
+#ap.CFLAGS += -DUART0 -DDOWNLINK_AP_DEVICE=Uart0
+#ap.srcs += $(SRC_ARCH)/uart_hw.c 
+ap.CFLAGS += -DMODEM  -DDOWNLINK_AP_DEVICE=Modem
+ap.srcs += $(SRC_ARCH)/modem_hw.c 
+ap.CFLAGS += -DRADIO_CONTROL_SETTINGS -DRADIO_CONTROL_TYPE=RC_FUTABA
+ap.srcs += rc_settings.c
+ap.CFLAGS += -DDATALINK=PPRZ
+ap.srcs +=  traffic_info.c datalink.c
+ap.CFLAGS += -DPPRZ_UART=Uart0 -DUSE_UART0 -DUART0_BAUD=B9600
+ap.CFLAGS += -DUART1_BAUD=B38400
+ap.CFLAGS += -DMOBILE_CAM
+# Config for SITL simulation
+include $(PAPARAZZI_SRC)/conf/autopilot/sitl.makefile
+sim.CFLAGS += -DMOBILE_CAM
+sim.EXTRA_SRCS += traffic_info.c datalink.c

@@ -1,0 +1,237 @@
+   1              		.file	"xbee.c"
+   2              		.section	.rodata.str1.4,"aMS",%progbits,1
+   3              		.align	2
+   4              	.LC0:
+   5 0000 2B2B2B00 		.ascii	"+++\000"
+   6              		.align	2
+   7              	.LC1:
+   8 0004 41544D59 		.ascii	"ATMY\000"
+   8      00
+   9              		.section	.rodata
+  10              	.LC2:
+  11 0000 30       		.byte	48
+  12 0001 31       		.byte	49
+  13 0002 32       		.byte	50
+  14 0003 33       		.byte	51
+  15 0004 34       		.byte	52
+  16 0005 35       		.byte	53
+  17 0006 36       		.byte	54
+  18 0007 37       		.byte	55
+  19 0008 38       		.byte	56
+  20 0009 39       		.byte	57
+  21 000a 41       		.byte	65
+  22 000b 42       		.byte	66
+  23 000c 43       		.byte	67
+  24 000d 44       		.byte	68
+  25 000e 45       		.byte	69
+  26 000f 46       		.byte	70
+  27              		.section	.rodata.str1.4
+  28 0009 000000   		.align	2
+  29              	.LC3:
+  30 000c 0D00     		.ascii	"\r\000"
+  31 000e 0000     		.align	2
+  32              	.LC4:
+  33 0010 41544150 		.ascii	"ATAP1\r\000"
+  33      310D00
+  34 0017 00       		.align	2
+  35              	.LC5:
+  36 0018 4154434E 		.ascii	"ATCN\r\000"
+  36      0D00
+  37 001e 0000     		.text
+  38              		.align	2
+  39              		.global	xbee_init
+  41              	xbee_init:
+  42              		@ Function supports interworking.
+  43              		@ args = 0, pretend = 0, frame = 16
+  44              		@ frame_needed = 1, uses_anonymous_args = 0
+  45 0000 0DC0A0E1 		mov	ip, sp
+  46 0004 F0D82DE9 		stmfd	sp!, {r4, r5, r6, r7, fp, ip, lr, pc}
+  47 0008 F4219FE5 		ldr	r2, .L43
+  48 000c 04B04CE2 		sub	fp, ip, #4
+  49 0010 10D04DE2 		sub	sp, sp, #16
+  50 0014 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+  51 0018 0040A0E3 		mov	r4, #0
+  52 001c 000053E3 		cmp	r3, #0
+  53              	.L38:
+  54 0020 0F00000A 		beq	.L27
+  55 0024 0400D2E7 		ldrb	r0, [r2, r4]	@ zero_extendqisi2
+  56 0028 FEFFFFEB 		bl	uart0_transmit
+  57 002c 013084E2 		add	r3, r4, #1
+  58 0030 CC219FE5 		ldr	r2, .L43
+  59 0034 FF4003E2 		and	r4, r3, #255
+  60 0038 0430D2E7 		ldrb	r3, [r2, r4]	@ zero_extendqisi2
+  61 003c 000053E3 		cmp	r3, #0
+  62 0040 060000EA 		b	.L38
+  63              	.L27:
+  64 0044 7850A0E3 		mov	r5, #120
+  65              	.L13:
+  66 0048 B8319FE5 		ldr	r3, .L43+4
+  67 004c B8719FE5 		ldr	r7, .L43+8
+  68 0050 082093E5 		ldr	r2, [r3, #8]
+  69 0054 001097E5 		ldr	r1, [r7, #0]
+  70 0058 B0319FE5 		ldr	r3, .L43+12
+  71 005c B0C19FE5 		ldr	ip, .L43+16
+  72 0060 022061E0 		rsb	r2, r1, r2
+  73 0064 030052E1 		cmp	r2, r3
+  74 0068 A8419FE5 		ldr	r4, .L43+20
+  75 006c 0C0081E0 		add	r0, r1, ip
+  76 0070 0030A093 		movls	r3, #0
+  77 0074 3200009A 		bls	.L12
+  78 0078 002094E5 		ldr	r2, [r4, #0]
+  79 007c 98319FE5 		ldr	r3, .L43+24
+  80 0080 0CC082E0 		add	ip, r2, ip
+  81 0084 94119FE5 		ldr	r1, .L43+28
+  82 0088 03005CE1 		cmp	ip, r3
+  83 008c 90E19FE5 		ldr	lr, .L43+32
+  84 0090 90619FE5 		ldr	r6, .L43+36
+  85 0094 011082E0 		add	r1, r2, r1
+  86 0098 000087E5 		str	r0, [r7, #0]
+  87 009c 00C084E5 		str	ip, [r4, #0]
+  88 00a0 3100009A 		bls	.L9
+  89 00a4 10209EE5 		ldr	r2, [lr, #16]
+  90 00a8 B030D6E1 		ldrh	r3, [r6, #0]
+  91 00ac 010212E3 		tst	r2, #268435456
+  92 00b0 013083E2 		add	r3, r3, #1
+  93 00b4 B030C6E1 		strh	r3, [r6, #0]	@ movhi 
+  94 00b8 0132A013 		movne	r3, #268435456
+  95 00bc 0132A003 		moveq	r3, #268435456
+  96 00c0 001084E5 		str	r1, [r4, #0]
+  97 00c4 1C308E15 		strne	r3, [lr, #28]
+  98 00c8 14308E05 		streq	r3, [lr, #20]
+  99              	.L9:
+ 100 00cc 0130A0E3 		mov	r3, #1
+ 101              	.L12:
+ 102 00d0 000053E3 		cmp	r3, #0
+ 103 00d4 013045E2 		sub	r3, r5, #1
+ 104 00d8 FF500312 		andne	r5, r3, #255
+ 105 00dc 000055E3 		cmp	r5, #0
+ 106 00e0 1000001A 		bne	.L13
+ 107 00e4 40219FE5 		ldr	r2, .L43+40
+ 108 00e8 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 109 00ec 0540A0E1 		mov	r4, r5
+ 110 00f0 000053E3 		cmp	r3, #0
+ 111              	.L39:
+ 112 00f4 4400000A 		beq	.L31
+ 113 00f8 0400D2E7 		ldrb	r0, [r2, r4]	@ zero_extendqisi2
+ 114 00fc FEFFFFEB 		bl	uart0_transmit
+ 115 0100 013084E2 		add	r3, r4, #1
+ 116 0104 20219FE5 		ldr	r2, .L43+40
+ 117 0108 FF4003E2 		and	r4, r3, #255
+ 118 010c 0430D2E7 		ldrb	r3, [r2, r4]	@ zero_extendqisi2
+ 119 0110 000053E3 		cmp	r3, #0
+ 120 0114 3B0000EA 		b	.L39
+ 121              	.L31:
+ 122 0118 2C404BE2 		sub	r4, fp, #44
+ 123 011c 0C119FE5 		ldr	r1, .L43+44
+ 124 0120 1020A0E3 		mov	r2, #16
+ 125 0124 0400A0E1 		mov	r0, r4
+ 126 0128 FEFFFFEB 		bl	memcpy
+ 127 012c 2C005BE5 		ldrb	r0, [fp, #-44]	@ zero_extendqisi2
+ 128 0130 FEFFFFEB 		bl	uart0_transmit
+ 129 0134 2C005BE5 		ldrb	r0, [fp, #-44]	@ zero_extendqisi2
+ 130 0138 FEFFFFEB 		bl	uart0_transmit
+ 131 013c 1020A0E3 		mov	r2, #16
+ 132 0140 E8109FE5 		ldr	r1, .L43+44
+ 133 0144 0400A0E1 		mov	r0, r4
+ 134 0148 FEFFFFEB 		bl	memcpy
+ 135 014c 2B005BE5 		ldrb	r0, [fp, #-43]	@ zero_extendqisi2
+ 136 0150 FEFFFFEB 		bl	uart0_transmit
+ 137 0154 27005BE5 		ldrb	r0, [fp, #-39]	@ zero_extendqisi2
+ 138 0158 FEFFFFEB 		bl	uart0_transmit
+ 139 015c D0209FE5 		ldr	r2, .L43+48
+ 140 0160 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 141 0164 0040A0E3 		mov	r4, #0
+ 142 0168 000053E3 		cmp	r3, #0
+ 143              	.L40:
+ 144 016c 6200000A 		beq	.L33
+ 145 0170 0400D2E7 		ldrb	r0, [r2, r4]	@ zero_extendqisi2
+ 146 0174 FEFFFFEB 		bl	uart0_transmit
+ 147 0178 013084E2 		add	r3, r4, #1
+ 148 017c B0209FE5 		ldr	r2, .L43+48
+ 149 0180 FF4003E2 		and	r4, r3, #255
+ 150 0184 0430D2E7 		ldrb	r3, [r2, r4]	@ zero_extendqisi2
+ 151 0188 000053E3 		cmp	r3, #0
+ 152 018c 590000EA 		b	.L40
+ 153              	.L33:
+ 154 0190 A0209FE5 		ldr	r2, .L43+52
+ 155 0194 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 156 0198 0040A0E3 		mov	r4, #0
+ 157 019c 000053E3 		cmp	r3, #0
+ 158              	.L41:
+ 159 01a0 6F00000A 		beq	.L35
+ 160 01a4 0400D2E7 		ldrb	r0, [r2, r4]	@ zero_extendqisi2
+ 161 01a8 FEFFFFEB 		bl	uart0_transmit
+ 162 01ac 013084E2 		add	r3, r4, #1
+ 163 01b0 80209FE5 		ldr	r2, .L43+52
+ 164 01b4 FF4003E2 		and	r4, r3, #255
+ 165 01b8 0430D2E7 		ldrb	r3, [r2, r4]	@ zero_extendqisi2
+ 166 01bc 000053E3 		cmp	r3, #0
+ 167 01c0 660000EA 		b	.L41
+ 168              	.L35:
+ 169 01c4 70209FE5 		ldr	r2, .L43+56
+ 170 01c8 0030D2E5 		ldrb	r3, [r2, #0]	@ zero_extendqisi2
+ 171 01cc 0040A0E3 		mov	r4, #0
+ 172 01d0 000053E3 		cmp	r3, #0
+ 173              	.L42:
+ 174 01d4 7C00000A 		beq	.L37
+ 175 01d8 0400D2E7 		ldrb	r0, [r2, r4]	@ zero_extendqisi2
+ 176 01dc FEFFFFEB 		bl	uart0_transmit
+ 177 01e0 013084E2 		add	r3, r4, #1
+ 178 01e4 50209FE5 		ldr	r2, .L43+56
+ 179 01e8 FF4003E2 		and	r4, r3, #255
+ 180 01ec 0430D2E7 		ldrb	r3, [r2, r4]	@ zero_extendqisi2
+ 181 01f0 000053E3 		cmp	r3, #0
+ 182 01f4 730000EA 		b	.L42
+ 183              	.L37:
+ 184 01f8 1CD04BE2 		sub	sp, fp, #28
+ 185 01fc F0689DE8 		ldmfd	sp, {r4, r5, r6, r7, fp, sp, lr}
+ 186 0200 1EFF2FE1 		bx	lr
+ 187              	.L44:
+ 188              		.align	2
+ 189              	.L43:
+ 190 0204 00000000 		.word	.LC0
+ 191 0208 004000E0 		.word	-536854528
+ 192 020c 00000000 		.word	last_periodic_event
+ 193 0210 86930300 		.word	234374
+ 194 0214 87930300 		.word	234375
+ 195 0218 00000000 		.word	cpu_time_ticks
+ 196 021c C0E1E400 		.word	15000000
+ 197 0220 C7B11EFF 		.word	-14765625
+ 198 0224 008002E0 		.word	-536707072
+ 199 0228 00000000 		.word	cpu_time_sec
+ 200 022c 04000000 		.word	.LC1
+ 201 0230 00000000 		.word	.LC2
+ 202 0234 0C000000 		.word	.LC3
+ 203 0238 10000000 		.word	.LC4
+ 204 023c 18000000 		.word	.LC5
+ 206              		.bss
+ 207              		.align	2
+ 208              	last_periodic_event:
+ 209 0000 00000000 		.space	4
+ 210              		.comm	xbee_cs,1,1
+ 211              		.comm	xbee_payload,256,1
+ 212              		.comm	xbee_msg_received,1,1
+ 213              		.comm	xbee_payload_len,1,1
+ 214              		.comm	xbee_rssi,1,1
+ 215              		.comm	xbee_ovrn,1,1
+ 216              		.comm	xbee_error,1,1
+ 217              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 xbee.c
+     /tmp/ccBSiSOm.s:41     .text:00000000 xbee_init
+     /tmp/ccBSiSOm.s:45     .text:00000000 $a
+     /tmp/ccBSiSOm.s:190    .text:00000204 $d
+     /tmp/ccBSiSOm.s:208    .bss:00000000 last_periodic_event
+                            *COM*:00000001 xbee_cs
+                            *COM*:00000100 xbee_payload
+                            *COM*:00000001 xbee_msg_received
+                            *COM*:00000001 xbee_payload_len
+                            *COM*:00000001 xbee_rssi
+                            *COM*:00000001 xbee_ovrn
+                            *COM*:00000001 xbee_error
+
+UNDEFINED SYMBOLS
+uart0_transmit
+memcpy
+cpu_time_ticks
+cpu_time_sec

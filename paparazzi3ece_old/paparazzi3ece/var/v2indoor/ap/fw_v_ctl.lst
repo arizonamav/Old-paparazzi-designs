@@ -1,0 +1,773 @@
+   1              		.file	"fw_v_ctl.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	v_ctl_init
+   6              	v_ctl_init:
+   7              		@ Function supports interworking.
+   8              		@ args = 0, pretend = 0, frame = 0
+   9              		@ frame_needed = 0, uses_anonymous_args = 0
+  10 0000 3C219FE5 		ldr	r2, .L2
+  11 0004 3C319FE5 		ldr	r3, .L2+4
+  12 0008 30402DE9 		stmfd	sp!, {r4, r5, lr}
+  13 000c 002083E5 		str	r2, [r3, #0]	@ float
+  14 0010 34E19FE5 		ldr	lr, .L2+8
+  15 0014 34319FE5 		ldr	r3, .L2+12
+  16 0018 34219FE5 		ldr	r2, .L2+16
+  17 001c 00E083E5 		str	lr, [r3, #0]	@ float
+  18 0020 30319FE5 		ldr	r3, .L2+20
+  19 0024 30419FE5 		ldr	r4, .L2+24
+  20 0028 002083E5 		str	r2, [r3, #0]	@ float
+  21 002c 2C319FE5 		ldr	r3, .L2+28
+  22 0030 2C219FE5 		ldr	r2, .L2+32
+  23 0034 004083E5 		str	r4, [r3, #0]	@ float
+  24 0038 28319FE5 		ldr	r3, .L2+36
+  25 003c 28019FE5 		ldr	r0, .L2+40
+  26 0040 002083E5 		str	r2, [r3, #0]	@ float
+  27 0044 24319FE5 		ldr	r3, .L2+44
+  28 0048 24219FE5 		ldr	r2, .L2+48
+  29 004c 000083E5 		str	r0, [r3, #0]	@ float
+  30 0050 20319FE5 		ldr	r3, .L2+52
+  31 0054 20519FE5 		ldr	r5, .L2+56
+  32 0058 002083E5 		str	r2, [r3, #0]	@ float
+  33 005c 1C319FE5 		ldr	r3, .L2+60
+  34 0060 1C219FE5 		ldr	r2, .L2+64
+  35 0064 005083E5 		str	r5, [r3, #0]	@ float
+  36 0068 18319FE5 		ldr	r3, .L2+68
+  37 006c 002083E5 		str	r2, [r3, #0]	@ float
+  38 0070 14319FE5 		ldr	r3, .L2+72
+  39 0074 0010A0E3 		mov	r1, #0
+  40 0078 001083E5 		str	r1, [r3, #0]	@ float
+  41 007c 0C319FE5 		ldr	r3, .L2+76
+  42 0080 FE25A0E3 		mov	r2, #1065353216
+  43 0084 002083E5 		str	r2, [r3, #0]	@ float
+  44 0088 04319FE5 		ldr	r3, .L2+80
+  45 008c 00C0A0E3 		mov	ip, #0
+  46 0090 B0C0C3E1 		strh	ip, [r3, #0]	@ movhi 
+  47 0094 FC309FE5 		ldr	r3, .L2+84
+  48 0098 00C0C3E5 		strb	ip, [r3, #0]
+  49 009c F8309FE5 		ldr	r3, .L2+88
+  50 00a0 001083E5 		str	r1, [r3, #0]	@ float
+  51 00a4 F4309FE5 		ldr	r3, .L2+92
+  52 00a8 001083E5 		str	r1, [r3, #0]	@ float
+  53 00ac F0309FE5 		ldr	r3, .L2+96
+  54 00b0 001083E5 		str	r1, [r3, #0]	@ float
+  55 00b4 EC309FE5 		ldr	r3, .L2+100
+  56 00b8 001083E5 		str	r1, [r3, #0]	@ float
+  57 00bc E8309FE5 		ldr	r3, .L2+104
+  58 00c0 001083E5 		str	r1, [r3, #0]	@ float
+  59 00c4 E4309FE5 		ldr	r3, .L2+108
+  60 00c8 00C0C3E5 		strb	ip, [r3, #0]
+  61 00cc E0309FE5 		ldr	r3, .L2+112
+  62 00d0 00E083E5 		str	lr, [r3, #0]	@ float
+  63 00d4 DC309FE5 		ldr	r3, .L2+116
+  64 00d8 004083E5 		str	r4, [r3, #0]	@ float
+  65 00dc D8309FE5 		ldr	r3, .L2+120
+  66 00e0 000083E5 		str	r0, [r3, #0]	@ float
+  67 00e4 D4309FE5 		ldr	r3, .L2+124
+  68 00e8 000083E5 		str	r0, [r3, #0]	@ float
+  69 00ec D0309FE5 		ldr	r3, .L2+128
+  70 00f0 005083E5 		str	r5, [r3, #0]	@ float
+  71 00f4 CC309FE5 		ldr	r3, .L2+132
+  72 00f8 001083E5 		str	r1, [r3, #0]	@ float
+  73 00fc C8309FE5 		ldr	r3, .L2+136
+  74 0100 001083E5 		str	r1, [r3, #0]	@ float
+  75 0104 C4309FE5 		ldr	r3, .L2+140
+  76 0108 000083E5 		str	r0, [r3, #0]	@ float
+  77 010c C0309FE5 		ldr	r3, .L2+144
+  78 0110 001083E5 		str	r1, [r3, #0]	@ float
+  79 0114 BC309FE5 		ldr	r3, .L2+148
+  80 0118 001083E5 		str	r1, [r3, #0]	@ float
+  81 011c B8309FE5 		ldr	r3, .L2+152
+  82 0120 001083E5 		str	r1, [r3, #0]	@ float
+  83 0124 B4309FE5 		ldr	r3, .L2+156
+  84 0128 001083E5 		str	r1, [r3, #0]	@ float
+  85 012c B0309FE5 		ldr	r3, .L2+160
+  86 0130 001083E5 		str	r1, [r3, #0]	@ float
+  87 0134 AC309FE5 		ldr	r3, .L2+164
+  88 0138 B0C0C3E1 		strh	ip, [r3, #0]	@ movhi 
+  89 013c 3040BDE8 		ldmfd	sp!, {r4, r5, lr}
+  90 0140 1EFF2FE1 		bx	lr
+  91              	.L3:
+  92              		.align	2
+  93              	.L2:
+  94 0144 9A99993E 		.word	1050253722
+  95 0148 00000000 		.word	v_ctl_altitude_pgain
+  96 014c EC51B83E 		.word	1052266988
+  97 0150 00000000 		.word	v_ctl_auto_throttle_cruise_throttle
+  98 0154 31082C3D 		.word	1026295857
+  99 0158 00000000 		.word	v_ctl_auto_throttle_pgain_plus
+ 100 015c 4260E53B 		.word	1004888130
+ 101 0160 00000000 		.word	v_ctl_auto_throttle_cruise_throttle_pgain2
+ 102 0164 AAF1D23D 		.word	1037234602
+ 103 0168 00000000 		.word	v_ctl_altitude_pgain2
+ 104 016c EC51383D 		.word	1027101164
+ 105 0170 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_minus2
+ 106 0174 46B6F33D 		.word	1039382086
+ 107 0178 00000000 		.word	v_ctl_auto_throttle_pgain_plus2
+ 108 017c 508D173D 		.word	1024953680
+ 109 0180 00000000 		.word	v_ctl_auto_throttle_pgain_minus2
+ 110 0184 CDCCCC3D 		.word	1036831949
+ 111 0188 00000000 		.word	v_ctl_auto_pitch_pgain
+ 112 018c 00000000 		.word	v_ctl_auto_pitch_sum_err
+ 113 0190 00000000 		.word	v_ctl_throttle_slew_
+ 114 0194 00000000 		.word	v_ctl_throttle_slewed
+ 115 0198 00000000 		.word	v_ctl_mode
+ 116 019c 00000000 		.word	v_ctl_altitude_setpoint
+ 117 01a0 00000000 		.word	v_ctl_altitude_pre_climb
+ 118 01a4 00000000 		.word	v_ctl_altitude_error
+ 119 01a8 00000000 		.word	v_ctl_alt_sum_err
+ 120 01ac 00000000 		.word	v_ctl_climb_setpoint
+ 121 01b0 00000000 		.word	v_ctl_climb_mode
+ 122 01b4 00000000 		.word	v_ctl_auto_throttle_nominal_cruise_throttle
+ 123 01b8 00000000 		.word	v_ctl_auto_throttle_cruise_throttle_pgain
+ 124 01bc 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_plus
+ 125 01c0 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_minus
+ 126 01c4 00000000 		.word	v_ctl_auto_throttle_pgain_minus
+ 127 01c8 00000000 		.word	v_ctl_auto_throttle_igain_plus
+ 128 01cc 00000000 		.word	v_ctl_auto_throttle_igain_minus
+ 129 01d0 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_plus2
+ 130 01d4 00000000 		.word	v_ctl_auto_throttle_igain_plus2
+ 131 01d8 00000000 		.word	v_ctl_auto_throttle_igain_minus2
+ 132 01dc 00000000 		.word	v_ctl_auto_throttle_igain
+ 133 01e0 00000000 		.word	v_ctl_auto_throttle_pitch_of_vz_pgain
+ 134 01e4 00000000 		.word	v_ctl_auto_pitch_igain
+ 135 01e8 00000000 		.word	v_ctl_throttle_setpoint
+ 137              		.global	__subsf3
+ 138              		.global	__extendsfdf2
+ 139              		.global	__gtdf2
+ 140              		.global	__mulsf3
+ 141              		.global	__addsf3
+ 142              		.global	__gtsf2
+ 143              		.global	__ltsf2
+ 144              		.bss
+ 145              	alt_err_sum_idx.0:
+ 146 0000 00       		.space	1
+ 147 0001 000000   		.align	2
+ 148              	alt_err_sum_values.1:
+ 149 0004 00000000 		.space	80
+ 149      00000000 
+ 149      00000000 
+ 149      00000000 
+ 149      00000000 
+ 150              		.global	__divsf3
+ 151              		.text
+ 152              		.align	2
+ 153              		.global	v_ctl_altitude_loop
+ 155              	v_ctl_altitude_loop:
+ 156              		@ Function supports interworking.
+ 157              		@ args = 0, pretend = 0, frame = 0
+ 158              		@ frame_needed = 1, uses_anonymous_args = 0
+ 159 01ec 0DC0A0E1 		mov	ip, sp
+ 160 01f0 F0DF2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, ip, lr, pc}
+ 161 01f4 58319FE5 		ldr	r3, .L20+8
+ 162 01f8 000093E5 		ldr	r0, [r3, #0]	@ float
+ 163 01fc 54319FE5 		ldr	r3, .L20+12
+ 164 0200 04B04CE2 		sub	fp, ip, #4
+ 165 0204 001093E5 		ldr	r1, [r3, #0]	@ float
+ 166 0208 FEFFFFEB 		bl	__subsf3
+ 167 020c 48919FE5 		ldr	r9, .L20+16
+ 168 0210 0040A0E1 		mov	r4, r0
+ 169 0214 004089E5 		str	r4, [r9, #0]	@ float
+ 170 0218 FEFFFFEB 		bl	__extendsfdf2
+ 171 021c 4A2F8FE2 		adr	r2, .L20
+ 172 0220 0C0092E8 		ldmia	r2, {r2-r3}
+ 173 0224 FEFFFFEB 		bl	__gtdf2
+ 174 0228 000050E3 		cmp	r0, #0
+ 175 022c 2C319FC5 		ldrgt	r3, .L20+20
+ 176 0230 2C319FD5 		ldrle	r3, .L20+24
+ 177 0234 2C519FE5 		ldr	r5, .L20+28
+ 178 0238 0410A0C1 		movgt	r1, r4
+ 179 023c 0410A0D1 		movle	r1, r4
+ 180 0240 000093E5 		ldr	r0, [r3, #0]	@ float
+ 181 0244 FEFFFFEB 		bl	__mulsf3
+ 182 0248 001095E5 		ldr	r1, [r5, #0]	@ float
+ 183 024c FEFFFFEB 		bl	__addsf3
+ 184 0250 14619FE5 		ldr	r6, .L20+32
+ 185 0254 10519FE5 		ldr	r5, .L20+32
+ 186 0258 000086E5 		str	r0, [r6, #0]	@ float
+ 187 025c 004095E5 		ldr	r4, [r5, #0]	@ float
+ 188 0260 0111A0E3 		mov	r1, #1073741824
+ 189 0264 0400A0E1 		mov	r0, r4
+ 190 0268 FEFFFFEB 		bl	__gtsf2
+ 191 026c 000050E3 		cmp	r0, #0
+ 192 0270 0131A0C3 		movgt	r3, #1073741824
+ 193 0274 A20000CA 		bgt	.L18
+ 194 0278 0400A0E1 		mov	r0, r4
+ 195 027c 0311A0E3 		mov	r1, #-1073741824
+ 196 0280 FEFFFFEB 		bl	__ltsf2
+ 197 0284 000050E3 		cmp	r0, #0
+ 198 0288 A30000AA 		bge	.L10
+ 199 028c 0331A0E3 		mov	r3, #-1073741824
+ 200              	.L18:
+ 201 0290 003085E5 		str	r3, [r5, #0]	@ float
+ 202              	.L10:
+ 203 0294 D4A09FE5 		ldr	sl, .L20+36
+ 204 0298 0040DAE5 		ldrb	r4, [sl, #0]	@ zero_extendqisi2
+ 205 029c D0809FE5 		ldr	r8, .L20+40
+ 206 02a0 D0709FE5 		ldr	r7, .L20+44
+ 207 02a4 FF6004E2 		and	r6, r4, #255
+ 208 02a8 061197E7 		ldr	r1, [r7, r6, asl #2]	@ float
+ 209 02ac 000098E5 		ldr	r0, [r8, #0]	@ float
+ 210 02b0 FEFFFFEB 		bl	__subsf3
+ 211 02b4 009099E5 		ldr	r9, [r9, #0]	@ float
+ 212 02b8 0050A0E1 		mov	r5, r0
+ 213 02bc B8109FE5 		ldr	r1, .L20+48
+ 214 02c0 0900A0E1 		mov	r0, r9
+ 215 02c4 FEFFFFEB 		bl	__divsf3
+ 216 02c8 0030A0E1 		mov	r3, r0
+ 217 02cc 0010A0E1 		mov	r1, r0
+ 218 02d0 0500A0E1 		mov	r0, r5
+ 219 02d4 063187E7 		str	r3, [r7, r6, asl #2]	@ float
+ 220 02d8 FEFFFFEB 		bl	__addsf3
+ 221 02dc 014084E2 		add	r4, r4, #1
+ 222 02e0 0040CAE5 		strb	r4, [sl, #0]
+ 223 02e4 0030DAE5 		ldrb	r3, [sl, #0]	@ zero_extendqisi2
+ 224 02e8 130053E3 		cmp	r3, #19
+ 225 02ec 0050A0E1 		mov	r5, r0
+ 226 02f0 000088E5 		str	r0, [r8, #0]	@ float
+ 227 02f4 CF00009A 		bls	.L4
+ 228 02f8 0030A0E3 		mov	r3, #0
+ 229 02fc 0900A0E1 		mov	r0, r9
+ 230 0300 0030CAE5 		strb	r3, [sl, #0]
+ 231 0304 FEFFFFEB 		bl	__extendsfdf2
+ 232 0308 3C208FE2 		adr	r2, .L20
+ 233 030c 0C0092E8 		ldmia	r2, {r2-r3}
+ 234 0310 FEFFFFEB 		bl	__gtdf2
+ 235 0314 000050E3 		cmp	r0, #0
+ 236 0318 60309FC5 		ldrgt	r3, .L20+52
+ 237 031c 60309FD5 		ldrle	r3, .L20+56
+ 238 0320 0510A0C1 		movgt	r1, r5
+ 239 0324 0510A0D1 		movle	r1, r5
+ 240 0328 000093E5 		ldr	r0, [r3, #0]	@ float
+ 241 032c FEFFFFEB 		bl	__mulsf3
+ 242 0330 50409FE5 		ldr	r4, .L20+60
+ 243 0334 0010A0E1 		mov	r1, r0
+ 244 0338 000094E5 		ldr	r0, [r4, #0]	@ float
+ 245 033c FEFFFFEB 		bl	__addsf3
+ 246 0340 000084E5 		str	r0, [r4, #0]	@ float
+ 247              	.L4:
+ 248 0344 F06F9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, r9, sl, fp, sp, lr}
+ 249 0348 1EFF2FE1 		bx	lr
+ 250              	.L21:
+ 251              		.align	2
+ 252              	.L20:
+ 253 034c 3333D33F 		.word	1070805811
+ 254 0350 33333333 		.word	858993459
+ 255 0354 00000000 		.word	v_ctl_altitude_setpoint
+ 256 0358 00000000 		.word	estimator_z
+ 257 035c 00000000 		.word	v_ctl_altitude_error
+ 258 0360 00000000 		.word	v_ctl_altitude_pgain2
+ 259 0364 00000000 		.word	v_ctl_altitude_pgain
+ 260 0368 00000000 		.word	v_ctl_altitude_pre_climb
+ 261 036c 00000000 		.word	v_ctl_climb_setpoint
+ 262 0370 00000000 		.word	alt_err_sum_idx.0
+ 263 0374 00000000 		.word	v_ctl_alt_sum_err
+ 264 0378 04000000 		.word	alt_err_sum_values.1
+ 265 037c 0000A041 		.word	1101004800
+ 266 0380 00000000 		.word	v_ctl_auto_throttle_cruise_throttle_pgain2
+ 267 0384 00000000 		.word	v_ctl_auto_throttle_cruise_throttle_pgain
+ 268 0388 00000000 		.word	v_ctl_auto_throttle_cruise_throttle
+ 270              		.global	__fixsfsi
+ 271              		.global	__ltdf2
+ 272              		.align	2
+ 273              		.global	v_ctl_climb_loop
+ 275              	v_ctl_climb_loop:
+ 276              		@ Function supports interworking.
+ 277              		@ args = 0, pretend = 0, frame = 0
+ 278              		@ frame_needed = 1, uses_anonymous_args = 0
+ 279 038c 0DC0A0E1 		mov	ip, sp
+ 280 0390 F0D82DE9 		stmfd	sp!, {r4, r5, r6, r7, fp, ip, lr, pc}
+ 281 0394 18339FE5 		ldr	r3, .L72+24
+ 282 0398 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 283 039c 000053E3 		cmp	r3, #0
+ 284 03a0 04B04CE2 		sub	fp, ip, #4
+ 285 03a4 EB00000A 		beq	.L24
+ 286 03a8 010053E3 		cmp	r3, #1
+ 287 03ac 6701000A 		beq	.L53
+ 288 03b0 A30100EA 		b	.L22
+ 289              	.L24:
+ 290 03b4 FC629FE5 		ldr	r6, .L72+28
+ 291 03b8 FC329FE5 		ldr	r3, .L72+32
+ 292 03bc 004096E5 		ldr	r4, [r6, #0]	@ float
+ 293 03c0 001093E5 		ldr	r1, [r3, #0]	@ float
+ 294 03c4 0400A0E1 		mov	r0, r4
+ 295 03c8 FEFFFFEB 		bl	__subsf3
+ 296 03cc EC329FE5 		ldr	r3, .L72+36
+ 297 03d0 0050A0E1 		mov	r5, r0
+ 298 03d4 000093E5 		ldr	r0, [r3, #0]	@ float
+ 299 03d8 FEFFFFEB 		bl	__extendsfdf2
+ 300 03dc AE2F8FE2 		adr	r2, .L72
+ 301 03e0 0C0092E8 		ldmia	r2, {r2-r3}
+ 302 03e4 FEFFFFEB 		bl	__gtdf2
+ 303 03e8 000050E3 		cmp	r0, #0
+ 304 03ec 0010A0E3 		mov	r1, #0
+ 305 03f0 150100DA 		ble	.L25
+ 306 03f4 0400A0E1 		mov	r0, r4
+ 307 03f8 FEFFFFEB 		bl	__gtsf2
+ 308 03fc 000050E3 		cmp	r0, #0
+ 309 0400 BC329FC5 		ldrgt	r3, .L72+40
+ 310 0404 BC329FD5 		ldrle	r3, .L72+44
+ 311 0408 BC229FE5 		ldr	r2, .L72+48
+ 312 040c 003093E5 		ldr	r3, [r3, #0]	@ float
+ 313 0410 0010A0E3 		mov	r1, #0
+ 314 0414 003082E5 		str	r3, [r2, #0]	@ float
+ 315 0418 0500A0E1 		mov	r0, r5
+ 316 041c FEFFFFEB 		bl	__ltsf2
+ 317 0420 000050E3 		cmp	r0, #0
+ 318 0424 A4329FB5 		ldrlt	r3, .L72+52
+ 319 0428 A4329FA5 		ldrge	r3, .L72+56
+ 320 042c A4229FE5 		ldr	r2, .L72+60
+ 321 0430 003093E5 		ldr	r3, [r3, #0]	@ float
+ 322 0434 A0029FE5 		ldr	r0, .L72+64
+ 323 0438 003082E5 		str	r3, [r2, #0]	@ float
+ 324 043c 000090E5 		ldr	r0, [r0, #0]	@ float
+ 325 0440 0010A0E3 		mov	r1, #0
+ 326 0444 FEFFFFEB 		bl	__ltsf2
+ 327 0448 000050E3 		cmp	r0, #0
+ 328 044c 8C229FE5 		ldr	r2, .L72+68
+ 329 0450 8C329FB5 		ldrlt	r3, .L72+72
+ 330 0454 8C329FA5 		ldrge	r3, .L72+76
+ 331 0458 2E0100EA 		b	.L69
+ 332              	.L25:
+ 333 045c 0400A0E1 		mov	r0, r4
+ 334 0460 FEFFFFEB 		bl	__gtsf2
+ 335 0464 000050E3 		cmp	r0, #0
+ 336 0468 7C329FC5 		ldrgt	r3, .L72+80
+ 337 046c 7C329FD5 		ldrle	r3, .L72+84
+ 338 0470 54229FE5 		ldr	r2, .L72+48
+ 339 0474 003093E5 		ldr	r3, [r3, #0]	@ float
+ 340 0478 0010A0E3 		mov	r1, #0
+ 341 047c 003082E5 		str	r3, [r2, #0]	@ float
+ 342 0480 0500A0E1 		mov	r0, r5
+ 343 0484 FEFFFFEB 		bl	__ltsf2
+ 344 0488 000050E3 		cmp	r0, #0
+ 345 048c 60329FB5 		ldrlt	r3, .L72+88
+ 346 0490 60329FA5 		ldrge	r3, .L72+92
+ 347 0494 3C229FE5 		ldr	r2, .L72+60
+ 348 0498 003093E5 		ldr	r3, [r3, #0]	@ float
+ 349 049c 38029FE5 		ldr	r0, .L72+64
+ 350 04a0 003082E5 		str	r3, [r2, #0]	@ float
+ 351 04a4 000090E5 		ldr	r0, [r0, #0]	@ float
+ 352 04a8 0010A0E3 		mov	r1, #0
+ 353 04ac FEFFFFEB 		bl	__ltsf2
+ 354 04b0 000050E3 		cmp	r0, #0
+ 355 04b4 24229FE5 		ldr	r2, .L72+68
+ 356 04b8 3C329FB5 		ldrlt	r3, .L72+96
+ 357 04bc 3C329FA5 		ldrge	r3, .L72+100
+ 358              	.L69:
+ 359 04c0 003093E5 		ldr	r3, [r3, #0]	@ float
+ 360 04c4 006096E5 		ldr	r6, [r6, #0]	@ float
+ 361 04c8 003082E5 		str	r3, [r2, #0]	@ float
+ 362 04cc F8319FE5 		ldr	r3, .L72+48
+ 363 04d0 0610A0E1 		mov	r1, r6
+ 364 04d4 000093E5 		ldr	r0, [r3, #0]	@ float
+ 365 04d8 FEFFFFEB 		bl	__mulsf3
+ 366 04dc 20329FE5 		ldr	r3, .L72+104
+ 367 04e0 0010A0E1 		mov	r1, r0
+ 368 04e4 000093E5 		ldr	r0, [r3, #0]	@ float
+ 369 04e8 FEFFFFEB 		bl	__addsf3
+ 370 04ec E4319FE5 		ldr	r3, .L72+60
+ 371 04f0 0040A0E1 		mov	r4, r0
+ 372 04f4 0510A0E1 		mov	r1, r5
+ 373 04f8 000093E5 		ldr	r0, [r3, #0]	@ float
+ 374 04fc FEFFFFEB 		bl	__mulsf3
+ 375 0500 0010A0E1 		mov	r1, r0
+ 376 0504 0400A0E1 		mov	r0, r4
+ 377 0508 FEFFFFEB 		bl	__addsf3
+ 378 050c CC319FE5 		ldr	r3, .L72+68
+ 379 0510 0040A0E1 		mov	r4, r0
+ 380 0514 000093E5 		ldr	r0, [r3, #0]	@ float
+ 381 0518 BC319FE5 		ldr	r3, .L72+64
+ 382 051c 001093E5 		ldr	r1, [r3, #0]	@ float
+ 383 0520 FEFFFFEB 		bl	__mulsf3
+ 384 0524 0010A0E1 		mov	r1, r0
+ 385 0528 0400A0E1 		mov	r0, r4
+ 386 052c FEFFFFEB 		bl	__addsf3
+ 387 0530 D0319FE5 		ldr	r3, .L72+108
+ 388 0534 0050A0E1 		mov	r5, r0
+ 389 0538 001093E5 		ldr	r1, [r3, #0]	@ float
+ 390 053c 0600A0E1 		mov	r0, r6
+ 391 0540 FEFFFFEB 		bl	__mulsf3
+ 392 0544 C0419FE5 		ldr	r4, .L72+112
+ 393 0548 0010A0E1 		mov	r1, r0
+ 394 054c 000094E5 		ldr	r0, [r4, #0]	@ float
+ 395 0550 FEFFFFEB 		bl	__addsf3
+ 396 0554 B4119FE5 		ldr	r1, .L72+116
+ 397 0558 000084E5 		str	r0, [r4, #0]	@ float
+ 398 055c 0500A0E1 		mov	r0, r5
+ 399 0560 FEFFFFEB 		bl	__mulsf3
+ 400 0564 0010A0E3 		mov	r1, #0
+ 401 0568 0040A0E1 		mov	r4, r0
+ 402 056c FEFFFFEB 		bl	__ltsf2
+ 403 0570 000050E3 		cmp	r0, #0
+ 404 0574 0000A0B3 		movlt	r0, #0	@ movhi
+ 405 0578 640100BA 		blt	.L47
+ 406 057c 0400A0E1 		mov	r0, r4
+ 407 0580 88119FE5 		ldr	r1, .L72+116
+ 408 0584 FEFFFFEB 		bl	__gtsf2
+ 409 0588 000050E3 		cmp	r0, #0
+ 410 058c 960DA0C3 		movgt	r0, #9600	@ movhi
+ 411 0590 0400A0D1 		movle	r0, r4
+ 412 0594 FEFFFFDB 		blle	__fixsfsi
+ 413              	.L47:
+ 414 0598 74319FE5 		ldr	r3, .L72+120
+ 415 059c B000C3E1 		strh	r0, [r3, #0]	@ movhi 
+ 416 05a0 A30100EA 		b	.L22
+ 417              	.L53:
+ 418 05a4 0C319FE5 		ldr	r3, .L72+28
+ 419 05a8 000093E5 		ldr	r0, [r3, #0]	@ float
+ 420 05ac 08319FE5 		ldr	r3, .L72+32
+ 421 05b0 001093E5 		ldr	r1, [r3, #0]	@ float
+ 422 05b4 FEFFFFEB 		bl	__subsf3
+ 423 05b8 58219FE5 		ldr	r2, .L72+124
+ 424 05bc 50319FE5 		ldr	r3, .L72+120
+ 425 05c0 B020D2E1 		ldrh	r2, [r2, #0]
+ 426 05c4 50519FE5 		ldr	r5, .L72+128
+ 427 05c8 0070A0E1 		mov	r7, r0
+ 428 05cc 0710A0E1 		mov	r1, r7
+ 429 05d0 000095E5 		ldr	r0, [r5, #0]	@ float
+ 430 05d4 B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+ 431 05d8 FEFFFFEB 		bl	__addsf3
+ 432 05dc 3C619FE5 		ldr	r6, .L72+132
+ 433 05e0 0040A0E1 		mov	r4, r0
+ 434 05e4 0610A0E1 		mov	r1, r6
+ 435 05e8 004085E5 		str	r4, [r5, #0]	@ float
+ 436 05ec FEFFFFEB 		bl	__gtsf2
+ 437 05f0 000050E3 		cmp	r0, #0
+ 438 05f4 820100CA 		bgt	.L70
+ 439 05f8 24619FE5 		ldr	r6, .L72+136
+ 440 05fc 0400A0E1 		mov	r0, r4
+ 441 0600 0610A0E1 		mov	r1, r6
+ 442 0604 FEFFFFEB 		bl	__ltsf2
+ 443 0608 000050E3 		cmp	r0, #0
+ 444 060c 830100AA 		bge	.L56
+ 445              	.L70:
+ 446 0610 006085E5 		str	r6, [r5, #0]	@ float
+ 447              	.L56:
+ 448 0614 0C319FE5 		ldr	r3, .L72+140
+ 449 0618 001095E5 		ldr	r1, [r5, #0]	@ float
+ 450 061c 000093E5 		ldr	r0, [r3, #0]	@ float
+ 451 0620 FEFFFFEB 		bl	__mulsf3
+ 452 0624 0010A0E1 		mov	r1, r0
+ 453 0628 0700A0E1 		mov	r0, r7
+ 454 062c FEFFFFEB 		bl	__addsf3
+ 455 0630 F4309FE5 		ldr	r3, .L72+144
+ 456 0634 0010A0E1 		mov	r1, r0
+ 457 0638 000093E5 		ldr	r0, [r3, #0]	@ float
+ 458 063c FEFFFFEB 		bl	__mulsf3
+ 459 0640 C4609FE5 		ldr	r6, .L72+112
+ 460 0644 0030A0E1 		mov	r3, r0
+ 461 0648 003086E5 		str	r3, [r6, #0]	@ float
+ 462 064c FEFFFFEB 		bl	__extendsfdf2
+ 463 0650 4C208FE2 		adr	r2, .L72+8
+ 464 0654 0C0092E8 		ldmia	r2, {r2-r3}
+ 465 0658 0150A0E1 		mov	r5, r1
+ 466 065c 0040A0E1 		mov	r4, r0
+ 467 0660 FEFFFFEB 		bl	__gtdf2
+ 468 0664 000050E3 		cmp	r0, #0
+ 469 0668 C0309FC5 		ldrgt	r3, .L72+148
+ 470 066c A20100CA 		bgt	.L71
+ 471 0670 0510A0E1 		mov	r1, r5
+ 472 0674 0400A0E1 		mov	r0, r4
+ 473 0678 2C208FE2 		adr	r2, .L72+16
+ 474 067c 0C0092E8 		ldmia	r2, {r2-r3}
+ 475 0680 FEFFFFEB 		bl	__ltdf2
+ 476 0684 000050E3 		cmp	r0, #0
+ 477 0688 A30100AA 		bge	.L22
+ 478 068c A0309FE5 		ldr	r3, .L72+152
+ 479              	.L71:
+ 480 0690 003086E5 		str	r3, [r6, #0]	@ float
+ 481              	.L22:
+ 482 0694 F0689DE8 		ldmfd	sp, {r4, r5, r6, r7, fp, sp, lr}
+ 483 0698 1EFF2FE1 		bx	lr
+ 484              	.L73:
+ 485              		.align	2
+ 486              	.L72:
+ 487 069c 3333D33F 		.word	1070805811
+ 488 06a0 33333333 		.word	858993459
+ 489 06a4 6666D63F 		.word	1071015526
+ 490 06a8 66666666 		.word	1717986918
+ 491 06ac 6666D6BF 		.word	-1076468122
+ 492 06b0 66666666 		.word	1717986918
+ 493 06b4 00000000 		.word	v_ctl_climb_mode
+ 494 06b8 00000000 		.word	v_ctl_climb_setpoint
+ 495 06bc 00000000 		.word	estimator_z_dot
+ 496 06c0 00000000 		.word	v_ctl_altitude_error
+ 497 06c4 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_plus2
+ 498 06c8 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_minus2
+ 499 06cc 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment
+ 500 06d0 00000000 		.word	v_ctl_auto_throttle_pgain_plus2
+ 501 06d4 00000000 		.word	v_ctl_auto_throttle_pgain_minus2
+ 502 06d8 00000000 		.word	v_ctl_auto_throttle_pgain
+ 503 06dc 00000000 		.word	v_ctl_alt_sum_err
+ 504 06e0 00000000 		.word	v_ctl_auto_throttle_igain
+ 505 06e4 00000000 		.word	v_ctl_auto_throttle_igain_plus2
+ 506 06e8 00000000 		.word	v_ctl_auto_throttle_igain_minus2
+ 507 06ec 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_plus
+ 508 06f0 00000000 		.word	v_ctl_auto_throttle_climb_throttle_increment_minus
+ 509 06f4 00000000 		.word	v_ctl_auto_throttle_pgain_plus
+ 510 06f8 00000000 		.word	v_ctl_auto_throttle_pgain_minus
+ 511 06fc 00000000 		.word	v_ctl_auto_throttle_igain_plus
+ 512 0700 00000000 		.word	v_ctl_auto_throttle_igain_minus
+ 513 0704 00000000 		.word	v_ctl_auto_throttle_cruise_throttle
+ 514 0708 00000000 		.word	v_ctl_auto_throttle_pitch_of_vz_pgain
+ 515 070c 00000000 		.word	nav_pitch
+ 516 0710 00001646 		.word	1175846912
+ 517 0714 00000000 		.word	v_ctl_throttle_setpoint
+ 518 0718 00000000 		.word	nav_throttle_setpoint
+ 519 071c 00000000 		.word	v_ctl_auto_pitch_sum_err
+ 520 0720 0000C842 		.word	1120403456
+ 521 0724 0000C8C2 		.word	-1027080192
+ 522 0728 00000000 		.word	v_ctl_auto_pitch_igain
+ 523 072c 00000000 		.word	v_ctl_auto_pitch_pgain
+ 524 0730 3333B33E 		.word	1051931443
+ 525 0734 3333B3BE 		.word	-1095552205
+ 527              		.global	__floatsisf
+ 528              		.align	2
+ 529              		.global	v_ctl_throttle_slew
+ 531              	v_ctl_throttle_slew:
+ 532              		@ Function supports interworking.
+ 533              		@ args = 0, pretend = 0, frame = 0
+ 534              		@ frame_needed = 1, uses_anonymous_args = 0
+ 535 0738 0DC0A0E1 		mov	ip, sp
+ 536 073c F0DD2DE9 		stmfd	sp!, {r4, r5, r6, r7, r8, sl, fp, ip, lr, pc}
+ 537 0740 A4319FE5 		ldr	r3, .L107
+ 538 0744 A4A19FE5 		ldr	sl, .L107+4
+ 539 0748 B030D3E1 		ldrh	r3, [r3, #0]
+ 540 074c B020DAE1 		ldrh	r2, [sl, #0]
+ 541 0750 033062E0 		rsb	r3, r2, r3
+ 542 0754 0338A0E1 		mov	r3, r3, asl #16
+ 543 0758 2368A0E1 		mov	r6, r3, lsr #16
+ 544 075c 0678A0E1 		mov	r7, r6, asl #16
+ 545 0760 04B04CE2 		sub	fp, ip, #4
+ 546 0764 4708A0E1 		mov	r0, r7, asr #16
+ 547 0768 FEFFFFEB 		bl	__floatsisf
+ 548 076c 80819FE5 		ldr	r8, .L107+8
+ 549 0770 0050A0E1 		mov	r5, r0
+ 550 0774 7C119FE5 		ldr	r1, .L107+12
+ 551 0778 000098E5 		ldr	r0, [r8, #0]	@ float
+ 552 077c FEFFFFEB 		bl	__mulsf3
+ 553 0780 74119FE5 		ldr	r1, .L107+16
+ 554 0784 0040A0E1 		mov	r4, r0
+ 555 0788 FEFFFFEB 		bl	__ltsf2
+ 556 078c 000050E3 		cmp	r0, #0
+ 557 0790 0500A0B1 		movlt	r0, r5
+ 558 0794 60119FB5 		ldrlt	r1, .L107+16
+ 559 0798 ED0100BA 		blt	.L102
+ 560 079c 54119FE5 		ldr	r1, .L107+12
+ 561 07a0 0400A0E1 		mov	r0, r4
+ 562 07a4 FEFFFFEB 		bl	__gtsf2
+ 563 07a8 000050E3 		cmp	r0, #0
+ 564 07ac 44119FC5 		ldrgt	r1, .L107+12
+ 565 07b0 0500A0C1 		movgt	r0, r5
+ 566 07b4 0500A0D1 		movle	r0, r5
+ 567 07b8 0410A0D1 		movle	r1, r4
+ 568              	.L102:
+ 569 07bc FEFFFFEB 		bl	__gtsf2
+ 570 07c0 000050E3 		cmp	r0, #0
+ 571 07c4 FF0100DA 		ble	.L75
+ 572 07c8 28119FE5 		ldr	r1, .L107+12
+ 573 07cc 000098E5 		ldr	r0, [r8, #0]	@ float
+ 574 07d0 FEFFFFEB 		bl	__mulsf3
+ 575 07d4 20119FE5 		ldr	r1, .L107+16
+ 576 07d8 0040A0E1 		mov	r4, r0
+ 577 07dc FEFFFFEB 		bl	__ltsf2
+ 578 07e0 000050E3 		cmp	r0, #0
+ 579 07e4 2C0200BA 		blt	.L106
+ 580 07e8 0400A0E1 		mov	r0, r4
+ 581 07ec 04119FE5 		ldr	r1, .L107+12
+ 582 07f0 FEFFFFEB 		bl	__gtsf2
+ 583 07f4 000050E3 		cmp	r0, #0
+ 584 07f8 0400A0D1 		movle	r0, r4
+ 585 07fc 310200DA 		ble	.L104
+ 586 0800 250200EA 		b	.L105
+ 587              	.L75:
+ 588 0804 4708A0E1 		mov	r0, r7, asr #16
+ 589 0808 FEFFFFEB 		bl	__floatsisf
+ 590 080c 007098E5 		ldr	r7, [r8, #0]	@ float
+ 591 0810 0050A0E1 		mov	r5, r0
+ 592 0814 DC109FE5 		ldr	r1, .L107+12
+ 593 0818 0700A0E1 		mov	r0, r7
+ 594 081c FEFFFFEB 		bl	__mulsf3
+ 595 0820 D4109FE5 		ldr	r1, .L107+16
+ 596 0824 0040A0E1 		mov	r4, r0
+ 597 0828 FEFFFFEB 		bl	__ltsf2
+ 598 082c 000050E3 		cmp	r0, #0
+ 599 0830 0500A0B1 		movlt	r0, r5
+ 600 0834 BC109FB5 		ldrlt	r1, .L107+12
+ 601 0838 190200BA 		blt	.L103
+ 602 083c B4109FE5 		ldr	r1, .L107+12
+ 603 0840 0400A0E1 		mov	r0, r4
+ 604 0844 FEFFFFEB 		bl	__gtsf2
+ 605 0848 000050E3 		cmp	r0, #0
+ 606 084c 0500A0C1 		movgt	r0, r5
+ 607 0850 A4109FC5 		ldrgt	r1, .L107+16
+ 608 0854 190200CA 		bgt	.L103
+ 609 0858 9C109FE5 		ldr	r1, .L107+16
+ 610 085c 0700A0E1 		mov	r0, r7
+ 611 0860 FEFFFFEB 		bl	__mulsf3
+ 612 0864 0010A0E1 		mov	r1, r0
+ 613 0868 0500A0E1 		mov	r0, r5
+ 614              	.L103:
+ 615 086c FEFFFFEB 		bl	__ltsf2
+ 616 0870 000050E3 		cmp	r0, #0
+ 617 0874 340200AA 		bge	.L88
+ 618 0878 005098E5 		ldr	r5, [r8, #0]	@ float
+ 619 087c 74109FE5 		ldr	r1, .L107+12
+ 620 0880 0500A0E1 		mov	r0, r5
+ 621 0884 FEFFFFEB 		bl	__mulsf3
+ 622 0888 6C109FE5 		ldr	r1, .L107+16
+ 623 088c 0040A0E1 		mov	r4, r0
+ 624 0890 FEFFFFEB 		bl	__ltsf2
+ 625 0894 000050E3 		cmp	r0, #0
+ 626 0898 270200AA 		bge	.L96
+ 627              	.L105:
+ 628 089c 966DA0E3 		mov	r6, #9600
+ 629 08a0 340200EA 		b	.L88
+ 630              	.L96:
+ 631 08a4 0400A0E1 		mov	r0, r4
+ 632 08a8 48109FE5 		ldr	r1, .L107+12
+ 633 08ac FEFFFFEB 		bl	__gtsf2
+ 634 08b0 000050E3 		cmp	r0, #0
+ 635 08b4 2E0200DA 		ble	.L99
+ 636              	.L106:
+ 637 08b8 40609FE5 		ldr	r6, .L107+20
+ 638 08bc 340200EA 		b	.L88
+ 639              	.L99:
+ 640 08c0 0500A0E1 		mov	r0, r5
+ 641 08c4 30109FE5 		ldr	r1, .L107+16
+ 642 08c8 FEFFFFEB 		bl	__mulsf3
+ 643              	.L104:
+ 644 08cc FEFFFFEB 		bl	__fixsfsi
+ 645 08d0 0008A0E1 		mov	r0, r0, asl #16
+ 646 08d4 2068A0E1 		mov	r6, r0, lsr #16
+ 647              	.L88:
+ 648 08d8 B030DAE1 		ldrh	r3, [sl, #0]
+ 649 08dc 063083E0 		add	r3, r3, r6
+ 650 08e0 B030CAE1 		strh	r3, [sl, #0]	@ movhi 
+ 651 08e4 F06D9DE8 		ldmfd	sp, {r4, r5, r6, r7, r8, sl, fp, sp, lr}
+ 652 08e8 1EFF2FE1 		bx	lr
+ 653              	.L108:
+ 654              		.align	2
+ 655              	.L107:
+ 656 08ec 00000000 		.word	v_ctl_throttle_setpoint
+ 657 08f0 00000000 		.word	v_ctl_throttle_slewed
+ 658 08f4 00000000 		.word	v_ctl_throttle_slew_
+ 659 08f8 00001646 		.word	1175846912
+ 660 08fc 000016C6 		.word	-971636736
+ 661 0900 80DA0000 		.word	55936
+ 663              		.bss
+ 664              		.align	2
+ 665              	last_periodic_event:
+ 666 0054 00000000 		.space	4
+ 667              		.comm	v_ctl_mode,1,1
+ 668              		.comm	v_ctl_altitude_setpoint,4,4
+ 669              		.comm	v_ctl_altitude_pre_climb,4,4
+ 670              		.comm	v_ctl_altitude_pgain,4,4
+ 671              		.comm	v_ctl_alt_sum_err,4,4
+ 672              		.comm	v_ctl_climb_setpoint,4,4
+ 673              		.comm	v_ctl_climb_mode,1,1
+ 674              		.comm	v_ctl_auto_throttle_nominal_cruise_throttle,4,4
+ 675              		.comm	v_ctl_auto_throttle_cruise_throttle_pgain,4,4
+ 676              		.comm	v_ctl_auto_throttle_cruise_throttle,4,4
+ 677              		.comm	v_ctl_auto_throttle_climb_throttle_increment_plus,4,4
+ 678              		.comm	v_ctl_auto_throttle_climb_throttle_increment_minus,4,4
+ 679              		.comm	v_ctl_auto_throttle_pgain_plus,4,4
+ 680              		.comm	v_ctl_auto_throttle_pgain_minus,4,4
+ 681              		.comm	v_ctl_auto_throttle_igain_plus,4,4
+ 682              		.comm	v_ctl_auto_throttle_igain_minus,4,4
+ 683              		.comm	v_ctl_auto_throttle_cruise_throttle_pgain2,4,4
+ 684              		.comm	v_ctl_altitude_pgain2,4,4
+ 685              		.comm	v_ctl_auto_throttle_climb_throttle_increment_plus2,4,4
+ 686              		.comm	v_ctl_auto_throttle_climb_throttle_increment_minus2,4,4
+ 687              		.comm	v_ctl_auto_throttle_pgain_plus2,4,4
+ 688              		.comm	v_ctl_auto_throttle_pgain_minus2,4,4
+ 689              		.comm	v_ctl_auto_throttle_igain_plus2,4,4
+ 690              		.comm	v_ctl_auto_throttle_igain_minus2,4,4
+ 691              		.comm	v_ctl_auto_throttle_climb_throttle_increment,4,4
+ 692              		.comm	v_ctl_auto_throttle_pgain,4,4
+ 693              		.comm	v_ctl_auto_throttle_igain,4,4
+ 694              		.comm	v_ctl_auto_throttle_pitch_of_vz_pgain,4,4
+ 695              		.comm	v_ctl_throttle_slew_,4,4
+ 696              		.comm	v_ctl_auto_pitch_pgain,4,4
+ 697              		.comm	v_ctl_auto_pitch_igain,4,4
+ 698              		.comm	v_ctl_auto_pitch_sum_err,4,4
+ 699              		.comm	v_ctl_throttle_setpoint,2,2
+ 700              		.comm	v_ctl_throttle_slewed,2,2
+ 701              		.comm	climb_throttle,4,4
+ 702              		.comm	desc_throttle,4,4
+ 703              		.comm	v_ctl_altitude_error,4,4
+ 704              		.comm	v_ctl_auto_throttle_submode,1,1
+ 705              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 fw_v_ctl.c
+     /tmp/ccx9xUpE.s:6      .text:00000000 v_ctl_init
+     /tmp/ccx9xUpE.s:10     .text:00000000 $a
+     /tmp/ccx9xUpE.s:94     .text:00000144 $d
+                            *COM*:00000004 v_ctl_altitude_pgain
+                            *COM*:00000004 v_ctl_auto_throttle_cruise_throttle
+                            *COM*:00000004 v_ctl_auto_throttle_pgain_plus
+                            *COM*:00000004 v_ctl_auto_throttle_cruise_throttle_pgain2
+                            *COM*:00000004 v_ctl_altitude_pgain2
+                            *COM*:00000004 v_ctl_auto_throttle_climb_throttle_increment_minus2
+                            *COM*:00000004 v_ctl_auto_throttle_pgain_plus2
+                            *COM*:00000004 v_ctl_auto_throttle_pgain_minus2
+                            *COM*:00000004 v_ctl_auto_pitch_pgain
+                            *COM*:00000004 v_ctl_auto_pitch_sum_err
+                            *COM*:00000004 v_ctl_throttle_slew_
+                            *COM*:00000002 v_ctl_throttle_slewed
+                            *COM*:00000001 v_ctl_mode
+                            *COM*:00000004 v_ctl_altitude_setpoint
+                            *COM*:00000004 v_ctl_altitude_pre_climb
+                            *COM*:00000004 v_ctl_altitude_error
+                            *COM*:00000004 v_ctl_alt_sum_err
+                            *COM*:00000004 v_ctl_climb_setpoint
+                            *COM*:00000001 v_ctl_climb_mode
+                            *COM*:00000004 v_ctl_auto_throttle_nominal_cruise_throttle
+                            *COM*:00000004 v_ctl_auto_throttle_cruise_throttle_pgain
+                            *COM*:00000004 v_ctl_auto_throttle_climb_throttle_increment_plus
+                            *COM*:00000004 v_ctl_auto_throttle_climb_throttle_increment_minus
+                            *COM*:00000004 v_ctl_auto_throttle_pgain_minus
+                            *COM*:00000004 v_ctl_auto_throttle_igain_plus
+                            *COM*:00000004 v_ctl_auto_throttle_igain_minus
+                            *COM*:00000004 v_ctl_auto_throttle_climb_throttle_increment_plus2
+                            *COM*:00000004 v_ctl_auto_throttle_igain_plus2
+                            *COM*:00000004 v_ctl_auto_throttle_igain_minus2
+                            *COM*:00000004 v_ctl_auto_throttle_igain
+                            *COM*:00000004 v_ctl_auto_throttle_pitch_of_vz_pgain
+                            *COM*:00000004 v_ctl_auto_pitch_igain
+                            *COM*:00000002 v_ctl_throttle_setpoint
+     /tmp/ccx9xUpE.s:145    .bss:00000000 alt_err_sum_idx.0
+     /tmp/ccx9xUpE.s:148    .bss:00000004 alt_err_sum_values.1
+     /tmp/ccx9xUpE.s:155    .text:000001ec v_ctl_altitude_loop
+     /tmp/ccx9xUpE.s:159    .text:000001ec $a
+     /tmp/ccx9xUpE.s:253    .text:0000034c $d
+     /tmp/ccx9xUpE.s:275    .text:0000038c v_ctl_climb_loop
+     /tmp/ccx9xUpE.s:279    .text:0000038c $a
+     /tmp/ccx9xUpE.s:487    .text:0000069c $d
+                            *COM*:00000004 v_ctl_auto_throttle_climb_throttle_increment
+                            *COM*:00000004 v_ctl_auto_throttle_pgain
+     /tmp/ccx9xUpE.s:531    .text:00000738 v_ctl_throttle_slew
+     /tmp/ccx9xUpE.s:535    .text:00000738 $a
+     /tmp/ccx9xUpE.s:656    .text:000008ec $d
+     /tmp/ccx9xUpE.s:665    .bss:00000054 last_periodic_event
+                            *COM*:00000004 climb_throttle
+                            *COM*:00000004 desc_throttle
+                            *COM*:00000001 v_ctl_auto_throttle_submode
+
+UNDEFINED SYMBOLS
+__subsf3
+__extendsfdf2
+__gtdf2
+__mulsf3
+__addsf3
+__gtsf2
+__ltsf2
+__divsf3
+estimator_z
+__fixsfsi
+__ltdf2
+estimator_z_dot
+nav_pitch
+nav_throttle_setpoint
+__floatsisf

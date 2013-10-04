@@ -1,0 +1,44 @@
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/downlink.o: downlink.c ap_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/airframe.h \
+  downlink.h ivy_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/periodic.h \
+  gyro.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/commands.o: commands.c commands.h paparazzi.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/airframe.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/gps.o: gps.c gps.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/flight_plan.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  estimator.h ap_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/airframe.h \
+  downlink.h ivy_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/periodic.h \
+  gyro.h infrared.h nav.h paparazzi.h fw_v_ctl.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/fw_h_ctl.o: fw_h_ctl.c \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h led.h \
+  fw_h_ctl.h paparazzi.h estimator.h nav.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/airframe.h \
+  fw_v_ctl.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/estimator.o: estimator.c estimator.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h uart.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/uart_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h \
+  ap_downlink.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/airframe.h \
+  downlink.h ivy_transport.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/include/messages.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/periodic.h \
+  gyro.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/sys_time.o: sys_time.c sys_time.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/v1_2_1.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/conf/autopilot/twin_avr.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/airborne/avr/sys_time_hw.h \
+  /home/dragonfly/paparazzi_new/test/paparazzi3/sw/include/std.h
+/home/dragonfly/paparazzi_new/test/paparazzi3/var/blademdm/sim/traffic_info.o: traffic_info.c traffic_info.h

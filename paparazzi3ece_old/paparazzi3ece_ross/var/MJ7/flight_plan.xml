@@ -1,0 +1,59 @@
+<dump>
+  <flight_plan name="demo 1" lon0="1.27289" max_dist_from_home="400" ground_alt="185" security_height="25" qfu="270" alt="250" lat0="43.46223">
+    <waypoints utm_x0="360284.774187" utm_y0="4813595.46908">
+      <waypoint y="30.0" name="HOME" x="0.0" alt="250."/>
+      <waypoint name="road_start" x="-337" y="17" alt="250."/>
+      <waypoint name="road_end" x="238" y="-30" alt="250."/>
+      <waypoint name="too far" x="529" y="-23" alt="250."/>
+    </waypoints>
+    <blocks>
+      <block name="survey road 1" no="0">
+        <go wp="road_start" no="0"/>
+        <go wp="road_end" no="1"/>
+      </block>
+      <block name="survey road 2" no="1">
+        <while cond="TRUE" no="0">
+          <go wp="road_start" from="road_end" hmode="route" no="1"/>
+          <go wp="road_end" from="road_start" hmode="route" no="2"/>
+        </while>
+      </block>
+      <block name="circle" no="2">
+        <circle wp="road_end" alt="ground_alt+50" radius="75" no="0"/>
+      </block>
+      <block name="go too far" no="3">
+        <go wp="too far" no="0"/>
+        <circle wp="too far" radius="50" no="1"/>
+      </block>
+    </blocks>
+    <exceptions/>
+  </flight_plan>
+  <stages>
+    <stage block="3" block_name="go too far" stage="1">
+      <circle wp="too far" radius="50" no="1"/>
+    </stage>
+    <stage block="3" block_name="go too far" stage="0">
+      <go wp="too far" no="0"/>
+    </stage>
+    <stage block="2" block_name="circle" stage="0">
+      <circle wp="road_end" alt="ground_alt+50" radius="75" no="0"/>
+    </stage>
+    <stage block="1" block_name="survey road 2" stage="2">
+      <go wp="road_end" from="road_start" hmode="route" no="2"/>
+    </stage>
+    <stage block="1" block_name="survey road 2" stage="1">
+      <go wp="road_start" from="road_end" hmode="route" no="1"/>
+    </stage>
+    <stage block="1" block_name="survey road 2" stage="0">
+      <while cond="TRUE" no="0">
+        <go wp="road_start" from="road_end" hmode="route" no="1"/>
+        <go wp="road_end" from="road_start" hmode="route" no="2"/>
+      </while>
+    </stage>
+    <stage block="0" block_name="survey road 1" stage="1">
+      <go wp="road_end" no="1"/>
+    </stage>
+    <stage block="0" block_name="survey road 1" stage="0">
+      <go wp="road_start" no="0"/>
+    </stage>
+  </stages>
+</dump>

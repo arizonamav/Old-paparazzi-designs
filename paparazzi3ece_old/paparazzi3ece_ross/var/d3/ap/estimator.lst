@@ -1,0 +1,118 @@
+   1              		.file	"estimator.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	estimator_init
+   6              	estimator_init:
+   7              		@ Function supports interworking.
+   8              		@ args = 0, pretend = 0, frame = 0
+   9              		@ frame_needed = 0, uses_anonymous_args = 0
+  10              		@ link register save eliminated.
+  11 0000 7C309FE5 		ldr	r3, .L2
+  12 0004 0020A0E3 		mov	r2, #0
+  13 0008 002083E5 		str	r2, [r3, #0]	@ float
+  14 000c 74309FE5 		ldr	r3, .L2+4
+  15 0010 002083E5 		str	r2, [r3, #0]	@ float
+  16 0014 70309FE5 		ldr	r3, .L2+8
+  17 0018 002083E5 		str	r2, [r3, #0]	@ float
+  18 001c 6C309FE5 		ldr	r3, .L2+12
+  19 0020 002083E5 		str	r2, [r3, #0]	@ float
+  20 0024 68309FE5 		ldr	r3, .L2+16
+  21 0028 002083E5 		str	r2, [r3, #0]	@ float
+  22 002c 64309FE5 		ldr	r3, .L2+20
+  23 0030 002083E5 		str	r2, [r3, #0]	@ float
+  24 0034 60309FE5 		ldr	r3, .L2+24
+  25 0038 002083E5 		str	r2, [r3, #0]	@ float
+  26 003c 5C309FE5 		ldr	r3, .L2+28
+  27 0040 002083E5 		str	r2, [r3, #0]	@ float
+  28 0044 58309FE5 		ldr	r3, .L2+32
+  29 0048 002083E5 		str	r2, [r3, #0]	@ float
+  30 004c 54309FE5 		ldr	r3, .L2+36
+  31 0050 002083E5 		str	r2, [r3, #0]	@ float
+  32 0054 50309FE5 		ldr	r3, .L2+40
+  33 0058 002083E5 		str	r2, [r3, #0]	@ float
+  34 005c 4C309FE5 		ldr	r3, .L2+44
+  35 0060 002083E5 		str	r2, [r3, #0]	@ float
+  36 0064 48309FE5 		ldr	r3, .L2+48
+  37 0068 002083E5 		str	r2, [r3, #0]	@ float
+  38 006c 44309FE5 		ldr	r3, .L2+52
+  39 0070 002083E5 		str	r2, [r3, #0]	@ float
+  40 0074 40309FE5 		ldr	r3, .L2+56
+  41 0078 0020A0E3 		mov	r2, #0	@ movhi
+  42              		@ lr needed for prologue
+  43 007c B020C3E1 		strh	r2, [r3, #0]	@ movhi 
+  44 0080 1EFF2FE1 		bx	lr
+  45              	.L3:
+  46              		.align	2
+  47              	.L2:
+  48 0084 00000000 		.word	estimator_az
+  49 0088 00000000 		.word	estimator_x
+  50 008c 00000000 		.word	estimator_y
+  51 0090 00000000 		.word	estimator_z
+  52 0094 00000000 		.word	estimator_phi
+  53 0098 00000000 		.word	estimator_psi
+  54 009c 00000000 		.word	estimator_theta
+  55 00a0 00000000 		.word	estimator_hspeed_mod
+  56 00a4 00000000 		.word	estimator_hspeed_dir
+  57 00a8 00000000 		.word	estimator_z_dot
+  58 00ac 00000000 		.word	estimator_p
+  59 00b0 00000000 		.word	estimator_q
+  60 00b4 00000000 		.word	estimator_ax
+  61 00b8 00000000 		.word	estimator_ay
+  62 00bc 00000000 		.word	estimator_flight_time
+  64              		.align	2
+  65              		.global	estimator_propagate_state
+  67              	estimator_propagate_state:
+  68              		@ Function supports interworking.
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 0, uses_anonymous_args = 0
+  71              		@ link register save eliminated.
+  72              		@ lr needed for prologue
+  73 00c0 1EFF2FE1 		bx	lr
+  75              		.comm	estimator_x,4,4
+  76              		.comm	estimator_y,4,4
+  77              		.comm	estimator_z,4,4
+  78              		.comm	estimator_phi,4,4
+  79              		.comm	estimator_psi,4,4
+  80              		.comm	estimator_theta,4,4
+  81              		.comm	estimator_z_dot,4,4
+  82              		.comm	estimator_p,4,4
+  83              		.comm	estimator_q,4,4
+  84              		.comm	estimator_flight_time,2,2
+  85              		.comm	estimator_t,4,4
+  86              		.comm	estimator_hspeed_mod,4,4
+  87              		.comm	estimator_hspeed_dir,4,4
+  88              		.comm	wind_east,4,4
+  89              		.comm	wind_north,4,4
+  90              		.comm	estimator_ax,4,4
+  91              		.comm	estimator_ay,4,4
+  92              		.comm	estimator_az,4,4
+  93              		.comm	alt_kalman_enabled,1,1
+  94              		.ident	"GCC: (GNU) 3.4.4"
+DEFINED SYMBOLS
+                            *ABS*:00000000 estimator.c
+     /tmp/ccsQVAZB.s:6      .text:00000000 estimator_init
+     /tmp/ccsQVAZB.s:11     .text:00000000 $a
+     /tmp/ccsQVAZB.s:48     .text:00000084 $d
+                            *COM*:00000004 estimator_az
+                            *COM*:00000004 estimator_x
+                            *COM*:00000004 estimator_y
+                            *COM*:00000004 estimator_z
+                            *COM*:00000004 estimator_phi
+                            *COM*:00000004 estimator_psi
+                            *COM*:00000004 estimator_theta
+                            *COM*:00000004 estimator_hspeed_mod
+                            *COM*:00000004 estimator_hspeed_dir
+                            *COM*:00000004 estimator_z_dot
+                            *COM*:00000004 estimator_p
+                            *COM*:00000004 estimator_q
+                            *COM*:00000004 estimator_ax
+                            *COM*:00000004 estimator_ay
+                            *COM*:00000002 estimator_flight_time
+     /tmp/ccsQVAZB.s:67     .text:000000c0 estimator_propagate_state
+     /tmp/ccsQVAZB.s:73     .text:000000c0 $a
+                            *COM*:00000004 estimator_t
+                            *COM*:00000004 wind_east
+                            *COM*:00000004 wind_north
+                            *COM*:00000001 alt_kalman_enabled
+
+NO UNDEFINED SYMBOLS

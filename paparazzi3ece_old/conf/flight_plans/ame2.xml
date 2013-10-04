@@ -1,0 +1,24 @@
+<flight_plan alt="430" ground_alt="380" lat0="37.210980" lon0="-113.456780" max_dist_from_home="500" name="Test flight" qfu="270" security_height="25">
+  <waypoints>
+    <waypoint name="HOME" x="1.19674950838e-07" y="-2.11922451854e-06"/>
+    <waypoint name="waypoint" x="31.5368476322" y="74.0696637738"/>
+    <waypoint name="wp2" x="-98.8063207673" y="82.8231300418"/>
+    <waypoint name="wp3" x="-118.411427673" y="-103.939672323"/>
+  </waypoints>
+  <include name="up_and_down" procedure="circles.xml" rotate="0" x="00" y="100">
+    <arg name="bottom" value="GROUND_ALT+50"/>
+    <with from="event1" to="circlehome"/>
+  </include>
+  <blocks>
+    <block name="init">
+      <while cond="(!launch)"/>
+      <heading course="QFU" pitch="0.15" throttle="0.8" until="(estimator_flight_time > 8)" vmode="throttle"/>
+      <heading climb="3.0" course="QFU" pitch="0.15" until="(estimator_z > SECURITY_ALT)" vmode="climb"/>
+      <deroute block="circlehome"/>
+    </block>
+    <block name="circlehome">
+      <exception cond="(RcEvent1())" deroute="up_and_down.climb"/>
+      <circle alt="GROUND_ALT+50" radius="75" wp="HOME"/>
+    </block>
+  </blocks>
+</flight_plan>

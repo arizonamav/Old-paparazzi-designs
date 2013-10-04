@@ -1,0 +1,22 @@
+/horizon.ml/1.7/Fri Oct 20 15:35:31 2006//
+/map2d.ml/1.87/Sat Jul 29 09:34:34 2006//
+/map2d.mli/1.1/Sat Jul 29 09:34:34 2006//
+/plugin.ml/1.1/Sat Jul 29 09:34:34 2006//
+/plugin.mli/1.1/Sat Jul 29 09:34:34 2006//
+/sectors.ml/1.1/Sat Jul 29 09:34:34 2006//
+/sectors.mli/1.1/Sat Jul 29 09:34:34 2006//
+/speech.ml/1.1/Sat Jul 29 09:34:34 2006//
+/speech.mli/1.1/Sat Jul 29 09:34:34 2006//
+D/Paparazzi////
+/Makefile/1.30/Thu Feb  1 00:06:07 2007//
+/ant_track.c/1.1/Wed Jan 24 23:01:05 2007//
+/editFP.ml/1.7/Thu Feb  1 00:06:07 2007//
+/editFP.mli/1.4/Thu Feb  1 00:06:07 2007//
+/gcs.ml/1.20/Thu Feb  1 00:06:07 2007//
+/live.ml/1.27/Thu Feb  1 00:06:07 2007//
+/live.mli/1.8/Thu Feb  1 00:06:07 2007//
+/pages.ml/1.26/Thu Feb  1 00:06:07 2007//
+/pages.mli/1.8/Thu Feb  1 00:06:07 2007//
+/particules.ml/1.1/Tue Dec 12 06:36:32 2006//
+/strip.ml/1.16/Thu Feb  1 00:06:07 2007//
+/strip.mli/1.7/Thu Feb  1 00:06:07 2007//

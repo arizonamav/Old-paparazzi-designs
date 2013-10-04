@@ -1,0 +1,59 @@
+<flight_plan alt="108.6" ground_alt="58.6" lat0="30.686697" lon0="86.393367" max_dist_from_home="500" name="Precise Navigation" qfu="270" security_height="0.5">
+  <waypoints>
+    <waypoint name="Rally" x="124.496282064" y="2.1232711561"/>
+    <waypoint name="wp2" x="258.351140914" y="155.327275993"/>
+    <waypoint name="wp3" x="176.738144655" y="315.848628398"/>
+    <waypoint name="wp4" x="380.07341995" y="527.1714698"/>
+    <waypoint name="wp5" x="-47.5525564263" y="658.773110105"/>
+    <waypoint name="wp6" x="7.78295950632" y="559.961858012"/>
+    <waypoint name="wp7" x="-48.2685804866" y="526.401379549"/>
+  </waypoints>
+  <blocks>
+    <block name="init">
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent2())" deroute="7wp loiter"/>
+      <while cond="(!launch)"/>
+      <attitude pitch="0.0" roll="0.0" throttle="0.54" until="(estimator_z > SECURITY_ALT)" vmode="throttle"/>
+      <deroute block="2wp loiter"/>
+    </block>
+    <block name="2wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="7wp loiter"/>
+      <while>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="1"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="2"/>
+      </while>
+    </block>
+    <block name="7wp loiter">
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/> 
+      <while>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="1"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="2"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="3"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="4"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="5"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="6"/>
+        <go approaching_time="1" throttle="auto" vmode="alt" wp="7"/>
+      </while>
+    </block>
+    <block name="circle">
+      <exception cond="(RcEvent2())" deroute="2wp loiter"/>
+      <exception cond="(RcEvent1())" deroute="landing"/>
+      <exception cond="(RcEvent2())" deroute="7wp loiter"/>
+      <circle radius="40" wp="HOME"/>
+    </block>
+    <block name="landing">
+      <exception cond="(RcEvent2())" deroute="circle"/>
+      <exception cond="(RcEvent1())" deroute="init"/>
+      <go alt="GROUND_ALT+28" wp="1"/>
+      <go alt="GROUND_ALT+20" throttle="0.30" vmode="throttle" wp="2"/>
+    </block>
+  </blocks>
+</flight_plan>
+
